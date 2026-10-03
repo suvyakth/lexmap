@@ -8,6 +8,7 @@ in the corpus.
 from __future__ import annotations
 
 import csv
+import json
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
@@ -69,7 +70,19 @@ def load_docs() -> dict[str, Doc]:
             raw, url, retrieved, body = _parse(supp_path)
             docs[did] = Doc(did, row["jurisdictions"], url or row["url"], row["source_type"],
                             retrieved, supp_path, raw, body, official=False, supplementary=True)
+    for path in sorted(config.HOUR16.glob("*.txt")) if config.HOUR16.exists() else []:
+        meta_path = path.with_suffix(".json")
+        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
+        raw, url, retrieved, body = _parse(path)
+        did = "H16-" + re.sub(r"[^A-Za-z0-9]+", "-", path.stem).strip("-").upper()
+        docs[did] = Doc(did, meta.get("jurisdiction", ""), url or meta.get("url", f"file:{path.name}"),
+                        "official (organiser hour-16 release)", retrieved or meta.get("retrieved_at", "supplied"),
+                        path, raw, body, official=True)
     return docs
+
+
+def hour16_docs() -> list[Doc]:
+    return [d for d in load_docs().values() if d.doc_id.startswith("H16-")]
 
 
 def manifest_jurisdiction(doc: Doc) -> str:

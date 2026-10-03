@@ -329,13 +329,15 @@
     const checks = D.selfcheck.checks.filter((c) => c.group === "C");
     let html = "";
     for (const [tid, r] of Object.entries(rep)) {
-      const mine = checks.filter((c) => c.check.startsWith(tid));
+      const mine = checks.filter((c) => c.check.startsWith(tid) && !c.check.includes("(info)"));
       const ok = mine.every((c) => c.ok);
+      const verdict = mine.length ? (ok ? '<span class="ok">✓ matches expected behaviour</span>' : '<span class="bad">✗ check failed</span>')
+        : '<span class="muted">computed; no expected set was supplied</span>';
       const d = det[tid];
       const ids = d.affected_address_ids;
       const example = ids[0];
       html += `<article class="card test">
-        <div class="test-top"><h3>${esc(tid)} · ${esc(r.title)}</h3><span class="${ok ? "ok" : "bad"}">${ok ? "✓ matches expected behaviour" : "✗ check failed"}</span></div>
+        <div class="test-top"><h3>${esc(tid)} · ${esc(r.title)}</h3>${verdict}</div>
         <div class="exp"><b>Expected:</b> ${esc(r.expected_behavior)}</div>
         <div class="res"><b>${r.affected}</b> addresses affected${r.conflict_flags ? ` · <b>${r.conflict_flags}</b> flagged for possible conflict` : ""}. ${esc(r.notes)}</div>
         ${example ? `<div class="kv" style="margin-top:6px"><b>Example ${esc(example)}:</b> ${esc(JSON.stringify(d.details[example]))}</div>` : ""}

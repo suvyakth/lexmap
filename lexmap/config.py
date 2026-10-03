@@ -13,6 +13,7 @@ ADDRESSES = RAW / "data" / "sample_addresses.csv"
 SCHEMA = RAW / "schema" / "rule_record.schema.json"
 CHANGE_TESTS = RAW / "dev" / "change_tests.json"
 SUPPLEMENTARY = ROOT / "data" / "supplementary"
+HOUR16 = ROOT / "data" / "hour16"          # organiser mid-event releases (see SUBMISSION_CHECKLIST.md)
 CACHE = ROOT / "data" / "cache"
 LLM_CACHE = CACHE / "llm"
 BUILD = ROOT / "build"            # intermediate artefacts (candidates, reconciled rules)

@@ -24,8 +24,30 @@ def _entry(entries: list[dict], rid: str) -> dict | None:
     return next((e for e in entries if e["team_rule_id"] == rid), None)
 
 
+def hour16_tests(rules: list[dict], start: int) -> list[dict]:
+    """One extra test per organiser hour-16 document: which addresses change once its rules take effect."""
+    from datetime import timedelta
+    from .corpus import hour16_docs
+    out = []
+    for i, d in enumerate(hour16_docs()):
+        ids = [r["team_rule_id"] for r in rules if r.get("source_doc_id") == d.doc_id]
+        effs = [r.get("effective_date") for r in rules if r.get("source_doc_id") == d.doc_id and r.get("effective_date")]
+        last = max(((e + "-01-01")[:10] if len(e) == 4 else (e + "-01")[:10] if len(e) == 7 else e) for e in effs) if effs else None
+        after = (date.fromisoformat(last) + timedelta(days=1)).isoformat() if last and last >= config.DEFAULT_AS_OF else config.DEFAULT_AS_OF
+        st = (d.jurisdictions.split(", ")[-1] if d.jurisdictions else "")
+        out.append({"test_id": f"T{start + i}", "title": f"Hour-16 release {d.path.name} ({d.jurisdictions})",
+                    "type": "as_of", "rule_ids": ids, "as_of_before": config.DEFAULT_AS_OF, "as_of_after": after,
+                    "states": [st] if st in config.STATES else [],
+                    "expected_behavior": "Extract the new ordinance unaided, get its effective date right, and list the "
+                                         "addresses whose answers change once it takes effect.",
+                    "extracted_effective_dates": effs})
+    return out
+
+
 def run(rules: list[dict], addrs: list[dict] | None = None) -> tuple[dict, dict]:
     tests = json.loads(config.CHANGE_TESTS.read_text(encoding="utf-8"))
+    if not any(t["test_id"] == "T6" for t in tests):
+        tests += hour16_tests(rules, start=6)
     addrs = addrs if addrs is not None else address_records()
     eng = Engine(rules)
     by_id = eng.by_id
@@ -63,6 +85,8 @@ def run(rules: list[dict], addrs: list[dict] | None = None) -> tuple[dict, dict]
                                 conflicts.add(aid)
             notes.append(f"{len(affected)} of {len(in_scope)} {'/'.join(sorted(states)) or 'all'} addresses change between "
                          f"{t['as_of_before']} and {t['as_of_after']}.")
+            if t.get("extracted_effective_dates") is not None:
+                notes.append(f"Extracted rules {ids} with effective date(s) {t['extracted_effective_dates']}.")
         elif t["type"] == "boundary":
             snap = look(t["as_of"])
             per_rule = {i: [] for i in ids}

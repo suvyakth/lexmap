@@ -122,6 +122,9 @@ def run(write: bool = True) -> dict:
                   f"got {len(got.get('conflict_flag_address_ids', []))}, expected {len(ec)}", "C")
         for rid in t["rule_ids"]:
             check(f"{tid}: rule {rid} exists in rules.json", rid in by_id, by_id.get(rid, {}).get("title", ""), "C")
+    for tid in sorted(set(changes) - {t["test_id"] for t in tests}):
+        check(f"{tid} (hour-16 release) computed by the same pipeline (info)", True,
+              f"{len(changes[tid].get('affected_address_ids', []))} affected; {changes[tid].get('notes', '')[:200]}", "C")
     # T1/T3/T4 status checks at the default date
     for rid, want in (("CA-ALG-01", "applies"), ("NJ-ALG-01", "not_yet_effective"), ("MA-ALG-P1", "pending"), ("MA-ALG-P2", "pending")):
         st = {e["result"] for a, es in L.items() for e in es if e["team_rule_id"] == rid}
