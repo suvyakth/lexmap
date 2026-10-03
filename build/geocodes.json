@@ -150,21 +150,21 @@
  "A0009": {
   "address_id": "A0009",
   "state": "MA",
-  "query": "322-322.5 Western Ave, Cambridge, MA",
+  "query": "322 Western Ave, Cambridge, MA",
   "flags": [
-   "Mailing city 'Cambridge' resolved to legal jurisdiction Boston, MA"
+   "Census match '5 WESTERN AVE, CAMBRIDGE, MA, 02163' has a different house number; rejected"
   ],
   "method": "census_geocoder",
   "confidence": "high",
-  "matched_address": "5 WESTERN AVE, CAMBRIDGE, MA, 02163",
-  "lat": 42.364216771469,
-  "lon": -71.11828649689,
-  "county": "Suffolk County",
-  "census_place": "Boston city",
-  "city": "Boston, MA",
+  "matched_address": "322 WESTERN AVE, CAMBRIDGE, MA, 02139",
+  "lat": 42.364468228676,
+  "lon": -71.113348085886,
+  "county": "Middlesex County",
+  "census_place": "Cambridge city",
+  "city": "Cambridge, MA",
   "stack": [
    "MA",
-   "Boston, MA"
+   "Cambridge, MA"
   ]
  },
  "A0010": {

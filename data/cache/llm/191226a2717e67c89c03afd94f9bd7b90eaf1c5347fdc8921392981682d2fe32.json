@@ -1,0 +1,8 @@
+{
+ "key": "191226a2717e67c89c03afd94f9bd7b90eaf1c5347fdc8921392981682d2fe32",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:screening_restrictions",
+ "created_at": "2026-10-03T20:34:02+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement runs to three sentences, but the limit is 1-2. The third sentence describes subsection 7B (advertising), which is not in the source excerpts. The requirement is rewritten in two sentences based only on § 4(10).\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"requirement\": \"Anyone furnishing credit, services or rental accommodations may not discriminate against an individual who receives federal, state or local public assistance (including medical assistance) or who is a tenant receiving federal, state or local housing subsidies (including rental assistance or rental supplements). This applies whether the discrimination is because the person is such a recipient or because of any requirement of the assistance or subsidy program.\"}}\n```"
+}

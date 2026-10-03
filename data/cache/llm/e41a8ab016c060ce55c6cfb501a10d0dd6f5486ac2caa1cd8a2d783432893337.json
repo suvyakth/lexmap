@@ -1,0 +1,8 @@
+{
+ "key": "e41a8ab016c060ce55c6cfb501a10d0dd6f5486ac2caa1cd8a2d783432893337",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:screening_restrictions",
+ "created_at": "2026-10-03T20:33:21+00:00",
+ "text": "{\"ok\": true, \"issues\": [], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {}}"
+}

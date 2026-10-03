@@ -1,0 +1,8 @@
+{
+ "key": "db6d82d17733f11014c2f1abbdefefe0213e3c1408a4e1462def950b078032ca",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Francisco, CA:rent_increase_limits",
+ "created_at": "2026-10-03T20:34:35+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {}}\n```"
+}

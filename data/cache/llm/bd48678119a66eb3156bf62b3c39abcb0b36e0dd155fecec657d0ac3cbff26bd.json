@@ -1,0 +1,8 @@
+{
+ "key": "bd48678119a66eb3156bf62b3c39abcb0b36e0dd155fecec657d0ac3cbff26bd",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:security_deposits",
+ "created_at": "2026-10-03T20:34:35+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"Citation: the source cites N.J.S.A. 46:8-21.2 specifically for the deposit cap, which is the record's headline requirement. That specific section should replace the broader range 46:8-19 to 46:8-21.5. The range also leaves out the applicability section 46:8-26, which the source cites.\", \"No other errors found. Status in_force with null dates is correct for this long-standing statute as of 2026-10-01. Subject 'landlord' is correct. The coverage_logic exemption (owner-occupied AND units <= 3) points the right way and matches the owner-occupied two- or three-family exception. The tenant's written-request opt-in and the seasonal-rental carve-out from the account rules are correctly kept in the text fields rather than coverage_logic. yields_to_local and preempts_local are correctly false. The requirement and key_value text match the source (1.5x cap, 10% yearly increase cap, 2.5x at lease inception, trust/interest-bearing account, 30-day return, double damages).\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"citation\": \"N.J.S.A. 46:8-21.2\"}}\n```"
+}

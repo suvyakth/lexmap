@@ -1,0 +1,8 @@
+{
+ "key": "3b429bd3100dc51ba0b895997e84e5a21363d73a8690a752bef09f75c471c17d",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Boston, MA:screening_restrictions",
+ "created_at": "2026-10-03T20:33:02+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement and key_value say covered providers may not use credit scores and may use credit history only in place of unavailable rental history. The source excerpts (policy pages 1-2, cut off before page 3) say nothing about credit, so these clauses are removed as unsupported.\", \"Status in_force is kept. The February 2017 date on the policy is its document date, not a stated effective date, so effective_date stays null.\", \"Subject, coverage_logic (other_fact for DND funding/land or BPDA inclusionary units), exemptions, yields_to_local, preempts_local and citation match the source.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"requirement\": \"Covered housing providers may not use blanket bans on applicants with arrests or convictions and must consider applicants case by case. When deciding eligibility or eviction, they may not consider non-conviction arrests, convictions subject to judicial relief (such as expungement or sealing), juvenile records, or convictions more than 5 years old.\", \"key_value\": \"Excludes non-conviction arrests, expunged or sealed convictions, juvenile records and convictions over 5 years old\"}}\n```"
+}

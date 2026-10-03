@@ -1,0 +1,8 @@
+{
+ "key": "4e9563532625f474857960fe8edb07173c36a7769e5842fb3c3fac11416e52a0",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:application_screening_fees",
+ "created_at": "2026-10-03T20:33:16+00:00",
+ "text": "{\"ok\": false, \"issues\": [\"key_value cites a '2026 adjusted maximum: $68.96 per D005', but the D005 excerpt does not contain that figure. No supplied source gives a CPI-adjusted dollar amount, so the figure was removed.\", \"status in_force is correct as of 2026-10-01. effective_date 2026-01-01 is the effective date of the current amended text (Stats. 2025, Ch. 67 (AB 1170)). The CPI language dating from 1998 is the base for the fee adjustment, not a competing effective date.\", \"subject landlord, null coverage_logic, yields_to_local false, preempts_local false and the citation Cal. Civ. Code § 1950.6 are all supported. The Berkeley sibling ordinance adds local requirements and does not create a preemption question.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"key_value\": \"$30 per applicant base cap, which the landlord may adjust annually for CPI increases since Jan. 1, 1998; credit-report copy due within 7 days of the landlord receiving it, and refunds of inadvertently collected fees due within 7 days\"}}"
+}

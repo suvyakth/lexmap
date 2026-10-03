@@ -1,0 +1,8 @@
+{
+ "key": "2f78da5a3f6299ca32924e9ac7cac3ebb90283e6297a9078fc37099751b2cb00",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:screening_restrictions",
+ "created_at": "2026-10-03T20:33:20+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [\"The conflict_note describes a resolved difference, not a real conflict. 2020-01-01 (D015) is the SB 329 source-of-income/Section 8 change and 2024-01-01 (D027) is the SB 267 amendment to § 12955. Both dates are correct, and the current operative text has been in force since 2024-01-01. Its trailing 'Sources give different effective dates' fragment should be dropped and conflict_unresolved set to false.\", \"The criminal-history limits come from D016 (Civil Rights Council regulations), not § 12955. They overlap with the sibling record for those regulations. The citation 'Cal. Gov. Code § 12955' remains the right citation for the core source-of-income, aggregate-income and credit-history requirements, and no more specific section is supported for the combined record, so no citation change is made.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": \"The 2020-01-01 date is the SB 329 source-of-income/Section 8 amendment and the 2024-01-01 date is the SB 267 credit-history amendment to Gov. Code § 12955, so both are correct and the current text has been in force since 2024-01-01.\", \"fix\": {}}\n```"
+}

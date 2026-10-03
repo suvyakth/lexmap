@@ -18,9 +18,7 @@ STATUS = {"in_force", "not_yet_effective", "pending", "failed"}
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 
 # documents that the corpus survey showed are not law (kept in audit trail, not extracted)
-SKIP_DOCS = {
-    "D078": "URL resolved to the SF Human Rights Commission homepage, not the Fair Chance Ordinance",
-}
+SKIP_DOCS: dict[str, str] = {}   # no document is excluded by hand
 
 
 def canonical_jurisdiction(j: str | None) -> str | None:

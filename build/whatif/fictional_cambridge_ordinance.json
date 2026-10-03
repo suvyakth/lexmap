@@ -29,10 +29,11 @@
  ],
  "status_at_as_of": {
   "NEW-CAM-FEE-01": {
-   "not_yet_effective": 49
+   "not_yet_effective": 45
   }
  },
  "affected_address_ids": [
+  "A0009",
   "A0010",
   "A0015",
   "A0024",
@@ -79,9 +80,19 @@
   "A0485"
  ],
  "affected_by_city": {
-  "Cambridge, MA": 44
+  "Cambridge, MA": 45
  },
  "details": {
+  "A0009": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
   "A0010": {
    "city": "Cambridge, MA",
    "before": {},

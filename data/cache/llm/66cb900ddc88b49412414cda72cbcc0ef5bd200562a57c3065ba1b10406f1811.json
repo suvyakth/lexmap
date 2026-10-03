@@ -1,0 +1,8 @@
+{
+ "key": "66cb900ddc88b49412414cda72cbcc0ef5bd200562a57c3065ba1b10406f1811",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:rent_increase_limits",
+ "created_at": "2026-10-03T20:34:16+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"coverage_logic is null, so the rule would apply to every building. The record limits coverage to 'Residential tenancies covered by the Anti-Eviction Act'. The unconscionability limit is enforced through the Act's nonpayment-of-increased-rent ground (N.J.S.A. 2A:18-61.1(f)), so the Act's own coverage applies: owner-occupied buildings with 3 or fewer units are excluded. That coverage was copied from the sibling Anti-Eviction Act record.\", \"The citation range '2A:18-61.1 et seq.' is broader than needed. The source names N.J.S.A. 2A:18-61.1(f) for the rent-increase notice and lease-termination procedure, so that is the more specific citation.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"coverage_logic\": {\"covers\": null, \"exempt\": {\"all\": [{\"field\": \"units\", \"op\": \"<=\", \"value\": 3}, {\"field\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}, \"citation\": \"N.J.S.A. 2A:18-61.1(f); N.J.S.A. 2A:18-61.31\"}}\n```"
+}

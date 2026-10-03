@@ -43,6 +43,10 @@ def export_rules(rules: list[dict], explain: dict) -> dict:
             "coverage_logic": r.get("coverage_logic"),
             "subject": r.get("subject", "landlord"),
             "source_conflict": bool(r.get("source_conflict")),
+            "scope": r.get("scope", "core"),
+            "applies_only_in": r.get("applies_only_in") or [],
+            "official_source": bool(r.get("official_source")),
+            "source_notes": r.get("source_notes"),
             "yields_to": r.get("yields_to") or [],
             "conflicts_with": r.get("conflicts_with") or [],
             "supporting_spans": [s["text"] for s in r["verified_spans"][1:]],
@@ -115,7 +119,8 @@ def one_lookup(args) -> int:
     print(f"{a['row']['street_address']}, {a['row']['postal_city']} -> {a['stack']} | facts: "
           f"year {a['facts']['year_built']}, {lookup.units_label(a['facts'])} | as of {args.as_of}")
     for e in eng.lookup(a, date.fromisoformat(args.as_of)):
-        print(f"  {e['team_rule_id']:16} {e['result']:18} {'CONFLICT ' if e['conflict_flag'] else ''}{e['explanation']}")
+        tag = "[event-only] " if e.get("event_only") else ""
+        print(f"  {e['team_rule_id']:16} {e['result']:18} {tag}{'CONFLICT ' if e['conflict_flag'] else ''}{e['explanation']}")
     return 0
 
 

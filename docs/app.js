@@ -22,6 +22,8 @@
       retrieved: "retrieved", confidence: "confidence", none: "None",
       tally_applies: "apply", tally_unknown: "unknown", tally_superseded: "superseded", tally_nye: "not yet effective", tally_pending: "pending",
       exemptions: "Exemptions", coverage: "Coverage logic", requirement: "Requirement",
+      event_only: "Only if a specific event happens (demolition, conversion, temporary displacement)",
+      no_rule_short: "No rule found in the corpus", category: "Category", governs: "What governs here", citation: "Citation",
     },
     es: {
       applies: "Aplica", superseded: "Desplazada", unknown: "Desconocido", not_yet_effective: "Aún no vigente", pending: "Proyecto pendiente",
@@ -33,6 +35,8 @@
       retrieved: "consultado", confidence: "confianza", none: "Ninguna",
       tally_applies: "aplican", tally_unknown: "desconocidas", tally_superseded: "desplazadas", tally_nye: "aún no vigentes", tally_pending: "pendientes",
       exemptions: "Exenciones", coverage: "Lógica de cobertura", requirement: "Requisito",
+      event_only: "Solo si ocurre un hecho específico (demolición, conversión, desplazamiento temporal)",
+      no_rule_short: "No se encontró ninguna norma en el corpus", category: "Categoría", governs: "Qué rige aquí", citation: "Cita",
     },
   };
   const UI_ES = {
@@ -98,14 +102,17 @@
   // ------------------------------------------------------------------ lookup view
   function renderAddress(addr, meta) {
     const asOf = $("#asof").value || DEFAULT_ASOF;
-    const entries = engine.lookup(addr, asOf);
-    const by = {};
+    const all = engine.lookup(addr, asOf);
+    const entries = all.filter((e) => !e.event_only);
+    const events = all.filter((e) => e.event_only);
+    const by = {}, evBy = {};
     for (const e of entries) (by[e.category] = by[e.category] || []).push(e);
+    for (const e of events) (evBy[e.category] = evBy[e.category] || []).push(e);
     const count = (r) => entries.filter((e) => e.result === r).length;
     const f = addr.facts;
     const stackHtml = addr.stack.map((j) => `<span class="lvl">${esc(j.length === 2 ? D.meta.states[j] : j)}</span>`).join('<span class="sep">›</span>');
     const flags = (meta.flags || []).map((x) => `<li>${esc(x)}</li>`).join("");
-    const units = f.units_min == null ? t("not_in_data") : Lexmap.unitsText(f);
+    const units = f.units_min == null || (f.units_min <= 1 && f.units_max == null) ? t("not_in_data") : Lexmap.unitsText(f);
     let html = `<div class="card addr">
       <div class="addr-top">
         <div>
@@ -118,7 +125,7 @@
       <div class="facts">
         <div class="fact"><div class="k">${t("year")}</div><div class="v">${f.year_built || "—"}</div><div class="p">${esc(f.year_source || "")}</div></div>
         <div class="fact"><div class="k">${t("units")}</div><div class="v">${esc(units)}</div><div class="p">${esc(f.units_source || "")}</div></div>
-        <div class="fact"><div class="k">${t("type")}</div><div class="v">${esc(f.property_type || "—")}</div><div class="p">${esc(f.property_type_source || "")}</div></div>
+        <div class="fact"><div class="k">${t("type")}</div><div class="v">${esc(f.property_type === "multifamily" ? "apartment building" : (f.property_type || "unknown"))}</div><div class="p">${esc(f.property_type_source || "")}</div></div>
         <div class="fact"><div class="k">${t("owner")}</div><div class="v">${t("not_in_data")}</div><div class="p">No owner names in the sample; owner-based exemptions resolve to “unknown” unless building facts rule them out.</div></div>
       </div>
       ${flags ? `<ul class="flags">${flags}</ul>` : ""}
@@ -128,14 +135,46 @@
         ${entries.some((e) => e.conflict_flag) ? `<span class="pill conflict">⚑ ${t("conflict")}: ${entries.filter((e) => e.conflict_flag).length}</span>` : ""}
       </div>
     </div>`;
+    html += glance(by);
     for (const c of D.meta.categories) {
       const es = by[c] || [];
-      html += `<section class="cat"><div class="cat-h"><h3>${esc(catName(c))}</h3><span class="n">${es.length} rule${es.length === 1 ? "" : "s"}</span></div>`;
-      if (!es.length) html += `<div class="empty">${t("no_rule")}</div>`;
+      const ev = evBy[c] || [];
+      html += `<section class="cat" id="cat-${c}"><div class="cat-h"><h3>${esc(catName(c))}</h3><span class="n">${es.length} rule${es.length === 1 ? "" : "s"}</span></div>`;
+      if (!es.length) html += noRuleCard(c, addr);
       for (const e of es) html += ruleCard(e);
+      if (ev.length) html += `<details class="src evgroup"><summary>${t("event_only")} (${ev.length})</summary>${ev.map(ruleCard).join("")}</details>`;
       html += `</section>`;
     }
     $("#result").innerHTML = html;
+  }
+
+  // One line per category: what governs here, at a glance (mirrors the brief's illustrative output).
+  function glance(by) {
+    const rank = { applies: 0, unknown: 1, not_yet_effective: 2, superseded: 3, pending: 4 };
+    let rows = "";
+    for (const c of D.meta.categories) {
+      const es = (by[c] || []).slice().sort((a, b) => rank[a.result] - rank[b.result]);
+      if (!es.length) { rows += `<tr><td>${esc(catName(c))}</td><td colspan="2" class="muted">${t("no_rule_short")}</td></tr>`; continue; }
+      const main = es[0], r = main.rule;
+      const more = es.length > 1 ? ` <span class="muted">+${es.length - 1} more</span>` : "";
+      rows += `<tr><td><a href="#cat-${c}" class="catlink">${esc(catName(c))}</a></td>
+        <td>${pill(main.result)} <b>${esc(r.title)}</b>${more}${r.key_value ? `<div class="muted">${esc(r.key_value)}</div>` : ""}</td>
+        <td class="c">${esc(r.citation)}</td></tr>`;
+    }
+    return `<div class="card glance"><table><thead><tr><th>${t("category")}</th><th>${t("governs")}</th><th>${t("citation")}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  // "No rule" is still an answer: show what the corpus says (state bars on local rules, failed measures).
+  function noRuleCard(c, addr) {
+    const bits = [];
+    for (const r of D.rules) {
+      if (r.category !== c || !addr.stack.includes(r.jurisdiction)) continue;
+      if (r.subject === "municipality" && r.status === "in_force" && !(r.coverage_logic || {}).covers)
+        bits.push(`<li><b>${esc(r.citation)}</b>: ${esc(plain(r))}</li>`);
+      if (r.status === "failed")
+        bits.push(`<li>${pill("failed")} <b>${esc(r.title)}</b> (${esc(r.citation)}): never became law, so it is not reported.</li>`);
+    }
+    return `<div class="empty">${t("no_rule")}${bits.length ? `<ul class="flags">${bits.join("")}</ul>` : ""}</div>`;
   }
 
   function ruleCard(e) {
@@ -265,10 +304,12 @@
         if (!city) for (const cs of g["County Subdivisions"] || []) city = city || PLACE_TO_CITY[st + "|" + cs.NAME];
         const year = parseInt($("#c-year").value, 10);
         const units = parseInt($("#c-units").value, 10);
+        const apt = $("#c-type").value === "multifamily";
         const facts = {
-          year_built: isNaN(year) ? null : year, year_source: isNaN(year) ? "not provided" : "entered by you",
-          units_min: isNaN(units) ? 1 : units, units_max: isNaN(units) ? null : units, units_source: isNaN(units) ? "not provided" : "entered by you",
-          property_type: "multifamily", property_type_source: "assumed rental building",
+          year_built: isNaN(year) ? null : year, year_source: isNaN(year) ? "not provided: treated as unknown" : "entered by you",
+          units_min: isNaN(units) ? (apt ? 2 : 1) : units, units_max: isNaN(units) ? null : units,
+          units_source: isNaN(units) ? "not provided: treated as unknown" : "entered by you",
+          property_type: apt ? "multifamily" : null, property_type_source: apt ? "entered by you" : "not provided: treated as unknown",
         };
         const flags = [];
         if (!city) flags.push(`Census places this address in ${place || "an unincorporated area"}, outside the 10 cities in the corpus: only ${D.meta.states[st]} statewide rules are evaluated.`);

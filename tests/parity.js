@@ -12,7 +12,7 @@ const eng = new Engine(rules);
 let total = 0, bad = 0;
 for (const [asOf, expected] of Object.entries(fx)) {
   for (const a of addrs) {
-    const got = eng.lookup({ stack: a.stack, facts: a.facts }, asOf).map((e) => [e.team_rule_id, e.result, e.conflict_flag]);
+    const got = eng.lookup({ stack: a.stack, facts: a.facts }, asOf).map((e) => [e.team_rule_id, e.result, e.conflict_flag, e.event_only]);
     const want = expected[a.id];
     total++;
     if (JSON.stringify(got) !== JSON.stringify(want)) {

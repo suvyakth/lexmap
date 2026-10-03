@@ -1,0 +1,8 @@
+{
+ "key": "07dfa42cd439e3b2054fd8f58e1fe2b597510df59a7838ec9de6c15bf04394bf",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Diego, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:34:32+00:00",
+ "text": "{\"ok\": true, \"issues\": [\"The record's conflict note does not describe a real conflict. D076 is the pre-adoption draft: the Council certification, mayoral approval and final-passage date are blank. It only says the ordinance takes effect 30 days after final passage, which does not contradict the secondary reports that it was enacted and took effect in June 2025. Status in_force as of 2026-10-01 is consistent with all sources.\", \"effective_date stays null. No source gives an exact date: the official text has only the 30-days-after-passage formula, and the secondary sources give the month only.\", \"Exemption (a) mentions nonpublic competitor data more than 90 days old. That detail is not in the quoted official excerpt, which mentions only public, aggregated information. The exemptions text is not a fixable field here, so it is flagged only.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {}}"
+}

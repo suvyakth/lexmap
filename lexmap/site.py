@@ -56,7 +56,7 @@ def build(rules, expl, geos, addrs, changes_detailed, ch_report, selfcheck_repor
     par = {}
     for d in PARITY_DATES:
         dd = date.fromisoformat(d)
-        par[d] = {a["address_id"]: [[e["team_rule_id"], e["result"], e["conflict_flag"]] for e in eng.lookup(a, dd)]
+        par[d] = {a["address_id"]: [[e["team_rule_id"], e["result"], e["conflict_flag"], e["event_only"]] for e in eng.lookup(a, dd)]
                   for a in addrs}
     (config.ROOT / "tests").mkdir(exist_ok=True)
     (config.ROOT / "tests" / "parity_fixtures.json").write_text(json.dumps(par), encoding="utf-8")

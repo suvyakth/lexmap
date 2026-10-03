@@ -155,7 +155,7 @@ class Reproducibility(unittest.TestCase):
         for as_of, expected in fx.items():
             d = date.fromisoformat(as_of)
             for a in self.addrs:
-                got = [[e["team_rule_id"], e["result"], e["conflict_flag"]] for e in self.eng.lookup(a, d)]
+                got = [[e["team_rule_id"], e["result"], e["conflict_flag"], e["event_only"]] for e in self.eng.lookup(a, d)]
                 self.assertEqual(got, expected[a["address_id"]], (as_of, a["address_id"]))
 
     def test_changes_reproduce(self):

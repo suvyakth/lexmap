@@ -1,0 +1,8 @@
+{
+ "key": "fe1873a64836ad784ef3c37c741ceef0ace9fabb2f025a29abfc1d09a8c7c215",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:just_cause_eviction",
+ "created_at": "2026-10-03T20:34:19+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"Citation: the operative good-cause requirement (evict or refuse renewal only for statutory good cause) is in N.J.S.A. 2A:18-61.1, which the sources cite directly. That section is more specific than the open-ended 'et seq.' The source's parenthetical 'N.J.S.A. 2A:18-53' in the good-cause sentence points to the general summary-dispossess statute, not the good-cause list, so it is not used.\", \"All other fields are correct. Status in_force with null dates is consistent with the sources, which give no effective date for this long-standing Act. Subject is landlord. The coverage_logic exemption for owner-occupied premises with 3 or fewer units (2 or fewer rental units) has the correct direction. The hotel, motel, transient and developmentally-disabled-trust exemptions are properly kept in the exemptions text. The yields_to_local and preempts_local flags are correctly false. The key_value figures are supported or consistent: 6x monthly rent relocation for illegal-occupancy evictions, and Notice to Quit periods of 3 days to 3 years.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"citation\": \"N.J.S.A. 2A:18-61.1\"}}\n```"
+}

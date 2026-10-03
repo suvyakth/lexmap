@@ -1,0 +1,8 @@
+{
+ "key": "897e16ca51838a11215941bd34b7a163e6ee297e2b24b6755e40aaa3c8b004d6",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Berkeley, CA:rent_increase_limits",
+ "created_at": "2026-10-03T20:33:04+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [\"The existing conflict_note is not a real unresolved conflict. Whether Section 202, Section 811 and HUD-mortgage project-based units are 'partially covered' or 'exempt', both sources agree these units are not rent-controlled, so the AGA limit does not apply to them either way.\", \"D006's summary table says 'certificate of occupancy issued after 1980' while the exemptions text says 'after June 1980'. The table is a rounded summary of the June 1980 cutoff, so the 1980-06-30 encoding is acceptable.\", \"Exemptions that turn on tenancy start date (single-family tenancies from 1996 on; Costa-Hawkins tenancies from 2025 on) or historical occupancy (Golden Duplex owner-occupied on Dec. 31, 1979) cannot be encoded with the allowed fields. They are correctly left in the exemptions text, and coverage_logic exempts only post-June-1980 new construction and condominiums.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": \"Sources label Section 202/811 and HUD-mortgage project-based units as 'partially covered' (D006) or exempt, but both agree these units are not rent-controlled, so the AGA limit does not apply to them either way.\", \"fix\": {}}\n```"
+}

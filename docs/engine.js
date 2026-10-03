@@ -74,6 +74,7 @@
     return v;
   }
   function propertyTypeValue(pt, facts) {
+    if (facts.property_type === null) return U;   // building type unknown (typed-in address)
     pt = String(pt).toLowerCase().replace(/-/g, "_").replace(/ /g, "_");
     const lo = facts.units_min == null ? 2 : facts.units_min;
     const hi = facts.units_max == null ? INF : facts.units_max;
@@ -201,22 +202,22 @@
     _eval(rule, addr, asOf, memo) {
       const facts = addr.facts;
       if (!addr.stack.includes(rule.jurisdiction)) return null;
+      const only = rule.applies_only_in || [];
+      if (only.length && !only.some((c) => addr.stack.includes(c))) return null;
       const status = rule.status;
       if (status === "failed" || rule.subject === "municipality") return null;
       const end = dt(rule.end_date);
       if (end && end <= asOf) return null;
-      if (status === "pending") return { result: "pending", reason: "Bill or proposal, not law.", missing: [] };
-      const eff = dt(rule.effective_date);
-      if ((eff && eff > asOf) || (status === "not_yet_effective" && !eff))
-        return { result: "not_yet_effective", reason: `Enacted; takes effect ${rule.effective_date || "on a future date"}.`, missing: [] };
       const cl = rule.coverage_logic || {};
       const tCov = [], tEx = [];
       const cov = evaluate(cl.covers, facts, asOf, tCov);
       if (cov === F) return null;
-      if (cov === U) return { result: "unknown", missing: missingFields(tCov), reason: "Coverage depends on facts not in the data: " + factsText(tCov, facts), trace: tCov };
       const ex = cl.exempt ? evaluate(cl.exempt, facts, asOf, tEx) : F;
       if (ex === T) return null;
-      if (ex === U) return { result: "unknown", missing: missingFields(tEx), reason: "An exemption may apply; it depends on facts not in the data: " + factsText(tEx, facts), trace: tEx };
+      if (status === "pending") return { result: "pending", reason: "Bill or proposal, not law.", missing: [] };
+      const eff = dt(rule.effective_date);
+      if ((eff && eff > asOf) || (status === "not_yet_effective" && !eff))
+        return { result: "not_yet_effective", reason: `Enacted; takes effect ${rule.effective_date || "on a future date"}.`, missing: [] };
       if (rule.level === "city") {
         const st = rule.jurisdiction.split(", ")[1];
         for (const m of this.mods[st + "|" + rule.category] || []) {
@@ -234,9 +235,11 @@
         if (!y) continue;
         const yr = this.evalRule(y, addr, asOf, memo);
         if (yr && yr.result === "applies")
-          return { result: "superseded", missing: [], superseded_by: yid, reason: `Covered, but the local rule ${yid} (${y.citation}) governs at this address.` };
+          return { result: "superseded", missing: [], superseded_by: yid, reason: `The local rule ${yid} (${y.citation}) governs at this address, so this state rule is superseded.` };
         if (yr && yr.result === "unknown") yieldedUnknown.push([yid, yr]);
       }
+      if (cov === U) return { result: "unknown", missing: missingFields(tCov), reason: "Coverage depends on facts not in the data: " + factsText(tCov, facts), trace: tCov };
+      if (ex === U) return { result: "unknown", missing: missingFields(tEx), reason: "An exemption may apply; it depends on facts not in the data: " + factsText(tEx, facts), trace: tEx };
       if (yieldedUnknown.length) {
         const [yid, yr] = yieldedUnknown[0];
         return { result: "unknown", missing: yr.missing, reason: `Applies unless the local rule ${yid} covers this building, which depends on facts not in the data (` + yr.missing.map((m) => FIELD_LABEL[m] || m).join(", ") + ")." };
@@ -265,10 +268,13 @@
         const partners = (r.conflicts_with || []).filter((c) => present.has(c));
         const conflict = !!r.source_conflict || partners.length > 0;
         let expl = e.reason;
+        const official = !!r.official_source || String(r.source_type || "").startsWith("official") || String(r.source_type || "").startsWith("user-supplied");
+        if (!official) expl += " Source: a secondary summary (law-firm or news page); the enacting text is not in the corpus.";
         if (partners.length) expl += ` Possible conflict with ${partners.join(", ")}: flagged for human review.`;
         else if (r.source_conflict) expl += " Sources disagree about this rule: flagged for human review.";
         return { team_rule_id: r.team_rule_id, result: e.result, explanation: expl.trim(), conflict_flag: conflict,
-          missing_facts: e.missing || [], category: r.category, superseded_by: e.superseded_by || null, rule: r };
+          missing_facts: e.missing || [], category: r.category, superseded_by: e.superseded_by || null,
+          event_only: r.scope === "event", rule: r };
       });
       entries.sort((a, b) => (this.order.indexOf(a.category) - this.order.indexOf(b.category)) ||
         (a.team_rule_id < b.team_rule_id ? -1 : a.team_rule_id > b.team_rule_id ? 1 : 0));

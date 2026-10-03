@@ -1,0 +1,8 @@
+{
+ "key": "1bd05f8b6b2893f13f9455a53420f8be2a735acfa3c70ebd38636107c3058e80",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:rent_increase_limits",
+ "created_at": "2026-10-03T20:33:55+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": \"The secondary source describes Initiative Petition 25-21, which would have repealed c. 40P, but that petition is recorded as failed (blocked from the November 2026 ballot), so c. 40P, § 4 remains in force as of 2026-10-01.\", \"fix\": {}}\n```"
+}

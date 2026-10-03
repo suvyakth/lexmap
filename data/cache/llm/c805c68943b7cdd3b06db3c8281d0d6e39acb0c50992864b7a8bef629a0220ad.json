@@ -1,0 +1,8 @@
+{
+ "key": "c805c68943b7cdd3b06db3c8281d0d6e39acb0c50992864b7a8bef629a0220ad",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:33:45+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement names the reporting committee as the 'Senate Committee on Housing'. The bill page lists the Joint Committee on Housing, which reported S.2983 in the Senate on 3/12/2026 as a new draft of S.994 and S.1016 and referred it to Senate Ways and Means. Status 'pending' is correct as of 2026-10-01, since the bill's last action is that referral. Subject, coverage_logic (null), yields_to_local, preempts_local, key_value (null) and citation are supported by the sources. The sibling bill H.5222 is a separate pending bill on the same topic, not a source conflict.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"requirement\": \"Pending Massachusetts Senate bill that would prohibit algorithmic rent setting. On March 12, 2026 the Joint Committee on Housing reported it favorably, as a new draft of S.994 and S.1016, and referred it to Senate Ways and Means; no operative text is given, so prohibitions, definitions, coverage and penalties are not stated.\"}}\n```"
+}

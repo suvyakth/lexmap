@@ -74,10 +74,33 @@ def attempts(row: dict) -> list[str]:
     if z and zip_consistent(st, z):
         out.append(f"{street}, {city}, {st} {z}")
     out.append(f"{street}, {city}, {st}")
-    m = re.match(r"^(\d+)[A-Z]?\s*-\s*\d+[A-Z]?\s+(.*)$", street)
-    if m:  # "1031-1035 CLINTON ST" -> "1031 CLINTON ST"
+    m = re.match(r"^(\d+)(?:\.\d+)?[A-Z]?\s*[-&]\s*\d+(?:\.\d+)?[A-Z]?\s+(.*)$", street)
+    if m:  # "1031-1035 CLINTON ST" / "322-322.5 Western Ave" / "238 & 242 GARFIELD" -> first number
         out.append(f"{m.group(1)} {m.group(2)}, {city}, {st}")
     return list(dict.fromkeys(out))
+
+
+NUM = r"(\d+)(?:\.\d+)?[A-Z]?"
+RANGE_RE = re.compile(r"^\s*" + NUM + r"(?:\s*[-&]\s*" + NUM + r")?\b")
+
+
+def _house_range(street: str) -> tuple[int, int] | None:
+    m = RANGE_RE.match(street.upper())
+    if not m:
+        return None
+    a = int(m.group(1))
+    b = int(m.group(2)) if m.group(2) else a
+    return (min(a, b), max(a, b))
+
+
+def house_number_ok(street: str, matched: str | None) -> bool:
+    """Reject a match whose house number is outside the queried number range
+    (e.g. '322 WESTERN AVE' matched to '5 WESTERN AVE' in another city)."""
+    want = _house_range(street)
+    got = _house_range((matched or "") + " ")
+    if not want or not got:
+        return True
+    return want[0] <= got[0] <= want[1] or got[0] <= want[0] <= got[1]
 
 
 def resolve(row: dict, cache: dict) -> dict:
@@ -99,6 +122,9 @@ def resolve(row: dict, cache: dict) -> dict:
                 with _lock:
                     cache[q] = res
         if res and "error" not in res:
+            if not house_number_ok(row["street_address"], res.get("matched_address")):
+                flags.append(f"Census match '{res.get('matched_address')}' has a different house number; rejected")
+                continue
             hit, used = res, q
             break
     out = {"address_id": row["address_id"], "state": st, "query": used, "flags": flags}

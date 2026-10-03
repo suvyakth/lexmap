@@ -1,0 +1,8 @@
+{
+ "key": "98edb15f5598c777f4f53f458b4ae043c07d239a3014d731f2ea002738b3f4f4",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:33:42+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {}}\n```"
+}

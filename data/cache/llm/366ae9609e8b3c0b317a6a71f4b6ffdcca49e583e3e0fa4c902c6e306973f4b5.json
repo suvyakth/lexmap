@@ -1,0 +1,8 @@
+{
+ "key": "366ae9609e8b3c0b317a6a71f4b6ffdcca49e583e3e0fa4c902c6e306973f4b5",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:application_screening_fees",
+ "created_at": "2026-10-03T20:33:51+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"Citation should name the operative subsection, (1)(b), which the official text and the record title support, rather than the whole section.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"citation\": \"M.G.L. c. 186, § 15B(1)(b)\"}}\n```"
+}

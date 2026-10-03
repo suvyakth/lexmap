@@ -85,11 +85,22 @@ class Engine:
         facts = addr["facts"]
         if rule["jurisdiction"] not in addr["stack"]:
             return None
+        only = rule.get("applies_only_in") or []
+        if only and not any(c in addr["stack"] for c in only):
+            return None                      # state statute limited by its text to particular cities
         status = rule.get("status")
         if status == "failed" or rule.get("subject") == "municipality":
             return None
         end = _d(rule.get("end_date"))
         if end and end <= as_of:
+            return None
+        cl = rule.get("coverage_logic") or {}
+        t_cov, t_ex = Trace(), Trace()
+        cov = evaluate(cl.get("covers"), facts, as_of, t_cov)
+        if cov is False:
+            return None
+        ex = evaluate(cl.get("exempt"), facts, as_of, t_ex) if cl.get("exempt") else False
+        if ex is True:
             return None
         if status == "pending":
             return {"result": "pending", "reason": "Bill or proposal, not law.", "missing": []}
@@ -98,20 +109,6 @@ class Engine:
             return {"result": "not_yet_effective",
                     "reason": f"Enacted; takes effect {rule.get('effective_date') or 'on a future date'}.",
                     "missing": []}
-        cl = rule.get("coverage_logic") or {}
-        t_cov, t_ex = Trace(), Trace()
-        cov = evaluate(cl.get("covers"), facts, as_of, t_cov)
-        if cov is False:
-            return None
-        if cov is None:
-            return {"result": "unknown", "missing": t_cov.missing,
-                    "reason": "Coverage depends on facts not in the data: " + _facts_text(t_cov, facts)}
-        ex = evaluate(cl.get("exempt"), facts, as_of, t_ex) if cl.get("exempt") else False
-        if ex is True:
-            return None
-        if ex is None:
-            return {"result": "unknown", "missing": t_ex.missing,
-                    "reason": "An exemption may apply; it depends on facts not in the data: " + _facts_text(t_ex, facts)}
         if rule["level"] == "city":
             st = rule["jurisdiction"].split(", ")[1]
             for m in self.state_modifiers.get((st, rule["category"]), []):
@@ -135,9 +132,15 @@ class Engine:
             yr = self.evaluate(y, addr, as_of, memo)
             if yr and yr["result"] == "applies":
                 return {"result": "superseded", "missing": [], "superseded_by": yid,
-                        "reason": f"Covered, but the local rule {yid} ({y['citation']}) governs at this address."}
+                        "reason": f"The local rule {yid} ({y['citation']}) governs at this address, so this state rule is superseded."}
             if yr and yr["result"] == "unknown":
                 yielded_unknown.append((yid, yr))
+        if cov is None:
+            return {"result": "unknown", "missing": t_cov.missing,
+                    "reason": "Coverage depends on facts not in the data: " + _facts_text(t_cov, facts)}
+        if ex is None:
+            return {"result": "unknown", "missing": t_ex.missing,
+                    "reason": "An exemption may apply; it depends on facts not in the data: " + _facts_text(t_ex, facts)}
         if yielded_unknown:
             yid, yr = yielded_unknown[0]
             return {"result": "unknown", "missing": yr["missing"],
@@ -161,15 +164,22 @@ class Engine:
             partners = [c for c in (r.get("conflicts_with") or []) if c in present]
             conflict = bool(r.get("source_conflict")) or bool(partners)
             expl = e["reason"]
+            if not is_official(r):
+                expl += " Source: a secondary summary (law-firm or news page); the enacting text is not in the corpus."
             if partners:
                 expl += f" Possible conflict with {', '.join(partners)}: flagged for human review."
             elif r.get("source_conflict"):
                 expl += " Sources disagree about this rule: flagged for human review."
             entries.append({"team_rule_id": r["team_rule_id"], "result": e["result"], "explanation": expl.strip(),
                             "conflict_flag": conflict, "missing_facts": e.get("missing", []),
-                            "category": r["category"], "superseded_by": e.get("superseded_by")})
+                            "category": r["category"], "superseded_by": e.get("superseded_by"),
+                            "event_only": r.get("scope") == "event"})
         entries.sort(key=lambda x: (ORDER[x["category"]], x["team_rule_id"]))
         return entries
+
+
+def is_official(r: dict) -> bool:
+    return bool(r.get("official_source")) or str(r.get("source_type") or "").startswith("official")         or str(r.get("source_type") or "").startswith("user-supplied")
 
 
 def _facts_text(t: Trace, facts: dict) -> str:
@@ -209,8 +219,10 @@ def run(as_of: str = config.DEFAULT_AS_OF, rules: list[dict] | None = None) -> d
 
 
 def to_submission(full: dict, as_of: str) -> dict:
+    """Event-only rules (they bite only on demolition, condo conversion, etc.) stay in rules.json and
+    on the site, but are not reported as applying to the building in lookups.json."""
     return {"as_of": as_of, "lookups": {aid: [{k: e[k] for k in ("team_rule_id", "result", "explanation", "conflict_flag")}
-                                             for e in es] for aid, es in full.items()}}
+                                             for e in es if not e.get("event_only")] for aid, es in full.items()}}
 
 
 __all__ = ["Engine", "address_records", "load_rules", "run", "to_submission", "units_label"]

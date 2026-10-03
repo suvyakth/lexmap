@@ -38,10 +38,14 @@ def _int(v: str | None) -> int | None:
 
 def derive_units(row: dict) -> tuple[float, float, str]:
     u = _int(row.get("units"))
-    if u is not None and u > 0:
-        return u, u, "units column (assessor record)"
     desc = (row.get("use_description") or "").strip()
     code = (row.get("use_code") or "").strip()
+    if u is not None and u > 0:
+        if row.get("state") == "NJ" and code == "4C" and u < 5:
+            # contradiction: class 4C is a 5+ unit apartment class; fall through to the description
+            pass
+        else:
+            return u, u, "units column (assessor record)"
     lo, hi, prov = 2, INF, "multifamily sample (units not recorded)"
     for pat, (a, b, p) in DESCRIPTION_RULES:
         if re.search(pat, desc, flags=re.I):
@@ -50,6 +54,8 @@ def derive_units(row: dict) -> tuple[float, float, str]:
     if row.get("state") == "NJ" and code == "4C":
         # N.J.A.C. 18:12-2.2: class 2 = residential of four families or less; class 4C = apartment.
         lo, prov = max(lo, 5), "NJ property class 4C (apartment; 1-4 family homes are class 2)"
+        if u is not None and u < 5:
+            prov += f"; the units column says {u}, which contradicts class 4C, so it is not used"
         comps = [int(x.replace("O", "0")) for x in re.findall(r"(?:^|[-/,\s.])(\d[\dO]*)\s*U(?![A-Z])", desc)]
         if comps and max(comps) > lo:
             lo, prov = max(comps), f"assessor building description '{desc}' ({max(comps)} units)"

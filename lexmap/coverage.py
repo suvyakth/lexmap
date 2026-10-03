@@ -123,6 +123,8 @@ def _resolve_value(v, field_: str, op: str, as_of: date):
 
 def _property_type_value(pt, facts: dict) -> bool | None:
     """Is the building of property type `pt`?  The sample is all assessor apartment parcels."""
+    if "property_type" in facts and facts["property_type"] is None:
+        return U          # building type not known (e.g. a typed-in address)
     pt = str(pt).lower().replace("-", "_").replace(" ", "_")
     lo, hi = facts.get("units_min", 2), facts.get("units_max", INF)
     if pt in ("multifamily", "multi_family", "apartment", "residential", "residential_rental"):

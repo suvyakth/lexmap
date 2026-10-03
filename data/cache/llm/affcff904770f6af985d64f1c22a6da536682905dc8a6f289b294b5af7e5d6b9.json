@@ -1,0 +1,8 @@
+{
+ "key": "affcff904770f6af985d64f1c22a6da536682905dc8a6f289b294b5af7e5d6b9",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:33:08+00:00",
+ "text": "```json\n{\"ok\": true, \"issues\": [\"Minor, not a fixable field: the exemptions text says a secondary source notes that the statute does not expressly exempt non-confidential competitor data. No provided excerpt supports this. The statutory point is still accurate: the § 16729(d)(3) definition contains no such carve-out.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {}}\n```"
+}

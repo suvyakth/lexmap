@@ -1,0 +1,8 @@
+{
+ "key": "c899fe7923513a9e35290b1fd3f8595edc81f85aa8f568a641b4026bc19403f1",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Francisco, CA:screening_restrictions",
+ "created_at": "2026-10-03T20:34:39+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement text describes the source page ('The page says...') instead of stating the rule plainly. Rewritten to state the rule while keeping the note that the source gives no operative details.\", \"Status in_force is consistent with the source, which describes the ordinance as currently protecting residents. effective_date stays null because no date appears in the source excerpts.\", \"coverage_logic uses other_fact for 'affordable housing'. This is appropriate because the condition defines the scope of coverage and cannot be expressed with the allowed fields, and no sibling rule supplies its coverage.\", \"The citation is generic, but the excerpts give no code article or section, so it is left unchanged to avoid inventing one.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"requirement\": \"San Francisco's Fair Chance Ordinance protects applicants and residents with arrest or conviction history in affordable housing decisions. The source does not specify which screening practices are restricted or the required procedures.\"}}\n```"
+}

@@ -1,0 +1,8 @@
+{
+ "key": "e3ec07e6dc9f5d4a62f290fd2c964855e0e4a56b585f376e77f6d7657a4612c1",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:just_cause_eviction",
+ "created_at": "2026-10-03T20:33:22+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement presents the 'higher of the State HCA amount or the City amount' rule as part of the statewide statute. That comparison comes from the LAHD bulletin's guidance on how the HCA interacts with the City of Los Angeles's own relocation ordinances (RSO/JCO). It is not a general term of Gov. Code § 66300 et seq., so the requirement now says it applies in Los Angeles.\", \"Scope is 'event': the obligation arises only when Protected Units are demolished for new construction.\", \"Status in_force, subject landlord, null coverage_logic, yields_to_local false, preempts_local false, jurisdiction CA and citation 'Cal. Gov. Code § 66300 et seq.' are consistent with the source. Coverage turns on Protected Unit history and the tenant's income, which cannot be expressed with the allowed fields.\", \"effective_date and end_date stay null because the excerpts give no statutory operative or sunset date. The bulletin's 2/11/2025 date belongs to the LA Resident Protections Ordinance, not the HCA.\"], \"scope\": \"event\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"requirement\": \"Lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new construction must receive relocation benefits consistent with Gov. Code § 7260 et seq. In Los Angeles, LAHD requires the landlord to pay the higher of the Housing Crisis Act amount or the City (RSO/JCO) relocation amount.\"}}\n```"
+}

@@ -1,0 +1,8 @@
+{
+ "key": "c26350532135806619b4cc4cf5a0cda7290f29ad15ff5b62268943d4be40fd3e",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Berkeley, CA:screening_restrictions",
+ "created_at": "2026-10-03T20:32:56+00:00",
+ "text": "{\"ok\": false, \"issues\": [\"The requirement is too long for the 1-2 sentence plain format. It also says housing providers must post a prescribed Notice to Rental Applicants and Tenants, which none of the source excerpts mention. I condensed it to the supported prohibitions plus the notice-and-response duty.\", \"Status in_force is consistent with the sources: the ordinance passed April 14, 2020 and nothing indicates repeal. No effective date appears in the excerpts, so effective_date stays null rather than guessing one.\", \"coverage_logic correctly exempts owner-occupied properties of 1-3 units. The other exemptions depend on facts outside the allowed fields (sex offender status, public housing, move-back agreements, sublets and roommates), so they belong in the exemptions text.\", \"key_value, citation (BMC 13.106), subject (landlord) and the local flags are correct.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null, \"fix\": {\"requirement\": \"Berkeley rental housing providers may not ask about or use criminal history or background checks in advertising, applications, tenant selection or tenancy decisions; this includes refusing to rent, terminating a tenancy, charging a higher deposit or rent, refusing to add an immediate family member, or treating applicants or tenants differently because of criminal history. Any action taken against an applicant or tenant based on criminal history requires written notice and an opportunity to respond.\"}}"
+}

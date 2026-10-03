@@ -45,9 +45,14 @@ class StatusAndDates(unittest.TestCase):
         r = results([rule("MA-ALG-P1", "MA", status="pending", eff="2026-01-01")], addr(["MA", "Boston, MA"]))
         self.assertEqual(r["MA-ALG-P1"]["result"], "pending")
 
-    def test_pending_beats_coverage(self):
-        # a bill is reported as pending even where its coverage would be false
+    def test_pending_respects_coverage(self):
+        # coverage is checked first: a bill is only reported where it would reach the building
         r = results([rule("P", "CA", status="pending", covers={"field": "units", "op": "<=", "value": 1})], addr(LA))
+        self.assertNotIn("P", r)
+        r = results([rule("P", "CA", status="pending", covers={"field": "units", "op": ">=", "value": 2})], addr(LA))
+        self.assertEqual(r["P"]["result"], "pending")
+        # unknown coverage still reports the bill as pending (status is the more useful fact)
+        r = results([rule("P", "CA", status="pending", covers={"field": "owner_occupied", "op": "==", "value": True})], addr(LA))
         self.assertEqual(r["P"]["result"], "pending")
 
     def test_future_effective(self):

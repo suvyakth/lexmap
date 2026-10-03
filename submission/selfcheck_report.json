@@ -21,19 +21,19 @@
    "group": "A",
    "check": "every quoted_span is a verbatim substring of its source document",
    "ok": true,
-   "detail": "49 in official corpus text, 6 in fetched secondary pages, missing: []"
+   "detail": "50 in official corpus text, 6 in fetched secondary pages, missing: []"
   },
   {
    "group": "A",
    "check": "all six categories are represented",
    "ok": true,
-   "detail": "{'algorithmic_rent_setting': 10, 'security_deposits': 6, 'just_cause_eviction': 14, 'application_screening_fees': 5, 'rent_increase_limits': 11, 'screening_restrictions': 9}"
+   "detail": "{'algorithmic_rent_setting': 10, 'security_deposits': 6, 'just_cause_eviction': 14, 'application_screening_fees': 5, 'rent_increase_limits': 11, 'screening_restrictions': 10}"
   },
   {
    "group": "A",
    "check": "every in-scope jurisdiction has at least one rule (or is a documented gap)",
    "ok": true,
-   "detail": "rules per jurisdiction: {'Berkeley, CA': 7, 'Boston, MA': 2, 'CA': 9, 'Cambridge, MA': 1, 'Hoboken, NJ': 1, 'Jersey City, NJ': 2, 'Los Angeles, CA': 5, 'MA': 10, 'NJ': 9, 'Santa Ana, CA': 3, 'San Diego, CA': 2, 'San Francisco, CA': 4}; without rules: ['Newark, NJ']"
+   "detail": "rules per jurisdiction: {'Berkeley, CA': 7, 'Boston, MA': 4, 'CA': 9, 'Cambridge, MA': 1, 'Hoboken, NJ': 1, 'Jersey City, NJ': 2, 'Los Angeles, CA': 5, 'MA': 8, 'NJ': 9, 'Santa Ana, CA': 3, 'San Diego, CA': 2, 'San Francisco, CA': 5}; without rules: ['Newark, NJ']"
   },
   {
    "group": "A",
@@ -75,31 +75,31 @@
    "group": "B",
    "check": "every 'unknown' names the missing fact",
    "ok": true,
-   "detail": "550/550"
+   "detail": "490/490"
   },
   {
    "group": "B",
    "check": "every 'applies' answer is backed by a source URL and verbatim quote",
    "ok": true,
-   "detail": "4126/4126"
+   "detail": "3491/3491"
   },
   {
    "group": "B",
    "check": "share of 'applies' answers whose quote is in the official corpus text (info)",
    "ok": true,
-   "detail": "3739/4126 = 91%"
+   "detail": "3104/3491 = 89%"
   },
   {
    "group": "B",
    "check": "superseded answers name the governing local rule",
    "ok": true,
-   "detail": "265 superseded"
+   "detail": "305 superseded"
   },
   {
    "group": "B",
    "check": "result distribution (info)",
    "ok": true,
-   "detail": "{\"superseded\": 265, \"applies\": 4126, \"unknown\": 550, \"not_yet_effective\": 140, \"pending\": 220}"
+   "detail": "{\"superseded\": 305, \"applies\": 3491, \"not_yet_effective\": 140, \"unknown\": 490, \"pending\": 220}"
   },
   {
    "group": "B",
@@ -267,7 +267,7 @@
    "group": "R",
    "check": "conflicts flagged for human review (info)",
    "ok": true,
-   "detail": "14 rules: BERK-RENT-01, CA-DEP-01, CA-EVICT-03, CA-SCREEN-01, HOB-ALG-01, JC-ALG-01, JC-RENT-01, MA-EVICT-P1, MA-RENT-P1, MA-RENT-P2, NJ-ALG-01, NJ-RENT-01, SA-ALG-01, SD-ALG-01"
+   "detail": "3 rules: HOB-ALG-01, JC-ALG-01, NJ-ALG-01"
   }
  ]
 }

@@ -8784,5 +8784,41 @@
    "San Fernando Valley CCD"
   ],
   "n_matches": 1
+ },
+ "238 & 242 GARFIELD AVE., Jersey City, NJ": {
+  "matched_address": "242 GARFIELD AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.091122112815,
+  "lat": 40.692246111645,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "322 Western Ave, Cambridge, MA": {
+  "matched_address": "322 WESTERN AVE, CAMBRIDGE, MA, 02139",
+  "lon": -71.113348085886,
+  "lat": 42.364468228676,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
  }
 }

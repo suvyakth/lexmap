@@ -1,0 +1,8 @@
+{
+ "key": "48b04af604c489209cf7dedbd3eded93ee2deb0cc3e9b80c1cedd5c989f62837",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Francisco, CA:security_deposits",
+ "created_at": "2026-10-03T20:34:40+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The record has no dates, but the 4.2% figure applies only to March 1, 2026 through February 28, 2027 per the source. Set effective_date to 2026-03-01 and end_date to 2027-02-28; the rule is in force on 2026-10-01.\", \"The requirement text includes a note about what the web page leaves out ('The page does not state deposit maximums or return deadlines'). That note is not a requirement, so it is removed. The current rate and the prior rates are kept in plain terms.\", \"The source does not give an ordinance section number, so the citation stays as is. The source states no coverage limits or exemptions, so coverage_logic stays null/null. The subject (landlord) and the yield/preempt flags are correct.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": null,\n \"fix\": {\"effective_date\": \"2026-03-01\", \"end_date\": \"2027-02-28\", \"requirement\": \"Interest on tenant security deposits in San Francisco is set at the Rent Board's annual rate, which is 4.2% for March 1, 2026 to February 28, 2027. The prior rates were 5.0% for 2025-26 and 5.2% for 2024-25.\"}}\n```"
+}

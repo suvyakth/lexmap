@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from . import config, llm
 from .corpus import load_docs
-from .extract import DATE_RE, STATUS, _prune, _valid_pred
+from .extract import DATE_RE, STATUS, _prune, _valid_pred, canonical_jurisdiction
 
 QA_SYSTEM = ("You are a meticulous senior housing-law analyst doing quality control on machine-built rule records. "
              "You compare each record with its source text, fix only clear errors, and never add facts the sources "
@@ -31,6 +31,11 @@ Check, in this order:
    Exemptions that depend on facts outside the allowed fields (dormitories, deed-restricted affordable housing, government ownership, tenant traits, tenancy length) belong in the exemptions text, NOT in coverage_logic.
 4. yields_to_local: true only if this rule does not apply where a local ordinance of the same kind applies. preempts_local: true only if it preempts / prohibits conflicting local ordinances.
 5. requirement and key_value are accurate, current, and plain (1-2 sentences).
+6. scope: "core" if the rule governs ordinary tenancies of a covered building; "event" if it only bites when a specific event happens to the building or tenancy (demolition or redevelopment, Ellis Act withdrawal, condominium/cooperative conversion, temporary displacement for repairs or capital improvements, sale/foreclosure). A just-cause list or a deposit cap is "core"; relocation payments that are owed only on demolition are "event".
+7. applies_only_in: if the text limits a STATE statute to particular cities (e.g. a section that applies only in "a city and county", i.e. San Francisco), list those cities as "City, ST" (in-scope cities: Los Angeles, San Francisco, San Diego, Berkeley, Santa Ana, CA; Jersey City, Hoboken, Newark, NJ; Boston, Cambridge, MA); otherwise [].
+8. jurisdiction: change it only if the record is a state-level bill or petition that concerns a single city (e.g. a home-rule petition for Boston) - then use that city ("Boston, MA").
+9. citation: the most specific official citation for the operative requirement that the sources support (e.g. if a source says "(N.J.S.A. 46:8-21.2)" for the deposit cap, use "N.J.S.A. 46:8-21.2" rather than a range). Never invent a section number that is not in the record or the excerpts.
+10. conflict: decide whether a REAL unresolved question remains - sources give different effective dates or figures that cannot both be right, or a law may preempt this one. Set conflict_unresolved true/false and a one-sentence conflict_note (null if none). A note that explains why two values are both right (e.g. operative date vs. amendment date) is resolved, not a conflict.
 
 RULE RECORD:
 {record}
@@ -41,11 +46,12 @@ SOURCE EXCERPTS (verbatim; the quoted spans are marked with >>> <<<):
 SIBLING RULES (same state / city; for reference only):
 {siblings}
 
-Return JSON: {{"ok": true}} if no change is needed, otherwise
-{{"ok": false, "issues": ["..."], "fix": {{only the fields to change, from: status, effective_date, end_date, subject, coverage_logic, yields_to_local, preempts_local, requirement, key_value}}}}"""
+Return JSON (always include scope, applies_only_in, conflict_unresolved and conflict_note):
+{{"ok": true|false, "issues": ["..."], "scope": "core"|"event", "applies_only_in": [], "conflict_unresolved": false, "conflict_note": null,
+  "fix": {{only the fields to change, from: status, effective_date, end_date, subject, coverage_logic, yields_to_local, preempts_local, requirement, key_value, citation, jurisdiction}}}}"""
 
 FIXABLE = {"status", "effective_date", "end_date", "subject", "coverage_logic", "yields_to_local", "preempts_local",
-           "requirement", "key_value"}
+           "requirement", "key_value", "citation", "jurisdiction"}
 
 
 def _excerpts(r: dict, docs: dict, width: int = 1400, max_chars: int = 9000) -> str:
@@ -99,6 +105,14 @@ def review(r: dict, rules: list[dict], docs: dict) -> dict:
         return r
     qa["ok"] = bool(obj.get("ok"))
     qa["issues"] = [str(x) for x in obj.get("issues") or []]
+    scope = obj.get("scope")
+    r["scope"] = scope if scope in ("core", "event") else "core"
+    only = [canonical_jurisdiction(c) for c in (obj.get("applies_only_in") or []) if isinstance(c, str)]
+    st = r["jurisdiction"].split(", ")[-1]
+    r["applies_only_in"] = sorted({c for c in only if c and "," in c and c.endswith(", " + st)}) if r["level"] == "state" else []
+    if isinstance(obj.get("conflict_unresolved"), bool):
+        qa["conflict_unresolved"] = obj["conflict_unresolved"]
+        qa["conflict_note"] = obj.get("conflict_note") if isinstance(obj.get("conflict_note"), str) else None
     fix = obj.get("fix") or {}
     for k, v in fix.items() if isinstance(fix, dict) else []:
         if k not in FIXABLE:
@@ -111,6 +125,14 @@ def review(r: dict, rules: list[dict], docs: dict) -> dict:
             continue
         if k in ("yields_to_local", "preempts_local"):
             v = bool(v)
+        if k == "jurisdiction":
+            v = canonical_jurisdiction(v) if isinstance(v, str) else None
+            st = r["jurisdiction"].split(", ")[-1]
+            # only state -> one of its own cities (home-rule petitions); never across states
+            if not v or r["level"] != "state" or "," not in v or not v.endswith(", " + st):
+                continue
+        if k == "citation" and (not isinstance(v, str) or len(v) < 4):
+            continue
         if k == "coverage_logic":
             if not isinstance(v, dict):
                 continue
@@ -122,6 +144,8 @@ def review(r: dict, rules: list[dict], docs: dict) -> dict:
         if r.get(k) != v:
             qa["changes"][k] = {"from": r.get(k), "to": v}
             r[k] = v
+            if k == "jurisdiction":
+                r["level"] = "city"
     r["qa"] = qa
     return r
 

@@ -253,6 +253,7 @@ def clean_citation(c: str) -> str:
     head = re.sub(r"\s+", " ", head).strip().strip(",").strip()
     head = re.sub(r"\s+,", ",", head)
     head = re.sub(r"§(?=[^\s§])", "§ ", head)
+    head = re.sub(r"\s*1/2\b", "½", head)
     head = re.sub(r"\(\s*\)", "", head).strip()
     head = head.replace("⟨", "(").replace("⟩", ")")
     return head if len(head) >= 4 else c
@@ -281,12 +282,16 @@ def wire_relations(rules: list[dict]) -> None:
                 r["interaction"] = (base + " " if base else "") + "Yields to local rules: " + ", ".join(r["yields_to"]) + "."
                 for o in locals_:
                     o["overrides"] = sorted(set(o.get("overrides") or []) | {r["team_rule_id"]})
-        if r.get("preempts_local"):
-            hits = [o for o in locals_]
+        # Preemption flags only from core, landlord-level laws, and only against local rules in the
+        # cities the law actually covers (a San Francisco-only statute cannot preempt Los Angeles).
+        if (r.get("preempts_local") and r.get("subject", "landlord") == "landlord" and r.get("scope", "core") == "core"
+                and r["status"] in ("in_force", "not_yet_effective")):
+            only = set(r.get("applies_only_in") or [])
+            hits = [o for o in locals_ if o.get("scope", "core") == "core" and (not only or o["jurisdiction"] in only)]
             if hits:
                 r["conflicts_with"] = [o["team_rule_id"] for o in hits]
-                msg = (f"{r['citation']} states municipalities may not enact conflicting ordinances"
-                       f" (effective {r.get('effective_date') or 'n/a'}); possible preemption of "
+                when = (f" (effective {r['effective_date']})" if r.get("effective_date") else "")
+                msg = (f"{r['citation']} states municipalities may not enact conflicting ordinances{when}; possible preemption of "
                        + ", ".join(f"{o['team_rule_id']} ({o['jurisdiction']})" for o in hits)
                        + ". Flagged for human review.")
                 r["conflict_flag"] = True
@@ -295,7 +300,8 @@ def wire_relations(rules: list[dict]) -> None:
                     o["conflicts_with"] = sorted(set(o["conflicts_with"]) | {r["team_rule_id"]})
                     o["conflict_flag"] = True
                     o["conflict_note"] = _append_note(o.get("conflict_note"),
-                                                      f"May be preempted by {r['team_rule_id']} ({r['citation']}) once it takes effect")
+                                                      f"May be preempted by {r['team_rule_id']} ({r['citation']})"
+                                                      + (" once it takes effect" if r["status"] == "not_yet_effective" else ""))
     for r in rules:
         r.setdefault("overrides", [])
         if r["yields_to"]:
@@ -327,6 +333,14 @@ def run(skip_qa: bool = False) -> list[dict]:
         qa.run(rules)
         for r in rules:
             r["status"] = _status_from_dates(r, config.DEFAULT_AS_OF)
+            q = r.get("qa") or {}
+            if "conflict_unresolved" in q:      # QA decides whether a source disagreement is still open
+                r["conflict_flag"] = bool(q["conflict_unresolved"])
+                if r["conflict_flag"]:
+                    r["conflict_note"] = q.get("conflict_note") or r.get("conflict_note")
+                else:                            # resolved: keep the explanation, drop the flag
+                    r["source_notes"] = r.get("conflict_note")
+                    r["conflict_note"] = None
     for r in rules:
         r["citation_full"] = r.get("citation")
         r["citation"] = clean_citation(r.get("citation") or "") or r.get("citation")

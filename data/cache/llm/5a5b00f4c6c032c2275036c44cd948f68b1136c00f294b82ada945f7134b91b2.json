@@ -1,0 +1,8 @@
+{
+ "key": "5a5b00f4c6c032c2275036c44cd948f68b1136c00f294b82ada945f7134b91b2",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:security_deposits",
+ "created_at": "2026-10-03T20:33:34+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The conflict_note wrongly says the sources disagree on small-landlord eligibility. D025, § 1950.5(c)(5)(C), also counts a settlor or beneficiary of a family trust as a 'natural person', so D007 and D025 agree. The coverage_conditions text should add family-trust settlors and beneficiaries as qualifying natural persons.\", \"The two effective dates do not conflict. 2024-07-01 is when AB 12's cap took effect, and D025 confirms it in § 1950.5(c)(6). 2026-01-01 is when the later AB 414 amendment (Stats. 2025, ch. 340) took effect. Keeping effective_date as 2024-07-01 is correct.\"], \"scope\": \"core\", \"applies_only_in\": [], \"conflict_unresolved\": false, \"conflict_note\": \"2024-07-01 is the deposit cap's operative date (§ 1950.5(c)(6)) and 2026-01-01 is the effective date of the AB 414 amendment, so both are correct; both sources also include family-trust settlors and beneficiaries as small landlords.\", \"fix\": {}}\n```"
+}
