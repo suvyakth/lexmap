@@ -1,8 +1,0 @@
-{
- "key": "fb69bccc48b37251610f702ea04ed272606a192cdad3fcb18f8e5fc2c09bc5b1",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Berkeley, CA:rent_increase_limits",
- "created_at": "2026-10-03T19:59:10+00:00",
- "text": "{\"ok\": true}"
-}

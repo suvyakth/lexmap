@@ -1,8 +1,0 @@
-{
- "key": "f54f304868fa662add2dbc712cd9e2a6e149c2421436950b7ecaa83e973b83a4",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Boston, MA:screening_restrictions",
- "created_at": "2026-10-03T19:59:12+00:00",
- "text": "{\"ok\": true}"
-}

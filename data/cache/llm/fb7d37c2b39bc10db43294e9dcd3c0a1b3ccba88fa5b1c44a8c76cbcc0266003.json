@@ -1,8 +1,0 @@
-{
- "key": "fb7d37c2b39bc10db43294e9dcd3c0a1b3ccba88fa5b1c44a8c76cbcc0266003",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:CA:just_cause_eviction",
- "created_at": "2026-10-03T19:59:29+00:00",
- "text": "```json\n{\n  \"ok\": false,\n  \"issues\": [\n    \"The conflict_note says the two per-day amounts are unlabeled, but D083 does label their periods. The table is keyed to the date the eviction notice is served: $446.00/day applies to notices served 3/01/26 – 2/28/27, and $436.00/day applies to notices served 3/01/25 – 2/28/26. As of 2026-10-01, $446.00/day is confirmed as the current amount. The conflict note should be updated or cleared; conflict_note is outside the fixable fields.\",\n    \"key_value should state the period the amount applies to and that it is a per-tenant-household amount, as the source table does.\",\n    \"requirement should note that the amount depends on when the eviction notice was served, and that the per-day figure comes from the San Francisco Rent Board's published rate table (the source document).\"\n  ],\n  \"fix\": {\n    \"key_value\": \"$446.00/day per tenant household, plus actual moving expenses, for eviction notices served 3/01/2026 through 2/28/2027 (was $436.00/day for 3/01/2025 through 2/28/2026)\",\n    \"requirement\": \"When a tenant household is temporarily displaced for less than 20 days for capital improvement work, the owner must pay a per-day relocation amount plus actual moving expenses, set by the date the eviction notice was served. Under the San Francisco Rent Board's rate table, these payments are governed by Civ. Code § 1947.9, not by San Francisco Rent Ordinance § 37.9C.\"\n  }\n}\n```"
-}

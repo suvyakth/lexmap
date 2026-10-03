@@ -1,8 +1,0 @@
-{
- "key": "062add1140eb2cd8dd1b35160fc93a67cb3e00d10c80e0e314e8324244bd1e94",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:MA:application_screening_fees",
- "created_at": "2026-10-03T19:59:47+00:00",
- "text": "{\"ok\": true}"
-}

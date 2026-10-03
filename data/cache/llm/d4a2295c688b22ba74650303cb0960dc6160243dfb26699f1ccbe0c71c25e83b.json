@@ -1,8 +1,0 @@
-{
- "key": "d4a2295c688b22ba74650303cb0960dc6160243dfb26699f1ccbe0c71c25e83b",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Santa Ana, CA:algorithmic_rent_setting",
- "created_at": "2026-10-03T20:05:47+00:00",
- "text": "{\"ok\": false, \"issues\": [\"The requirement says the ordinance is also enforced through code enforcement. None of the source excerpts support this; they describe only tenant civil actions (injunctive relief, damages or civil penalties up to $1,000 per violation, plus attorney's fees). The unsupported clause is removed.\"], \"fix\": {\"requirement\": \"Prohibits the sale, licensing, provision and use of algorithmic rent-setting software that sets rents using nonpublic competitor data for residential rental property in Santa Ana. Affected tenants may sue for injunctive relief, damages or civil penalties, plus attorney's fees.\"}}"
-}

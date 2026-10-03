@@ -2,6 +2,14 @@
 
 Two submissions are required: the **HackOS platform form** and the **Google Form** linked at the top of the platform page.
 
+## If the organisers publish the hour-16 ordinance (change test T6)
+The brief mentions a fictional Cambridge ordinance released mid-event in the starter-pack Google Drive folder. Our pack was the "no-hour16" version. If a new file appears:
+1. Save its text as `data/hour16/<name>.txt` (UTF-8). Optionally the first two lines can be `SOURCE: <url>` and `RETRIEVED: <date> UTC`, then a blank line.
+2. Create `data/hour16/<name>.json` containing `{"jurisdiction": "Cambridge, MA"}`, using the city the document names.
+3. Run `python run.py --extract`. The document is extracted like any corpus file. Its rule enters `rules.json` and `lookups.json`, and `changes.json` gains a `T6` entry listing the affected addresses and the extracted effective date.
+4. Run `python -m unittest discover -s tests`, `node tests/parity.js`, then `git add -A && git commit -m "Hour-16 release" && git push`. The site updates within about a minute.
+This exact flow was rehearsed with our fictional test ordinance: extraction, effective date 2027-03-01, and 45 affected Cambridge addresses. The rehearsal was then removed.
+
 ## Platform form fields
 - [ ] **Project name:** Lexmap
 - [ ] **Challenge:** Rental Housing Law Navigator (RealPage)

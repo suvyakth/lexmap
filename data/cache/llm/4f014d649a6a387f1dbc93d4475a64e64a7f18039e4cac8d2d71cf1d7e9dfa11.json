@@ -1,8 +1,0 @@
-{
- "key": "4f014d649a6a387f1dbc93d4475a64e64a7f18039e4cac8d2d71cf1d7e9dfa11",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:CA:algorithmic_rent_setting",
- "created_at": "2026-10-03T19:59:14+00:00",
- "text": "{\"ok\": true}"
-}

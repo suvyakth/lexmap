@@ -1,8 +1,0 @@
-{
- "key": "e348661676bac76ae9a095bb2ce21319b7d6c052ebf60fc328c59913c22891d0",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Jersey City, NJ:rent_increase_limits",
- "created_at": "2026-10-03T19:59:38+00:00",
- "text": "{\"ok\": false, \"issues\": [\"The requirement includes details the source excerpts do not support. The excerpts never name the increase types (capital improvement, vacancy capital improvement, hardship), and they never say tenants may petition over illegal rent or failure to maintain service. They say only that all landlord applications for rent increases, annual registrations, petitions and requests must be submitted through the city's Tyler portal. The requirement is rewritten to stick to the source.\", \"key_value restates the exemption instead of giving the rule's scope. It is reworded plainly to say the rule covers properties with 5 or more units and exempts 1-4 unit properties. The source gives no allowable increase percentage.\"], \"fix\": {\"requirement\": \"Jersey City's Rent Control Ordinance (Municipal Code Chapter 260) regulates rents and is administered and enforced by the Office of Landlord Tenant Relations. Landlord applications for rent increases, annual registrations, petitions and requests must be filed through the city's Tyler online portal; the source does not state the allowable increase percentage.\", \"key_value\": \"Applies to properties with 5 or more units; all 1-4 unit properties are exempt from rent control\"}}"
-}

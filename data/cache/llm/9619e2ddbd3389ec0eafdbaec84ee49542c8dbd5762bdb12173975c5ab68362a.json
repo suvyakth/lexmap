@@ -1,8 +1,0 @@
-{
- "key": "9619e2ddbd3389ec0eafdbaec84ee49542c8dbd5762bdb12173975c5ab68362a",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Berkeley, CA:security_deposits",
- "created_at": "2026-10-03T19:59:15+00:00",
- "text": "```json\n{\"ok\": false, \"issues\": [\"coverage_logic uses other_fact for 'unit is fully or partially covered by Berkeley's Rent Ordinance'. That ordinance's broadest coverage (fully plus partially covered units) appears in the sibling just-cause rule from the same Rent Stabilization and Eviction for Just Cause Ordinance, with covers null and exempt null. Copy that coverage. The exempt-unit categories (subsidized units, Golden Duplex, shared kitchen or bath, owner-occupied ADU properties, university housing, nonprofit co-ops) depend on facts outside the allowed fields and are already listed in the exemptions text. The Annual General Adjustment sibling should not be used because it covers only fully covered units.\"], \"fix\": {\"coverage_logic\": {\"covers\": null, \"exempt\": null}}}\n```"
-}

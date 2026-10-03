@@ -1,8 +1,0 @@
-{
- "key": "4588df5d150dd55816cf20f04529259727261db3397272d736adbd2c0c207de9",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:San Diego, CA:algorithmic_rent_setting",
- "created_at": "2026-10-03T20:05:40+00:00",
- "text": "{\"ok\": true}"
-}

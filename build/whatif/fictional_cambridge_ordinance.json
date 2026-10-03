@@ -9,9 +9,9 @@
    "jurisdiction": "Cambridge, MA",
    "category": "application_screening_fees",
    "status": "not_yet_effective",
-   "title": "Cambridge Rental Application Fee Protections (Ch. 8.80)",
-   "requirement": "Landlords, property managers and agents may not charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a covered dwelling unit.",
-   "key_value": "$0 - application, screening and holding fees prohibited",
+   "title": "Cambridge Chapter 8.80 - Rental Application Fee Protections",
+   "requirement": "Landlords, property managers and agents may not charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a covered dwelling unit. Applies to residential rental buildings with six or more dwelling units.",
+   "key_value": "Application, screening and holding fees prohibited (cap = $0) in buildings with 6+ units",
    "effective_date": "2027-03-01",
    "citation": "Cambridge Ordinance No. 2026-T1, Cambridge Municipal Code ch. 8.80",
    "coverage_logic": {
@@ -23,7 +23,7 @@
     "exempt": null
    },
    "conflicts_with": [],
-   "conflict_note": "The document is labelled a fictional test document. The adoption date (2026-11-09) is later than the 2026-10-01 query date, so the status is derived from the stated effective date of 2027-03-01.",
+   "conflict_note": "The document is labeled a fictional test document, not a real law.",
    "quoted_span": "No landlord, property manager or agent shall charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a dwelling unit subject to this chapter."
   }
  ],

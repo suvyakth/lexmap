@@ -1,8 +1,0 @@
-{
- "key": "007acdf467fda85f1ebc7034fb16cec499750cca57546d657de0b110d4504f6a",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Los Angeles, CA:just_cause_eviction",
- "created_at": "2026-10-03T19:59:39+00:00",
- "text": "{\"ok\": true}"
-}

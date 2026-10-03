@@ -1,8 +1,0 @@
-{
- "key": "440be210fd8c0795aea63ce4ab7c6c19ffa4c492c40973438ca402ec557d1c56",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:Santa Ana, CA:just_cause_eviction",
- "created_at": "2026-10-03T20:05:46+00:00",
- "text": "{\"ok\": true}"
-}

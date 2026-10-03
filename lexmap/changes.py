@@ -36,7 +36,7 @@ def hour16_tests(rules: list[dict], start: int) -> list[dict]:
         after = (date.fromisoformat(last) + timedelta(days=1)).isoformat() if last and last >= config.DEFAULT_AS_OF else config.DEFAULT_AS_OF
         st = (d.jurisdictions.split(", ")[-1] if d.jurisdictions else "")
         out.append({"test_id": f"T{start + i}", "title": f"Hour-16 release {d.path.name} ({d.jurisdictions})",
-                    "type": "as_of", "rule_ids": ids, "as_of_before": config.DEFAULT_AS_OF, "as_of_after": after,
+                    "type": "as_of", "hour16": True, "rule_ids": ids, "as_of_before": config.DEFAULT_AS_OF, "as_of_after": after,
                     "states": [st] if st in config.STATES else [],
                     "expected_behavior": "Extract the new ordinance unaided, get its effective date right, and list the "
                                          "addresses whose answers change once it takes effect.",
@@ -69,7 +69,20 @@ def run(rules: list[dict], addrs: list[dict] | None = None) -> tuple[dict, dict]
         if missing:
             notes.append(f"Rule ids not found in rules.json: {missing}")
         if t["type"] == "as_of":
-            b, a_ = look(t["as_of_before"]), look(t["as_of_after"])
+            b = look(t["as_of_before"])
+            if t.get("hour16"):
+                # an organiser release is evaluated as enacted on its own effective date, even if its
+                # adoption post-dates the default query date (status would otherwise stay "pending")
+                h_rules = []
+                for r in rules:
+                    if r["team_rule_id"] in ids and r.get("status") == "pending":
+                        r = dict(r, status="in_force")
+                    h_rules.append(r)
+                heng = Engine(h_rules)
+                da = date.fromisoformat(t["as_of_after"])
+                a_ = {ad["address_id"]: heng.lookup(ad, da) for ad in addrs}
+            else:
+                a_ = look(t["as_of_after"])
             for ad in in_scope:
                 aid = ad["address_id"]
                 before = {i: (_entry(b[aid], i) or {}).get("result", "not reported") for i in ids}
