@@ -1,8 +1,0 @@
-{
- "key": "b9b058dd77328365c7d4742cad881c69e15dcf03b9e75474d1221b8f82c07eed",
- "model": "sonnet",
- "backend": "claude-cli",
- "tag": "extract:D053:0",
- "created_at": "2026-10-03T19:40:53+00:00",
- "text": "{\"rules\": [], \"notes\": \"M.G.L. c. 186, § 18 is an anti-reprisal (retaliation) statute. It makes landlords liable for damages when they retaliate against tenants for reporting code violations, enforcing housing laws, or organizing tenant unions. It also creates a rebuttable presumption of reprisal when a termination notice, rent increase, or substantial change in tenancy terms follows such activity within six months. It does not cap rent increases, limit evictions to a list of permitted causes, set security deposit rules, cap application or screening fees, restrict screening criteria, or address algorithmic rent setting. It therefore falls outside the six categories and is excluded.\"}"
-}

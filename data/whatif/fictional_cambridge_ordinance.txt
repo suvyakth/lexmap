@@ -1,0 +1,23 @@
+FICTIONAL TEST DOCUMENT - written by the Lexmap team to demonstrate change tracking. Not a real law.
+
+CITY OF CAMBRIDGE
+ORDINANCE NO. 2026-T1 (FICTIONAL)
+
+AN ORDINANCE AMENDING TITLE 8 OF THE CAMBRIDGE MUNICIPAL CODE BY ADDING CHAPTER 8.80, "RENTAL APPLICATION FEE PROTECTIONS"
+
+Section 1. Chapter 8.80 is hereby added to the Cambridge Municipal Code to read as follows:
+
+8.80.010 Purpose.
+The purpose of this chapter is to protect applicants for rental housing from excessive fees charged before a tenancy begins.
+
+8.80.020 Applicability.
+This chapter applies to every residential rental building in the City of Cambridge that contains six or more dwelling units. Buildings that contain five or fewer dwelling units are not subject to this chapter.
+
+8.80.030 Application fee prohibited.
+No landlord, property manager or agent shall charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a dwelling unit subject to this chapter.
+
+8.80.040 Penalty.
+A violation of this chapter is punishable by a civil fine of three hundred dollars for each violation. Each fee collected is a separate violation.
+
+Section 2. Effective date.
+This ordinance was adopted by the City Council on November 9, 2026, and shall take effect on March 1, 2027.

@@ -1,8 +1,0 @@
-{
- "key": "4d72943cff87363d2710b5c9774ee6884295a7f7e97ad5af665104b48d2b4bef",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "reconcile:Jersey City, NJ:algorithmic_rent_setting",
- "created_at": "2026-10-03T19:52:54+00:00",
- "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\"],\"primary\":\"c1\",\"title\":\"Jersey City ban on algorithmic rent coordination services\",\"requirement\":\"Landlords in Jersey City may not use algorithmic rent coordination services. The ban is enforceable by both public authorities and private parties.\",\"key_value\":\"Fines up to $2,000 per day\",\"status\":\"in_force\",\"effective_date\":\"2025-06\",\"end_date\":null,\"citation\":\"Jersey City Code § 218-12\",\"coverage_conditions\":\"Applies to landlords of rental housing in Jersey City; no building-level limits stated\",\"exemptions\":null,\"coverage_from\":\"c1\",\"conflict_note\":null}],\"dropped\":[]}\n```"
-}

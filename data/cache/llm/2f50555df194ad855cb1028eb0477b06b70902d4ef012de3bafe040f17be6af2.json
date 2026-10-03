@@ -1,8 +1,0 @@
-{
- "key": "2f50555df194ad855cb1028eb0477b06b70902d4ef012de3bafe040f17be6af2",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:NJ:screening_restrictions",
- "created_at": "2026-10-03T20:04:07+00:00",
- "text": "{\"ok\": true}"
-}

@@ -28,6 +28,7 @@ from . import config
 
 _lock = threading.Lock()
 _stats = {"calls": 0, "cache_hits": 0, "failures": 0}
+_used: set[str] = set()      # cache keys touched in this process (for --prune-cache)
 
 
 class LLMError(RuntimeError):
@@ -112,6 +113,8 @@ def complete(prompt: str, system: str, model: str | None = None, *, use_cache: b
     """Return {'text', 'model', 'key', 'cached', 'created_at', 'backend'}."""
     model = model or config.EXTRACT_MODEL
     key = prompt_hash(model, system, prompt)
+    with _lock:
+        _used.add(key)
     cp = _cache_path(key)
     if use_cache and cp.exists():
         with _lock:
@@ -182,3 +185,20 @@ def parse_json(text: str):
 
 def stats() -> dict:
     return dict(_stats)
+
+
+def prune_cache() -> int:
+    """Delete cached responses not used by this run (stale prompts from earlier iterations)."""
+    n = 0
+    for f in config.LLM_CACHE.glob("*.json"):
+        if f.stem in _used:
+            continue
+        try:
+            tag = json.loads(f.read_text(encoding="utf-8")).get("tag", "")
+        except (OSError, ValueError):
+            tag = ""
+        if tag.startswith("whatif"):
+            continue              # what-if demos are run separately; keep them reproducible
+        f.unlink()
+        n += 1
+    return n

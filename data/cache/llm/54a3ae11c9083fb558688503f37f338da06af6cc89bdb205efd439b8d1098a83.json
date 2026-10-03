@@ -1,8 +1,0 @@
-{
- "key": "54a3ae11c9083fb558688503f37f338da06af6cc89bdb205efd439b8d1098a83",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:San Diego, CA:algorithmic_rent_setting",
- "created_at": "2026-10-03T20:00:16+00:00",
- "text": "```json\n{\"ok\": false, \"issues\": [\"requirement runs to three sentences, longer than the 1-2 allowed, and implies any suing tenant recovers costs and attorney's fees; under §98.1104(a) only a prevailing tenant (including one granted injunctive relief) recovers costs and reasonable attorney's fees\"], \"fix\": {\"requirement\": \"No one may sell, license or otherwise provide a landlord an algorithmic device (software that uses nonpublic competitor data to recommend rents or occupancy levels), and landlords may not use one to set rental rates or occupancy levels for residential rental property. Tenants may sue for injunctive relief, damages or civil penalties, and a prevailing tenant recovers costs and reasonable attorney's fees.\"}}\n```"
-}

@@ -1,8 +1,0 @@
-{
- "key": "6d51a7a9f064eeb46da33a6faaa0312a76083d2fb5ed442463b86fd0908268b8",
- "model": "sonnet",
- "backend": "claude-cli",
- "tag": "extract:D058:0",
- "created_at": "2026-10-03T19:40:59+00:00",
- "text": "{\"rules\": [], \"notes\": \"M.G.L. c. 186, § 31 only requires that a notice to quit for nonpayment of rent be accompanied by a state-developed information form, and that courts not accept summary process filings without proof the form was delivered. It does not limit evictions to listed causes, set a just-cause termination notice tied to such limits, or provide relocation assistance. It also says nothing on rent increases, deposits, application fees, screening, or algorithmic pricing, so no in-scope rule is recorded.\"}"
-}

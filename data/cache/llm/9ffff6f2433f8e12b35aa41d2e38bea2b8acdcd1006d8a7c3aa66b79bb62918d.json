@@ -1,8 +1,0 @@
-{
- "key": "9ffff6f2433f8e12b35aa41d2e38bea2b8acdcd1006d8a7c3aa66b79bb62918d",
- "model": "sonnet",
- "backend": "claude-cli",
- "tag": "extract:D051:0",
- "created_at": "2026-10-03T19:40:51+00:00",
- "text": "{\"rules\":[],\"notes\":\"M.G.L. c. 186, § 12 sets notice periods for ending a tenancy at will: three months' notice, or a rent-interval/30-day notice, or 14 days' notice to quit for nonpayment with a 10-day cure right. It does not limit terminations to listed causes, and it has no relocation assistance. It is a general termination-procedure rule, not a just-cause eviction rule. The document also covers no rent increase limits, security deposits, application fees, screening restrictions or algorithmic pricing, so no in-scope rule is extracted.\"}"
-}

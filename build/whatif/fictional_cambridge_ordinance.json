@@ -1,0 +1,526 @@
+{
+ "document": "data\\whatif\\fictional_cambridge_ordinance.txt",
+ "jurisdiction": "Cambridge, MA",
+ "as_of": "2026-10-01",
+ "evaluated_at": "2027-03-01",
+ "new_rules": [
+  {
+   "team_rule_id": "NEW-CAM-FEE-01",
+   "jurisdiction": "Cambridge, MA",
+   "category": "application_screening_fees",
+   "status": "not_yet_effective",
+   "title": "Cambridge Rental Application Fee Protections (Ch. 8.80)",
+   "requirement": "Landlords, property managers and agents may not charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a covered dwelling unit.",
+   "key_value": "$0 - application, screening and holding fees prohibited",
+   "effective_date": "2027-03-01",
+   "citation": "Cambridge Ordinance No. 2026-T1, Cambridge Municipal Code ch. 8.80",
+   "coverage_logic": {
+    "covers": {
+     "field": "units",
+     "op": ">=",
+     "value": 6
+    },
+    "exempt": null
+   },
+   "conflicts_with": [],
+   "conflict_note": "The document is labelled a fictional test document. The adoption date (2026-11-09) is later than the 2026-10-01 query date, so the status is derived from the stated effective date of 2027-03-01.",
+   "quoted_span": "No landlord, property manager or agent shall charge, accept or require any rental application fee, screening fee or holding fee from a prospective tenant of a dwelling unit subject to this chapter."
+  }
+ ],
+ "status_at_as_of": {
+  "NEW-CAM-FEE-01": {
+   "not_yet_effective": 49
+  }
+ },
+ "affected_address_ids": [
+  "A0010",
+  "A0015",
+  "A0024",
+  "A0034",
+  "A0039",
+  "A0043",
+  "A0046",
+  "A0064",
+  "A0070",
+  "A0073",
+  "A0075",
+  "A0077",
+  "A0082",
+  "A0095",
+  "A0124",
+  "A0174",
+  "A0175",
+  "A0176",
+  "A0191",
+  "A0209",
+  "A0214",
+  "A0218",
+  "A0230",
+  "A0232",
+  "A0272",
+  "A0284",
+  "A0286",
+  "A0290",
+  "A0291",
+  "A0292",
+  "A0294",
+  "A0298",
+  "A0301",
+  "A0302",
+  "A0306",
+  "A0336",
+  "A0339",
+  "A0342",
+  "A0361",
+  "A0422",
+  "A0453",
+  "A0465",
+  "A0468",
+  "A0485"
+ ],
+ "affected_by_city": {
+  "Cambridge, MA": 44
+ },
+ "details": {
+  "A0010": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0015": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (83 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0024": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0034": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0039": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (32 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0043": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0046": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (44 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0064": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (84 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0070": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (7 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0073": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0075": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (10 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0077": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0082": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (16 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0095": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0124": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (16 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0174": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (19 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0175": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0176": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (29 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0191": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0209": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0214": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0218": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (46 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0230": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (18 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0232": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0272": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0284": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (9 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0286": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (29 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0290": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (10 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0291": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (244 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0292": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0294": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0298": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0301": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0302": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (8 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0306": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (17 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0336": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (468 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0339": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (8 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0342": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0361": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0422": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0453": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0465": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (8 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0468": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  },
+  "A0485": {
+   "city": "Cambridge, MA",
+   "before": {},
+   "after": {
+    "NEW-CAM-FEE-01": "applies"
+   },
+   "explanations": {
+    "NEW-CAM-FEE-01": "Cambridge, MA city rule; the address is inside city limits. Covered: number of units >= 6? yes (6 units). Sources disagree about this rule: flagged for human review."
+   }
+  }
+ }
+}

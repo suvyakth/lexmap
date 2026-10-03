@@ -220,6 +220,12 @@ def align_test_ids(rules: list[dict]) -> None:
                 by_id[want] = best
 
 
+def _append_note(note: str | None, msg: str) -> str:
+    if note and msg in note:
+        return note
+    return " | ".join(x for x in [note, msg] if x)
+
+
 def wire_relations(rules: list[dict]) -> None:
     for r in rules:
         r["yields_to"] = []
@@ -233,8 +239,8 @@ def wire_relations(rules: list[dict]) -> None:
         if r.get("yields_to_local") and r.get("subject", "landlord") == "landlord":
             r["yields_to"] = [o["team_rule_id"] for o in locals_]
             if r["yields_to"]:
-                r["interaction"] = (r.get("interaction") or "") + (
-                    " " if r.get("interaction") else "") + "Yields to local rules: " + ", ".join(r["yields_to"]) + "."
+                base = re.sub(r"\s*Yields to local rules: [^.]*\.", "", r.get("interaction") or "").strip()
+                r["interaction"] = (base + " " if base else "") + "Yields to local rules: " + ", ".join(r["yields_to"]) + "."
                 for o in locals_:
                     o["overrides"] = sorted(set(o.get("overrides") or []) | {r["team_rule_id"]})
         if r.get("preempts_local"):
@@ -246,12 +252,12 @@ def wire_relations(rules: list[dict]) -> None:
                        + ", ".join(f"{o['team_rule_id']} ({o['jurisdiction']})" for o in hits)
                        + ". Flagged for human review.")
                 r["conflict_flag"] = True
-                r["conflict_note"] = " | ".join(x for x in [r.get("conflict_note"), msg] if x)
+                r["conflict_note"] = _append_note(r.get("conflict_note"), msg)
                 for o in hits:
                     o["conflicts_with"] = sorted(set(o["conflicts_with"]) | {r["team_rule_id"]})
                     o["conflict_flag"] = True
-                    o["conflict_note"] = " | ".join(x for x in [o.get("conflict_note"),
-                                                                f"May be preempted by {r['team_rule_id']} ({r['citation']}) once it takes effect"] if x)
+                    o["conflict_note"] = _append_note(o.get("conflict_note"),
+                                                      f"May be preempted by {r['team_rule_id']} ({r['citation']}) once it takes effect")
     for r in rules:
         r.setdefault("overrides", [])
         if r["yields_to"]:

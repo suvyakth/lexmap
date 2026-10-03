@@ -1,8 +1,0 @@
-{
- "key": "79e34c54f010a92b54c5ac551f694616c0748dcacb4599483963aacc8a9247cf",
- "model": "opus",
- "backend": "claude-cli",
- "tag": "qa:San Diego, CA:just_cause_eviction",
- "created_at": "2026-10-03T20:00:16+00:00",
- "text": "```json\n{\"ok\": false, \"issues\": [\"coverage_logic: exemption (k) exempts housing with a certificate of occupancy issued within the previous 15 years 'unless the housing is a mobilehome'. The record leaves out this mobilehome carve-out, so recently certified mobilehomes are wrongly treated as exempt. The fix adds property_type != mobile_home to that branch.\"], \"fix\": {\"coverage_logic\": {\"covers\": null, \"exempt\": {\"any\": [{\"all\": [{\"field\": \"certificate_of_occupancy\", \"op\": \">\", \"value\": {\"as_of_minus_years\": 15}}, {\"field\": \"property_type\", \"op\": \"!=\", \"value\": \"mobile_home\"}]}, {\"all\": [{\"field\": \"property_type\", \"op\": \"==\", \"value\": \"duplex\"}, {\"field\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}, {\"all\": [{\"field\": \"property_type\", \"op\": \"==\", \"value\": \"single_family\"}, {\"field\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}]}}}}\n```"
-}

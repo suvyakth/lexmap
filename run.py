@@ -95,6 +95,11 @@ def pipeline(args) -> int:
     report = selfcheck.run(write=True)
     print("[W ] site data ...")
     site.build(rules, expl, geos, addrs, ch, ch_report, report)
+    if args.prune_cache:
+        if args.extract or args.live:
+            print(f"     pruned {llm.prune_cache()} stale cache entries")
+        else:
+            print("     --prune-cache needs --extract (otherwise extraction calls look unused); skipped")
     print(f"done in {time.time() - t0:.0f}s; llm {llm.stats()}; self-check: "
           f"{report['summary']['passed']}/{report['summary']['total']} checks passed")
     return 0 if report["summary"]["failed"] == 0 else 1
@@ -121,6 +126,7 @@ def main() -> int:
     ap.add_argument("--extract", action="store_true", help="re-run extraction (cached calls are reused)")
     ap.add_argument("--fetch", action="store_true", help="fetch the secondary link-only pages")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--prune-cache", action="store_true", help="delete cached LLM responses this run did not use")
     ap.add_argument("--as-of", default=config.DEFAULT_AS_OF)
     ap.add_argument("--address")
     ap.add_argument("--jurisdiction")
