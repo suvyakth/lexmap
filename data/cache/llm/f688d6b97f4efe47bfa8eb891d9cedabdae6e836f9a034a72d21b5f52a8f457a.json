@@ -1,0 +1,8 @@
+{
+ "key": "f688d6b97f4efe47bfa8eb891d9cedabdae6e836f9a034a72d21b5f52a8f457a",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:Hoboken, NJ:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:46:01+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\"],\"primary\":\"c2\",\"title\":\"Hoboken ban on landlord use of rent-coordinating software and algorithms\",\"requirement\":\"Landlords may not use software, algorithms, or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy.\",\"key_value\":null,\"status\":\"in_force\",\"effective_date\":\"2025-07\",\"end_date\":null,\"citation\":\"Hoboken City Code, ch. 158-2\",\"coverage_conditions\":null,\"exemptions\":null,\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

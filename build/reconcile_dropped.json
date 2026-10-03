@@ -1,0 +1,51 @@
+[
+ {
+  "candidate": {
+   "jurisdiction": "Los Angeles, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "LA Rent Stabilization Ordinance (existence only)",
+   "requirement": "The document only refers to units covered by the Rent Stabilization Ordinance; it states no rent increase cap, coverage cutoffs or exemptions.",
+   "key_value": null,
+   "coverage_conditions": null,
+   "exemptions": null,
+   "coverage_logic": {
+    "covers": null,
+    "exempt": null
+   },
+   "subject": "landlord",
+   "interaction": null,
+   "yields_to_local": false,
+   "preempts_local": false,
+   "effective_date": null,
+   "effective_rule": null,
+   "enacted_date": null,
+   "end_date": null,
+   "penalty": null,
+   "citation": "Los Angeles Rent Stabilization Ordinance (RSO)",
+   "quoted_span": "Failure to file the Landlord Declaration with the LAHD makes the eviction a violation of the RSO or JCO.",
+   "supporting_spans": [],
+   "confidence": 0.3,
+   "conflict_note": null,
+   "verified_spans": [
+    {
+     "text": "Failure to file the Landlord Declaration with the LAHD makes the eviction a \nviolation of the RSO or JCO.",
+     "start": 549,
+     "end": 654,
+     "method": "normalised"
+    }
+   ],
+   "source_doc_id": "D043",
+   "source_url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
+   "source_type": "official",
+   "retrieved_at": "2026-10-01 22:36 UTC",
+   "official_source": true,
+   "supplementary_source": false,
+   "llm_call": "4c89ddedcac7bf185df2cdb125827e0cfb9ea9477686d7d7775a3247e306d1da",
+   "validation_notes": []
+  },
+  "reason": "The source only mentions the RSO in the context of eviction filings (the Landlord Declaration requirement). It states no rent increase cap, coverage or exemption, so it is not a rent_increase_limits rule.",
+  "llm_call": "93dfc02ef75549e1b8b6a816b13a7c2c96e04f3ff9f34d6a3cb942ff7c146c7f"
+ }
+]

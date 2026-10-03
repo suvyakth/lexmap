@@ -1,0 +1,8 @@
+{
+ "key": "89e1bd89649537be216954f16ce1b45bb42214ad686bf71c8045a7d1d4e8f482",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:San Francisco, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:53:25+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c5\",\"c1\",\"c2\",\"c3\",\"c4\",\"c6\"],\"primary\":\"c5\",\"title\":\"San Francisco Rent Ordinance § 37.10C: prohibition on algorithmic devices used to set rents\",\"requirement\":\"Prohibits the sale or use of algorithmic devices that analyze nonpublic competitor rental data to recommend rents or manage occupancy levels for residential units in San Francisco. A tenant or the City Attorney may bring a civil action for damages, injunctive relief and civil penalties.\",\"key_value\":\"Ban on sale or use of algorithmic rent-setting devices; civil penalties up to $1,000 per violation, and each month of use for each affected unit may be a separate violation\",\"status\":\"in_force\",\"effective_date\":\"2024-10-14\",\"end_date\":null,\"citation\":\"S.F. Admin. Code § 37.10C\",\"coverage_conditions\":\"Residential units in San Francisco; landlords and sellers of qualifying algorithmic devices that use nonpublic competitor data\",\"exemptions\":null,\"coverage_from\":\"c5\",\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

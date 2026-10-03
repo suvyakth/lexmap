@@ -1,0 +1,8788 @@
+{
+ "4257 SAN PEDRO PL, Los Angeles, CA 90011": {
+  "matched_address": "4257 SAN PEDRO PL, LOS ANGELES, CA, 90011",
+  "lon": -118.271165204282,
+  "lat": 34.006235579229,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "1065 SUMMIT AVENUE, Jersey City, NJ": {
+  "matched_address": "1065 SUMMIT AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.049026204465,
+  "lat": 40.751069898526,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "6238 DE LONGPRE AVE, Los Angeles, CA 90028": {
+  "matched_address": "6238 DE LONGPRE AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.324865073863,
+  "lat": 34.096133031379,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "10050 MOUNTAIR AVE, Los Angeles, CA 91042": {
+  "matched_address": "10050 MOUNTAIR AVE, TUJUNGA, CA, 91042",
+  "lon": -118.293109199528,
+  "lat": 34.251842346844,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "69-71 WESTLAND AV, Boston, MA 02115": {
+  "matched_address": "71 WESTLAND AVE, BOSTON, MA, 02115",
+  "lon": -71.08876547331,
+  "lat": 42.343794186875,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "876-878 S 14TH ST, Newark, NJ": {
+  "matched_address": "878 S 14TH ST, NEWARK, NJ, 07108",
+  "lon": -74.210426110952,
+  "lat": 40.724856764464,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1031-1035 CLINTON ST, Hoboken, NJ 07030": {
+  "matched_address": "1035 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.03181724923,
+  "lat": 40.74981078208,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1609 ADDISON ST, Berkeley, CA 94703": {
+  "matched_address": "1609 ADDISON ST, BERKELEY, CA, 94703",
+  "lon": -122.279293972449,
+  "lat": 37.869830696926,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "834-836 RAYMOND BLVD, Newark, NJ 08805": {
+  "matched_address": "836 RAYMOND BLVD, NEWARK, NJ, 07105",
+  "lon": -74.156177797252,
+  "lat": 40.732646449965,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1064 SUMMIT AVE., Jersey City, NJ 07728": {
+  "matched_address": "1064 SUMMIT AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.048775549263,
+  "lat": 40.751188750138,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "5907 CAHUENGA BLVD, Los Angeles, CA 91601": {
+  "matched_address": "5907 CAHUENGA BLVD, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.361636078081,
+  "lat": 34.177801731811,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "15 Everett St, Cambridge, MA": {
+  "matched_address": "15 EVERETT ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.118720021347,
+  "lat": 42.379980886163,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "137 N 11TH ST, Newark, NJ 07107": {
+  "matched_address": "137 N 11TH ST, NEWARK, NJ, 07107",
+  "lon": -74.191694841632,
+  "lat": 40.759893850085,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "134 Oxford St, Cambridge, MA": {
+  "matched_address": "134 OXFORD ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.1160583909,
+  "lat": 42.385333082376,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "3515 FILLMORE ST, San Francisco, CA": {
+  "matched_address": "3515 FILLMORE ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.436684852142,
+  "lat": 37.801874337429,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "322-322.5 Western Ave, Cambridge, MA": {
+  "matched_address": "5 WESTERN AVE, CAMBRIDGE, MA, 02163",
+  "lon": -71.11828649689,
+  "lat": 42.364216771469,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 2
+ },
+ "3820 HAINES ST, San Diego, CA 92109": {
+  "matched_address": "3820 HAINES ST, SAN DIEGO, CA, 92109",
+  "lon": -117.239511773112,
+  "lat": 32.788734586305,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "22 PRECITA AV, San Francisco, CA": {
+  "matched_address": "22 PRECITA AVE, SAN FRANCISCO, CA, 94110",
+  "lon": -122.418913690663,
+  "lat": 37.746697199975,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "646-648 N 6TH ST, Newark, NJ 07083": {
+  "matched_address": "648 N 6TH ST, NEWARK, NJ, 07107",
+  "lon": -74.180587460657,
+  "lat": 40.771224225449,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "225 DUNCAN AVE., Jersey City, NJ": {
+  "matched_address": "225 DUNCAN AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.079234576768,
+  "lat": 40.7277629714,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1906 BONITA AVE, Berkeley, CA 94704": {
+  "matched_address": "1906 BONITA AVE, BERKELEY, CA, 94704",
+  "lon": -122.272116073506,
+  "lat": 37.873088577747,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "10908 HARTSOOK ST, Los Angeles, CA 91601": {
+  "matched_address": "10908 HARTSOOK ST, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.368312978252,
+  "lat": 34.163485706471,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "843 IROLO ST, Los Angeles, CA 90005": {
+  "matched_address": "843 IROLO ST, LOS ANGELES, CA, 90005",
+  "lon": -118.300958567015,
+  "lat": 34.0569182313,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "227 Charles St, Cambridge, MA": {
+  "matched_address": "227 CHARLES ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.084850671785,
+  "lat": 42.368207474124,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "2341 8TH ST, Berkeley, CA 94710": {
+  "matched_address": "2341 8TH ST, BERKELEY, CA, 94710",
+  "lon": -122.293815269518,
+  "lat": 37.863231048622,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "3918 FULTON ST, San Francisco, CA": {
+  "matched_address": "3918 FULTON ST, SAN FRANCISCO, CA, 94118",
+  "lon": -122.473684296131,
+  "lat": 37.773108534668,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "59 OAK ST., Jersey City, NJ 07306": {
+  "matched_address": "59 OAK ST, JERSEY CITY, NJ, 07304",
+  "lon": -74.076996657496,
+  "lat": 40.713718828723,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "63 OAK ST., Jersey City, NJ 08820": {
+  "matched_address": "63 OAK ST, JERSEY CITY, NJ, 07304",
+  "lon": -74.077148779124,
+  "lat": 40.7137999274,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "2051 DIVISADERO ST, San Francisco, CA": {
+  "matched_address": "2051 DIVISADERO ST, SAN FRANCISCO, CA, 94115",
+  "lon": -122.440651886856,
+  "lat": 37.788524403095,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "280-284 VERONA AVE, Newark, NJ 07653": {
+  "matched_address": "284 VERONA AVE, NEWARK, NJ, 07104",
+  "lon": -74.166168698177,
+  "lat": 40.78286229736,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "5624 S SAN PEDRO ST, Los Angeles, CA 90011": {
+  "matched_address": "5624 S SAN PEDRO ST, LOS ANGELES, CA, 90011",
+  "lon": -118.270046050706,
+  "lat": 33.991312087929,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "585 5TH ST, Newark, NJ 07107": {
+  "matched_address": "585 N 5TH ST, NEWARK, NJ, 07107",
+  "lon": -74.180832847404,
+  "lat": 40.768516151715,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1260 KEARNY ST, San Francisco, CA": {
+  "matched_address": "1260 KEARNY ST, SAN FRANCISCO, CA, 94133",
+  "lon": -122.405709002561,
+  "lat": 37.79964889858,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "5239 HARMONY AVE, Los Angeles, CA 91601": {
+  "matched_address": "5239 HARMONY AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.366516457468,
+  "lat": 34.165618179362,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "25 Gore St, Cambridge, MA": {
+  "matched_address": "25 GORE ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.079128226997,
+  "lat": 42.371703436562,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "33 WARD ST, South Boston, MA 02127": {
+  "matched_address": "33 WARD ST, SOUTH BOSTON, MA, 02127",
+  "lon": -71.054524489253,
+  "lat": 42.32946722555,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "770 IROLO ST, Los Angeles, CA 90005": {
+  "matched_address": "770 IROLO ST, LOS ANGELES, CA, 90005",
+  "lon": -118.300824624602,
+  "lat": 34.058302827517,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "154 YUKON ST, San Francisco, CA": {
+  "matched_address": "154 YUKON ST, SAN FRANCISCO, CA, 94114",
+  "lon": -122.442397125228,
+  "lat": 37.757178828285,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "69-75 JACKSON ST, Hoboken, NJ 07030": {
+  "matched_address": "75 JACKSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.041089522043,
+  "lat": 40.738840718117,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1 Craigie St, Cambridge, MA": {
+  "matched_address": "1 CRAIGIE ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.125838882455,
+  "lat": 42.379449621711,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "122 TIFFANY AV, San Francisco, CA": {
+  "matched_address": "122 TIFFANY AVE, SAN FRANCISCO, CA, 94110",
+  "lon": -122.421406384884,
+  "lat": 37.744990908268,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "4 Orchard St, Cambridge, MA": {
+  "matched_address": "4 ORCHARD ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.119075629483,
+  "lat": 42.390119763731,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "320 FORREST ST., Jersey City, NJ 07304": {
+  "matched_address": "320 FORREST ST, JERSEY CITY, NJ, 07304",
+  "lon": -74.077362139063,
+  "lat": 40.713202456168,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "773-775 SANDFORD AVE, Newark, NJ": {
+  "matched_address": "775 SANDFORD AVE, NEWARK, NJ, 07106",
+  "lon": -74.237036956138,
+  "lat": 40.735737050359,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "12829 BRANFORD ST, Los Angeles, CA 91331": {
+  "matched_address": "12829 BRANFORD ST, PACOIMA, CA, 91331",
+  "lon": -118.41212012105,
+  "lat": 34.241771886514,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "8-12 Soden St, Cambridge, MA": {
+  "matched_address": "12 SODEN ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.108340513884,
+  "lat": 42.365690566108,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "14 RUTGERS AVE., Jersey City, NJ 07304": {
+  "matched_address": "14 RUTGERS AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.090865859165,
+  "lat": 40.698116647571,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1619 COMMONWEALTH AV, Brighton, MA 02135": {
+  "matched_address": "1619 COMMONWEALTH AVE, BRIGHTON, MA, 02135",
+  "lon": -71.143549067491,
+  "lat": 42.343402761946,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "721 CLINTON ST, Hoboken, NJ 07856": {
+  "matched_address": "721 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.033058218101,
+  "lat": 40.745798808889,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "36 HOFF ST, San Francisco, CA": {
+  "matched_address": "36 HOFF ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.420573521471,
+  "lat": 37.764124413322,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "65 OAKLAND AVE., Jersey City, NJ 07423": {
+  "matched_address": "65 OAKLAND AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.055436604985,
+  "lat": 40.734681117954,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "88 Gardner ST, Allston, MA 02134": {
+  "matched_address": "88 GARDNER ST, ALLSTON, MA, 02134",
+  "lon": -71.125813095903,
+  "lat": 42.35351823784,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "32 Garrison ST, Boston, MA 02116": {
+  "matched_address": "32 GARRISON ST, BOSTON, MA, 02116",
+  "lon": -71.07944707371,
+  "lat": 42.345890982312,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "13 Shetland ST, Roxbury, MA 02119": {
+  "matched_address": "13 SHETLAND ST, ROXBURY, MA, 02119",
+  "lon": -71.068028337557,
+  "lat": 42.324986499476,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "305 10TH AV, San Francisco, CA": {
+  "matched_address": "305 10TH AVE, SAN FRANCISCO, CA, 94118",
+  "lon": -122.46876702789,
+  "lat": 37.782619210817,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "41-43 Edgerly RD, Boston, MA 02115": {
+  "matched_address": "43 EDGERLY RD, BOSTON, MA, 02115",
+  "lon": -71.087947355571,
+  "lat": 42.345644184192,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "57 STONE ST, Newark, NJ 07012": {
+  "matched_address": "57 STONE ST, NEWARK, NJ, 07104",
+  "lon": -74.174377039669,
+  "lat": 40.753432421375,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "3137 BOSTON AVE, San Diego, CA 92113": {
+  "matched_address": "3137 BOSTON AVE, SAN DIEGO, CA, 92113",
+  "lon": -117.126888325341,
+  "lat": 32.693817730505,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "84-86 WALNUT ST, Newark, NJ 07078": {
+  "matched_address": "86 WALNUT ST, NEWARK, NJ, 07102",
+  "lon": -74.170855709577,
+  "lat": 40.729215526845,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "5737 WILLOWCREST AVE, Los Angeles, CA 91601": {
+  "matched_address": "5737 WILLOWCREST AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.362720761505,
+  "lat": 34.174656039346,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "106 18TH AV, San Francisco, CA": {
+  "matched_address": "106 18TH AVE, SAN FRANCISCO, CA, 94121",
+  "lon": -122.477559726965,
+  "lat": 37.785919313984,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "77 HOFF ST, San Francisco, CA": {
+  "matched_address": "77 HOFF ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.420395727367,
+  "lat": 37.763766231452,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "24-26 Concord Ave, Cambridge, MA": {
+  "matched_address": "26 CONCORD AVE, CAMBRIDGE, MA, 02138",
+  "lon": -71.125842851742,
+  "lat": 42.379416219968,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "11 Cortes ST, Boston, MA 02116": {
+  "matched_address": "11 CORTES ST, BOSTON, MA, 02116",
+  "lon": -71.069583391995,
+  "lat": 42.348290028212,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "63 Bailey ST, Dorchester, MA 02124": {
+  "matched_address": "63 BAILEY ST, DORCHESTER, MA, 02124",
+  "lon": -71.066465126331,
+  "lat": 42.284452236737,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1335 N VISTA ST, Los Angeles, CA 90046": {
+  "matched_address": "1335 N VISTA ST, LOS ANGELES, CA, 90046",
+  "lon": -118.351799391859,
+  "lat": 34.095045778052,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "1318 N ORANGE DR, Los Angeles, CA 90028": {
+  "matched_address": "1318 N ORANGE DR, LOS ANGELES, CA, 90028",
+  "lon": -118.341484249454,
+  "lat": 34.0947022093,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "40-42 Clearway ST, Boston, MA 02115": {
+  "matched_address": "42 CLEARWAY ST, BOSTON, MA, 02115",
+  "lon": -71.085769499369,
+  "lat": 42.345336985524,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "2277 UNION ST, San Francisco, CA": {
+  "matched_address": "2277 UNION ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.436717035924,
+  "lat": 37.796874616444,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "43 Fayette St, Cambridge, MA": {
+  "matched_address": "43 FAYETTE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.103267573782,
+  "lat": 42.372611705618,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "14.5-16 Vandine St, Cambridge, MA": {
+  "matched_address": "16 VANDINE ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.0905953379,
+  "lat": 42.368814396347,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "1251 10TH AV, San Francisco, CA": {
+  "matched_address": "1251 10TH AVE, SAN FRANCISCO, CA, 94122",
+  "lon": -122.467520089919,
+  "lat": 37.764890627041,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Sunset CCD"
+  ],
+  "n_matches": 1
+ },
+ "27 Everett St, Cambridge, MA": {
+  "matched_address": "27 EVERETT ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.117508170008,
+  "lat": 42.379922700614,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "35-37 Inman St, Cambridge, MA": {
+  "matched_address": "37 INMAN ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.103956176776,
+  "lat": 42.368713915313,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "717 S BERENDO ST, Los Angeles, CA 90005": {
+  "matched_address": "717 S BERENDO ST, LOS ANGELES, CA, 90005",
+  "lon": -118.294210099909,
+  "lat": 34.059391478589,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "304 E KINNEY ST, Newark, NJ 07033": {
+  "matched_address": "304 E KINNEY ST, NEWARK, NJ, 07105",
+  "lon": -74.162836470045,
+  "lat": 40.724076460199,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "91 Brookline St, Cambridge, MA": {
+  "matched_address": "91 BROOKLINE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.103733351887,
+  "lat": 42.361566486333,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "115 BAYVIEW AVE., Jersey City, NJ 07304": {
+  "matched_address": "115 BAYVIEW AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.080499166258,
+  "lat": 40.705324743987,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "2361 PORTLAND ST, Los Angeles, CA 90007": {
+  "matched_address": "2361 PORTLAND ST, LOS ANGELES, CA, 90007",
+  "lon": -118.282094130957,
+  "lat": 34.032231820463,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "690 S CATALINA ST, Los Angeles, CA 90005": {
+  "matched_address": "690 S CATALINA ST, LOS ANGELES, CA, 90005",
+  "lon": -118.295327996925,
+  "lat": 34.060127849082,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "145 TAYLOR ST, San Francisco, CA": {
+  "matched_address": "145 TAYLOR ST, SAN FRANCISCO, CA, 94102",
+  "lon": -122.410947938983,
+  "lat": 37.783758897294,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "38 KENILWORTH ST, Roxbury, MA 02119": {
+  "matched_address": "38 KENILWORTH ST, ROXBURY, MA, 02119",
+  "lon": -71.087424612529,
+  "lat": 42.328651609512,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "63 Inman St, Cambridge, MA": {
+  "matched_address": "63 INMAN ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.102833387558,
+  "lat": 42.370344257321,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "1725 CHESTNUT ST, San Francisco, CA": {
+  "matched_address": "1725 CHESTNUT ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.431739349227,
+  "lat": 37.801332618559,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "1101 CHURCH ST, San Francisco, CA": {
+  "matched_address": "1101 CHURCH ST, SAN FRANCISCO, CA, 94114",
+  "lon": -122.427505338235,
+  "lat": 37.753239144697,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "67 Plymouth St, Cambridge, MA": {
+  "matched_address": "67 PLYMOUTH ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.093495991755,
+  "lat": 42.369083221693,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "323 BLOOMFIELD ST, Hoboken, NJ 07504": {
+  "matched_address": "323 BLOOMFIELD ST, HOBOKEN, NJ, 07030",
+  "lon": -74.030768159948,
+  "lat": 40.740414697817,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "201 CLEMENT ST, San Francisco, CA": {
+  "matched_address": "201 CLEMENT ST, SAN FRANCISCO, CA, 94118",
+  "lon": -122.461275217487,
+  "lat": 37.783026502307,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "935 PARK AVE, Hoboken, NJ 07030": {
+  "matched_address": "935 PARK AVE, HOBOKEN, NJ, 07030",
+  "lon": -74.030368120288,
+  "lat": 40.748211954503,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "30 JACKSON ST, Newark, NJ 07105": {
+  "matched_address": "30 JACKSON ST, NEWARK, NJ, 07105",
+  "lon": -74.155787524567,
+  "lat": 40.731204856376,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "2514 PIEDMONT AVE, Berkeley, CA 94704": {
+  "matched_address": "2514 PIEDMONT AVE, BERKELEY, CA, 94704",
+  "lon": -122.251697248224,
+  "lat": 37.865583367618,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "90 BICKFORD ST, Jamaica Plain, MA 02130": {
+  "matched_address": "90 BICKFORD ST, JAMAICA PLAIN, MA, 02130",
+  "lon": -71.101924371068,
+  "lat": 42.324002818423,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "2229 DWIGHT WAY, Berkeley, CA 94704": {
+  "matched_address": "2229 DWIGHT WAY, BERKELEY, CA, 94704",
+  "lon": -122.264605312198,
+  "lat": 37.864405329327,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1371 27TH ST, San Diego, CA 92154": {
+  "matched_address": "1371 27TH ST, SAN DIEGO, CA, 92154",
+  "lon": -117.075371141803,
+  "lat": 32.571862077109,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "23 Elm St, Cambridge, MA": {
+  "matched_address": "23 ELM ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.098495150944,
+  "lat": 42.367845841037,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "81 WESTLAND AV, Boston, MA 02115": {
+  "matched_address": "81 WESTLAND AVE, BOSTON, MA, 02115",
+  "lon": -71.089157903457,
+  "lat": 42.343854353427,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1560 MASON ST, San Francisco, CA": {
+  "matched_address": "1560 MASON ST, SAN FRANCISCO, CA, 94133",
+  "lon": -122.411949673166,
+  "lat": 37.79780463687,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "WILLOWWOOD ST, Dorchester, MA 02124": null,
+ "822 WASHINGTON ST, Hoboken, NJ 07458": {
+  "matched_address": "822 WASHINGTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.028270964888,
+  "lat": 40.746308514721,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "4732 BANCROFT ST, San Diego, CA 92116": {
+  "matched_address": "4732 BANCROFT ST, SAN DIEGO, CA, 92116",
+  "lon": -117.123977567896,
+  "lat": 32.764095185337,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "124 BLOOMFIELD ST, Hoboken, NJ": {
+  "matched_address": "124 BLOOMFIELD ST, HOBOKEN, NJ, 07030",
+  "lon": -74.031684861444,
+  "lat": 40.737933172158,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "2161 ALLSTON WAY, Berkeley, CA 94704": {
+  "matched_address": "2161 ALLSTON WAY, BERKELEY, CA, 94704",
+  "lon": -122.266218694007,
+  "lat": 37.869701586713,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "315-319 FAIRMOUNT AVENUE, Jersey City, NJ 07039": {
+  "matched_address": "319 FAIRMOUNT AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.070809872433,
+  "lat": 40.725229747686,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "409 5TH ST, Newark, NJ 07012": {
+  "matched_address": "409 N 5TH ST, NEWARK, NJ, 07107",
+  "lon": -74.184328525178,
+  "lat": 40.761814283797,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "140 PORTOLA DR, San Francisco, CA": {
+  "matched_address": "140 PORTOLA DR, SAN FRANCISCO, CA, 94131",
+  "lon": -122.444191229026,
+  "lat": 37.748652213279,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "WILLOWWOOD ST, Dorchester, MA": null,
+ "250 FREMONT ST, San Francisco, CA": {
+  "matched_address": "250 FREMONT ST, SAN FRANCISCO, CA, 94105",
+  "lon": -122.394074444911,
+  "lat": 37.788294915739,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "SoMa-Potrero-Mission Bay CCD"
+  ],
+  "n_matches": 1
+ },
+ "10635 SHERMAN GROVE AVE, Los Angeles, CA 91040": {
+  "matched_address": "10635 SHERMAN GROVE AVE, SUNLAND, CA, 91040",
+  "lon": -118.32017657606,
+  "lat": 34.262255890509,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "13 JEFFERSON AVE., Jersey City, NJ 07030": {
+  "matched_address": "13 JEFFERSON AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.049970012264,
+  "lat": 40.736287315576,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "2922 OTIS ST, Berkeley, CA 94703": {
+  "matched_address": "2922 OTIS ST, BERKELEY, CA, 94703",
+  "lon": -122.270269918923,
+  "lat": 37.8558347046,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "130-132 2ND AVE, Newark, NJ 07055": {
+  "matched_address": "132 2ND AVE, NEWARK, NJ, 07104",
+  "lon": -74.174745021871,
+  "lat": 40.763265479466,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "10075 TUJUNGA CANYON BLVD, Los Angeles, CA 91042": {
+  "matched_address": "10075 TUJUNGA CANYON BLVD, TUJUNGA, CA, 91042",
+  "lon": -118.284430355328,
+  "lat": 34.249924250911,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "448 BRODERICK ST, San Francisco, CA": {
+  "matched_address": "448 BRODERICK ST, SAN FRANCISCO, CA, 94117",
+  "lon": -122.439298239317,
+  "lat": 37.77431322716,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "3151 ETON AVE, Berkeley, CA 94705": {
+  "matched_address": "3151 ETON AVE, BERKELEY, CA, 94705",
+  "lon": -122.250637537308,
+  "lat": 37.853156920269,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "3743 INDIA ST, San Diego, CA 92103": {
+  "matched_address": "3743 INDIA ST, SAN DIEGO, CA, 92103",
+  "lon": -117.180736253153,
+  "lat": 32.74279009558,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "397 05TH AV, San Francisco, CA": null,
+ "36 PROSPECT ST., Jersey City, NJ 07111": {
+  "matched_address": "36 PROSPECT ST, JERSEY CITY, NJ, 07307",
+  "lon": -74.049245065733,
+  "lat": 40.73782973401,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1733 N CHEROKEE AVE, Los Angeles, CA 90028": {
+  "matched_address": "1733 N CHEROKEE AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.334821278665,
+  "lat": 34.102120911287,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "607 ADAMS ST, Hoboken, NJ 07030": {
+  "matched_address": "607 ADAMS ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035368051004,
+  "lat": 40.744671445285,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "18-34 KINGBIRD RD, Dorchester, MA 02124": {
+  "matched_address": "34 KINGBIRD RD, DORCHESTER, MA, 02124",
+  "lon": -71.093533488467,
+  "lat": 42.292350464404,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "4079 FRONT ST, San Diego, CA 92103": {
+  "matched_address": "4079 FRONT ST, SAN DIEGO, CA, 92103",
+  "lon": -117.16494526813,
+  "lat": 32.751421595306,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "139 ELM ST, Newark, NJ 07105": {
+  "matched_address": "139 ELM ST, NEWARK, NJ, 07105",
+  "lon": -74.165047104124,
+  "lat": 40.72835234588,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "123 Condor ST, East Boston, MA 02128": {
+  "matched_address": "123 CONDOR ST, EAST BOSTON, MA, 02128",
+  "lon": -71.035437146913,
+  "lat": 42.382539410028,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "4812 S BROADWAY, Los Angeles, CA 90037": {
+  "matched_address": "4812 S BROADWAY, LOS ANGELES, CA, 90037",
+  "lon": -118.278252342985,
+  "lat": 33.999020066962,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "33-35 Brookline St, Cambridge, MA": {
+  "matched_address": "35 BROOKLINE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.102457805365,
+  "lat": 42.362941773312,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "227 GRAND ST, Hoboken, NJ 07030": {
+  "matched_address": "227 GRAND ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035814894303,
+  "lat": 40.740020460669,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1350 POTRERO AV, San Francisco, CA": {
+  "matched_address": "1350 POTRERO AVE, SAN FRANCISCO, CA, 94110",
+  "lon": -122.406250403098,
+  "lat": 37.750954392609,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "10029 SEPULVEDA BLVD, Los Angeles, CA 91345": {
+  "matched_address": "10029 N SEPULVEDA BLVD, MISSION HILLS, CA, 91345",
+  "lon": -118.467596873721,
+  "lat": 34.252367056179,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "Harvard ST, Dorchester, MA 02124": null,
+ "526-532 MULBERRY ST, Newark, NJ 07039": {
+  "matched_address": "532 MULBERRY ST, NEWARK, NJ, 07114",
+  "lon": -74.176858130312,
+  "lat": 40.719764997575,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "554 MARKET ST, Newark, NJ 07205": {
+  "matched_address": "554 MARKET ST, NEWARK, NJ, 07105",
+  "lon": -74.154426811823,
+  "lat": 40.731588087906,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 2
+ },
+ "43 POPLAR ST., Jersey City, NJ 07307": {
+  "matched_address": "43 POPLAR ST, JERSEY CITY, NJ, 07307",
+  "lon": -74.046101194189,
+  "lat": 40.754136146986,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "587 N 6TH ST, Newark, NJ": {
+  "matched_address": "587 N 6TH ST, NEWARK, NJ, 07107",
+  "lon": -74.181410596224,
+  "lat": 40.76934816412,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "8819 LANKERSHIM BLVD, Los Angeles, CA 91352": {
+  "matched_address": "8819 LANKERSHIM BLVD, SUN VALLEY, CA, 91352",
+  "lon": -118.387834588124,
+  "lat": 34.229428423859,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "101 Norfolk ST, Dorchester, MA 02124": {
+  "matched_address": "101 NORFOLK ST, DORCHESTER, MA, 02124",
+  "lon": -71.076008765993,
+  "lat": 42.288488914986,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "843 CLAY ST, San Francisco, CA": {
+  "matched_address": "843 CLAY ST, SAN FRANCISCO, CA, 94108",
+  "lon": -122.40698604858,
+  "lat": 37.794118952125,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "Harvard ST, Dorchester, MA": null,
+ "920 HUDSON ST, Hoboken, NJ 07030": {
+  "matched_address": "920 HUDSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.026733524669,
+  "lat": 40.747367988246,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "65-71 NORFLOK ST, Newark, NJ 07003": {
+  "matched_address": "71 NORFOLK ST, NEWARK, NJ, 07103",
+  "lon": -74.182685493475,
+  "lat": 40.74650540714,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1033 E 51ST ST, Los Angeles, CA 90011": {
+  "matched_address": "1033 E 51ST ST, LOS ANGELES, CA, 90011",
+  "lon": -118.257577562794,
+  "lat": 33.996685074769,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "54 STUYVESANT AVE., Jersey City, NJ 07042": {
+  "matched_address": "54 STUYVESANT AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.071034378592,
+  "lat": 40.729943720291,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "459 BEACON ST, Boston, MA 02115": {
+  "matched_address": "459 BEACON ST, BOSTON, MA, 02115",
+  "lon": -71.088098655836,
+  "lat": 42.351156189935,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "2601 43RD AV, San Francisco, CA": {
+  "matched_address": "2601 43RD AVE, SAN FRANCISCO, CA, 94116",
+  "lon": -122.501210314083,
+  "lat": 37.73813158911,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Sunset CCD"
+  ],
+  "n_matches": 1
+ },
+ "4615 AVALON BLVD, Los Angeles, CA 90011": {
+  "matched_address": "4615 AVALON BLVD, LOS ANGELES, CA, 90011",
+  "lon": -118.265290530936,
+  "lat": 34.001426079007,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "75 ELM HILL AV, Dorchester, MA 02121": {
+  "matched_address": "75 ELM HILL AVE, DORCHESTER, MA, 02121",
+  "lon": -71.087061380822,
+  "lat": 42.310212727666,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "112-114 Amory ST, Roxbury, MA 02119": {
+  "matched_address": "114 AMORY ST, ROXBURY, MA, 02119",
+  "lon": -71.100197786289,
+  "lat": 42.319506233426,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "4515 FELTON ST, San Diego, CA 92116": {
+  "matched_address": "4515 FELTON ST, SAN DIEGO, CA, 92116",
+  "lon": -117.121714561521,
+  "lat": 32.759371284084,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "93-95 HAWKINS ST, Newark, NJ 07105": {
+  "matched_address": "93-95 HAWKINS ST, NEWARK, NJ, 07105",
+  "lon": -74.138947612797,
+  "lat": 40.727984681112,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "2850 GOLDEN GATE AV, San Francisco, CA": {
+  "matched_address": "2850 GOLDEN GATE AVE, SAN FRANCISCO, CA, 94118",
+  "lon": -122.457612633148,
+  "lat": 37.776358944957,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "162-166 5TH ST, Newark, NJ 07105": {
+  "matched_address": "166 5TH ST, NEWARK, NJ, 07107",
+  "lon": -74.190058099169,
+  "lat": 40.751386045226,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "25 Everett ST, East Boston, MA 02128": {
+  "matched_address": "25 EVERETT ST, EAST BOSTON, MA, 02128",
+  "lon": -71.036711056222,
+  "lat": 42.368309769533,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "3784 E BROADWAY, San Diego, CA 92102": {
+  "matched_address": "3784 BROADWAY, SAN DIEGO, CA, 92102",
+  "lon": -117.11184048031,
+  "lat": 32.716024799043,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "16 Queensberry ST, Boston, MA 02215": {
+  "matched_address": "16 QUEENSBERRY ST, BOSTON, MA, 02215",
+  "lon": -71.095965021374,
+  "lat": 42.343098317562,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1669 SUNSET CLIFFS BLVD, San Diego, CA 92107": {
+  "matched_address": "1669 SUNSET CLIFFS BLVD, SAN DIEGO, CA, 92107",
+  "lon": -117.25076493005,
+  "lat": 32.74094590948,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "366 E 55TH ST, Los Angeles, CA 90011": {
+  "matched_address": "366 E 55TH ST, LOS ANGELES, CA, 90011",
+  "lon": -118.268297439622,
+  "lat": 33.992394354537,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "4568 IDAHO ST, San Diego, CA 92116": {
+  "matched_address": "4568 IDAHO ST, SAN DIEGO, CA, 92116",
+  "lon": -117.133977948208,
+  "lat": 32.760412374063,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "473 Harvard ST, Dorchester, MA 02124": {
+  "matched_address": "473 HARVARD ST, DORCHESTER, MA, 02124",
+  "lon": -71.09239312943,
+  "lat": 42.288741879366,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "290 GREEN ST, San Francisco, CA": {
+  "matched_address": "290 GREEN ST, SAN FRANCISCO, CA, 94111",
+  "lon": -122.402990211203,
+  "lat": 37.80031526334,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 2
+ },
+ "2701 RIDGE RD, Berkeley, CA 94709": {
+  "matched_address": "2701 RIDGE RD, BERKELEY, CA, 94709",
+  "lon": -122.257026606732,
+  "lat": 37.876494513292,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2522 HILGARD AVE, Berkeley, CA 94709": {
+  "matched_address": "2522 HILGARD AVE, BERKELEY, CA, 94709",
+  "lon": -122.260493108118,
+  "lat": 37.878591221585,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "104 SUNSET AVE, Newark, NJ": {
+  "matched_address": "104 SUNSET AVE, NEWARK, NJ, 07106",
+  "lon": -74.226709353047,
+  "lat": 40.74245866913,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "86 CHARLES ST., Jersey City, NJ 07642": {
+  "matched_address": "86 CHARLES ST, JERSEY CITY, NJ, 07307",
+  "lon": -74.05173810144,
+  "lat": 40.749433761671,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "317 UNION ST., Jersey City, NJ 07013": {
+  "matched_address": "317 UNION ST, JERSEY CITY, NJ, 07304",
+  "lon": -74.083091056543,
+  "lat": 40.717916452711,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1640 N POINSETTIA PL, Los Angeles, CA 90046": {
+  "matched_address": "1640 N POINSETTIA PL, LOS ANGELES, CA, 90046",
+  "lon": -118.347788965715,
+  "lat": 34.100552498585,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "233-235 SECOND ST., Jersey City, NJ 07042": {
+  "matched_address": "235 2ND ST, JERSEY CITY, NJ, 07302",
+  "lon": -74.043552476848,
+  "lat": 40.722395074274,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "725 14TH ST, San Francisco, CA": {
+  "matched_address": "725 14TH ST, SAN FRANCISCO, CA, 94114",
+  "lon": -122.42951948205,
+  "lat": 37.76763837901,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "734 JAMAICA CT, San Diego, CA 92109": {
+  "matched_address": "734 JAMAICA CT, SAN DIEGO, CA, 92109",
+  "lon": -117.252245356556,
+  "lat": 32.773642646317,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1 Potter Pk, Cambridge, MA": {
+  "matched_address": "1 POTTER PARK, CAMBRIDGE, MA, 02138",
+  "lon": -71.12020099261,
+  "lat": 42.384310248934,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "4616 FLORIDA ST, San Diego, CA 92116": {
+  "matched_address": "4616 FLORIDA ST, SAN DIEGO, CA, 92116",
+  "lon": -117.143850889032,
+  "lat": 32.76124264042,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "600 JACKSON/601 HARRISON, Hoboken, NJ 07030": {
+  "matched_address": "600 JACKSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.039281685445,
+  "lat": 40.745283626731,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "8917 CEDROS AVE, Los Angeles, CA 91402": {
+  "matched_address": "8917 CEDROS AVE, PANORAMA CITY, CA, 91402",
+  "lon": -118.453618335394,
+  "lat": 34.232064015614,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "115 KILSYTH RD, Brighton, MA 02135": {
+  "matched_address": "115 KILSYTH RD, BRIGHTON, MA, 02135",
+  "lon": -71.146633078674,
+  "lat": 42.340367940381,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "127 OGDEN AVE., Jersey City, NJ 07660": {
+  "matched_address": "127 OGDEN AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.04663280324,
+  "lat": 40.738902438048,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "8504 WILLIS AVE, Los Angeles, CA 91402": {
+  "matched_address": "8504 WILLIS AVE, PANORAMA CITY, CA, 91402",
+  "lon": -118.455218605953,
+  "lat": 34.224850838975,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "13180 FOOTHILL BLVD, Los Angeles, CA 91342": {
+  "matched_address": "13180 FOOTHILL BLVD, SYLMAR, CA, 91342",
+  "lon": -118.421538456805,
+  "lat": 34.299371281369,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "84 Hampshire St, Cambridge, MA": {
+  "matched_address": "84 HAMPSHIRE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.0943940217,
+  "lat": 42.368359091009,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "10 Dover St, Cambridge, MA": {
+  "matched_address": "10 DOVER ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.126686968537,
+  "lat": 42.394678131873,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "5308 RIVERTON AVE, Los Angeles, CA 91601": {
+  "matched_address": "5308 RIVERTON AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.365290745355,
+  "lat": 34.166828679584,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "166 HIGHLAND AVE., Jersey City, NJ": {
+  "matched_address": "166 HIGHLAND AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.073105945172,
+  "lat": 40.729583045817,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "15 Chester St, Cambridge, MA": {
+  "matched_address": "15 CHESTER ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.124477534158,
+  "lat": 42.393657148181,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "7006 LANEWOOD AVE, Los Angeles, CA 90028": {
+  "matched_address": "7006 LANEWOOD AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.341635208217,
+  "lat": 34.09915207252,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "845 S KINGSLEY DR, Los Angeles, CA 90005": {
+  "matched_address": "845 S KINGSLEY DR, LOS ANGELES, CA, 90005",
+  "lon": -118.303137913263,
+  "lat": 34.056870603736,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "931 GARDEN ST, Hoboken, NJ 07030": {
+  "matched_address": "931 GARDEN ST, HOBOKEN, NJ, 07030",
+  "lon": -74.029444711794,
+  "lat": 40.748003289428,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "911-923 CLINTON ST, Hoboken, NJ 07030": {
+  "matched_address": "923 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.032259129478,
+  "lat": 40.748382853996,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "2427 HILGARD AVE, Berkeley, CA 94709": {
+  "matched_address": "2427 HILGARD AVE, BERKELEY, CA, 94709",
+  "lon": -122.262349376787,
+  "lat": 37.87845544308,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "154 TERHUNE AVE., Jersey City, NJ 07103": {
+  "matched_address": "154 TERHUNE AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.096225420442,
+  "lat": 40.705096415554,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "156 W 32ND ST, Los Angeles, CA 90007": {
+  "matched_address": "156 W 32ND ST, LOS ANGELES, CA, 90007",
+  "lon": -118.273514783778,
+  "lat": 34.020782218595,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "107 BEACON AVE., Jersey City, NJ 07306": {
+  "matched_address": "107 BEACON AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.054827866989,
+  "lat": 40.736920404507,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "146 CARLTON AVE., Jersey City, NJ 07423": {
+  "matched_address": "146 CARLTON AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.060798217241,
+  "lat": 40.744920038222,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "2819 MCGEE AVE, Berkeley, CA 94703": {
+  "matched_address": "2819 MCGEE AVE, BERKELEY, CA, 94703",
+  "lon": -122.275258218951,
+  "lat": 37.856959944236,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1811 CARLETON ST, Berkeley, CA 94703": {
+  "matched_address": "1811 CARLETON ST, BERKELEY, CA, 94703",
+  "lon": -122.273498335777,
+  "lat": 37.860487333982,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "60 Kirkland St, Cambridge, MA": {
+  "matched_address": "60 KIRKLAND ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.110680713996,
+  "lat": 42.377309547812,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "283 ADAMS ST, Newark, NJ 07105": {
+  "matched_address": "283 ADAMS ST, NEWARK, NJ, 07105",
+  "lon": -74.16236498265,
+  "lat": 40.722831839974,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "780 POST ST, San Francisco, CA": {
+  "matched_address": "780 POST ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.414659903737,
+  "lat": 37.787554937568,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "1626 BONITA AVE, Berkeley, CA 94709": {
+  "matched_address": "1626 BONITA AVE, BERKELEY, CA, 94709",
+  "lon": -122.272592199936,
+  "lat": 37.877436210953,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "72 Burbank ST, Boston, MA 02115": {
+  "matched_address": "72 BURBANK ST, BOSTON, MA, 02115",
+  "lon": -71.08932121797,
+  "lat": 42.34449244891,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1850-1848 COMMONWEALTH AV, Brighton, MA 02135": {
+  "matched_address": "1848 COMMONWEALTH AVE, BRIGHTON, MA, 02135",
+  "lon": -71.152111420394,
+  "lat": 42.339062553814,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "16915 BLACKHAWK ST, Los Angeles, CA 91344": {
+  "matched_address": "16915 BLACKHAWK ST, GRANADA HILLS, CA, 91344",
+  "lon": -118.500920253647,
+  "lat": 34.258955182522,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1611 62ND ST, Berkeley, CA 94703": {
+  "matched_address": "1611 62ND ST, BERKELEY, CA, 94703",
+  "lon": -122.274812039507,
+  "lat": 37.846527054842,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "194 Havre ST, East Boston, MA 02128": {
+  "matched_address": "194 HAVRE ST, EAST BOSTON, MA, 02128",
+  "lon": -71.036497835188,
+  "lat": 42.374496794147,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "42 Bay State Rd, Cambridge, MA": {
+  "matched_address": "42 BAY STATE RD, CAMBRIDGE, MA, 02138",
+  "lon": -71.140083871382,
+  "lat": 42.387191106272,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "1853 N HIGHLAND AVE, Los Angeles, CA 90028": {
+  "matched_address": "1853 N HIGHLAND AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.337549044749,
+  "lat": 34.105004287023,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "2737 BENVENUE AVE, Berkeley, CA 94705": {
+  "matched_address": "2737 BENVENUE AVE, BERKELEY, CA, 94705",
+  "lon": -122.25463879726,
+  "lat": 37.861084663474,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1446 JACKSON ST, San Francisco, CA": {
+  "matched_address": "1446 JACKSON ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.41889836579,
+  "lat": 37.794522791984,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "2986-2930 Washington ST, Roxbury, MA 02119": {
+  "matched_address": "2930 WASHINGTON ST, ROXBURY, MA, 02119",
+  "lon": -71.095569636405,
+  "lat": 42.31845754666,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "202-208 6TH AVE W, Newark, NJ 08736": {
+  "matched_address": "208 6TH AVE W, NEWARK, NJ, 07107",
+  "lon": -74.186173040995,
+  "lat": 40.756210023298,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "2425 GRANT ST, Berkeley, CA 94703": {
+  "matched_address": "2425 GRANT ST, BERKELEY, CA, 94703",
+  "lon": -122.274486388915,
+  "lat": 37.864419418207,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "401 43RD AV, San Francisco, CA": {
+  "matched_address": "401 43RD AVE, SAN FRANCISCO, CA, 94121",
+  "lon": -122.504228232138,
+  "lat": 37.78106651207,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "705 W 23RD ST, Los Angeles, CA 90007": {
+  "matched_address": "705 W 23RD ST, LOS ANGELES, CA, 90007",
+  "lon": -118.276733095547,
+  "lat": 34.032030548439,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "126 ADAMS ST, Hoboken, NJ 07604": {
+  "matched_address": "126 ADAMS ST, HOBOKEN, NJ, 07030",
+  "lon": -74.037275318111,
+  "lat": 40.738937251272,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1432 N CURSON AVE, Los Angeles, CA 90046": {
+  "matched_address": "1432 N CURSON AVE, LOS ANGELES, CA, 90046",
+  "lon": -118.354938535163,
+  "lat": 34.096815880701,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "19 Trowbridge St, Cambridge, MA": {
+  "matched_address": "19 TROWBRIDGE ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.11237412069,
+  "lat": 42.371041072612,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "499 BEACON ST, Boston, MA 02215": {
+  "matched_address": "499 BEACON ST, BOSTON, MA, 02215",
+  "lon": -71.089845858115,
+  "lat": 42.350692439566,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1311 SOUTH VAN NESS AV, San Francisco, CA": {
+  "matched_address": "1311 S VAN NESS AVE, SAN FRANCISCO, CA, 94110",
+  "lon": -122.4161731875,
+  "lat": 37.752168513331,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "358 Harvard St, Cambridge, MA": {
+  "matched_address": "358 HARVARD ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.110911398922,
+  "lat": 42.371082219474,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "11649 ACAMA ST, Los Angeles, CA 91604": {
+  "matched_address": "11649 ACAMA ST, STUDIO CITY, CA, 91604",
+  "lon": -118.386856598286,
+  "lat": 34.145584078078,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2295 CALIFORNIA ST, San Francisco, CA": {
+  "matched_address": "2295 CALIFORNIA ST, SAN FRANCISCO, CA, 94115",
+  "lon": -122.432052589153,
+  "lat": 37.789075325053,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2309 HASTE ST, Berkeley, CA 94704": {
+  "matched_address": "2309 HASTE ST, BERKELEY, CA, 94704",
+  "lon": -122.262957356662,
+  "lat": 37.865531910644,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "170-172 Maverick ST, East Boston, MA 02128": {
+  "matched_address": "172 MAVERICK ST, EAST BOSTON, MA, 02128",
+  "lon": -71.037362951665,
+  "lat": 42.369519627611,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "15 Richdale Ave, Cambridge, MA": {
+  "matched_address": "15 RICHDALE AVE, CAMBRIDGE, MA, 02140",
+  "lon": -71.121620396425,
+  "lat": 42.388324409245,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "3735 32ND ST, San Diego, CA 92104": {
+  "matched_address": "3735 32ND ST, SAN DIEGO, CA, 92104",
+  "lon": -117.124937736826,
+  "lat": 32.746245203063,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "21-23 Faulkner ST, Dorchester, MA 02122": {
+  "matched_address": "23 FAULKNER ST, DORCHESTER, MA, 02122",
+  "lon": -71.061535322591,
+  "lat": 42.29951865269,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1901 VALLEJO ST, San Francisco, CA": {
+  "matched_address": "1901 VALLEJO ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.428597910742,
+  "lat": 37.795996387914,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "191 Park DR, Boston, MA 02215": {
+  "matched_address": "191 PARK DR, BOSTON, MA, 02215",
+  "lon": -71.100162328229,
+  "lat": 42.341033010088,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "504 COURT ST, Hoboken, NJ 07030": {
+  "matched_address": "504 COURT ST, HOBOKEN, NJ, 07030",
+  "lon": -74.028940035027,
+  "lat": 40.742214718476,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "8727 TOBIAS AVE, Los Angeles, CA 91402": {
+  "matched_address": "8727 TOBIAS AVE, PANORAMA CITY, CA, 91402",
+  "lon": -118.451718756162,
+  "lat": 34.228507480493,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "663 MASSACHUSETTS AV, Boston, MA 02118": {
+  "matched_address": "663 MASSACHUSETTS AVE, BOSTON, MA, 02118",
+  "lon": -71.0764696579,
+  "lat": 42.335912589034,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "1627 JACKSON ST, San Francisco, CA": {
+  "matched_address": "1627 JACKSON ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.421842293682,
+  "lat": 37.794030087633,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "1401 HUDSON ST, Hoboken, NJ 07030": {
+  "matched_address": "1401 HUDSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.025132220092,
+  "lat": 40.752162276082,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "225 COLLINGWOOD ST, San Francisco, CA": {
+  "matched_address": "225 COLLINGWOOD ST, SAN FRANCISCO, CA, 94114",
+  "lon": -122.43584550357,
+  "lat": 37.758806229242,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "5164 03RD ST, San Francisco, CA": null,
+ "521 ARGUELLO BL, San Francisco, CA": {
+  "matched_address": "521 ARGUELLO BLVD, SAN FRANCISCO, CA, 94118",
+  "lon": -122.458904742326,
+  "lat": 37.780784398048,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "189 Third St, Cambridge, MA": {
+  "matched_address": "189 3RD ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.080956110328,
+  "lat": 42.367926768436,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "85 Hancock St, Cambridge, MA": {
+  "matched_address": "85 HANCOCK ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.10823462185,
+  "lat": 42.36894090845,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "2212 BLAKE ST, Berkeley, CA 94704": {
+  "matched_address": "2212 BLAKE ST, BERKELEY, CA, 94704",
+  "lon": -122.26472014852,
+  "lat": 37.863354369764,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "30 MEDFIELD ST, Boston, MA 02215": {
+  "matched_address": "30 MEDFIELD ST, BOSTON, MA, 02215",
+  "lon": -71.105981333095,
+  "lat": 42.345263577025,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "6736 SELMA AVE, Los Angeles, CA 90028": {
+  "matched_address": "6736 SELMA AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.337259232832,
+  "lat": 34.099644694718,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "1110 JACKSON ST, San Francisco, CA": {
+  "matched_address": "1110 JACKSON ST, SAN FRANCISCO, CA, 94133",
+  "lon": -122.41341354471,
+  "lat": 37.795227211111,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "15256 ACRE ST, Los Angeles, CA 91343": {
+  "matched_address": "15256 ACRE ST, NORTH HILLS, CA, 91343",
+  "lon": -118.465059354597,
+  "lat": 34.229903219394,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "36 VALLEY ST, San Francisco, CA": {
+  "matched_address": "36 VALLEY ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.423160521356,
+  "lat": 37.744772339215,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1476 UNIVERSITY AVE, Berkeley, CA 94702": {
+  "matched_address": "1476 UNIVERSITY AVE, BERKELEY, CA, 94702",
+  "lon": -122.282479272768,
+  "lat": 37.870240703252,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "4135 38TH ST, San Diego, CA 92105": {
+  "matched_address": "4135 38TH ST, SAN DIEGO, CA, 92105",
+  "lon": -117.111779263182,
+  "lat": 32.752138713798,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "913 GARDEN ST, Hoboken, NJ 07030": {
+  "matched_address": "913 GARDEN ST, HOBOKEN, NJ, 07030",
+  "lon": -74.029507685512,
+  "lat": 40.747790932129,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "85-87 SIERRA RD, Hyde Park, MA 02136": {
+  "matched_address": "87 SIERRA RD, HYDE PARK, MA, 02136",
+  "lon": -71.126219924108,
+  "lat": 42.23648761117,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "664 OCEAN AVE., Jersey City, NJ 07305": {
+  "matched_address": "664 OCEAN AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.076659540243,
+  "lat": 40.70901429936,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "30 WEST HOWELL ST M-D, Dorchester, MA 02125": {
+  "matched_address": "30 W HOWELL ST, DORCHESTER, MA, 02125",
+  "lon": -71.059503187262,
+  "lat": 42.325356355842,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "4386 COPELAND AVE, San Diego, CA 92105": {
+  "matched_address": "4386 COPELAND AVE, SAN DIEGO, CA, 92105",
+  "lon": -117.104047557974,
+  "lat": 32.756800937083,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1126 HUDSON ST, Hoboken, NJ 07030": {
+  "matched_address": "1126 HUDSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.025921583962,
+  "lat": 40.75007710711,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "4957 CAPE MAY AVE, San Diego, CA 92107": {
+  "matched_address": "4957 CAPE MAY AVE, SAN DIEGO, CA, 92107",
+  "lon": -117.248171449465,
+  "lat": 32.748875084016,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "941 S KENMORE AVE, Los Angeles, CA 90006": {
+  "matched_address": "941 S KENMORE AVE, LOS ANGELES, CA, 90006",
+  "lon": -118.296589306557,
+  "lat": 34.054561165407,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "498-500 HAWTHORNE AVE, Newark, NJ": {
+  "matched_address": "500 HAWTHORNE AVE, NEWARK, NJ, 07112",
+  "lon": -74.215280471054,
+  "lat": 40.719775769166,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "211 BALDWIN AVE., Jersey City, NJ 07002": {
+  "matched_address": "211 BALDWIN AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.060120792112,
+  "lat": 40.729192320523,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "4663 33RD ST, San Diego, CA 92116": {
+  "matched_address": "4663 33RD ST, SAN DIEGO, CA, 92116",
+  "lon": -117.122794711786,
+  "lat": 32.762436259509,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "15514 CHASE ST, Los Angeles, CA 91343": {
+  "matched_address": "15514 CHASE ST, NORTH HILLS, CA, 91343",
+  "lon": -118.470326035112,
+  "lat": 34.224605812398,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2250 NORTH POINT ST, San Francisco, CA": {
+  "matched_address": "2250 N POINT ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.444275084577,
+  "lat": 37.802722582821,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "805 WASHINGTON ST, Hoboken, NJ 07030": {
+  "matched_address": "805 WASHINGTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.028189698217,
+  "lat": 40.746063788663,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "851 E 51ST ST, Los Angeles, CA 90011": {
+  "matched_address": "851 E 51ST ST, LOS ANGELES, CA, 90011",
+  "lon": -118.260152086488,
+  "lat": 33.996666263731,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "327 JACKSON ST, Hoboken, NJ 07017": {
+  "matched_address": "327 JACKSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.0400671093,
+  "lat": 40.742101329412,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "5 COMMER CT, San Francisco, CA": {
+  "matched_address": "5 COMMER CT, SAN FRANCISCO, CA, 94124",
+  "lon": -122.384674255589,
+  "lat": 37.732351895037,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Bayview CCD"
+  ],
+  "n_matches": 1
+ },
+ "471 COLUMBIA RD, Dorchester, MA 02125": {
+  "matched_address": "471 COLUMBIA RD, DORCHESTER, MA, 02125",
+  "lon": -71.067499784037,
+  "lat": 42.314021035494,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "872 NORTH POINT ST, San Francisco, CA": {
+  "matched_address": "872 N POINT ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.421551166435,
+  "lat": 37.805617181224,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "525 ADAMS ST, Hoboken, NJ 07030": {
+  "matched_address": "525 ADAMS ST, HOBOKEN, NJ, 07030",
+  "lon": -74.03569006655,
+  "lat": 40.743627056924,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "2479 LE CONTE AVE, Berkeley, CA 94709": {
+  "matched_address": "2479 LE CONTE AVE, BERKELEY, CA, 94709",
+  "lon": -122.261370866714,
+  "lat": 37.87682628993,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2924 E JUNIPER ST, San Diego, CA 92104": {
+  "matched_address": "2924 JUNIPER ST, SAN DIEGO, CA, 92104",
+  "lon": -117.13126954968,
+  "lat": 32.729713456435,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1636 M L KING JR WAY, Berkeley, CA 94709": {
+  "matched_address": "1636 MARTIN LUTHER KING JR WAY, BERKELEY, CA, 94709",
+  "lon": -122.273753258644,
+  "lat": 37.877104430999,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "583-589 ELIZABETH AVE, Newark, NJ": {
+  "matched_address": "589 ELIZABETH AVE, NEWARK, NJ, 07112",
+  "lon": -74.203997082351,
+  "lat": 40.706702590971,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "102 BALDWIN AVE., Jersey City, NJ 07306": {
+  "matched_address": "102 BALDWIN AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.062860646313,
+  "lat": 40.725395005355,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "52 BRIGHT ST., Jersey City, NJ": {
+  "matched_address": "52 BRIGHT ST, JERSEY CITY, NJ, 07302",
+  "lon": -74.04716146876,
+  "lat": 40.716964287987,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1848 FRANKLIN ST, San Francisco, CA": {
+  "matched_address": "1848 FRANKLIN ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.42417782805,
+  "lat": 37.791524228684,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "1314 N VAN NESS AVE, Los Angeles, CA 90028": {
+  "matched_address": "1314 N VAN NESS AVE, LOS ANGELES, CA, 90038",
+  "lon": -118.31568631956,
+  "lat": 34.095065338349,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "1015 CLINTON ST, Hoboken, NJ": {
+  "matched_address": "1015 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.031887796981,
+  "lat": 40.749581279291,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "29 CONCORD ST, Jersey City, NJ 07306": {
+  "matched_address": "29 CONCORD ST, JERSEY CITY, NJ, 07306",
+  "lon": -74.052574845456,
+  "lat": 40.733442605846,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "4115 LINCOLN WY, San Francisco, CA": {
+  "matched_address": "4115 LINCOLN WAY, SAN FRANCISCO, CA, 94122",
+  "lon": -122.502100180635,
+  "lat": 37.764244000512,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Sunset CCD"
+  ],
+  "n_matches": 1
+ },
+ "5 Everett St, Cambridge, MA": {
+  "matched_address": "5 EVERETT ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.11923068717,
+  "lat": 42.380002159495,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "3911 CENTRE ST, San Diego, CA 92103": {
+  "matched_address": "3911 CENTRE ST, SAN DIEGO, CA, 92103",
+  "lon": -117.147965593552,
+  "lat": 32.749136257741,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "7072 EASTMAN ST, San Diego, CA 92111": {
+  "matched_address": "7072 EASTMAN ST, SAN DIEGO, CA, 92111",
+  "lon": -117.168439360297,
+  "lat": 32.789776238445,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "4091 MORRELL ST, San Diego, CA 92109": {
+  "matched_address": "4091 MORRELL ST, SAN DIEGO, CA, 92109",
+  "lon": -117.231646719173,
+  "lat": 32.795607414483,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "4361 ILLINOIS ST, San Diego, CA 92104": {
+  "matched_address": "4361 ILLINOIS ST, SAN DIEGO, CA, 92104",
+  "lon": -117.127636770855,
+  "lat": 32.756358147896,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "2736 GRANT ST, Berkeley, CA 94703": {
+  "matched_address": "2736 GRANT ST, BERKELEY, CA, 94703",
+  "lon": -122.273424660577,
+  "lat": 37.85849365947,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1800 FRANKLIN ST, San Francisco, CA": {
+  "matched_address": "1800 FRANKLIN ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.424100965563,
+  "lat": 37.791146664293,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "1215 11TH AV, San Francisco, CA": {
+  "matched_address": "1215 11TH AVE, SAN FRANCISCO, CA, 94122",
+  "lon": -122.468630232306,
+  "lat": 37.76547270684,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Sunset CCD"
+  ],
+  "n_matches": 1
+ },
+ "1725 N GOWER ST, Los Angeles, CA 90028": {
+  "matched_address": "1725 N GOWER ST, LOS ANGELES, CA, 90028",
+  "lon": -118.32242566214,
+  "lat": 34.102103469042,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "90 KENSINGTON AVE., Jersey City, NJ 07302": {
+  "matched_address": "90 KENSINGTON AVE, JERSEY CITY, NJ, 07304",
+  "lon": -74.075287274906,
+  "lat": 40.723144945194,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 2
+ },
+ "2240 10TH ST, Berkeley, CA 94710": {
+  "matched_address": "2240 10TH ST, BERKELEY, CA, 94710",
+  "lon": -122.292299289201,
+  "lat": 37.865429346313,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "90 BARTLETT ST, San Francisco, CA": {
+  "matched_address": "90 BARTLETT ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.41994757491,
+  "lat": 37.755542885749,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "345 Columbia St, Cambridge, MA": {
+  "matched_address": "345 COLUMBIA ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.095359909702,
+  "lat": 42.371521199602,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "5255 HARMONY AVE, Los Angeles, CA 91601": {
+  "matched_address": "5255 HARMONY AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.366517318934,
+  "lat": 34.165894818542,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "27 Irving Ter, Cambridge, MA": {
+  "matched_address": "27 IRVING TER, CAMBRIDGE, MA, 02138",
+  "lon": -71.111412032264,
+  "lat": 42.375840853959,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "404 GRAND ST, Hoboken, NJ 07075": {
+  "matched_address": "404 GRAND ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035272884466,
+  "lat": 40.742295062797,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "75 CLENDENNY AVE., Jersey City, NJ": {
+  "matched_address": "75 CLENDENNY AVE, JERSEY CITY, NJ, 07304",
+  "lon": -74.0811726863,
+  "lat": 40.718013229375,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1741 M L KING JR WAY, Berkeley, CA 94709": {
+  "matched_address": "1741 MARTIN LUTHER KING JR WAY, BERKELEY, CA, 94709",
+  "lon": -122.273285380013,
+  "lat": 37.874873789783,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "21 Forest St, Cambridge, MA": {
+  "matched_address": "21 FOREST ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.116197964756,
+  "lat": 42.385243189976,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "1314 NATOMA ST, San Francisco, CA": {
+  "matched_address": "1314 NATOMA ST, SAN FRANCISCO, CA, 94103",
+  "lon": -122.418602494007,
+  "lat": 37.768086302987,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "24 Berkshire St, Cambridge, MA": {
+  "matched_address": "24 BERKSHIRE ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.091628846996,
+  "lat": 42.368859452865,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "165 Cambridgepark Dr, Cambridge, MA": {
+  "matched_address": "165 CAMBRIDGEPARK DR, CAMBRIDGE, MA, 02140",
+  "lon": -71.146981411789,
+  "lat": 42.395099011822,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 2
+ },
+ "178 Richdale Ave, Cambridge, MA": {
+  "matched_address": "178 RICHDALE AVE, CAMBRIDGE, MA, 02140",
+  "lon": -71.126525304753,
+  "lat": 42.389122123461,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "Harvard ST LOT 2A-13, Dorchester, MA 02124": null,
+ "83-85 MCWHORTER ST, Newark, NJ 07105": {
+  "matched_address": "85 MCWHORTER ST, NEWARK, NJ, 07105",
+  "lon": -74.16622635068,
+  "lat": 40.730142326692,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "211-213 SUMMER AVE, Newark, NJ": {
+  "matched_address": "213 SUMMER AVE, NEWARK, NJ, 07104",
+  "lon": -74.171685521994,
+  "lat": 40.758931675998,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "361 Washington St, Cambridge, MA": {
+  "matched_address": "361 WASHINGTON ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.099392946846,
+  "lat": 42.365668497367,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "36 Trowbridge St, Cambridge, MA": {
+  "matched_address": "36 TROWBRIDGE ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.111648701864,
+  "lat": 42.371850975157,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "1037 WASHINGTON ST, Hoboken, NJ": {
+  "matched_address": "1037 WASHINGTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.027266530035,
+  "lat": 40.749050177411,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "165 Hampshire St, Cambridge, MA": {
+  "matched_address": "165 HAMPSHIRE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.098439445715,
+  "lat": 42.371842605201,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "4-6 Clinton St, Cambridge, MA": {
+  "matched_address": "6 CLINTON ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.106823748323,
+  "lat": 42.367516001139,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "Harvard ST LOT 2A-13, Dorchester, MA": null,
+ "188 E 35TH ST, Los Angeles, CA 90011": {
+  "matched_address": "188 E 35TH ST, LOS ANGELES, CA, 90011",
+  "lon": -118.271171829397,
+  "lat": 34.016877079827,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "638 45TH AV, San Francisco, CA": {
+  "matched_address": "638 45TH AVE, SAN FRANCISCO, CA, 94121",
+  "lon": -122.505895195699,
+  "lat": 37.776456954836,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "4541 HAMILTON ST, San Diego, CA 92116": {
+  "matched_address": "4541 HAMILTON ST, SAN DIEGO, CA, 92116",
+  "lon": -117.136296909949,
+  "lat": 32.759898286948,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "335A Harvard St, Cambridge, MA": {
+  "matched_address": "335A HARVARD ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.109090354517,
+  "lat": 42.370715584888,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "294-296 VAN BUREN ST, Newark, NJ 07512": {
+  "matched_address": "296 VAN BUREN ST, NEWARK, NJ, 07105",
+  "lon": -74.16080945112,
+  "lat": 40.721814664163,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1032 HUDSON ST, Hoboken, NJ 07024": {
+  "matched_address": "1032 HUDSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.026323440878,
+  "lat": 40.748749351079,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1706 N STANLEY AVE, Los Angeles, CA 90046": {
+  "matched_address": "1706 N STANLEY AVE, LOS ANGELES, CA, 90046",
+  "lon": -118.356114053762,
+  "lat": 34.101835421105,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "53-55 Ashford ST, Allston, MA 02134": {
+  "matched_address": "55 ASHFORD ST, ALLSTON, MA, 02134",
+  "lon": -71.126531334249,
+  "lat": 42.354497619427,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "25 ORLANDO ST, Mattapan, MA 02126": {
+  "matched_address": "25 ORLANDO ST, MATTAPAN, MA, 02126",
+  "lon": -71.0991080589,
+  "lat": 42.274643004403,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "317-319 W RUNYON ST, Newark, NJ": {
+  "matched_address": "319 W RUNYON ST, NEWARK, NJ, 07108",
+  "lon": -74.209161967359,
+  "lat": 40.719489638436,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "38-38- SOMME ST, Newark, NJ 07032": {
+  "matched_address": "38 SOMME ST, NEWARK, NJ, 07105",
+  "lon": -74.150647497603,
+  "lat": 40.731405439224,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "3978 FLORIDA ST, San Diego, CA 92104": {
+  "matched_address": "3978 FLORIDA ST, SAN DIEGO, CA, 92104",
+  "lon": -117.143805824838,
+  "lat": 32.749889290623,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "2041 FRANCISCO ST, Berkeley, CA 94709": {
+  "matched_address": "2041 FRANCISCO ST, BERKELEY, CA, 94709",
+  "lon": -122.270236431385,
+  "lat": 37.875520264007,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2233 CHANNING WAY, Berkeley, CA 94704": {
+  "matched_address": "2233 CHANNING WAY, BERKELEY, CA, 94704",
+  "lon": -122.264363578265,
+  "lat": 37.866269484742,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "5233 CARTWRIGHT AVE, Los Angeles, CA 91601": {
+  "matched_address": "5233 CARTWRIGHT AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.363242167449,
+  "lat": 34.165516896714,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "6640 LELAND WAY, Los Angeles, CA 90028": {
+  "matched_address": "6640 LELAND WAY, LOS ANGELES, CA, 90028",
+  "lon": -118.334062631211,
+  "lat": 34.096954047102,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "408 MADISON ST, Hoboken, NJ 07030": {
+  "matched_address": "408 MADISON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.038062021201,
+  "lat": 40.742822649905,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "2315 GRANT ST, Berkeley, CA 94703": {
+  "matched_address": "2315 GRANT ST, BERKELEY, CA, 94703",
+  "lon": -122.27469711854,
+  "lat": 37.866407956138,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "200 NUNDA AVE., Jersey City, NJ 07306": {
+  "matched_address": "200 NUNDA AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.079221896001,
+  "lat": 40.729025280221,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "227 CYPRESS DR, San Ysidro, CA 92173": {
+  "matched_address": "227 CYPRESS DR, SAN YSIDRO, CA, 92173",
+  "lon": -117.045151967648,
+  "lat": 32.555470956839,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "2003 FRANKLIN ST, San Francisco, CA": {
+  "matched_address": "2003 FRANKLIN ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.424604033397,
+  "lat": 37.792904441436,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "4627 COMPTON AVE, Los Angeles, CA 90011": {
+  "matched_address": "4627 COMPTON AVE, LOS ANGELES, CA, 90011",
+  "lon": -118.247839866285,
+  "lat": 34.001632563866,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "38A GAUTIER AVE., Jersey City, NJ 07302": {
+  "matched_address": "38A GAUTIER AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.079307176087,
+  "lat": 40.72613987341,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "46 JEFFERSON ST, Newark, NJ 07105": {
+  "matched_address": "46 JEFFERSON ST, NEWARK, NJ, 07105",
+  "lon": -74.16011411828,
+  "lat": 40.731191686503,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1845 08TH AV, San Francisco, CA": null,
+ "1605 N MARTEL AVE, Los Angeles, CA 90046": {
+  "matched_address": "1605 N MARTEL AVE, LOS ANGELES, CA, 90046",
+  "lon": -118.350240944927,
+  "lat": 34.099942749927,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "51 MADISON ST, Newark, NJ 07105": {
+  "matched_address": "51 MADISON ST, NEWARK, NJ, 07105",
+  "lon": -74.159407511479,
+  "lat": 40.730936900745,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "26 SONOMA ST, Dorchester, MA 02121": {
+  "matched_address": "26 SONOMA ST, DORCHESTER, MA, 02121",
+  "lon": -71.086856518884,
+  "lat": 42.308190903587,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "342-344 IRVINE TURNER BLV, Newark, NJ": {
+  "matched_address": "344 IRVINE TURNER BLVD, NEWARK, NJ, 07108",
+  "lon": -74.193318622525,
+  "lat": 40.722514194915,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "5229 WILLOWCREST AVE, Los Angeles, CA 91601": {
+  "matched_address": "5229 WILLOWCREST AVE, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.362200030188,
+  "lat": 34.165448094429,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2025 FRANCISCO ST, Berkeley, CA 94709": {
+  "matched_address": "2025 FRANCISCO ST, BERKELEY, CA, 94709",
+  "lon": -122.270586610925,
+  "lat": 37.875475369217,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "3752 33RD ST, San Diego, CA 92104": {
+  "matched_address": "3752 33RD ST, SAN DIEGO, CA, 92104",
+  "lon": -117.12293391208,
+  "lat": 32.746101678529,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "125 BEMIS ST, San Francisco, CA": {
+  "matched_address": "125 BEMIS ST, SAN FRANCISCO, CA, 94131",
+  "lon": -122.430367276697,
+  "lat": 37.737182683157,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "66 MONROE ST, Newark, NJ 07032": {
+  "matched_address": "66 MONROE ST, NEWARK, NJ, 07105",
+  "lon": -74.158991782803,
+  "lat": 40.730254220709,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "151 North First St, Cambridge, MA": {
+  "matched_address": "151 N FIRST ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.075526736217,
+  "lat": 42.372482137906,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "521-523 S 17TH, Newark, NJ 07417": null,
+ "14735 ROSCOE BLVD, Los Angeles, CA 91402": {
+  "matched_address": "14735 ROSCOE BLVD, PANORAMA CITY, CA, 91402",
+  "lon": -118.454598749429,
+  "lat": 34.221547468329,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "49 Roseland St, Cambridge, MA": {
+  "matched_address": "49 ROSELAND ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.116972926785,
+  "lat": 42.386748328179,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "124 Berkshire St, Cambridge, MA": {
+  "matched_address": "124 BERKSHIRE ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.090029432444,
+  "lat": 42.371616346646,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "4225 50TH ST, San Diego, CA 92115": {
+  "matched_address": "4225 50TH ST, SAN DIEGO, CA, 92115",
+  "lon": -117.086787563421,
+  "lat": 32.753521698227,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "238 & 242 GARFIELD AVE., Jersey City, NJ 07304": {
+  "matched_address": "242 GARFIELD AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.091122112815,
+  "lat": 40.692246111645,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "153 W VERNON AVE, Los Angeles, CA 90037": {
+  "matched_address": "153 W VERNON AVE, LOS ANGELES, CA, 90037",
+  "lon": -118.275158399166,
+  "lat": 34.003875826453,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "408-410 5TH ST, Newark, NJ": {
+  "matched_address": "410 N 5TH ST, NEWARK, NJ, 07107",
+  "lon": -74.184299638763,
+  "lat": 40.762180695094,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "521-523 S 17TH, Newark, NJ": {
+  "matched_address": "523 S 17TH ST, NEWARK, NJ, 07103",
+  "lon": -74.208427714769,
+  "lat": 40.738106423692,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "AUBURN DR, San Diego, CA 92105": null,
+ "2142 2ND AVE, San Diego, CA 92101": {
+  "matched_address": "2142 2ND AVE, SAN DIEGO, CA, 92101",
+  "lon": -117.163065698172,
+  "lat": 32.727653319366,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "2400 DANA ST, Berkeley, CA 94704": {
+  "matched_address": "2400 DANA ST, BERKELEY, CA, 94704",
+  "lon": -122.261163802946,
+  "lat": 37.866568691092,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "229 CLINTON ST, Hoboken, NJ 08755": {
+  "matched_address": "229 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.034849797859,
+  "lat": 40.739876679452,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "1051 WEST SIDE AVE., Jersey City, NJ 07446": {
+  "matched_address": "1051 W SIDE AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.070961149168,
+  "lat": 40.735168801416,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "628 HYDE ST, San Francisco, CA": {
+  "matched_address": "628 HYDE ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.41643664948,
+  "lat": 37.786610489702,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "1044 E JEFFERSON BLVD, Los Angeles, CA 90011": {
+  "matched_address": "1044 E JEFFERSON BLVD, LOS ANGELES, CA, 90011",
+  "lon": -118.257806027731,
+  "lat": 34.012089330967,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "40-42 MT PROSPECT AVE, Newark, NJ 07083": {
+  "matched_address": "42 MT PROSPECT AVE, NEWARK, NJ, 07104",
+  "lon": -74.177805398305,
+  "lat": 40.753191626991,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 3
+ },
+ "AUBURN DR, San Diego, CA": null,
+ "10701 AMESTOY AVE, Los Angeles, CA 91344": {
+  "matched_address": "10701 AMESTOY AVE, GRANADA HILLS, CA, 91344",
+  "lon": -118.506705841287,
+  "lat": 34.264856666784,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "73 LUBEC ST, East Boston, MA 02128": {
+  "matched_address": "73 LUBEC ST, EAST BOSTON, MA, 02128",
+  "lon": -71.033000779013,
+  "lat": 42.370721531914,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "16 Brainerd RD, Allston, MA 02134": {
+  "matched_address": "16 BRAINERD RD, ALLSTON, MA, 02134",
+  "lon": -71.130629546012,
+  "lat": 42.348858680092,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "173 07TH ST, San Francisco, CA": null,
+ "717 N 6TH ST, Newark, NJ 07110": {
+  "matched_address": "717 N 6TH ST, NEWARK, NJ, 07107",
+  "lon": -74.179007529056,
+  "lat": 40.773922773441,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "925 PARK AVE, Hoboken, NJ 07306": {
+  "matched_address": "925 PARK AVE, HOBOKEN, NJ, 07030",
+  "lon": -74.030402774821,
+  "lat": 40.748092459219,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "140 NEW YORK AVE., Jersey City, NJ": {
+  "matched_address": "140 NEW YORK AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.047111900025,
+  "lat": 40.741104245751,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "15 Berkshire St, Cambridge, MA": {
+  "matched_address": "15 BERKSHIRE ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.092040596292,
+  "lat": 42.368426537915,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "368 RIVERWAY ST, Boston, MA 02115": {
+  "matched_address": "368 RIVERWAY, BOSTON, MA, 02115",
+  "lon": -71.110791246894,
+  "lat": 42.334291810524,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "2451 SHATTUCK AVE, Berkeley, CA 94704": {
+  "matched_address": "2451 SHATTUCK AVE, BERKELEY, CA, 94704",
+  "lon": -122.267324831145,
+  "lat": 37.864690284096,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "125 03RD AV, San Francisco, CA": null,
+ "3940 IDAHO ST, San Diego, CA 92104": {
+  "matched_address": "3940 IDAHO ST, SAN DIEGO, CA, 92104",
+  "lon": -117.13391504862,
+  "lat": 32.749235987165,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "230 Everett ST, East Boston, MA 02128": {
+  "matched_address": "230 EVERETT ST, EAST BOSTON, MA, 02128",
+  "lon": -71.030306589214,
+  "lat": 42.365643672949,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "219 S 35TH ST, San Diego, CA 92113": {
+  "matched_address": "219 S 35TH ST, SAN DIEGO, CA, 92113",
+  "lon": -117.118695602941,
+  "lat": 32.704217966085,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1430 FRANCISCO ST, San Francisco, CA": {
+  "matched_address": "1430 FRANCISCO ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.428752796943,
+  "lat": 37.802780409256,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "3260 CALIFORNIA ST, Berkeley, CA 94703": {
+  "matched_address": "3260 CALIFORNIA ST, BERKELEY, CA, 94703",
+  "lon": -122.276013172823,
+  "lat": 37.848609498456,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2222 TOBERMAN ST, Los Angeles, CA 90007": {
+  "matched_address": "2222 TOBERMAN ST, LOS ANGELES, CA, 90007",
+  "lon": -118.281203744904,
+  "lat": 34.034721924415,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "76-80 BRUEN ST, Newark, NJ 07105": {
+  "matched_address": "80 BRUEN ST, NEWARK, NJ, 07105",
+  "lon": -74.166930355672,
+  "lat": 40.730337311596,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "314 SEVENTH ST., Jersey City, NJ 07302": {
+  "matched_address": "314 7TH ST, JERSEY CITY, NJ, 07302",
+  "lon": -74.047955557321,
+  "lat": 40.726486238182,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1315 SPRUCE ST, Berkeley, CA 94709": {
+  "matched_address": "1315 SPRUCE ST, BERKELEY, CA, 94709",
+  "lon": -122.266249122343,
+  "lat": 37.883557224033,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1880 FULTON ST, San Francisco, CA": {
+  "matched_address": "1880 FULTON ST, SAN FRANCISCO, CA, 94117",
+  "lon": -122.447766948778,
+  "lat": 37.775695071124,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "686 S ARDMORE AVE, Los Angeles, CA 90005": {
+  "matched_address": "686 S ARDMORE AVE, LOS ANGELES, CA, 90005",
+  "lon": -118.301920522459,
+  "lat": 34.060247782434,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "206 BLOOMFIELD ST, Hoboken, NJ": {
+  "matched_address": "206 BLOOMFIELD ST, HOBOKEN, NJ, 07030",
+  "lon": -74.031363571985,
+  "lat": 40.738998730944,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "ST JAMES ST, Roxbury, MA 02119": null,
+ "GREENVILLE ST, Roxbury, MA 02119": null,
+ "4053 IDAHO ST, San Diego, CA 92104": {
+  "matched_address": "4053 IDAHO ST, SAN DIEGO, CA, 92104",
+  "lon": -117.133775905804,
+  "lat": 32.751323560417,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1336 BRUNNER ST, San Diego, CA 92110": {
+  "matched_address": "1336 BRUNNER ST, SAN DIEGO, CA, 92110",
+  "lon": -117.189895788824,
+  "lat": 32.769172247535,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "521-523 MARKET ST, Newark, NJ 07105": {
+  "matched_address": "523 MARKET ST, NEWARK, NJ, 07105",
+  "lon": -74.155856508272,
+  "lat": 40.732015014036,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "119 DAY ST, San Francisco, CA": {
+  "matched_address": "119 DAY ST, SAN FRANCISCO, CA, 94131",
+  "lon": -122.425132126354,
+  "lat": 37.742927740317,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1908 CALIFORNIA ST, Berkeley, CA 94703": {
+  "matched_address": "1908 CALIFORNIA ST, BERKELEY, CA, 94703",
+  "lon": -122.280023113182,
+  "lat": 37.872036512971,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "21 GUERRERO ST, San Francisco, CA": null,
+ "ST JAMES ST, Roxbury, MA": null,
+ "GREENVILLE ST, Roxbury, MA": null,
+ "1059 UNION ST, San Francisco, CA": {
+  "matched_address": "1059 UNION ST, SAN FRANCISCO, CA, 94133",
+  "lon": -122.416408067433,
+  "lat": 37.79947735291,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "3654 ARIZONA ST, San Diego, CA 92104": {
+  "matched_address": "3654 ARIZONA ST, SAN DIEGO, CA, 92104",
+  "lon": -117.1379712012,
+  "lat": 32.744723856404,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "10303 CAMINITO ALVAREZ, San Diego, CA 92126": {
+  "matched_address": "10303 CMT ALVAREZ, SAN DIEGO, CA, 92126",
+  "lon": -117.169286391696,
+  "lat": 32.9053438981,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "157-155 CLERK ST., Jersey City, NJ 07305": {
+  "matched_address": "155 CLERK ST, JERSEY CITY, NJ, 07305",
+  "lon": -74.075725799324,
+  "lat": 40.708921674003,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "923 GARDEN ST, Hoboken, NJ 07068": {
+  "matched_address": "923 GARDEN ST, HOBOKEN, NJ, 07030",
+  "lon": -74.029472700113,
+  "lat": 40.747908908406,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "70 DARCY ST, Newark, NJ 07202": {
+  "matched_address": "70 DARCY ST, NEWARK, NJ, 07105",
+  "lon": -74.149929644264,
+  "lat": 40.726005356196,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "265 22ND ST, San Diego, CA 92102": {
+  "matched_address": "265 22ND ST, SAN DIEGO, CA, 92102",
+  "lon": -117.143904241304,
+  "lat": 32.707989329138,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "4545 N 39TH ST, San Diego, CA 92116": {
+  "matched_address": "4545 39TH ST, SAN DIEGO, CA, 92116",
+  "lon": -117.110733157421,
+  "lat": 32.759875365223,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "91 JORDAN AVE., Jersey City, NJ 07081": {
+  "matched_address": "91 JORDAN AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.064895908212,
+  "lat": 40.72674257266,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "45 RAVINE AVE., Jersey City, NJ 07302": {
+  "matched_address": "45 RAVINE AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.049129869145,
+  "lat": 40.74028302667,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1632 RUSSELL ST, Berkeley, CA 94703": {
+  "matched_address": "1632 RUSSELL ST, BERKELEY, CA, 94703",
+  "lon": -122.275797862561,
+  "lat": 37.85541480374,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "3244 CLAIREMONT DR, San Diego, CA 92117": {
+  "matched_address": "3244 CLAIREMONT DR, SAN DIEGO, CA, 92117",
+  "lon": -117.195770657922,
+  "lat": 32.800141615463,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1677 BUSH ST, San Francisco, CA": {
+  "matched_address": "1677 BUSH ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.424817163952,
+  "lat": 37.788065631555,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "890 GREEN ST, San Francisco, CA": {
+  "matched_address": "890 GREEN ST, SAN FRANCISCO, CA, 94133",
+  "lon": -122.413748040152,
+  "lat": 37.798969157635,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "227 WILLOW AVE, Hoboken, NJ 07643": {
+  "matched_address": "227 WILLOW AVE, HOBOKEN, NJ, 07030",
+  "lon": -74.033923758593,
+  "lat": 40.739690854009,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "174 MT PROSPECT AVE, Newark, NJ 07107": {
+  "matched_address": "174 MT PROSPECT AVE, NEWARK, NJ, 07104",
+  "lon": -74.17546726324,
+  "lat": 40.757731471944,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 2
+ },
+ "257 14TH ST, San Francisco, CA": {
+  "matched_address": "257 14TH ST, SAN FRANCISCO, CA, 94103",
+  "lon": -122.419001453676,
+  "lat": 37.768275245554,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "2914 LARKIN ST, San Francisco, CA": {
+  "matched_address": "2914 LARKIN ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.421779262494,
+  "lat": 37.804747750317,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "45 Myrtle ST, Boston, MA 02114": {
+  "matched_address": "45 MYRTLE ST, BOSTON, MA, 02114",
+  "lon": -71.066075463637,
+  "lat": 42.359416672345,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "10214 FERNGLEN AVE, Los Angeles, CA 91042": {
+  "matched_address": "10214 FERNGLEN AVE, TUJUNGA, CA, 91042",
+  "lon": -118.294269681844,
+  "lat": 34.254405539147,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "240 BOWERS ST., Jersey City, NJ 07603": {
+  "matched_address": "240 BOWERS ST, JERSEY CITY, NJ, 07307",
+  "lon": -74.053172054328,
+  "lat": 40.749176716976,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "170 W Springfield ST, Boston, MA 02118": {
+  "matched_address": "170 W SPRINGFIELD ST, BOSTON, MA, 02118",
+  "lon": -71.079433474182,
+  "lat": 42.339468331482,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "4188 GREENBUSH AVE, Los Angeles, CA 91423": {
+  "matched_address": "4188 GREENBUSH AVE, SHERMAN OAKS, CA, 91423",
+  "lon": -118.426009923389,
+  "lat": 34.146796782796,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "14375 POLK ST, Los Angeles, CA 91342": {
+  "matched_address": "14375 POLK ST, SYLMAR, CA, 91342",
+  "lon": -118.446247129705,
+  "lat": 34.310760350581,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "4428 GRESHAM ST, San Diego, CA 92109": {
+  "matched_address": "4428 GRESHAM ST, SAN DIEGO, CA, 92109",
+  "lon": -117.244179056101,
+  "lat": 32.79763108496,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "319 SUMMIT AVE., Jersey City, NJ 07306": {
+  "matched_address": "319 SUMMIT AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.064026798734,
+  "lat": 40.726387646101,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1833 BERKELEY WAY, Berkeley, CA 94703": {
+  "matched_address": "1833 BERKELEY WAY, BERKELEY, CA, 94703",
+  "lon": -122.27465308516,
+  "lat": 37.87232876757,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "229-231 GRAFTON AVE, Newark, NJ 07003": {
+  "matched_address": "231 GRAFTON AVE, NEWARK, NJ, 07104",
+  "lon": -74.167287967397,
+  "lat": 40.778250739849,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "2209 GRAND AVE, San Diego, CA 92109": {
+  "matched_address": "2209 GRAND AVE, SAN DIEGO, CA, 92109",
+  "lon": -117.229073590912,
+  "lat": 32.80027114964,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1987 CALIFORNIA ST, San Francisco, CA": {
+  "matched_address": "1987 CALIFORNIA ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.426993113372,
+  "lat": 37.789718887946,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "95 WAYNE ST., Jersey City, NJ 07302": {
+  "matched_address": "95 WAYNE ST, JERSEY CITY, NJ, 07302",
+  "lon": -74.046863038788,
+  "lat": 40.719860194431,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "882 PAVONIA AVE., Jersey City, NJ": {
+  "matched_address": "882 PAVONIA AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.069855824873,
+  "lat": 40.734106488592,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "4957 CAHUENGA BLVD, Los Angeles, CA 91601": {
+  "matched_address": "4957 CAHUENGA BLVD, NORTH HOLLYWOOD, CA, 91601",
+  "lon": -118.361590637042,
+  "lat": 34.160498077424,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "221 SIP AVE., Jersey City, NJ 07009": {
+  "matched_address": "221 SIP AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.070139397713,
+  "lat": 40.731794725913,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1538 HENRY ST, Berkeley, CA 94709": {
+  "matched_address": "1538 HENRY ST, BERKELEY, CA, 94709",
+  "lon": -122.2705189327,
+  "lat": 37.879313015271,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "17106 CHATSWORTH ST   APT 0001, Los Angeles, CA 91344": {
+  "matched_address": "17106 CHATSWORTH ST, GRANADA HILLS, CA, 91344",
+  "lon": -118.505814381942,
+  "lat": 34.264737200693,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "4419 CLEVELAND AVE, San Diego, CA 92116": {
+  "matched_address": "4419 CLEVELAND AVE, SAN DIEGO, CA, 92116",
+  "lon": -117.149951913385,
+  "lat": 32.757581273133,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "21-23 Marion St, Cambridge, MA": {
+  "matched_address": "23 MARION ST, CAMBRIDGE, MA, 02141",
+  "lon": -71.088992232886,
+  "lat": 42.372408944103,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "10 CAMELOT CT, Brighton, MA 02135": {
+  "matched_address": "10 CAMELOT CT, BRIGHTON, MA, 02135",
+  "lon": -71.141330315149,
+  "lat": 42.349362810146,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "650 POST ST, San Francisco, CA": {
+  "matched_address": "650 POST ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.412614041685,
+  "lat": 37.787814500247,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "1307 COLUSA ST, San Diego, CA 92110": {
+  "matched_address": "1307 COLUSA ST, SAN DIEGO, CA, 92110",
+  "lon": -117.190773729749,
+  "lat": 32.768532440161,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "208 JEFFERSON ST, Hoboken, NJ 07030": {
+  "matched_address": "208 JEFFERSON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.037883549718,
+  "lat": 40.740157173654,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "7665 FOUNTAIN AVE, Los Angeles, CA 90046": {
+  "matched_address": "7665 W FOUNTAIN AVE, LOS ANGELES, CA, 90046",
+  "lon": -118.356732566622,
+  "lat": 34.094477803207,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "12 BLACKWOOD ST, Boston, MA 02115": {
+  "matched_address": "12 BLACKWOOD ST, BOSTON, MA, 02115",
+  "lon": -71.082683836307,
+  "lat": 42.34315888883,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "312-314 MT PROSPECT AVE, Newark, NJ 07109": {
+  "matched_address": "314 MT PROSPECT AVE, NEWARK, NJ, 07104",
+  "lon": -74.172382340313,
+  "lat": 40.762317125202,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 2
+ },
+ "1950 ADDISON ST, Berkeley, CA 94704": {
+  "matched_address": "1950 ADDISON ST, BERKELEY, CA, 94704",
+  "lon": -122.272637519825,
+  "lat": 37.870562012406,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "245 EUCLID AVE, San Diego, CA 92114": {
+  "matched_address": "245 EUCLID AVE, SAN DIEGO, CA, 92114",
+  "lon": -117.084936538347,
+  "lat": 32.706728960145,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1225 HYDE ST, San Francisco, CA": {
+  "matched_address": "1225 HYDE ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.417712027591,
+  "lat": 37.792202707791,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "720 W 27TH ST, Los Angeles, CA 90007": {
+  "matched_address": "720 W 27TH ST, LOS ANGELES, CA, 90007",
+  "lon": -118.27894463392,
+  "lat": 34.028044141305,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "14605 RAYEN ST, Los Angeles, CA 91402": {
+  "matched_address": "14605 RAYEN ST, PANORAMA CITY, CA, 91402",
+  "lon": -118.450479396041,
+  "lat": 34.231842925425,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "310 MONROE ST, Hoboken, NJ 07632": {
+  "matched_address": "310 MONROE ST, HOBOKEN, NJ, 07030",
+  "lon": -74.039361820557,
+  "lat": 40.741775604922,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "832 WILLOW AVE, Hoboken, NJ 07030": {
+  "matched_address": "832 WILLOW AVE, HOBOKEN, NJ, 07030",
+  "lon": -74.031844915269,
+  "lat": 40.747085607112,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "2969 SAN MARINO ST, Los Angeles, CA 90006": {
+  "matched_address": "2969 SAN MARINO ST, LOS ANGELES, CA, 90006",
+  "lon": -118.293871486247,
+  "lat": 34.05457350989,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "60-62 CAMBRIDGE AVE, Jersey City, NJ 07430": {
+  "matched_address": "62 CAMBRIDGE AVE, JERSEY CITY, NJ, 07307",
+  "lon": -74.048682819823,
+  "lat": 40.744904276955,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "225 25TH AV, San Francisco, CA": {
+  "matched_address": "225 25TH AVE, SAN FRANCISCO, CA, 94121",
+  "lon": -122.485184671551,
+  "lat": 37.78525700396,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "4042 FULTON ST, San Francisco, CA": {
+  "matched_address": "4042 FULTON ST, SAN FRANCISCO, CA, 94118",
+  "lon": -122.47502114247,
+  "lat": 37.773046725887,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "4017 ILLINOIS ST, San Diego, CA 92104": {
+  "matched_address": "4017 ILLINOIS ST, SAN DIEGO, CA, 92104",
+  "lon": -117.127623761555,
+  "lat": 32.750692356257,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "7014 LANEWOOD AVE, Los Angeles, CA 90028": {
+  "matched_address": "7014 LANEWOOD AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.341876805569,
+  "lat": 34.099151448276,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "3526 FAIRMOUNT AVE, San Diego, CA 92105": {
+  "matched_address": "3526 FAIRMOUNT AVE, SAN DIEGO, CA, 92105",
+  "lon": -117.101032546312,
+  "lat": 32.742658851729,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "231 COMMONWEALTH AV, Boston, MA 02116": {
+  "matched_address": "231 COMMONWEALTH AVE, BOSTON, MA, 02116",
+  "lon": -71.082259034359,
+  "lat": 42.351030509952,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "8790 VAN NUYS BLVD, Los Angeles, CA 91402": {
+  "matched_address": "8790 VAN NUYS BLVD, PANORAMA CITY, CA, 91402",
+  "lon": -118.450185423298,
+  "lat": 34.229751001697,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "610 COLUMBUS AV, Boston, MA 02118": {
+  "matched_address": "610 COLUMBUS AVE, BOSTON, MA, 02118",
+  "lon": -71.083459763098,
+  "lat": 42.339112790328,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "208 CLINTON ST, Hoboken, NJ 07030": {
+  "matched_address": "208 CLINTON ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035067789528,
+  "lat": 40.73966668696,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "94 NEPTUNE AVE., Jersey City, NJ": {
+  "matched_address": "94 NEPTUNE AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.094734510649,
+  "lat": 40.691942000511,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "338 CLINTON PL, Newark, NJ 08701": {
+  "matched_address": "338 CLINTON PL, NEWARK, NJ, 07112",
+  "lon": -74.215190276398,
+  "lat": 40.712312782686,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "151-153 LAFAYETTE ST, Newark, NJ 07105": {
+  "matched_address": "153 LAFAYETTE ST, NEWARK, NJ, 07105",
+  "lon": -74.16637215896,
+  "lat": 40.730765527611,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "7300 VALMONT ST, Los Angeles, CA 91042": {
+  "matched_address": "7300 VALMONT ST, TUJUNGA, CA, 91042",
+  "lon": -118.291114794412,
+  "lat": 34.252257110602,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1310 N LAS PALMAS AVE, Los Angeles, CA 90028": {
+  "matched_address": "1310 N LAS PALMAS AVE, LOS ANGELES, CA, 90028",
+  "lon": -118.336242443207,
+  "lat": 34.094610686343,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "11 Carlisle St, Cambridge, MA": {
+  "matched_address": "11 CARLISLE ST, CAMBRIDGE, MA, 02139",
+  "lon": -71.097785158487,
+  "lat": 42.372350092405,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "78 STEVENS AVE., Jersey City, NJ 07108": {
+  "matched_address": "78 STEVENS AVE, JERSEY CITY, NJ, 07305",
+  "lon": -74.087633111396,
+  "lat": 40.701284285212,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "8944 COLUMBUS AVE, Los Angeles, CA 91343": {
+  "matched_address": "8944 COLUMBUS AVE, NORTH HILLS, CA, 91343",
+  "lon": -118.465331558771,
+  "lat": 34.232706363083,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "2151 CHATSWORTH BLVD, San Diego, CA 92107": {
+  "matched_address": "2151 CHATSWORTH BLVD, SAN DIEGO, CA, 92107",
+  "lon": -117.228546774402,
+  "lat": 32.738822467011,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "1856 GREEN ST, San Francisco, CA": {
+  "matched_address": "1856 GREEN ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.429684738163,
+  "lat": 37.796928164046,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "202 SOUTH ST., Jersey City, NJ 07423": {
+  "matched_address": "202 SOUTH ST, JERSEY CITY, NJ, 07307",
+  "lon": -74.051069939161,
+  "lat": 40.750737802252,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "223-229 SHEPHARD AVE, Newark, NJ": {
+  "matched_address": "229 SHEPHARD AVE, NEWARK, NJ, 07112",
+  "lon": -74.211611863532,
+  "lat": 40.712390393489,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "1670 E 48TH PL, Los Angeles, CA 90011": {
+  "matched_address": "1670 E 48TH PL, LOS ANGELES, CA, 90011",
+  "lon": -118.243996855675,
+  "lat": 33.999307703621,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "735 11TH AV, San Francisco, CA": {
+  "matched_address": "735 11TH AVE, SAN FRANCISCO, CA, 94118",
+  "lon": -122.469251256406,
+  "lat": 37.774456141896,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "128 ST. PAULS AVE., Jersey City, NJ": {
+  "matched_address": "128 ST PAULS AVE, JERSEY CITY, NJ, 07306",
+  "lon": -74.05676729519,
+  "lat": 40.736518619808,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "4 BEECHWOOD ST, Dorchester, MA 02121": {
+  "matched_address": "4 BEECHWOOD ST, DORCHESTER, MA, 02121",
+  "lon": -71.074772762892,
+  "lat": 42.30507257807,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "2-98 DABNEY ST, Roxbury, MA 02119": {
+  "matched_address": "98 DABNEY ST, ROXBURY, MA, 02119",
+  "lon": -71.084731974369,
+  "lat": 42.324057161703,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "115 NORWAY ST, Boston, MA 02115": {
+  "matched_address": "115 NORWAY ST, BOSTON, MA, 02115",
+  "lon": -71.088829313111,
+  "lat": 42.345351761852,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "24 ST ALBANS RD, Boston, MA 02115": {
+  "matched_address": "24 ST ALBANS RD, BOSTON, MA, 02115",
+  "lon": -71.106997184859,
+  "lat": 42.333878417918,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "13 Shepard St, Cambridge, MA": {
+  "matched_address": "13 SHEPARD ST, CAMBRIDGE, MA, 02138",
+  "lon": -71.121015754447,
+  "lat": 42.381661514871,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "141 Oxford St, Cambridge, MA": {
+  "matched_address": "141 OXFORD ST, CAMBRIDGE, MA, 02140",
+  "lon": -71.116210705332,
+  "lat": 42.385287646163,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "2701 SHATTUCK AVE, Berkeley, CA 94705": {
+  "matched_address": "2701 SHATTUCK AVE, BERKELEY, CA, 94705",
+  "lon": -122.266948509568,
+  "lat": 37.860021095027,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1919 CURTIS ST, Berkeley, CA 94702": {
+  "matched_address": "1919 CURTIS ST, BERKELEY, CA, 94702",
+  "lon": -122.289620577483,
+  "lat": 37.870650504933,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Alameda County"
+  ],
+  "place": [
+   "Berkeley city"
+  ],
+  "county_subdivision": [
+   "Berkeley CCD"
+  ],
+  "n_matches": 1
+ },
+ "332-334 GARDEN ST, Hoboken, NJ 07604": {
+  "matched_address": "334 GARDEN ST, HOBOKEN, NJ, 07030",
+  "lon": -74.031817207369,
+  "lat": 40.74074767044,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "321 WILLOW AVE, Hoboken, NJ 07030": {
+  "matched_address": "321 WILLOW AVE, HOBOKEN, NJ, 07030",
+  "lon": -74.033572724402,
+  "lat": 40.740882326316,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "20 Phillips ST, Boston, MA 02114": {
+  "matched_address": "20 PHILLIPS ST, BOSTON, MA, 02114",
+  "lon": -71.067296757754,
+  "lat": 42.360298905905,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "3438 MCKINLEY AVE, Los Angeles, CA 90011": {
+  "matched_address": "3438 MCKINLEY AVE, LOS ANGELES, CA, 90011",
+  "lon": -118.260382953065,
+  "lat": 34.012650923784,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "361 FIRST ST, Hoboken, NJ 07030": {
+  "matched_address": "361 1ST ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035828506414,
+  "lat": 40.738241528429,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "26-28 COTTAGE ST, Newark, NJ 07840": {
+  "matched_address": "28 COTTAGE ST, NEWARK, NJ, 07102",
+  "lon": -74.171964638319,
+  "lat": 40.728822422354,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "2250 MISSION ST, San Francisco, CA": {
+  "matched_address": "2250 MISSION ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.419353294864,
+  "lat": 37.761016013708,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "3860 CHEROKEE AVE, San Diego, CA 92104": {
+  "matched_address": "3860 CHEROKEE AVE, SAN DIEGO, CA, 92104",
+  "lon": -117.114420057856,
+  "lat": 32.748446614415,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "12948 MOORPARK ST, Los Angeles, CA 91604": {
+  "matched_address": "12948 MOORPARK ST, STUDIO CITY, CA, 91604",
+  "lon": -118.415275590675,
+  "lat": 34.150301392175,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "4046 N 43RD ST, San Diego, CA 92105": {
+  "matched_address": "4046 43RD ST, SAN DIEGO, CA, 92105",
+  "lon": -117.102033252477,
+  "lat": 32.750481775488,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "536 LEAVENWORTH ST, San Francisco, CA": {
+  "matched_address": "536 LEAVENWORTH ST, SAN FRANCISCO, CA, 94109",
+  "lon": -122.414634028725,
+  "lat": 37.786028326648,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Downtown-Northeast Neighborhoods-Treasure Island CCD"
+  ],
+  "n_matches": 1
+ },
+ "101 CLIFTON PL., Jersey City, NJ": {
+  "matched_address": "101 CLIFTON PL, JERSEY CITY, NJ, 07304",
+  "lon": -74.06487503221,
+  "lat": 40.721027897402,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "1580 MARKET ST, San Francisco, CA": {
+  "matched_address": "1580 MARKET ST, SAN FRANCISCO, CA, 94102",
+  "lon": -122.420119239496,
+  "lat": 37.77458855478,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Western Addition-Buena Vista-Eureka Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "1801 08TH AV, San Francisco, CA": null,
+ "296-302 Western Ave, Cambridge, MA": {
+  "matched_address": "302 WESTERN AVE, CAMBRIDGE, MA, 02139",
+  "lon": -71.112809787533,
+  "lat": 42.364518126675,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Middlesex County"
+  ],
+  "place": [
+   "Cambridge city"
+  ],
+  "county_subdivision": [
+   "Cambridge city"
+  ],
+  "n_matches": 1
+ },
+ "2280 MISSION ST, San Francisco, CA": {
+  "matched_address": "2280 MISSION ST, SAN FRANCISCO, CA, 94110",
+  "lon": -122.419309809634,
+  "lat": 37.760560895514,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Mission-Bernal CCD"
+  ],
+  "n_matches": 1
+ },
+ "2118 FILLMORE ST, San Francisco, CA": {
+  "matched_address": "2118 FILLMORE ST, SAN FRANCISCO, CA, 94115",
+  "lon": -122.433810595937,
+  "lat": 37.789124926129,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "197 BEACON ST, Boston, MA 02116": {
+  "matched_address": "197 BEACON ST, BOSTON, MA, 02116",
+  "lon": -71.076768182377,
+  "lat": 42.354230756113,
+  "state": [
+   "Massachusetts"
+  ],
+  "county": [
+   "Suffolk County"
+  ],
+  "place": [
+   "Boston city"
+  ],
+  "county_subdivision": [
+   "Boston city"
+  ],
+  "n_matches": 1
+ },
+ "204 GRAND ST, Hoboken, NJ": {
+  "matched_address": "204 GRAND ST, HOBOKEN, NJ, 07030",
+  "lon": -74.036041272823,
+  "lat": 40.739786868515,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "526 ADAMS ST, Hoboken, NJ 07030": {
+  "matched_address": "526 ADAMS ST, HOBOKEN, NJ, 07030",
+  "lon": -74.035830171347,
+  "lat": 40.743676400471,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Hoboken city"
+  ],
+  "county_subdivision": [
+   "Hoboken city"
+  ],
+  "n_matches": 1
+ },
+ "37 IRVING ST, Newark, NJ 07104": {
+  "matched_address": "37 IRVING ST, NEWARK, NJ, 07104",
+  "lon": -74.158667478138,
+  "lat": 40.778727063623,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "800 S HARVARD BLVD, Los Angeles, CA 90005": {
+  "matched_address": "800 S HARVARD BLVD, LOS ANGELES, CA, 90005",
+  "lon": -118.304091662787,
+  "lat": 34.057623861111,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "Los Angeles CCD"
+  ],
+  "n_matches": 1
+ },
+ "4450 GEARY BL, San Francisco, CA": {
+  "matched_address": "4450 GEARY BLVD, SAN FRANCISCO, CA, 94118",
+  "lon": -122.466976349979,
+  "lat": 37.781029854011,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "2641 FRANKLIN ST, San Francisco, CA": {
+  "matched_address": "2641 FRANKLIN ST, SAN FRANCISCO, CA, 94123",
+  "lon": -122.425776460433,
+  "lat": 37.798725772954,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Francisco County"
+  ],
+  "place": [
+   "San Francisco city"
+  ],
+  "county_subdivision": [
+   "Richmond-Presidio-Marina CCD"
+  ],
+  "n_matches": 1
+ },
+ "230 VAN HORNE ST., Jersey City, NJ": {
+  "matched_address": "230 VAN HORNE ST, JERSEY CITY, NJ, 07304",
+  "lon": -74.063078920845,
+  "lat": 40.713022199008,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Hudson County"
+  ],
+  "place": [
+   "Jersey City city"
+  ],
+  "county_subdivision": [
+   "Jersey City city"
+  ],
+  "n_matches": 1
+ },
+ "512 32ND ST, San Diego, CA 92102": {
+  "matched_address": "512 32ND ST, SAN DIEGO, CA, 92102",
+  "lon": -117.125336741291,
+  "lat": 32.710782090084,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "3750 29TH ST, San Diego, CA 92104": {
+  "matched_address": "3750 29TH ST, SAN DIEGO, CA, 92104",
+  "lon": -117.131053086987,
+  "lat": 32.74637529596,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "San Diego County"
+  ],
+  "place": [
+   "San Diego city"
+  ],
+  "county_subdivision": [
+   "San Diego CCD"
+  ],
+  "n_matches": 1
+ },
+ "684-686 SUMMER AVE, Newark, NJ 07644": {
+  "matched_address": "686 SUMMER AVE, NEWARK, NJ, 07104",
+  "lon": -74.163386701052,
+  "lat": 40.775387981092,
+  "state": [
+   "New Jersey"
+  ],
+  "county": [
+   "Essex County"
+  ],
+  "place": [
+   "Newark city"
+  ],
+  "county_subdivision": [
+   "Newark city"
+  ],
+  "n_matches": 1
+ },
+ "8811 BURNET AVE, Los Angeles, CA 91343": {
+  "matched_address": "8811 BURNET AVE, NORTH HILLS, CA, 91343",
+  "lon": -118.463342888059,
+  "lat": 34.230253637086,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ },
+ "8519 WILLIS AVE, Los Angeles, CA 91402": {
+  "matched_address": "8519 WILLIS AVE, PANORAMA CITY, CA, 91402",
+  "lon": -118.455356959313,
+  "lat": 34.225076986185,
+  "state": [
+   "California"
+  ],
+  "county": [
+   "Los Angeles County"
+  ],
+  "place": [
+   "Los Angeles city"
+  ],
+  "county_subdivision": [
+   "San Fernando Valley CCD"
+  ],
+  "n_matches": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "key": "3dd2091529ad9de3e5b099f06f7486d3d0b18fe2f0a20b7560d149723305c135",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D031:0",
+ "created_at": "2026-10-03T19:49:26+00:00",
+ "text": "{\"rules\":[],\"notes\":\"D031 describes Cambridge Municipal Code Chapter 8.71 (Tenants Rights and Resources Notification Ordinance). It only requires landlords to give tenants an informational Guide at the start of a tenancy and when termination steps (e.g. Notice to Quit, Summary Process) begin, with a $300/day fine for violations. It does not set rent increase limits, restrict evictions to listed causes (the page says it does not prevent eviction), set security deposit rules, cap application or screening fees, restrict screening criteria, or address algorithmic rent setting. Because it is a notification requirement outside the six categories, no in-scope rule is extracted.\"}"
+}

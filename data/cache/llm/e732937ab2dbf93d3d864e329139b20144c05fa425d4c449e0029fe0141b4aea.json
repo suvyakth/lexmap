@@ -1,0 +1,8 @@
+{
+ "key": "e732937ab2dbf93d3d864e329139b20144c05fa425d4c449e0029fe0141b4aea",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D013:0",
+ "created_at": "2026-10-03T19:40:12+00:00",
+ "text": "{\"rules\": [], \"notes\": \"D013 describes Boston's Housing Stability Notification Act. It requires landlords to give tenants a Notice of Tenants' Rights and Resources along with a notice to quit or non-renewal notice, and to submit copies to the city, with fines for violations. It does not limit the grounds for ending a tenancy, require relocation assistance, or tie the notice to any just-cause limit, so it falls outside the six categories. The page contains no rent increase limits, security deposit rules, application fee caps, screening restrictions or algorithmic pricing rules.\"}"
+}

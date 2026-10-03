@@ -1,0 +1,8 @@
+{
+ "key": "44791d581ccbf199a0a342c6ac082b5ed542d98437ff5dd3ee3451739057367c",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D058:0",
+ "created_at": "2026-10-03T19:50:02+00:00",
+ "text": "{\"rules\":[],\"notes\":\"M.G.L. c. 186, § 31 only requires that a notice to quit for nonpayment of rent be accompanied by a state-developed form. The form must include repayment agreements, rental assistance information, court rules and the statement 'THIS NOTICE TO QUIT IS NOT AN EVICTION.' Courts may not accept a summary process filing without proof the form was delivered. This is a procedural notice requirement, not a limit on the grounds for ending a tenancy, and it is not tied to any such limit. It also gives no rent increase limits, coverage or exemptions, deposit rules, fee caps, screening restrictions or algorithmic pricing rules. No record fits the six categories, so none is emitted.\"}"
+}

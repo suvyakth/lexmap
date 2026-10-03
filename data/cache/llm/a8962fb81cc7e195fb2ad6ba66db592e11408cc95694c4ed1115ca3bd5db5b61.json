@@ -1,0 +1,8 @@
+{
+ "key": "a8962fb81cc7e195fb2ad6ba66db592e11408cc95694c4ed1115ca3bd5db5b61",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D050:0",
+ "created_at": "2026-10-03T19:49:51+00:00",
+ "text": "{\"rules\":[],\"notes\":\"M.G.L. c. 186, § 11 only sets the 14-day written notice to quit for nonpayment of rent under a written lease. It also lets the tenant cure by paying the rent due, with interest and costs, and requires a continuance of at least seven days when government payment delays caused the nonpayment. It does not limit terminations to a list of causes, does not provide relocation assistance, and does not address rent increase limits, security deposits, application fees, screening restrictions, or algorithmic rent setting. It is an ordinary nonpayment procedure, not a just-cause eviction rule, so there is no in-scope rule to record.\"}"
+}

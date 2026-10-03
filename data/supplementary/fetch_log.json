@@ -1,0 +1,107 @@
+[
+ {
+  "doc_id": "D002",
+  "status": "fetched",
+  "chars": 12833
+ },
+ {
+  "doc_id": "D015",
+  "status": "fetched",
+  "chars": 3704
+ },
+ {
+  "doc_id": "D017",
+  "status": "fetched",
+  "chars": 6085
+ },
+ {
+  "doc_id": "D018",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D019",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D020",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D021",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D028",
+  "status": "fetched",
+  "chars": 8763
+ },
+ {
+  "doc_id": "D030",
+  "status": "http 429 (skipped)"
+ },
+ {
+  "doc_id": "D035",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D037",
+  "status": "fetched",
+  "chars": 12833
+ },
+ {
+  "doc_id": "D044",
+  "status": "fetched",
+  "chars": 5639
+ },
+ {
+  "doc_id": "D054",
+  "status": "fetched",
+  "chars": 7253
+ },
+ {
+  "doc_id": "D055",
+  "status": "fetched",
+  "chars": 11368
+ },
+ {
+  "doc_id": "D059",
+  "status": "fetched",
+  "chars": 3590
+ },
+ {
+  "doc_id": "D060",
+  "status": "fetched",
+  "chars": 2712
+ },
+ {
+  "doc_id": "D061",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D062",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D063",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D064",
+  "status": "http 403 (skipped)"
+ },
+ {
+  "doc_id": "D077",
+  "status": "fetched",
+  "chars": 24860
+ },
+ {
+  "doc_id": "D086",
+  "status": "fetched",
+  "chars": 5494
+ },
+ {
+  "doc_id": "D087",
+  "status": "fetched",
+  "chars": 3837
+ }
+]

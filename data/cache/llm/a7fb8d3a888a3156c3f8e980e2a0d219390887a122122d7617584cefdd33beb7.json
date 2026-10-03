@@ -1,0 +1,8 @@
+{
+ "key": "a7fb8d3a888a3156c3f8e980e2a0d219390887a122122d7617584cefdd33beb7",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D045:0",
+ "created_at": "2026-10-03T19:49:38+00:00",
+ "text": "{\"rules\":[{\"jurisdiction\":\"MA\",\"level\":\"state\",\"category\":\"algorithmic_rent_setting\",\"status\":\"pending\",\"title\":\"H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market\",\"requirement\":\"The document gives only the bill's title, which indicates it aims to prevent algorithmic rent fixing in the rental housing market. No operative text, prohibitions, definitions or penalties are provided. The bill is shown in the House Committee on Ways and Means with no sign of enactment.\",\"key_value\":null,\"coverage_conditions\":null,\"exemptions\":null,\"coverage_logic\":{\"covers\":null,\"exempt\":null},\"subject\":\"landlord\",\"interaction\":null,\"yields_to_local\":false,\"preempts_local\":false,\"effective_date\":null,\"effective_rule\":null,\"enacted_date\":null,\"end_date\":null,\"penalty\":null,\"citation\":\"Mass. H.5222 (194th Gen. Ct.)\",\"quoted_span\":\"An Act relative to preventing algorithmic rent fixing in the rental housing market\",\"supporting_spans\":[],\"confidence\":0.3,\"conflict_note\":null}],\"notes\":\"The page is a bill-tracking stub showing only the title, the committee (House Ways and Means), and a count of 3 actions. It contains no operative text, so the record rests on the title and a pending status inferred from the committee stage. Details such as coverage, penalties and dates are unsupported and left null. No other in-scope categories are addressed.\"}"
+}

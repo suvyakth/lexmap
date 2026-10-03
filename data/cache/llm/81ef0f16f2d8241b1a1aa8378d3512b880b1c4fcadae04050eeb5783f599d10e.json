@@ -1,0 +1,8 @@
+{
+ "key": "81ef0f16f2d8241b1a1aa8378d3512b880b1c4fcadae04050eeb5783f599d10e",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D049:1",
+ "created_at": "2026-10-03T19:40:58+00:00",
+ "text": "{\"rules\":[],\"notes\":\"Part 2 of 2 of M.G.L. c. 151B, § 4 contains only provisions on age-based credit practices, employment discrimination (handicap, sexual harassment, retirement, genetic information, record-keeping), and a sexual-harassment prohibition for housing providers (subsection 18). None of these fall within the six categories (rent increase limits, just cause eviction, security deposits, application/screening fees, screening restrictions on criminal history, source of income or credit, algorithmic rent setting). Subsection 18 is general anti-discrimination (sexual harassment of tenants), not a screening-criteria rule, so it is excluded.\"}"
+}

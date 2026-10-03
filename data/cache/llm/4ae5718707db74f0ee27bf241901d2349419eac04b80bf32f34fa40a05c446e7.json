@@ -1,0 +1,8 @@
+{
+ "key": "4ae5718707db74f0ee27bf241901d2349419eac04b80bf32f34fa40a05c446e7",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D014:0",
+ "created_at": "2026-10-03T19:40:11+00:00",
+ "text": "{\"rules\":[],\"notes\":\"D014 describes Boston's Housing Stability Notification Act (effective 2020-11-06). It requires landlords to give tenants a Notice of Tenants' Rights and Resources with a Notice to Quit or non-renewal, and to send a copy to the Office of Housing Stability. It does not limit the causes for which a tenancy may be ended, and it sets no relocation assistance. It is a procedural notice-of-resources rule, not a just-cause eviction rule. It also says nothing on rent increase limits, security deposits, application or screening fees, screening restrictions, or algorithmic rent setting, so there is no in-scope rule to record.\"}"
+}

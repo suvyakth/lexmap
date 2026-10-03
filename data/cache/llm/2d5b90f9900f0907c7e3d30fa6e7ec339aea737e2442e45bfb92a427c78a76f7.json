@@ -1,0 +1,8 @@
+{
+ "key": "2d5b90f9900f0907c7e3d30fa6e7ec339aea737e2442e45bfb92a427c78a76f7",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D051:0",
+ "created_at": "2026-10-03T19:49:51+00:00",
+ "text": "{\"rules\":[],\"notes\":\"M.G.L. c. 186, § 12 only sets notice periods for ending an estate at will: three months' notice, or the rent-payment interval or 30 days if that is longer; and 14 days' notice to quit for nonpayment, with a 10-day right to cure and a required notice statement. It does not limit terminations to listed causes, so it is not a just-cause eviction rule. It states nothing on rent increase limits, security deposits, application or screening fees, screening restrictions or algorithmic rent setting. No in-scope rule is present.\"}"
+}

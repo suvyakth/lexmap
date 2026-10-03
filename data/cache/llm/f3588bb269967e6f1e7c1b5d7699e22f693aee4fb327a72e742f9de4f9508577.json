@@ -1,0 +1,8 @@
+{
+ "key": "f3588bb269967e6f1e7c1b5d7699e22f693aee4fb327a72e742f9de4f9508577",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:Berkeley, CA:security_deposits",
+ "created_at": "2026-10-03T19:52:28+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\"],\"primary\":\"c1\",\"title\":\"Berkeley Rent Ordinance security deposit interest\",\"requirement\":\"For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year. If the tenant moves out before the end of the year, the landlord must pay a prorated amount.\",\"key_value\":\"Interest paid annually, prorated on move-out; applies to fully and partially covered units, not exempt units\",\"status\":\"in_force\",\"effective_date\":null,\"end_date\":null,\"citation\":\"Berkeley Rent Stabilization and Eviction for Just Cause Ordinance\",\"coverage_conditions\":\"Fully covered units: most multifamily units built before 1980, single-family homes with tenancies that began before 1996, and rooming houses. Partially covered units: new construction after June 1980, single-family homes with tenancies beginning on or after January 1, 1996, and most condominiums.\",\"exemptions\":\"Exempt units are not covered. These include certain federally subsidized units (Section 202, Section 811, some HUD-insured projects), 'Golden Duplex' units, units where the owner shares a kitchen or bath, certain ADU properties with owner occupancy, university rental units such as dormitories, and nonprofit cooperatives.\",\"coverage_from\":\"c1\",\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

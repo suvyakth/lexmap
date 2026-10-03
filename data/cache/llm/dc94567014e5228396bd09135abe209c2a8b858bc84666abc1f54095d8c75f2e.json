@@ -1,0 +1,8 @@
+{
+ "key": "dc94567014e5228396bd09135abe209c2a8b858bc84666abc1f54095d8c75f2e",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:MA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:46:13+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\"],\"primary\":\"c1\",\"title\":\"H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market\",\"requirement\":\"Pending Massachusetts House bill intended to prevent algorithmic rent fixing in the rental housing market. The source gives only the title and no operative text, so its prohibitions, definitions and penalties are not stated.\",\"key_value\":null,\"status\":\"pending\",\"effective_date\":null,\"end_date\":null,\"citation\":\"Mass. H.5222 (194th Gen. Ct.)\",\"coverage_conditions\":null,\"exemptions\":null,\"conflict_note\":null},{\"members\":[\"c2\",\"c3\"],\"primary\":\"c2\",\"title\":\"An Act prohibiting algorithmic rent setting (Mass. S.2983)\",\"requirement\":\"Pending Massachusetts Senate bill that would prohibit algorithmic rent setting. It consolidates petitions S.994 and S.1016, was reported by the Senate Committee on Housing on March 12, 2026, and is before the Senate Committee on Ways and Means. No operative text is provided.\",\"key_value\":null,\"status\":\"pending\",\"effective_date\":null,\"end_date\":null,\"citation\":\"Mass. S.2983 (194th Gen. Ct.)\",\"coverage_conditions\":\"Not stated in the source documents.\",\"exemptions\":null,\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

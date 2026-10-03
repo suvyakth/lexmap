@@ -1,0 +1,8 @@
+{
+ "key": "81287ef377e06397770501f5fd9233b2d3c2bd0054634792588e3d2247bcf9e4",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "extract:D031:0",
+ "created_at": "2026-10-03T19:44:09+00:00",
+ "text": "{\"rules\":[],\"notes\":\"The document describes Cambridge Municipal Code Chapter 8.71 (Tenants Rights and Resources Notification Ordinance), which only requires landlords to give tenants an informational guide at the start of a tenancy and when steps to terminate it are taken. It expressly says it does not prevent evictions ('This Ordinance does not prevent a landlord from initiating an eviction action if otherwise allowed by law'), so it does not limit eviction to listed causes and is not a just_cause_eviction rule. It sets no rent increase limits, security deposit rules, application or screening fee caps, screening restrictions, or algorithmic rent-setting rules. The only penalty mentioned ($300 per day) applies to the notification requirement, which is outside the six categories.\"}"
+}
