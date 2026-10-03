@@ -1,5 +1,7 @@
 # Lexmap: Rental Housing Law Navigator
 
+[![reproduce](https://github.com/suvyakth/lexmap/actions/workflows/reproduce.yml/badge.svg)](https://github.com/suvyakth/lexmap/actions/workflows/reproduce.yml)
+
 **Which housing rules apply at this address today, and what is about to change?**
 Lexmap reads a corpus of real state and city housing law and turns it into executable rules. It answers any of the 500 sample addresses (or any address you type) in California, New Jersey and Massachusetts, for any date. Every answer quotes the law it comes from.
 
@@ -28,6 +30,7 @@ The participant pack we received was labelled `participant-final-no-hour16 … n
 | `applies` answers whose quote is in the official corpus text | 96% (3,375 / 3,512). The rest come from organiser-listed secondary pages |
 | Browser engine vs Python engine | 2,000 / 2,000 identical answers (500 addresses × 4 dates) |
 | Unit + end-to-end tests | 129 / 129 (`python -m unittest discover -s tests`) |
+| Clean Linux rebuild in CI from cached model calls | outputs byte-identical to the committed submission ([workflow](.github/workflows/reproduce.yml)) |
 
 ## What makes it different
 
