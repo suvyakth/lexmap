@@ -41,6 +41,7 @@ def export_rules(rules: list[dict], explain: dict) -> dict:
             "source_type": r.get("source_type"),
             "coverage_logic": r.get("coverage_logic"),
             "subject": r.get("subject", "landlord"),
+            "source_conflict": bool(r.get("source_conflict")),
             "yields_to": r.get("yields_to") or [],
             "conflicts_with": r.get("conflicts_with") or [],
             "supporting_spans": [s["text"] for s in r["verified_spans"][1:]],

@@ -1,0 +1,8 @@
+{
+ "key": "28ff4baa4d901e2b6218f18618ceeb52e7a1e83b87ffd87bf0eb15d09d771cb3",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:application_screening_fees",
+ "created_at": "2026-10-03T20:00:05+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement text runs to five sentences, which is too long. It mixes in agency implementation details and refund mechanics, and it states the CPI start date only relatively. The law was approved January 20, 2026, so the first CPI adjustment applies from January 1, 2027. As of 2026-10-01 the cap is still $50. The requirement should be shortened to 1-2 plain sentences.\", \"The key_value should show the current $50 cap and when CPI adjustments begin.\"], \"fix\": {\"requirement\": \"A landlord or the landlord's agent may not charge an application or similar fee above $50 to apply to lease or sublease a residential rental unit; violations carry penalties of up to $500, $750, and then $1,000 per offense, with the overcharge refunded to the applicant. Starting January 1, 2027, the cap is adjusted each year by any increase in the New York-Northern New Jersey-Long Island CPI, and the Division of Consumer Affairs publishes the current limit.\", \"key_value\": \"$50 maximum application fee (CPI-adjusted annually starting January 1, 2027)\"}}\n```"
+}

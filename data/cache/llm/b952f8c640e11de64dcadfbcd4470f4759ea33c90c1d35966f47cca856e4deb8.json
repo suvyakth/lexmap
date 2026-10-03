@@ -1,0 +1,8 @@
+{
+ "key": "b952f8c640e11de64dcadfbcd4470f4759ea33c90c1d35966f47cca856e4deb8",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:just_cause_eviction",
+ "created_at": "2026-10-03T19:59:26+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement's second sentence ('the higher of the State Housing Crisis Act amount or the City amount') describes Los Angeles's rule from the LAHD bulletin. It is not the state-law requirement. In a statewide record it implies a city relocation amount exists in every jurisdiction. That interaction belongs in the interaction field, which already covers it, so the requirement should state only the state-law obligation.\"], \"fix\": {\"requirement\": \"Lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new housing construction must receive relocation benefits consistent with Gov. Code § 7260 et seq. Where a local ordinance also requires relocation assistance, the higher amount applies.\"}}\n```"
+}

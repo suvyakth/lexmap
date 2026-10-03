@@ -40,7 +40,7 @@ class Trace:
     def missing(self) -> list[str]:
         out = []
         for l in self.leaves:
-            if l["result"] is None and l["field"] not in out:
+            if l["result"] is None and not l.get("irrelevant") and l["field"] not in out:
                 out.append(l["field"])
         return out
 
@@ -179,12 +179,20 @@ def evaluate(p, facts: dict, as_of: date, trace: Trace | None = None) -> bool | 
     trace = trace if trace is not None else Trace()
     if p is None:
         return T
-    if "all" in p:
-        vals = [evaluate(q, facts, as_of, trace) for q in p["all"]]
-        return F if F in vals else (T if all(v is T for v in vals) else U)
-    if "any" in p:
-        vals = [evaluate(q, facts, as_of, trace) for q in p["any"]]
-        return T if T in vals else (F if all(v is F for v in vals) else U)
+    if "all" in p or "any" in p:
+        start = len(trace.leaves)
+        if "all" in p:
+            vals = [evaluate(q, facts, as_of, trace) for q in p["all"]]
+            res = F if F in vals else (T if all(v is T for v in vals) else U)
+        else:
+            vals = [evaluate(q, facts, as_of, trace) for q in p["any"]]
+            res = T if T in vals else (F if all(v is F for v in vals) else U)
+        if res is not U:
+            # unknown sub-conditions that did not change the outcome are not "missing facts"
+            for l in trace.leaves[start:]:
+                if l["result"] is None:
+                    l["irrelevant"] = True
+        return res
     if "not" in p:
         v = evaluate(p["not"], facts, as_of, trace)
         return None if v is None else (not v)

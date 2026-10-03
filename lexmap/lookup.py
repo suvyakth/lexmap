@@ -174,7 +174,7 @@ class Engine:
 def _facts_text(t: Trace, facts: dict) -> str:
     seen, parts = set(), []
     for l in t.leaves:
-        if l["result"] is None:
+        if l["result"] is None and not l.get("irrelevant"):
             d = describe_leaf(l, facts)
             if d not in seen:
                 seen.add(d)

@@ -1,0 +1,8 @@
+{
+ "key": "acd62b5f2d23d888d02fbcf45bd5a97ec134a6856773a9d72de3bf4c9c252389",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:just_cause_eviction",
+ "created_at": "2026-10-03T20:00:03+00:00",
+ "text": "{\"ok\": true}"
+}

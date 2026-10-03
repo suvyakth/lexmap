@@ -258,7 +258,7 @@ def wire_relations(rules: list[dict]) -> None:
             r["overrides"] = sorted(set(r["overrides"]))
 
 
-def run() -> list[dict]:
+def run(skip_qa: bool = False) -> list[dict]:
     res = json.loads((config.BUILD / "candidates.json").read_text(encoding="utf-8"))
     groups = defaultdict(list)
     for d in res:
@@ -277,6 +277,12 @@ def run() -> list[dict]:
         for rs, dr in ex.map(work, sorted(groups)):
             rules += rs
             dropped += dr
+    if not skip_qa:
+        from . import qa
+        print("     legal QA pass over", len(rules), "rules ...", flush=True)
+        qa.run(rules)
+        for r in rules:
+            r["status"] = _status_from_dates(r, config.DEFAULT_AS_OF)
     assign_ids(rules)
     for r in rules:   # conflicts that come from the sources themselves (vs. preemption wiring below)
         r["source_conflict"] = bool(r.get("conflict_flag"))

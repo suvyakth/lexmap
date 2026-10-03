@@ -93,7 +93,7 @@ RECONCILE_SYSTEM = (
 RECONCILE_TEMPLATE = """Below are candidate rule records for jurisdiction {jurisdiction}, category {category}, extracted independently from different source documents. Several may describe the SAME law. Official sources (statute/ordinance/government pages) outrank law-firm and news pages.
 
 Your job:
-1. Group candidates that describe the same enacting law (same statute/ordinance/bill). Different laws stay separate (e.g. a city ordinance vs. a state statute, or two different bills).
+1. Group candidates that describe the same enacting law (same statute/ordinance/bill). Sections of one code chapter or ordinance count as the same law here (e.g. S.F. Admin. Code § 37.9 and § 37.9C are both the San Francisco Rent Ordinance; a relocation-payment schedule belongs with the eviction ordinance that requires it) unless their building coverage clearly differs. Different laws stay separate (e.g. a city ordinance vs. a state statute, two different bills, or two different city ordinances such as a rent stabilization ordinance and a separate just-cause ordinance with different coverage).
 2. For each group choose the primary candidate: prefer official sources, operative statutory text, and the most complete record.
 3. Produce corrected values only where the group's evidence clearly supports them: title, requirement (1-2 plain sentences), key_value, status (as of {as_of}: in_force / not_yet_effective / pending / failed), effective_date (ISO), end_date, citation (official form), coverage_conditions, exemptions.
 4. If candidates in a group disagree on an effective date, a key value or status, keep the best-supported value and write a conflict_note naming both values and their doc ids. Do not invent a conflict where values agree.

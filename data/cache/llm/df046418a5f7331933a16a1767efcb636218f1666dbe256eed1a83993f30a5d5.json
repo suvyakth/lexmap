@@ -1,0 +1,8 @@
+{
+ "key": "df046418a5f7331933a16a1767efcb636218f1666dbe256eed1a83993f30a5d5",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:CA:rent_increase_limits",
+ "created_at": "2026-10-03T19:59:25+00:00",
+ "text": "{\"ok\": true}"
+}

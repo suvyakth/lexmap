@@ -1,0 +1,8 @@
+{
+ "key": "656f7301562106917606e9e28787e66782f2c79fcfcf4b2174c1bf7f14531dd5",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:San Francisco, CA:just_cause_eviction",
+ "created_at": "2026-10-03T19:58:48+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\",\"c3\"],\"primary\":\"c1\",\"title\":\"San Francisco Rent Ordinance just cause eviction requirements\",\"requirement\":\"A landlord of a unit covered by the Rent Ordinance may evict only for one of the just causes listed in Section 37.9(a), and that cause must be the dominant motive; expiration of a rental agreement or a change in ownership is not just cause. Evictions for owner or relative move-in, demolition or permanent removal of a unit, temporary capital improvement work, or substantial rehabilitation also require relocation payments under Section 37.9C.\",\"key_value\":\"17 just cause reasons under Section 37.9(a)\",\"status\":\"in_force\",\"effective_date\":null,\"end_date\":null,\"citation\":\"S.F. Admin. Code §§ 37.9, 37.9C\",\"coverage_conditions\":\"Rental units covered by the Rent Ordinance. Some tenancies exempt from the rent increase limits remain subject to the just cause eviction provisions. These include units whose first Certificate of Occupancy was issued after June 13, 1979, tenancies eligible for a rent increase under Costa-Hawkins, and some tenancies whose rent is regulated by another government agency.\",\"exemptions\":\"Relocation payments for temporary capital improvement evictions of less than 20 days are governed by Cal. Civ. Code § 1947.9 rather than Rent Ordinance § 37.9C.\",\"coverage_from\":\"c1\",\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

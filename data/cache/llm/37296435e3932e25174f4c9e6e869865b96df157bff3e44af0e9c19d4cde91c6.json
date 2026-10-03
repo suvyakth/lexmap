@@ -1,0 +1,8 @@
+{
+ "key": "37296435e3932e25174f4c9e6e869865b96df157bff3e44af0e9c19d4cde91c6",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:rent_increase_limits",
+ "created_at": "2026-10-03T20:00:07+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"Because subject is 'municipality', coverage_logic.covers must describe the buildings the state law takes out of local rent control. Those are newly constructed multiple dwellings within 30 years of completing construction. The record instead had covers=null and listed those same buildings under 'exempt', which reverses the meaning. Corrected: covers certificate_of_occupancy > as_of_minus_years 30, exempt null. The 'multiple dwellings' limit was not added as a unit or property-type condition because the excerpt does not define it.\", \"The exemptions text (HUD-owned or HUD-subsidized housing, HUD-insured developments, NJHMFA-financed projects) goes beyond the source, which says only that 'rents that are subsidized by governmental funding may also be exempt' from local rent control. This was not corrected because 'exemptions' is not an editable field here; it should be trimmed to what the source supports.\"], \"fix\": {\"coverage_logic\": {\"covers\": {\"field\": \"certificate_of_occupancy\", \"op\": \">\", \"value\": {\"as_of_minus_years\": 30}}, \"exempt\": null}}}\n```"
+}

@@ -1,0 +1,8 @@
+{
+ "key": "c4b487eb048a04800ae2dc52dcc1b33c3f21c6c57d82a6de64bd64bb8f33c537",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Francisco, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:00:14+00:00",
+ "text": "{\"ok\": true}"
+}

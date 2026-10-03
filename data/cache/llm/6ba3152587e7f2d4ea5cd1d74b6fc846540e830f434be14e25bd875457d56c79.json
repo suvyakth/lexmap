@@ -1,0 +1,8 @@
+{
+ "key": "6ba3152587e7f2d4ea5cd1d74b6fc846540e830f434be14e25bd875457d56c79",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Berkeley, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:59:09+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"The requirement implies aggrieved tenants can sue for any violation. Under BMC 13.63.040(B), tenants may sue only for landlord use of a coordinated pricing algorithm (13.63.030(B)). The City Attorney may sue for both sale (13.63.030(A)) and use (13.63.030(B)) violations, and can also seek restitution.\"], \"fix\": {\"requirement\": \"It is unlawful to sell, license or otherwise provide a coordinated pricing algorithm to Berkeley landlords, and unlawful for a landlord to use one to set rents or occupancy levels for residential units in Berkeley; each unit and each month of a violation is a separate violation. The City Attorney may sue over sale or use of such an algorithm, and aggrieved tenants may sue over a landlord's use, for injunctive relief, damages and civil penalties up to $1,000 per violation.\"}}\n```"
+}

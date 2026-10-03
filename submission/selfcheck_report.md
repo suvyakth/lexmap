@@ -6,20 +6,20 @@
 |---|---|---|---|
 | A | every rule validates against rule_record.schema.json | PASS | 0 errors [] |
 | A | team_rule_id values are unique | PASS |  |
-| A | every quoted_span is a verbatim substring of its source document | PASS | 52 in official corpus text, 6 in fetched secondary pages, missing: [] |
-| A | all six categories are represented | PASS | {'algorithmic_rent_setting': 10, 'security_deposits': 6, 'just_cause_eviction': 16, 'application_screening_fees': 5, 'rent_increase_limits': 11, 'screening_restrictions': 10} |
-| A | every in-scope jurisdiction has at least one rule (or is a documented gap) | PASS | rules per jurisdiction: {'Berkeley, CA': 8, 'Boston, MA': 2, 'CA': 10, 'Cambridge, MA': 1, 'Hoboken, NJ': 1, 'Jersey City, NJ': 2, 'Los Angeles, CA': 5, 'MA': 10, 'NJ': 9, 'Santa Ana, CA': 3, 'San Diego, CA': 2, 'San Francisco, CA': 5}; without rules: ['Newark, NJ'] |
+| A | every quoted_span is a verbatim substring of its source document | PASS | 49 in official corpus text, 6 in fetched secondary pages, missing: [] |
+| A | all six categories are represented | PASS | {'algorithmic_rent_setting': 10, 'security_deposits': 6, 'just_cause_eviction': 14, 'application_screening_fees': 5, 'rent_increase_limits': 11, 'screening_restrictions': 9} |
+| A | every in-scope jurisdiction has at least one rule (or is a documented gap) | PASS | rules per jurisdiction: {'Berkeley, CA': 7, 'Boston, MA': 2, 'CA': 9, 'Cambridge, MA': 1, 'Hoboken, NJ': 1, 'Jersey City, NJ': 2, 'Los Angeles, CA': 5, 'MA': 10, 'NJ': 9, 'Santa Ana, CA': 3, 'San Diego, CA': 2, 'San Francisco, CA': 4}; without rules: ['Newark, NJ'] |
 | A | effective dates are ISO formatted | PASS | [] |
 | B | lookups.json covers all 500 sample addresses | PASS | 500 addresses |
 | B | every result uses the allowed vocabulary | PASS | [] |
 | B | every lookup references a rule in rules.json | PASS | [] |
 | B | rules only appear inside their own jurisdiction (geocoded legal city) | PASS | [] |
 | B | failed measures are never reported for an address | PASS | [] |
-| B | every 'unknown' names the missing fact | PASS | 631/631 |
-| B | every 'applies' answer is backed by a source URL and verbatim quote | PASS | 4487/4487 |
-| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 4147/4487 = 92% |
+| B | every 'unknown' names the missing fact | PASS | 550/550 |
+| B | every 'applies' answer is backed by a source URL and verbatim quote | PASS | 4126/4126 |
+| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 3739/4126 = 91% |
 | B | superseded answers name the governing local rule | PASS | 265 superseded |
-| B | result distribution (info) | PASS | {"superseded": 265, "applies": 4487, "unknown": 631, "not_yet_effective": 140, "pending": 330} |
+| B | result distribution (info) | PASS | {"superseded": 265, "applies": 4126, "unknown": 550, "not_yet_effective": 140, "pending": 220} |
 | B | addresses resolved by the Census geocoder (info) | PASS | 487/500 matched; 13 from mailing-city fallback (flagged low confidence) |
 | C | T1 affected set matches the expected behaviour (California AB 325 / SB 763 takes effect) | PASS | got 250, expected 250 |
 | C | T1: rule CA-ALG-01 exists in rules.json | PASS | Cartwright Act: ban on use or distribution of common pricing algorithms (AB 325) |
@@ -30,7 +30,7 @@
 | C | T3 conflict flags on exactly the Jersey City + Hoboken addresses | PASS | got 90, expected 90 |
 | C | T3: rule NJ-ALG-01 exists in rules.json | PASS | Forbidding the Algorithmic Inflation of Rent (FAIR) Act |
 | C | T4 affected set matches the expected behaviour (Massachusetts pending bills S.2983 and H.5222) | PASS | got 110, expected 110 |
-| C | T4: rule MA-ALG-P1 exists in rules.json | PASS | Bill S.2983, An Act prohibiting algorithmic rent setting |
+| C | T4: rule MA-ALG-P1 exists in rules.json | PASS | S.2983 - An Act prohibiting algorithmic rent setting |
 | C | T4: rule MA-ALG-P2 exists in rules.json | PASS | H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market |
 | C | T5 affected set matches the expected behaviour (Massachusetts rent-control ballot question struck) | PASS | got 0, expected 0 |
 | C | T5: rule MA-RENT-P1 exists in rules.json | PASS | Initiative Petition 25-21: statewide cap on annual rent increases (blocked from November 2026 ballot) |
@@ -47,4 +47,4 @@
 | C | No Santa Ana addresses in the sample (rules extracted only) | PASS |  |
 | R | every rule carries a source URL and retrieval date | PASS |  |
 | R | pending and failed measures are labelled, never in force | PASS |  |
-| R | conflicts flagged for human review (info) | PASS | 12 rules: BERK-RENT-01, CA-DEP-01, CA-EVICT-03, HOB-ALG-01, JC-ALG-01, JC-RENT-01, MA-EVICT-P1, MA-RENT-P2, NJ-ALG-01, NJ-RENT-01, SA-ALG-01, SD-ALG-01 |
+| R | conflicts flagged for human review (info) | PASS | 14 rules: BERK-RENT-01, CA-DEP-01, CA-EVICT-03, CA-SCREEN-01, HOB-ALG-01, JC-ALG-01, JC-RENT-01, MA-EVICT-P1, MA-RENT-P1, MA-RENT-P2, NJ-ALG-01, NJ-RENT-01, SA-ALG-01, SD-ALG-01 |

@@ -1,0 +1,8 @@
+{
+ "key": "db7a208d963b8f7307e32e469545e116d14a659d26ded57b27778e6841d696bd",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:CA:application_screening_fees",
+ "created_at": "2026-10-03T19:58:04+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\",\"c3\"],\"primary\":\"c3\",\"title\":\"California application screening fee cap and conditions (Civ. Code § 1950.6)\",\"requirement\":\"A landlord or agent may charge an applicant a screening fee only to cover actual out-of-pocket screening costs plus the reasonable value of time spent, capped at $30 per applicant, adjusted annually for CPI since Jan. 1, 1998. No fee may be charged when no unit is or will soon be available. The landlord must either process applications first-come, first-qualified and charge only applicants actually considered, or refund the fee to applicants not selected; it must also provide an itemized receipt, return any unused portion, and give the applicant a copy of the credit report within 7 days of receipt.\",\"key_value\":\"$30 per applicant base cap, CPI-adjustable annually since Jan. 1, 1998 (2026 adjusted maximum: $68.96 per D005); refunds and credit-report copies due within 7 days\",\"status\":\"in_force\",\"effective_date\":null,\"end_date\":null,\"citation\":\"Cal. Civ. Code § 1950.6\",\"coverage_conditions\":\"Applies to landlords (owners of residential rental property) and their agents charging applicants, including guarantors and cosignors, who apply to rent a residential housing unit in California.\",\"exemptions\":\"Does not preempt provisions or regulations governing the collection of deposits and fees under federal or state housing assistance programs.\",\"coverage_from\":\"c3\",\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

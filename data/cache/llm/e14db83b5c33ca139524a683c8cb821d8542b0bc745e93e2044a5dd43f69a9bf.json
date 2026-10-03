@@ -1,0 +1,8 @@
+{
+ "key": "e14db83b5c33ca139524a683c8cb821d8542b0bc745e93e2044a5dd43f69a9bf",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:rent_increase_limits",
+ "created_at": "2026-10-03T20:03:55+00:00",
+ "text": "```json\n{\"ok\": true}\n```"
+}

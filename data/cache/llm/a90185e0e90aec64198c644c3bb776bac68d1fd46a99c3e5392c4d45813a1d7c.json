@@ -1,0 +1,8 @@
+{
+ "key": "a90185e0e90aec64198c644c3bb776bac68d1fd46a99c3e5392c4d45813a1d7c",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Berkeley, CA:just_cause_eviction",
+ "created_at": "2026-10-03T19:59:03+00:00",
+ "text": "{\"ok\": true}"
+}

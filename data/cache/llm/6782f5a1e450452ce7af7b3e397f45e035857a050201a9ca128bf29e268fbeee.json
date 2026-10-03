@@ -1,0 +1,8 @@
+{
+ "key": "6782f5a1e450452ce7af7b3e397f45e035857a050201a9ca128bf29e268fbeee",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:Santa Ana, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:58:51+00:00",
+ "text": "{\"groups\":[{\"members\":[\"c1\",\"c2\",\"c3\",\"c4\"],\"primary\":\"c4\",\"title\":\"Santa Ana Ordinance NS-3090 banning algorithmic (automated) rent-setting software\",\"requirement\":\"Prohibits the sale, licensing, provision and use of algorithmic rent-setting software that sets rents using nonpublic competitor data for residential rental property in Santa Ana. Tenants may sue for injunctive relief, damages or civil penalties plus attorney's fees, and the ordinance is also enforced through code enforcement.\",\"key_value\":\"Civil penalties up to $1,000 per violation and per month\",\"status\":\"in_force\",\"effective_date\":\"2026-04-02\",\"end_date\":null,\"citation\":\"Santa Ana Ordinance No. NS-3090\",\"coverage_conditions\":\"Residential rental property within Santa Ana city limits.\",\"exemptions\":\"Does not apply to pricing software that relies solely on publicly available data or aggregate historical data, or to tools used to comply with affordable housing program requirements.\",\"coverage_from\":\"c4\",\"conflict_note\":\"Status differs: D087 (c4) records 'pending' with no effective date because it reports only first-reading approval on Feb. 17, 2026 and a final vote set for March 3, 2026. D002 (c1) and D037 (c2) record 'in_force' with an effective date of 2026-04-02, and D086 (c3) reports the final vote putting the ordinance into effect. The later adoption evidence supports in_force.\"}],\"dropped\":[]}"
+}

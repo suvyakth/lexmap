@@ -45,7 +45,7 @@
    "llm_call": "4c89ddedcac7bf185df2cdb125827e0cfb9ea9477686d7d7775a3247e306d1da",
    "validation_notes": []
   },
-  "reason": "The source only mentions the RSO in the context of eviction filings (the Landlord Declaration requirement). It states no rent increase cap, coverage or exemption, so it is not a rent_increase_limits rule.",
-  "llm_call": "93dfc02ef75549e1b8b6a816b13a7c2c96e04f3ff9f34d6a3cb942ff7c146c7f"
+  "reason": "The record contains no rent-increase rule. It only refers to the RSO in the context of an eviction filing requirement (the Landlord Declaration), which belongs to the eviction category, and it has no cap, coverage or exemption content.",
+  "llm_call": "509eedc2f0b421d14095ed22e983ac0372bf0513d1ba60ea4b26e1deda6005ae"
  }
 ]

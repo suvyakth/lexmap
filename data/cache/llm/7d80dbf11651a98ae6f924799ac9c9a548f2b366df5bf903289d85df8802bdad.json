@@ -1,0 +1,8 @@
+{
+ "key": "7d80dbf11651a98ae6f924799ac9c9a548f2b366df5bf903289d85df8802bdad",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:screening_restrictions",
+ "created_at": "2026-10-03T19:59:58+00:00",
+ "text": "{\"ok\": false, \"issues\": [\"The requirement runs to three sentences, longer than the 1-2 plain sentences required.\", \"The requirement adds a claim about subsection 7B (rental advertisements). The quoted source excerpt contains only subsection 10, so the record should not rely on it.\"], \"fix\": {\"requirement\": \"Landlords and others providing rental housing may not discriminate against anyone because they receive federal, state or local public assistance (including medical assistance) or housing subsidies (including rental assistance such as vouchers). The ban also covers discrimination because of any requirement of the assistance or subsidy program.\"}}"
+}

@@ -1,0 +1,8 @@
+{
+ "key": "4235e95c6c5fe72f1d31f9302daea9d52f05f01e7b31f6041288276a61c70afe",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:San Francisco, CA:just_cause_eviction",
+ "created_at": "2026-10-03T20:00:16+00:00",
+ "text": "{\"ok\": true}"
+}

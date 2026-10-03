@@ -1,0 +1,8 @@
+{
+ "key": "39638bc5842f58734a3e00188431165ab9c08c7e3029e50a546ce6338273f8f7",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:security_deposits",
+ "created_at": "2026-10-03T20:00:20+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"coverage_logic exemption is too broad. The source exempts only owner-occupied two- or three-family dwellings ('The exception is an owner-occupied two-, or three-family dwelling'). The current units <= 3 test also exempts owner-occupied 1-unit buildings, which the source does not exempt. Fix: require units >= 2 and units <= 3.\"], \"fix\": {\"coverage_logic\": {\"covers\": null, \"exempt\": {\"all\": [{\"field\": \"owner_occupied\", \"op\": \"==\", \"value\": true}, {\"field\": \"units\", \"op\": \">=\", \"value\": 2}, {\"field\": \"units\", \"op\": \"<=\", \"value\": 3}]}}}}\n```"
+}

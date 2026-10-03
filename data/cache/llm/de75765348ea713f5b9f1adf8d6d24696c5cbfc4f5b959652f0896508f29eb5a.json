@@ -1,0 +1,8 @@
+{
+ "key": "de75765348ea713f5b9f1adf8d6d24696c5cbfc4f5b959652f0896508f29eb5a",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Hoboken, NJ:algorithmic_rent_setting",
+ "created_at": "2026-10-03T19:59:31+00:00",
+ "text": "{\"ok\": true}"
+}

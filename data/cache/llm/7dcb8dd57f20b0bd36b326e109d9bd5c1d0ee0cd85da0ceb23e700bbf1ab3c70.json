@@ -1,0 +1,8 @@
+{
+ "key": "7dcb8dd57f20b0bd36b326e109d9bd5c1d0ee0cd85da0ceb23e700bbf1ab3c70",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:NJ:rent_increase_limits",
+ "created_at": "2026-10-03T20:00:10+00:00",
+ "text": "{\"ok\": false, \"issues\": [\"coverage_logic is null/null, but coverage_conditions limits the rule to tenancies covered by the Anti-Eviction Act. The unconscionability limit applies through the Act's eviction ground, N.J.S.A. 2A:18-61.1(f). The sibling Anti-Eviction Act rule (same citation) encodes the Act's coverage: owner-occupied buildings with 3 or fewer units (no more than two rental units) are exempt. That coverage should be copied here rather than leaving the rule applicable to every building.\"], \"fix\": {\"coverage_logic\": {\"covers\": null, \"exempt\": {\"all\": [{\"field\": \"units\", \"op\": \"<=\", \"value\": 3}, {\"field\": \"owner_occupied\", \"op\": \"==\", \"value\": true}]}}}}"
+}

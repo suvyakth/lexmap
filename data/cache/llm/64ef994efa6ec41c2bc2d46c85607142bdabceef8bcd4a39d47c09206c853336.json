@@ -1,0 +1,8 @@
+{
+ "key": "64ef994efa6ec41c2bc2d46c85607142bdabceef8bcd4a39d47c09206c853336",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "reconcile:San Francisco, CA:rent_increase_limits",
+ "created_at": "2026-10-03T19:58:50+00:00",
+ "text": "```json\n{\"groups\":[{\"members\":[\"c1\",\"c2\",\"c3\"],\"primary\":\"c1\",\"title\":\"San Francisco Rent Ordinance: annual allowable rent increase limits\",\"requirement\":\"For units covered by the San Francisco Rent Ordinance's rent increase limits, the annual allowable increase from March 1, 2026 through February 28, 2027 is 1.6% of the tenant's base rent (base rent × .016). The prior periods were 1.4% (3/1/2025–2/28/2026) and 1.7% (3/1/2024–2/28/2025).\",\"key_value\":\"1.6% annual allowable increase for March 1, 2026 – February 28, 2027 (previously 1.4% for 3/1/2025–2/28/2026)\",\"status\":\"in_force\",\"effective_date\":null,\"end_date\":null,\"citation\":\"S.F. Admin. Code ch. 37 (Rent Ordinance)\",\"coverage_conditions\":\"Rental units covered by the Rent Ordinance, other than tenancies exempt from its rent increase limitations.\",\"exemptions\":\"Units that first obtained a Certificate of Occupancy after June 13, 1979; tenancies eligible for a rent increase under the Costa-Hawkins Rental Housing Act; some tenancies where the rent is regulated by another government agency. These tenancies remain subject to the Ordinance's just cause eviction provisions.\",\"coverage_from\":\"c1\",\"conflict_note\":null}],\"dropped\":[]}\n```"
+}

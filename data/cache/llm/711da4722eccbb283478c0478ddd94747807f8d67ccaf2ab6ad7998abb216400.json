@@ -1,0 +1,8 @@
+{
+ "key": "711da4722eccbb283478c0478ddd94747807f8d67ccaf2ab6ad7998abb216400",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:MA:application_screening_fees",
+ "created_at": "2026-10-03T19:59:46+00:00",
+ "text": "```json\n{\"ok\": true}\n```"
+}

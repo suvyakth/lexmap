@@ -1,0 +1,8 @@
+{
+ "key": "9579b3f22c4d855e096093ff678f6289312afcee1070dbc6a8f12c5c46b701f9",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Los Angeles, CA:security_deposits",
+ "created_at": "2026-10-03T20:05:46+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"coverage_logic uses other_fact for 'unit is subject to LARSO', but the sibling LARSO rules (L.A.M.C. § 151.00 et seq. and § 151.09) define that coverage as certificate_of_occupancy <= 1978-10-01. Copied that coverage instead.\", \"key_value's 4.320% rate for calendar year 2025 is not in the quoted excerpts, because the rate table is cut off at 2013. It is also not the current rate as of 2026-10-01. Removed the unverified figure and kept only what the source supports.\", \"requirement was five sentences; condensed to two plain sentences that keep the accrual, payment-method, notice, and end-of-tenancy points.\"], \"fix\": {\"coverage_logic\": {\"covers\": {\"field\": \"certificate_of_occupancy\", \"op\": \"<=\", \"value\": \"1978-10-01\"}, \"exempt\": null}, \"requirement\": \"Landlords of units subject to the Los Angeles Rent Stabilization Ordinance must pay tenants interest on security deposits, which accrues monthly at a rate the City sets each year. The landlord must pay the interest monthly or yearly, either directly or as a rent credit, and must tell the tenant the chosen method in writing; paying it all with the deposit refund at move-out does not comply.\", \"key_value\": \"Interest has accrued monthly since Nov. 1, 1990 at a rate the City sets each year (5.000% for Nov. 1, 1990 to Dec. 31, 2000); check the City's current table for the 2026 rate.\"}}\n```"
+}

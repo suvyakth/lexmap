@@ -1,0 +1,8 @@
+{
+ "key": "c2e6ab3a89b788649e4b5efdb0573285284ce08724ea6937258674952e42c44a",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "qa:Berkeley, CA:screening_restrictions",
+ "created_at": "2026-10-03T19:59:09+00:00",
+ "text": "```json\n{\"ok\": false, \"issues\": [\"requirement includes a duty to post a prescribed 'Notice to Rental Applicants and Tenants' on application materials, websites and frequently visited locations. The source excerpts do not support this. It is also far longer than the 1-2 plain sentences requested.\", \"key_value says written notice and an opportunity to respond are required 'before' adverse action. The source only says they are required if a landlord takes action based on criminal history, so it does not support 'before'.\"], \"fix\": {\"requirement\": \"Rental housing providers in Berkeley may not ask about or use criminal history or criminal background checks in advertising, applications, tenant selection or decisions, including refusing to rent, evicting, charging more, or refusing to add a family member based on criminal history. If a landlord takes any action against an applicant or tenant based on criminal history, the landlord must give written notice and an opportunity to respond.\", \"key_value\": \"Administrative fines of $1,000 to $10,000 per violation; written notice and opportunity to respond required for any action based on criminal history\"}}\n```"
+}
