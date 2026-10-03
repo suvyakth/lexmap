@@ -341,6 +341,9 @@ def run(skip_qa: bool = False) -> list[dict]:
                 else:                            # resolved: keep the explanation, drop the flag
                     r["source_notes"] = r.get("conflict_note")
                     r["conflict_note"] = None
+    if not skip_qa:
+        from . import resource
+        resource.run(rules)
     for r in rules:
         r["citation_full"] = r.get("citation")
         r["citation"] = clean_citation(r.get("citation") or "") or r.get("citation")

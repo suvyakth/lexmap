@@ -1,0 +1,8 @@
+{
+ "key": "e1c6326dddcb65549acf5c2c7a9ed5183f8c13bd0e36139a448545ca8c9b9cfd",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "resource:Jersey City, NJ:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:44:50+00:00",
+ "text": "{\"doc_id\": null, \"quoted_span\": null}"
+}

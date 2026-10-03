@@ -6,7 +6,7 @@
 |---|---|---|---|
 | A | every rule validates against rule_record.schema.json | PASS | 0 errors [] |
 | A | team_rule_id values are unique | PASS |  |
-| A | every quoted_span is a verbatim substring of its source document | PASS | 50 in official corpus text, 6 in fetched secondary pages, missing: [] |
+| A | every quoted_span is a verbatim substring of its source document | PASS | 51 in official corpus text, 5 in fetched secondary pages, missing: [] |
 | A | all six categories are represented | PASS | {'algorithmic_rent_setting': 10, 'security_deposits': 6, 'just_cause_eviction': 14, 'application_screening_fees': 5, 'rent_increase_limits': 11, 'screening_restrictions': 10} |
 | A | every in-scope jurisdiction has at least one rule (or is a documented gap) | PASS | rules per jurisdiction: {'Berkeley, CA': 7, 'Boston, MA': 4, 'CA': 9, 'Cambridge, MA': 1, 'Hoboken, NJ': 1, 'Jersey City, NJ': 2, 'Los Angeles, CA': 5, 'MA': 8, 'NJ': 9, 'Santa Ana, CA': 3, 'San Diego, CA': 2, 'San Francisco, CA': 5}; without rules: ['Newark, NJ'] |
 | A | effective dates are ISO formatted | PASS | [] |
@@ -17,7 +17,7 @@
 | B | failed measures are never reported for an address | PASS | [] |
 | B | every 'unknown' names the missing fact | PASS | 490/490 |
 | B | every 'applies' answer is backed by a source URL and verbatim quote | PASS | 3491/3491 |
-| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 3104/3491 = 89% |
+| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 3354/3491 = 96% |
 | B | superseded answers name the governing local rule | PASS | 305 superseded |
 | B | result distribution (info) | PASS | {"superseded": 305, "applies": 3491, "not_yet_effective": 140, "unknown": 490, "pending": 220} |
 | B | addresses resolved by the Census geocoder (info) | PASS | 487/500 matched; 13 from mailing-city fallback (flagged low confidence) |

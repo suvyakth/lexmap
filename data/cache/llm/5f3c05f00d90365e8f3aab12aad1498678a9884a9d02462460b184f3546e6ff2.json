@@ -1,0 +1,8 @@
+{
+ "key": "5f3c05f00d90365e8f3aab12aad1498678a9884a9d02462460b184f3546e6ff2",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "resource:Santa Ana, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T20:44:51+00:00",
+ "text": "{\"doc_id\": null, \"quoted_span\": null}"
+}

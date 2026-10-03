@@ -1919,6 +1919,92 @@
   "level": "state",
   "category": "screening_restrictions",
   "status": "in_force",
+  "title": "California Civil Rights Council regulations on criminal history in housing decisions",
+  "requirement": "Regulations limit what criminal history a housing provider may seek and how it may be considered. Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions, but landlords are not entirely barred from checking criminal history.",
+  "key_value": "Blanket bans on applicants with a criminal record prohibited; arrests without convictions may not be considered",
+  "coverage_conditions": "Housing decisions generally; no building-level coverage limits stated",
+  "exemptions": null,
+  "coverage_logic": {
+   "covers": null,
+   "exempt": null
+  },
+  "subject": "landlord",
+  "interaction": null,
+  "yields_to_local": false,
+  "preempts_local": false,
+  "effective_date": "2020-01-01",
+  "effective_rule": null,
+  "enacted_date": "2019",
+  "end_date": null,
+  "penalty": null,
+  "citation": "California Civil Rights Council regulations on use of criminal history in housing",
+  "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
+  "supporting_spans": [
+   "The California regulations include limits on what type of criminal history may be sought, how an applicant’s criminal history can be considered, and what actions a landlord may take based on an applicant’s criminal history."
+  ],
+  "confidence": 0.75,
+  "conflict_note": null,
+  "verified_spans": [
+   {
+    "text": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+    "start": 21866,
+    "end": 22085,
+    "method": "exact"
+   }
+  ],
+  "source_doc_id": "D016",
+  "source_url": "https://calcivilrights.ca.gov/housing/",
+  "source_type": "official",
+  "retrieved_at": "2026-10-01 22:35 UTC",
+  "official_source": true,
+  "supplementary_source": true,
+  "llm_call": "51e5eddf4982b7734cb53d81f9890dc0989a0ec6130acff39a4926ab93416bd4",
+  "validation_notes": [
+   "primary quote re-sourced to official document D016; secondary quote kept as corroboration"
+  ],
+  "conflict_flag": false,
+  "corroborating_sources": [
+   {
+    "doc_id": "D015",
+    "url": "https://caanet.org/compliance-reminder-section-8-acceptance-and-criminal-background-checks-are-fair-housing-issues/",
+    "source_type": "secondary (law firm / news / mirror)",
+    "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
+    "retrieved_at": "2026-10-03 19:36 UTC"
+   }
+  ],
+  "reconcile": {
+   "members": [
+    "D015"
+   ],
+   "llm_call": "24c684b784e2b41b358477bd05d3f4f821f1abec8b044b7dc6fb275d56d3f501",
+   "note": null
+  },
+  "scope": "core",
+  "applies_only_in": [],
+  "qa": {
+   "llm_call": "e41a8ab016c060ce55c6cfb501a10d0dd6f5486ac2caa1cd8a2d783432893337",
+   "ok": true,
+   "issues": [],
+   "changes": {},
+   "conflict_unresolved": false,
+   "conflict_note": null
+  },
+  "source_notes": null,
+  "provenance_resource": {
+   "llm_call": "da2c504f963d9cf8ac0a9b9e922089378f5da1c037ec9dfa0ca90868cf3b39b7"
+  },
+  "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
+  "team_rule_id": "CA-SCREEN-01",
+  "source_conflict": false,
+  "yields_to": [],
+  "conflicts_with": [],
+  "overrides": []
+ },
+ {
+  "jurisdiction": "CA",
+  "level": "state",
+  "category": "screening_restrictions",
+  "status": "in_force",
   "title": "California FEHA housing screening limits: source of income (incl. Section 8), aggregate income, credit history for subsidized applicants, and criminal history",
   "requirement": "Housing providers may not refuse to rent based on lawful, verifiable source of income, including Section 8 and HUD-VASH vouchers, and income standards must count the aggregate income of people living together. Where a government rent subsidy exists, owners must base income standards on the tenant's portion of rent and, if they use credit history, must let the applicant provide alternative evidence of ability to pay; criminal-history blanket bans are prohibited, and arrests without conviction, sealed or expunged records, and juvenile records may not be considered.",
   "key_value": "Source of income (incl. Section 8 and HUD-VASH vouchers) is protected; alternative evidence to credit history required where a government rent subsidy exists; no blanket criminal-history bans",
@@ -2024,85 +2110,6 @@
   },
   "source_notes": "Effective dates differ across members: D015 (c2) gives 2020-01-01 for the SB 329 source-of-income/Section 8 provision, and D027 (c5) gives 2024-01-01, which matches the later SB 267 credit-history amendment. Both appear to be accurate dates for different amendments to § 12955. 2024-01-01 is kept as the date of the current operative text. | Sources give different effective dates: 2020-01-01 (D015); 2024-01-01 (D027)",
   "citation_full": "Cal. Gov. Code § 12955",
-  "team_rule_id": "CA-SCREEN-01",
-  "source_conflict": false,
-  "yields_to": [],
-  "conflicts_with": [],
-  "overrides": []
- },
- {
-  "jurisdiction": "CA",
-  "level": "state",
-  "category": "screening_restrictions",
-  "status": "in_force",
-  "title": "California Civil Rights Council regulations on criminal history in housing decisions",
-  "requirement": "Regulations limit what criminal history a housing provider may seek and how it may be considered. Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions, but landlords are not entirely barred from checking criminal history.",
-  "key_value": "Blanket bans on applicants with a criminal record prohibited; arrests without convictions may not be considered",
-  "coverage_conditions": "Housing decisions generally; no building-level coverage limits stated",
-  "exemptions": null,
-  "coverage_logic": {
-   "covers": null,
-   "exempt": null
-  },
-  "subject": "landlord",
-  "interaction": null,
-  "yields_to_local": false,
-  "preempts_local": false,
-  "effective_date": "2020-01-01",
-  "effective_rule": null,
-  "enacted_date": "2019",
-  "end_date": null,
-  "penalty": null,
-  "citation": "California Civil Rights Council regulations on use of criminal history in housing",
-  "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
-  "supporting_spans": [
-   "The California regulations include limits on what type of criminal history may be sought, how an applicant’s criminal history can be considered, and what actions a landlord may take based on an applicant’s criminal history."
-  ],
-  "confidence": 0.6,
-  "conflict_note": null,
-  "verified_spans": [
-   {
-    "text": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
-    "start": 1740,
-    "end": 1864,
-    "method": "exact"
-   },
-   {
-    "text": "The California regulations include limits on what type of criminal history may be sought, how an applicant’s criminal history can be considered, and what actions a landlord may take based on an applicant’s criminal history.",
-    "start": 1516,
-    "end": 1739,
-    "method": "exact"
-   }
-  ],
-  "source_doc_id": "D015",
-  "source_url": "https://caanet.org/compliance-reminder-section-8-acceptance-and-criminal-background-checks-are-fair-housing-issues/",
-  "source_type": "secondary (law firm / news / mirror)",
-  "retrieved_at": "2026-10-03 19:36 UTC",
-  "official_source": false,
-  "supplementary_source": true,
-  "llm_call": "51e5eddf4982b7734cb53d81f9890dc0989a0ec6130acff39a4926ab93416bd4",
-  "validation_notes": [],
-  "conflict_flag": false,
-  "corroborating_sources": [],
-  "reconcile": {
-   "members": [
-    "D015"
-   ],
-   "llm_call": "24c684b784e2b41b358477bd05d3f4f821f1abec8b044b7dc6fb275d56d3f501",
-   "note": null
-  },
-  "scope": "core",
-  "applies_only_in": [],
-  "qa": {
-   "llm_call": "e41a8ab016c060ce55c6cfb501a10d0dd6f5486ac2caa1cd8a2d783432893337",
-   "ok": true,
-   "issues": [],
-   "changes": {},
-   "conflict_unresolved": false,
-   "conflict_note": null
-  },
-  "source_notes": null,
-  "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
   "team_rule_id": "CA-SCREEN-02",
   "source_conflict": false,
   "yields_to": [],
@@ -2383,6 +2390,9 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "provenance_resource": {
+   "llm_call": "e1c6326dddcb65549acf5c2c7a9ed5183f8c13bd0e36139a448545ca8c9b9cfd"
+  },
   "citation_full": "Jersey City Code § 218-12",
   "team_rule_id": "JC-ALG-01",
   "source_conflict": false,
@@ -2610,6 +2620,9 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "provenance_resource": {
+   "llm_call": "37401109807271cc69a784b885869a9a31bb98901d90134f5d18e2da19daa13a"
+  },
   "citation_full": "LAMC § 151.06.02",
   "team_rule_id": "LA-DEP-01",
   "source_conflict": false,
@@ -3803,6 +3816,9 @@
    "conflict_note": null
   },
   "source_notes": "D055 dates the SJC ruling June 23, 2026 in the page text but June 24, 2026 in a recent-posts teaser; D059 gives no date.",
+  "provenance_resource": {
+   "llm_call": "28ac4be795c0638fce5c6e68efc515d9e5c799647fb100c441816da4951e8032"
+  },
   "citation_full": "Initiative Petition 25-21; Cella v. Attorney General, SJC-13893",
   "team_rule_id": "MA-RENT-P1",
   "source_conflict": false,
@@ -5010,6 +5026,9 @@
    "conflict_note": "D087's 'pending' status reflects only the Feb. 17, 2026 first reading. D086 confirms final adoption on March 3, 2026, consistent with the 2026-04-02 effective date reported by D002 and D037, so the ordinance is in force."
   },
   "source_notes": "Status differs: D087 (c4) records 'pending' with no effective date because it reports only first-reading approval on Feb. 17, 2026 and a final vote set for March 3, 2026. D002 (c1) and D037 (c2) record 'in_force' with an effective date of 2026-04-02, and D086 (c3) reports the final vote putting the ordinance into effect. The later adoption evidence supports in_force.",
+  "provenance_resource": {
+   "llm_call": "5f3c05f00d90365e8f3aab12aad1498678a9884a9d02462460b184f3546e6ff2"
+  },
   "citation_full": "Santa Ana Ordinance No. NS-3090",
   "team_rule_id": "SA-ALG-01",
   "source_conflict": false,

@@ -1,0 +1,8 @@
+{
+ "key": "da2c504f963d9cf8ac0a9b9e922089378f5da1c037ec9dfa0ca90868cf3b39b7",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "resource:CA:screening_restrictions",
+ "created_at": "2026-10-03T20:44:52+00:00",
+ "text": "{\"doc_id\": \"D016\", \"quoted_span\": \"Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.\"}"
+}

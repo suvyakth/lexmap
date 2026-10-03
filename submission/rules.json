@@ -777,8 +777,8 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule bans Boston landlords from discriminating against renters who use rental assistance, including Section 8, social security disability and veterans vouchers. Telling an applicant that rental assistance is not accepted counts as housing discrimination.",
-    "es": "Esta regla prohíbe que los propietarios de Boston discriminen a inquilinos que usan ayuda para el alquiler, incluidos Section 8 y los vales por discapacidad del seguro social y para veteranos. Decirle a un solicitante que no se acepta ayuda para el alquiler es discriminación en la vivienda.",
+    "en": "Boston bans discrimination against renters who use rental assistance, including Section 8, social security disability and veterans vouchers. A landlord telling you rental assistance is not accepted is housing discrimination.",
+    "es": "Boston prohíbe discriminar a inquilinos que usan ayuda para el alquiler, incluidos Section 8 y los vales por discapacidad del seguro social o para veteranos. Que un propietario diga que no acepta ayuda para el alquiler es discriminación de vivienda.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -847,8 +847,8 @@
     }
    ],
    "plain_language": {
-    "en": "This California law bans using or distributing a common pricing algorithm as part of a conspiracy to restrain trade, or while coercing others to adopt its recommended price. It covers all industries, including residential rent-setting, and took effect 2026-01-01.",
-    "es": "Esta ley de California prohíbe usar o distribuir un algoritmo de precios común como parte de una conspiración para restringir el comercio, o mientras se presiona a otros a adoptar su precio recomendado. Cubre todas las industrias, incluida la fijación de alquileres, y entró en vigor el 2026-01-01.",
+    "en": "Starting 2026-01-01, California bans using or distributing a common pricing algorithm, which uses competitor data, as part of a conspiracy to restrain trade or while coercing others to adopt its recommended price. This reaches residential rent-setting.",
+    "es": "Desde el 2026-01-01, California prohíbe usar o distribuir un algoritmo de precios común, que usa datos de competidores, como parte de una conspiración para restringir el comercio o al coaccionar a otros a adoptar su precio recomendado. Incluye la fijación de alquileres residenciales.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -919,8 +919,8 @@
     }
    ],
    "plain_language": {
-    "en": "This rule caps California security deposits at one month's rent, or two months for small landlords, but not for service-member tenants. Landlords must return the remaining deposit with an itemized statement within 21 calendar days after the tenant vacates.",
-    "es": "Esta regla limita los depósitos de garantía en California a un mes de renta, o dos meses para pequeños propietarios, pero no para inquilinos miembros del servicio militar. Los propietarios deben devolver el depósito restante con un estado de cuenta detallado dentro de 21 días calendario después de que el inquilino desocupe.",
+    "en": "California caps security deposits at one month's rent, or two months for small landlords (not for service-member tenants). Landlords must return the remaining deposit with an itemized statement within 21 calendar days after you move out.",
+    "es": "California limita los depósitos de seguridad a un mes de renta, o dos meses para propietarios pequeños (no para inquilinos miembros del servicio militar). El propietario debe devolver el depósito restante con un estado detallado dentro de 21 días calendario después de que usted se mude.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1065,8 +1065,8 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule requires California owners to have a stated just cause to end a tenancy once a tenant has lived in the unit lawfully and continuously for 12 months. For no-fault terminations, the owner must pay one month's rent within 15 calendar days of the notice or waive the final month's rent.",
-    "es": "Esta regla exige que los propietarios en California tengan una causa justa indicada para terminar un contrato una vez que el inquilino ha vivido en la unidad de forma legal y continua por 12 meses. En terminaciones sin culpa, el propietario debe pagar un mes de renta dentro de 15 días calendario del aviso o perdonar el último mes de renta.",
+    "en": "After 12 months of continuous, lawful occupancy, California requires a just cause, stated in the written notice, to end a tenancy. For no-fault terminations, the owner must pay one month's rent within 15 calendar days of the notice or waive the final month's rent.",
+    "es": "Después de 12 meses de ocupación continua y legal, California exige una causa justa, indicada en el aviso escrito, para terminar un arrendamiento. En terminaciones sin culpa, el propietario debe pagar un mes de renta dentro de 15 días calendario del aviso o perdonar el último mes de renta.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1125,8 +1125,8 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule requires relocation benefits for lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new construction. In Los Angeles, the landlord pays the higher of the Housing Crisis Act amount or the City (RSO/JCO) relocation amount.",
-    "es": "Esta regla exige beneficios de reubicación para hogares de bajos ingresos (80% del AMI o menos) desplazados cuando se demuelen Unidades Protegidas para nueva construcción. En Los Ángeles, el propietario paga el monto mayor entre el de la Ley de Crisis de Vivienda y el de reubicación de la Ciudad (RSO/JCO).",
+    "en": "Lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new construction must receive relocation benefits under Gov. Code § 7260 et seq. In Los Angeles, the landlord pays the higher of the state or City amount.",
+    "es": "Los hogares de bajos ingresos (80% del AMI o menos) desplazados cuando se demuelen Unidades Protegidas para nueva construcción deben recibir beneficios de reubicación según Gov. Code § 7260 y siguientes. En Los Ángeles, el propietario paga el monto más alto entre el estatal y el de la Ciudad.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1195,8 +1195,8 @@
     }
    ],
    "plain_language": {
-    "en": "This rule requires a San Francisco landlord who temporarily displaces a tenant household for less than 20 days for capital improvements to pay $446.00 per day per household plus actual moving expenses, for notices served 3/01/26–2/28/27.",
-    "es": "Esta regla exige que un propietario de San Francisco que desplaza temporalmente a un hogar por menos de 20 días por mejoras de capital pague $446.00 por día por hogar más los gastos reales de mudanza, para avisos entregados entre el 3/01/26 y el 2/28/27.",
+    "en": "In San Francisco, a landlord who temporarily displaces a household for less than 20 days for capital improvements must pay $446.00 per day per household plus actual moving expenses (notices served 3/01/26–2/28/27).",
+    "es": "En San Francisco, un propietario que desplaza temporalmente a un hogar por menos de 20 días por mejoras de capital debe pagar $446.00 por día por hogar más los gastos reales de mudanza (avisos entregados del 3/01/26 al 2/28/27).",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1274,8 +1274,8 @@
     }
    ],
    "plain_language": {
-    "en": "This rule limits California application screening fees to actual screening costs plus the reasonable value of time, capped at $30 per applicant, adjusted annually for CPI since Jan. 1, 1998. No fee may be charged when no unit is or will soon be available.",
-    "es": "Esta regla limita las tarifas de evaluación de solicitudes en California a los costos reales de evaluación más el valor razonable del tiempo, con un tope de $30 por solicitante, ajustado anualmente por el IPC desde el 1 de enero de 1998. No se puede cobrar si no hay una unidad disponible o próxima a estarlo.",
+    "en": "California limits application screening fees to actual costs plus the reasonable value of time, capped at $30 per applicant, adjusted for CPI. No fee may be charged if no unit is or will soon be available. You must get an itemized receipt and a copy of your credit report within 7 days.",
+    "es": "California limita las cuotas de evaluación de solicitudes a los costos reales más el valor razonable del tiempo, con tope de $30 por solicitante, ajustado por CPI. No se puede cobrar si no hay una unidad disponible o próxima a estarlo. Debe recibir un recibo detallado y una copia de su informe de crédito en 7 días.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1404,8 +1404,8 @@
     }
    ],
    "plain_language": {
-    "en": "This rule limits California rent increases on covered units to 5 percent plus the local cost-of-living change, or 10 percent, whichever is lower, over any 12 months. No more than two increases are allowed in 12 months for the same tenant.",
-    "es": "Esta regla limita los aumentos de renta en unidades cubiertas de California a 5 por ciento más el cambio local en el costo de vida, o 10 por ciento, lo que sea menor, en cualquier período de 12 meses. No se permiten más de dos aumentos en 12 meses para el mismo inquilino.",
+    "en": "California limits rent increases on covered housing to 5 percent plus the local cost-of-living change, or 10 percent, whichever is lower, over any 12 months. No more than two increases are allowed in 12 months for the same tenant.",
+    "es": "California limita los aumentos de renta en viviendas cubiertas a 5 por ciento más el cambio local en el costo de vida, o 10 por ciento, lo que sea menor, en cualquier período de 12 meses. No se permiten más de dos aumentos en 12 meses para el mismo inquilino.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1428,6 +1428,76 @@
   },
   {
    "team_rule_id": "CA-SCREEN-01",
+   "jurisdiction": "CA",
+   "level": "state",
+   "category": "screening_restrictions",
+   "status": "in_force",
+   "title": "California Civil Rights Council regulations on criminal history in housing decisions",
+   "requirement": "Regulations limit what criminal history a housing provider may seek and how it may be considered. Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions, but landlords are not entirely barred from checking criminal history.",
+   "key_value": "Blanket bans on applicants with a criminal record prohibited; arrests without convictions may not be considered",
+   "coverage_conditions": "Housing decisions generally; no building-level coverage limits stated",
+   "exemptions": null,
+   "overrides": [],
+   "interaction": null,
+   "effective_date": "2020-01-01",
+   "citation": "California Civil Rights Council regulations on use of criminal history in housing",
+   "source_doc_id": "D016",
+   "source_url": "https://calcivilrights.ca.gov/housing/",
+   "quoted_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system.",
+   "confidence": 0.75,
+   "conflict_flag": false,
+   "conflict_note": null,
+   "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
+   "penalty": null,
+   "end_date": null,
+   "retrieved_at": "2026-10-01 22:35 UTC",
+   "source_type": "official",
+   "coverage_logic": {
+    "covers": null,
+    "exempt": null
+   },
+   "subject": "landlord",
+   "source_conflict": false,
+   "scope": "core",
+   "applies_only_in": [],
+   "official_source": true,
+   "source_notes": null,
+   "yields_to": [],
+   "conflicts_with": [],
+   "supporting_spans": [],
+   "corroborating_sources": [
+    {
+     "doc_id": "D015",
+     "url": "https://caanet.org/compliance-reminder-section-8-acceptance-and-criminal-background-checks-are-fair-housing-issues/",
+     "source_type": "secondary (law firm / news / mirror)",
+     "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
+     "retrieved_at": "2026-10-03 19:36 UTC"
+    }
+   ],
+   "plain_language": {
+    "en": "California regulations limit how landlords may use criminal history. Blanket bans on applicants with a criminal record are prohibited, and arrests without convictions may not be considered, though landlords may still check criminal history in limited ways.",
+    "es": "Las regulaciones de California limitan cómo los propietarios pueden usar los antecedentes penales. Se prohíben las exclusiones generales de solicitantes con antecedentes penales y no se pueden considerar arrestos sin condena, aunque los propietarios aún pueden revisar antecedentes de forma limitada.",
+    "guard": {
+     "en": "ok",
+     "es": "ok"
+    }
+   },
+   "provenance": {
+    "extraction_llm_call": "51e5eddf4982b7734cb53d81f9890dc0989a0ec6130acff39a4926ab93416bd4",
+    "reconcile": {
+     "members": [
+      "D015"
+     ],
+     "llm_call": "24c684b784e2b41b358477bd05d3f4f821f1abec8b044b7dc6fb275d56d3f501",
+     "note": null
+    },
+    "validation_notes": [
+     "primary quote re-sourced to official document D016; secondary quote kept as corroboration"
+    ]
+   }
+  },
+  {
+   "team_rule_id": "CA-SCREEN-02",
    "jurisdiction": "CA",
    "level": "state",
    "category": "screening_restrictions",
@@ -1492,8 +1562,8 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bars California housing providers from refusing to rent based on lawful source of income, including Section 8 and HUD-VASH vouchers. It also prohibits blanket criminal-history bans and requires alternative evidence to credit history where a government rent subsidy exists.",
-    "es": "Esta regla prohíbe que los proveedores de vivienda en California se nieguen a alquilar por la fuente de ingresos legal, incluidos los vales Section 8 y HUD-VASH. También prohíbe las exclusiones generales por antecedentes penales y exige evidencia alternativa al historial de crédito cuando existe un subsidio de renta del gobierno.",
+    "en": "California bars refusing to rent based on lawful, verifiable source of income, including Section 8 and HUD-VASH vouchers. Income standards must count everyone's combined income. Blanket criminal-history bans are prohibited, and arrests without conviction, sealed or expunged, and juvenile records may not be considered.",
+    "es": "California prohíbe negarse a alquilar por una fuente de ingresos legal y verificable, incluidos los vales Section 8 y HUD-VASH. Los estándares de ingresos deben contar los ingresos combinados de todos. Se prohíben las exclusiones generales por antecedentes penales y no se pueden considerar arrestos sin condena, registros sellados o borrados, ni registros juveniles.",
     "guard": {
      "en": "ok",
      "es": "ok"
@@ -1514,68 +1584,6 @@
     "validation_notes": [
      "coverage logic taken from D016"
     ]
-   }
-  },
-  {
-   "team_rule_id": "CA-SCREEN-02",
-   "jurisdiction": "CA",
-   "level": "state",
-   "category": "screening_restrictions",
-   "status": "in_force",
-   "title": "California Civil Rights Council regulations on criminal history in housing decisions",
-   "requirement": "Regulations limit what criminal history a housing provider may seek and how it may be considered. Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions, but landlords are not entirely barred from checking criminal history.",
-   "key_value": "Blanket bans on applicants with a criminal record prohibited; arrests without convictions may not be considered",
-   "coverage_conditions": "Housing decisions generally; no building-level coverage limits stated",
-   "exemptions": null,
-   "overrides": [],
-   "interaction": null,
-   "effective_date": "2020-01-01",
-   "citation": "California Civil Rights Council regulations on use of criminal history in housing",
-   "source_doc_id": "D015",
-   "source_url": "https://caanet.org/compliance-reminder-section-8-acceptance-and-criminal-background-checks-are-fair-housing-issues/",
-   "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
-   "confidence": 0.6,
-   "conflict_flag": false,
-   "conflict_note": null,
-   "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
-   "penalty": null,
-   "end_date": null,
-   "retrieved_at": "2026-10-03 19:36 UTC",
-   "source_type": "secondary (law firm / news / mirror)",
-   "coverage_logic": {
-    "covers": null,
-    "exempt": null
-   },
-   "subject": "landlord",
-   "source_conflict": false,
-   "scope": "core",
-   "applies_only_in": [],
-   "official_source": false,
-   "source_notes": null,
-   "yields_to": [],
-   "conflicts_with": [],
-   "supporting_spans": [
-    "The California regulations include limits on what type of criminal history may be sought, how an applicant’s criminal history can be considered, and what actions a landlord may take based on an applicant’s criminal history."
-   ],
-   "corroborating_sources": [],
-   "plain_language": {
-    "en": "This rule limits how California housing providers may use criminal history. Blanket bans on applicants with a criminal record are prohibited, and arrests without convictions may not be considered, but landlords are not entirely barred from checking criminal history.",
-    "es": "Esta regla limita cómo los proveedores de vivienda en California pueden usar los antecedentes penales. Se prohíben las exclusiones generales de solicitantes con antecedentes y no se pueden considerar arrestos sin condena, pero los propietarios no tienen prohibido por completo revisar los antecedentes penales.",
-    "guard": {
-     "en": "ok",
-     "es": "ok"
-    }
-   },
-   "provenance": {
-    "extraction_llm_call": "51e5eddf4982b7734cb53d81f9890dc0989a0ec6130acff39a4926ab93416bd4",
-    "reconcile": {
-     "members": [
-      "D015"
-     ],
-     "llm_call": "24c684b784e2b41b358477bd05d3f4f821f1abec8b044b7dc6fb275d56d3f501",
-     "note": null
-    },
-    "validation_notes": []
    }
   },
   {

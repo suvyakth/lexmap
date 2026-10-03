@@ -1,0 +1,8 @@
+{
+ "key": "37401109807271cc69a784b885869a9a31bb98901d90134f5d18e2da19daa13a",
+ "model": "opus",
+ "backend": "claude-cli",
+ "tag": "resource:Los Angeles, CA:security_deposits",
+ "created_at": "2026-10-03T20:44:51+00:00",
+ "text": "{\"doc_id\": null, \"quoted_span\": null}"
+}

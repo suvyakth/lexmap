@@ -21,7 +21,7 @@
    "group": "A",
    "check": "every quoted_span is a verbatim substring of its source document",
    "ok": true,
-   "detail": "50 in official corpus text, 6 in fetched secondary pages, missing: []"
+   "detail": "51 in official corpus text, 5 in fetched secondary pages, missing: []"
   },
   {
    "group": "A",
@@ -87,7 +87,7 @@
    "group": "B",
    "check": "share of 'applies' answers whose quote is in the official corpus text (info)",
    "ok": true,
-   "detail": "3104/3491 = 89%"
+   "detail": "3354/3491 = 96%"
   },
   {
    "group": "B",
