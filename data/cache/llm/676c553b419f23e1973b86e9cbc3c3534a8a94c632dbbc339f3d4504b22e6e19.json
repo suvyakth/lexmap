@@ -1,8 +1,0 @@
-{
- "key": "676c553b419f23e1973b86e9cbc3c3534a8a94c632dbbc339f3d4504b22e6e19",
- "model": "sonnet",
- "backend": "claude-cli",
- "tag": "dates:San Francisco, CA:rent_increase_limits",
- "created_at": "2026-10-03T21:16:10+00:00",
- "text": "{\"kind\": \"amendment\", \"in_force_since\": \"2024-03-01\", \"reason\": \"The record shows the annual allowable increase was already in force in prior periods (1.7% from 3/1/2024 and 1.4% from 3/1/2025), so the 2026-03-01 date marks an annual rate update rather than a new requirement.\"}"
-}
