@@ -144,13 +144,24 @@
     if (hi == null) return `${lo}+ units`;
     return `${lo}-${hi} units`;
   }
+  const DATE_OPS = { "<=": "on or before", "<": "before", ">": "after", ">=": "on or after", "==": "on", "!=": "not on", in: "one of" };
+  const YEAR_OPS = { "<=": "in or before", "<": "before", ">": "after", ">=": "in or after", "==": "in", "!=": "not in" };
+  const NUM_OPS = { "<=": "at most", "<": "fewer than", ">": "more than", ">=": "at least", "==": "exactly", "!=": "not", in: "one of" };
+  const CAT_OPS = { "==": "is", "!=": "is not", in: "is one of" };
+  function opWords(field, op) {
+    const m = field === "certificate_of_occupancy" ? DATE_OPS : field === "year_built" ? YEAR_OPS
+      : ["units", "owner_property_count", "owner_unit_count"].includes(field) ? NUM_OPS : CAT_OPS;
+    return m[op] || op;
+  }
   function describeLeaf(l, facts) {
     if (l.field === "other_fact") return `${l.value}? unknown (not in the data)`;
     const label = FIELD_LABEL[l.field] || l.field;
     let val = l.value;
     if (val && typeof val === "object" && !Array.isArray(val) && "as_of_minus_years" in val)
       val = `${l.resolved} (${val.as_of_minus_years} years before the query date)`;
-    else if (Array.isArray(val)) val = "[" + val.join(", ") + "]";
+    else if (Array.isArray(val)) val = val.map((x) => String(x).replace(/_/g, " ")).join(", ");
+    else if (typeof val === "boolean") val = val ? "yes" : "no";
+    else if (typeof val === "string") val = val.replace(/_/g, " ");
     let have;
     if (l.field === "certificate_of_occupancy" || l.field === "year_built")
       have = facts.year_built ? `built ${facts.year_built}` : "year built not in the data";
@@ -158,7 +169,7 @@
     else if (l.field === "property_type") have = "apartment building";
     else have = "not in the data";
     const verdict = l.result === T ? "yes" : l.result === F ? "no" : "unknown";
-    return `${label} ${l.op} ${val}? ${verdict} (${have})`;
+    return `${label} ${opWords(l.field, l.op)} ${val}? ${verdict} (${have})`;
   }
   function factsText(trace, facts) {
     const seen = new Set(), parts = [];

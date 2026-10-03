@@ -96,7 +96,7 @@
     return `<span class="c">${esc(r.citation)}</span>
       <span>${official ? t("official") : t("secondary")} · <a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_doc_id)}</a></span>
       <span>${t("retrieved")} ${esc(r.retrieved_at || s.retrieved_at || "")}</span>
-      <span class="conf">${t("confidence")} <span class="meter"><i style="width:${Math.round((r.confidence || 0) * 100)}%"></i></span> ${Math.round((r.confidence || 0) * 100)}%</span>`;
+      <span class="conf" title="Model-reported confidence, capped at 0.6 for secondary sources and 0.75 for flagged conflicts">${t("confidence")} <span class="meter"><i style="width:${Math.round((r.confidence || 0) * 100)}%"></i></span> ${Math.round((r.confidence || 0) * 100)}%</span>`;
   }
 
   // ------------------------------------------------------------------ lookup view
@@ -398,6 +398,9 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
         ${r.exemptions ? `<div class="kv"><b>${t("exemptions")}:</b> ${esc(r.exemptions)}</div>` : ""}
         ${r.interaction ? `<div class="kv"><b>Interaction:</b> ${esc(r.interaction)}</div>` : ""}
         ${r.conflict_note ? `<div class="conflict-box">⚑ ${esc(r.conflict_note)}</div>` : ""}
+        ${r.source_notes ? `<div class="kv"><b>Resolved source discrepancy:</b> ${esc(r.source_notes)}</div>` : ""}
+        ${r.scope === "event" ? `<div class="kv"><b>Scope:</b> event-only (applies only when a specific event happens; not reported as applying to buildings in lookups.json)</div>` : ""}
+        ${(r.applies_only_in || []).length ? `<div class="kv"><b>Applies only in:</b> ${esc(r.applies_only_in.join(", "))}</div>` : ""}
         <blockquote>${esc(r.quoted_span)}</blockquote>
         <div class="cite">${sourceMeta(r)}</div>
         <div class="logic">covers: ${esc(describePred((r.coverage_logic || {}).covers))}\nexempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.exempt) : "none")}\nyields to: ${esc((r.yields_to || []).join(", ") || "none")}\nconflicts with: ${esc((r.conflicts_with || []).join(", ") || "none")}\nsources merged: ${esc(((qa.reconcile || {}).members || []).join(", "))}\nextraction call: ${esc(qa.extraction_llm_call || "")}</div>
@@ -439,6 +442,16 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
           <li>Public data only. Every model call is cached with its prompt hash, so <code>python run.py</code> reproduces this site exactly.</li>
           <li>The full audit log covers sources and hashes, model calls, rejected candidates and every answer.</li>
         </ul></div>
+      </div>
+      <h2>Open questions in the law</h2>
+      <p class="sub">Generated from the rule records. Unresolved conflicts are flagged on every affected answer. Resolved discrepancies are kept so a reviewer can see what the sources disagreed on and why one reading was chosen.</p>
+      <div class="two">
+        <div class="card"><h3>Flagged for human review</h3><ul>${D.rules.filter((r) => r.conflict_flag).map((r) => `<li><b>${esc(r.team_rule_id)}</b> (${esc(r.citation)}): ${esc(r.conflict_note || "")}</li>`).join("") || "<li>None</li>"}</ul></div>
+        <div class="card"><h3>Source discrepancies resolved by review</h3><ul>${D.rules.filter((r) => r.source_notes).map((r) => `<li><b>${esc(r.team_rule_id)}</b>: ${esc(r.source_notes)}</li>`).join("") || "<li>None</li>"}</ul></div>
+      </div>
+      <div class="two" style="margin-top:14px">
+        <div class="card"><h3>Event-only rules (not counted as applying to a building)</h3><ul>${D.rules.filter((r) => r.scope === "event").map((r) => `<li><b>${esc(r.team_rule_id)}</b>: ${esc(r.title)}${(r.applies_only_in || []).length ? " (only in " + esc(r.applies_only_in.join(", ")) + ")" : ""}</li>`).join("") || "<li>None</li>"}</ul></div>
+        <div class="card"><h3>Secondary-source rules (confidence capped at 0.6)</h3><ul>${D.rules.filter((r) => !r.official_source).map((r) => `<li><b>${esc(r.team_rule_id)}</b>: ${esc(r.title)} (<a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_doc_id)}</a>)</li>`).join("") || "<li>None</li>"}</ul></div>
       </div>
       <h2>Submission files</h2>
       <p class="sub"><a href="https://github.com/suvyakth/lexmap/blob/main/submission/rules.json">rules.json</a> ·

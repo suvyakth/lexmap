@@ -22,7 +22,7 @@ from .lookup import Engine, address_records, load_rules
 from .reconcile import _status_from_dates, wire_relations
 
 
-def extract_new(path: Path, jurisdiction: str) -> tuple[Doc, list[dict], list[dict], dict]:
+def extract_new(path: Path, jurisdiction: str, use_cache: bool = True) -> tuple[Doc, list[dict], list[dict], dict]:
     text = path.read_text(encoding="utf-8")
     h = hashlib.sha256(text.encode("utf-8")).hexdigest()[:8]
     doc = Doc(doc_id=f"NEW-{h}", jurisdictions=jurisdiction, url=f"file:{path.name}", source_type="user-supplied new law",
@@ -30,7 +30,8 @@ def extract_new(path: Path, jurisdiction: str) -> tuple[Doc, list[dict], list[di
     prompt = prompts.EXTRACT_TEMPLATE.format(
         doc_id=doc.doc_id, url=doc.url, source_type=doc.source_type, jurisdiction=jurisdiction,
         retrieved=doc.retrieved_at, as_of=config.DEFAULT_AS_OF, chunk_note="", text=text)
-    obj, rec = llm.complete_json(prompt, prompts.EXTRACT_SYSTEM, config.EXTRACT_MODEL, tag=f"whatif:{doc.doc_id}")
+    obj, rec = llm.complete_json(prompt, prompts.EXTRACT_SYSTEM, config.EXTRACT_MODEL, tag=f"whatif:{doc.doc_id}",
+                                 use_cache=use_cache)
     good, bad = [], []
     for r in obj.get("rules", []) if isinstance(obj, dict) else []:
         cand, notes = validate_candidate(r, doc)
@@ -54,7 +55,7 @@ def main(args) -> int:
     if not path.exists() or not jur:
         print("usage: python run.py whatif <law.txt> --jurisdiction 'City, ST' [--as-of YYYY-MM-DD]")
         return 2
-    doc, new, bad, rec = extract_new(path, jur)
+    doc, new, bad, rec = extract_new(path, jur, use_cache=not args.live)
     print(f"Extracted {len(new)} rule(s) from {path.name} (model call {rec['key'][:12]}..., cached={rec.get('cached')})")
     for b in bad:
         print("  rejected:", b["reasons"][-1])

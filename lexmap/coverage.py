@@ -201,6 +201,21 @@ def evaluate(p, facts: dict, as_of: date, trace: Trace | None = None) -> bool | 
     return _leaf(p, facts, as_of, trace)
 
 
+DATE_OPS = {"<=": "on or before", "<": "before", ">": "after", ">=": "on or after", "==": "on", "!=": "not on", "in": "one of"}
+NUM_OPS = {"<=": "at most", "<": "fewer than", ">": "more than", ">=": "at least", "==": "exactly", "!=": "not", "in": "one of"}
+CAT_OPS = {"==": "is", "!=": "is not", "in": "is one of"}
+
+
+def op_words(field_: str, op: str) -> str:
+    if field_ == "certificate_of_occupancy":
+        return DATE_OPS.get(op, op)
+    if field_ in ("year_built",):
+        return {"<=": "in or before", "<": "before", ">": "after", ">=": "in or after", "==": "in", "!=": "not in"}.get(op, op)
+    if field_ in ("units", "owner_property_count", "owner_unit_count"):
+        return NUM_OPS.get(op, op)
+    return CAT_OPS.get(op, op)
+
+
 def describe_leaf(l: dict, facts: dict) -> str:
     f = l["field"]
     label = FIELD_LABEL.get(f, f)
@@ -219,4 +234,10 @@ def describe_leaf(l: dict, facts: dict) -> str:
     else:
         have = "not in the data"
     verdict = {True: "yes", False: "no", None: "unknown"}[l["result"]]
-    return f"{label} {l['op']} {val}? {verdict} ({have})"
+    if isinstance(val, list):
+        val = ", ".join(str(x).replace("_", " ") for x in val)
+    elif isinstance(val, bool):
+        val = "yes" if val else "no"
+    elif isinstance(val, str):
+        val = val.replace("_", " ")
+    return f"{label} {op_words(f, l['op'])} {val}? {verdict} ({have})"

@@ -1,6 +1,6 @@
 # Video scripts (each ≤ 60 seconds, MP4/MOV)
 
-Record with any screen recorder (Windows: Snipping Tool's screen recording, or Xbox Game Bar with Win+Alt+R; macOS: Shift+Cmd+5). Use the live site https://suvyakth.github.io/lexmap/. Speak calmly; about 140 words fit in 60 seconds. The brief asks for your scores in the videos, so the technical video shows the self-check report and T1–T5.
+Record with any screen recorder (Windows: Snipping Tool's screen recording, or Xbox Game Bar with Win+Alt+R; macOS: Shift+Cmd+5). Use 1080p and zoom the browser to 125%; no music under the voice. Use the live site https://suvyakth.github.io/lexmap/. About 140 spoken words fit in 60 seconds. The brief asks for your scores in the videos, so the technical video shows the self-check report and T1–T5.
 
 ---
 
@@ -10,8 +10,8 @@ Record with any screen recorder (Windows: Snipping Tool's screen recording, or X
 > I built it solo this weekend, with Claude as my pair programmer.
 > I picked this challenge because housing law is public, but almost nobody can read it at the level that matters: one address.
 > Renters don't know their rights, and small landlords don't know their obligations.
-> Lexmap turns 67 documents of state and city law into executable rules. It answers any address with a quote from the law itself.
-> My focus was trust: no invented rules, honest "unknown" answers, and an audit trail for every answer.
+> Lexmap turns 67 documents of state and city law into executable rules. It answers any address, on any date, with a quote from the law itself.
+> My focus was trust: no invented rules, honest "unknown" answers, and an audit trail behind every answer.
 > Thanks for watching. The demo and the technical walkthrough are next.
 
 ---
@@ -20,12 +20,13 @@ Record with any screen recorder (Windows: Snipping Tool's screen recording, or X
 
 | Time | Show | Say |
 |---|---|---|
-| 0–8 s | Home page, "Not legal advice" banner visible | "Lexmap answers one question: which housing rules apply at this address, and what's about to change." |
-| 8–20 s | Click the chip **San Francisco, 1926** (A0016). Scroll the Rent increases section | "A 1926 San Francisco building. Local rent control applies, and California's statewide cap shows as *superseded* because the city ordinance governs. Every card quotes the law." Click **Source quote**. |
-| 20–28 s | Click **San Francisco, 2019** (A0105) | "A 2019 building: no rent cap at all, because it's newer than both cut-offs. Just-cause protection still applies." |
-| 28–38 s | Click **Los Angeles, built 1978** (A0107) | "Built in 1978, the cut-off year. Year built isn't the certificate-of-occupancy date, so Lexmap says *unknown* and names the missing fact. It doesn't guess." |
-| 38–50 s | Click **Hoboken** (A0002). Click the date chip **Jul 2, 2027** | "Hoboken's local algorithmic-pricing ban applies today. Move the date to July 2027 and New Jersey's FAIR Act takes effect. Lexmap flags a possible preemption conflict for human review." |
-| 50–60 s | Click the **What's changing** tab | "All five change cases are computed by the same engine, with every affected address listed. You can switch to Spanish too." Click **ES** for a second. |
+| 0–6 s | Home page, "Not legal advice" banner | "Lexmap: which housing rules apply at this address, today or on any date." |
+| 6–17 s | Click the chip **San Francisco, 1926**. Point at the at-a-glance table, then open one **Source quote** | "A 1926 San Francisco building. Local rent control applies, so California's statewide cap is *superseded*. Every line quotes the law and when it was retrieved." |
+| 17–25 s | Click **Los Angeles, built 1978** | "Built in the cut-off year. Year built isn't the certificate-of-occupancy date, so Lexmap says *unknown* and names the missing fact. It never guesses." |
+| 25–33 s | Click **Dorchester → Boston**. Scroll to Rent increases | "Dorchester is legally Boston. Massachusetts bars local rent control, and the 2026 ballot question was struck. So no rent cap, and the card explains why." |
+| 33–45 s | Click **Hoboken**, then the date chip **Jul 2, 2027** | "Hoboken's algorithmic-pricing ban applies today. Move the date to July 2027: New Jersey's FAIR Act takes effect, and Lexmap flags a possible preemption for human review." |
+| 45–55 s | **What's changing** tab: T1–T5 green, then the what-if card | "All five change tests pass, with every affected address listed. A brand-new ordinance goes through the same pipeline, with its future effective date and the 45 buildings it would cover." |
+| 55–60 s | Click **ES** for two seconds | "In English and Spanish. Not legal advice." |
 
 ---
 
@@ -33,10 +34,11 @@ Record with any screen recorder (Windows: Snipping Tool's screen recording, or X
 
 | Time | Show | Say |
 |---|---|---|
-| 0–10 s | README "How it works" diagram on GitHub | "The model reads the law. It never decides what applies. Each rule is extracted with machine-readable coverage logic, for example certificate of occupancy after June 13, 1979." |
-| 10–22 s | `submission/rules.json`, one rule with `quoted_span`, `coverage_logic`, `provenance` | "Every quote is verified character-for-character against the source file: 129 of 129. A second model merges sources, and an independent QA pass checks every cut-off's direction." |
-| 22–35 s | Terminal: `python run.py` (finishes in ~1 s from cache), then `python -m lexmap.selfcheck` | "Every model call is cached by prompt hash, so the whole submission reproduces offline. Our self-check implements the brief's rules: 44 of 44 pass." |
-| 35–47 s | Scroll `submission/selfcheck_report.md` to the **C** rows (T1–T5) | "T1 through T5 all match: CA flips on Jan 2, 2026. Hoboken and Jersey City stay inside city limits. The FAIR Act is not yet effective, with 90 conflict flags. The MA bills are pending, and there's no rent cap in Massachusetts." |
-| 47–60 s | Terminal: `python run.py whatif data/whatif/fictional_cambridge_ordinance.txt --jurisdiction "Cambridge, MA"` | "A brand-new ordinance goes through the same pipeline. Here a fictional Cambridge one is extracted with its future effective date, and the 44 affected buildings are listed. Adding a jurisdiction is just documents plus one command." |
+| 0–8 s | README "How it works" diagram | "The model only reads the law. A deterministic three-valued evaluator decides what applies." |
+| 8–22 s | Terminal: `python run.py whatif data/whatif/fictional_cambridge_ordinance.txt --jurisdiction "Cambridge, MA" --live` (a real model call, about 10 s) | "Here's a new ordinance going through the pipeline live, with no hand-coding. The quote is verified against the file, the effective date is computed, and the affected buildings are listed." |
+| 22–32 s | `submission/rules.json`: one rule showing `coverage_logic`, `quoted_span`, `provenance.qa` | "Each rule compiles to executable coverage logic. Then an independent QA pass checks every cut-off, its scope and its citation against the source." |
+| 32–47 s | `submission/selfcheck_report.md`: the "44/44" line, then the T1–T5 rows | "Our scores: 44 of 44 self-checks pass. T1 to T5 all match, including 90 conflict flags for the FAIR Act. 96% of 'applies' answers quote the official corpus." |
+| 47–55 s | Terminal: `python run.py` (say "cached replay"), then `node tests/parity.js` | "Every model call is cached by prompt hash, so the whole submission replays offline. The browser engine matches Python on all 2,000 answers." |
+| 55–60 s | README "Scalability path" | "A new city needs only its documents and one config line." |
 
-Tip: before recording, run each command once so the output is ready. `python run.py` needs no API key.
+Tip: run each command once before recording. `python run.py` needs no API key. The `--live` what-if call uses your Claude Code login (or `OPENROUTER_API_KEY`).

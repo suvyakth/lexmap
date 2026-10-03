@@ -8,5 +8,7 @@ Live: https://suvyakth.github.io/lexmap/  Repo: https://github.com/suvyakth/lexm
 - [x] whatif.py + fictional Cambridge ordinance demo
 - [x] README, METHOD_NOTE, VIDEO_SCRIPTS, SUBMISSION_CHECKLIST
 - [x] GitHub Pages live
-- [ ] Apply findings from build/review_legal.md, build/review_judge.md, unit-test bug report
-- [ ] Final numbers in README/METHOD_NOTE re-checked after last pipeline run
+- [x] Apply findings from build/review_legal.md, build/review_judge.md, unit-test bug report (event scope, city limits, re-sourcing, geocode house numbers, T6 readiness)
+- [x] Final numbers in README/METHOD_NOTE re-checked after last pipeline run
+- [ ] Final independent review round (regressions) and fixes
+- [ ] Morning: user records 3 videos, team photo, submits platform + Google Form (SUBMISSION_CHECKLIST.md)
