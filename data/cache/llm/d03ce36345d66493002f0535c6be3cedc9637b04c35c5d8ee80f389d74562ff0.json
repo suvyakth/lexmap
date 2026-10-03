@@ -1,0 +1,8 @@
+{
+ "key": "d03ce36345d66493002f0535c6be3cedc9637b04c35c5d8ee80f389d74562ff0",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Jersey City, NJ:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:16:02+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The excerpts describe Jersey City Code § 218-12 as a prohibition taking effect June 2025, with no indication of any earlier version of the ban, so the date marks first enactment.\"}"
+}

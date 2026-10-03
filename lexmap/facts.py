@@ -87,7 +87,7 @@ def facts_for(row: dict) -> dict:
 def units_label(f: dict) -> str:
     lo, hi = f["units_min"], f["units_max"]
     if lo == hi:
-        return f"{int(lo)} units"
+        return f"{int(lo)} unit" + ("" if lo == 1 else "s")
     if hi == INF:
         return f"{int(lo)}+ units (derived)"
     return f"{int(lo)}-{int(hi)} units (derived)"

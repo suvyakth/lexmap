@@ -104,8 +104,9 @@ class Engine:
             return None
         if status == "pending":
             return {"result": "pending", "reason": "Bill or proposal, not law.", "missing": []}
-        eff = _d(rule.get("effective_date"))
-        if (eff and eff > as_of) or (status == "not_yet_effective" and not eff):
+        # For an amendment the requirement was already in force (earlier version) before effective_date.
+        eff = _d(rule.get("in_force_since")) if rule.get("amendment") else _d(rule.get("effective_date"))
+        if (eff and eff > as_of) or (status == "not_yet_effective" and not eff and not rule.get("amendment")):
             return {"result": "not_yet_effective",
                     "reason": f"Enacted; takes effect {rule.get('effective_date') or 'on a future date'}.",
                     "missing": []}
@@ -164,6 +165,9 @@ class Engine:
             partners = [c for c in (r.get("conflicts_with") or []) if c in present]
             conflict = bool(r.get("source_conflict")) or bool(partners)
             expl = e["reason"]
+            ce = _d(r.get("effective_date"))
+            if r.get("amendment") and ce and ce > as_of and e["result"] in ("applies", "superseded", "unknown"):
+                expl += f" The version quoted takes effect {r['effective_date']}; an earlier version applies before then."
             if not is_official(r):
                 expl += " Source: a secondary summary (law-firm or news page); the enacting text is not in the corpus."
             if partners:

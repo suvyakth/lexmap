@@ -1191,12 +1191,6 @@
   ],
   "A0022": [
    {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
-    "conflict_flag": false
-   },
-   {
     "team_rule_id": "LA-EVICT-01",
     "result": "applies",
     "explanation": "Los Angeles, CA city rule; the address is inside city limits. Covered: certificate-of-occupancy date after 1978-10-01? yes (built 2012).",
@@ -1236,14 +1230,8 @@
   "A0023": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1987); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -1944,14 +1932,8 @@
   "A0035": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1997); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -2050,14 +2032,8 @@
   "A0037": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 2001); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -2492,14 +2468,8 @@
   "A0045": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1987); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -3644,14 +3614,8 @@
   "A0066": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1988); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -4404,14 +4368,8 @@
   "A0080": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 2002); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -5983,13 +5941,13 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (certificate-of-occupancy date, a building condition not in the data).",
+    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (certificate-of-occupancy date).",
     "conflict_flag": false
    },
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (built 1978); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (built 1978).",
     "conflict_flag": false
    },
    {
@@ -6230,14 +6188,8 @@
   "A0111": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1984); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -9140,14 +9092,8 @@
   "A0162": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1987); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -9582,14 +9528,8 @@
   "A0170": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1990); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -10130,14 +10070,8 @@
   "A0180": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1990); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -11341,7 +11275,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -11959,12 +11893,6 @@
   ],
   "A0210": [
    {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
-    "conflict_flag": false
-   },
-   {
     "team_rule_id": "LA-EVICT-01",
     "result": "applies",
     "explanation": "Los Angeles, CA city rule; the address is inside city limits. Covered: certificate-of-occupancy date after 1978-10-01? yes (built 2016).",
@@ -12128,14 +12056,8 @@
   "A0213": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1986); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -13439,7 +13361,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -14432,14 +14354,8 @@
   "A0252": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1984); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -15351,7 +15267,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -16479,7 +16395,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -18026,14 +17942,8 @@
   "A0315": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1990); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -18954,12 +18864,6 @@
    }
   ],
   "A0330": [
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
-    "conflict_flag": false
-   },
    {
     "team_rule_id": "LA-EVICT-01",
     "result": "applies",
@@ -20227,7 +20131,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -20338,14 +20242,8 @@
   "A0355": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1986); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -21468,14 +21366,8 @@
   "A0374": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1990); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -23318,14 +23210,8 @@
   "A0405": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 2008); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -24033,7 +23919,7 @@
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (year built not in the data).",
     "conflict_flag": false
    },
    {
@@ -24622,14 +24508,8 @@
   "A0427": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1986); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -24909,13 +24789,13 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (certificate-of-occupancy date, a building condition not in the data).",
+    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (certificate-of-occupancy date).",
     "conflict_flag": false
    },
    {
     "team_rule_id": "LA-RENT-01",
     "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (built 1978); unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "explanation": "Coverage depends on facts not in the data: certificate-of-occupancy date on or before 1978-10-01? unknown (built 1978).",
     "conflict_flag": false
    },
    {
@@ -25212,14 +25092,8 @@
   "A0437": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 2004); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -25522,14 +25396,8 @@
   "A0442": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1986); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -25990,14 +25858,8 @@
   "A0451": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1989); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -27576,14 +27438,8 @@
   "A0479": [
    {
     "team_rule_id": "CA-RENT-01",
-    "result": "unknown",
-    "explanation": "Applies unless the local rule LA-RENT-01 covers this building, which depends on facts not in the data (a building condition not in the data).",
-    "conflict_flag": false
-   },
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
+    "result": "applies",
+    "explanation": "Statewide California rule. Exemption cannot apply: certificate-of-occupancy date after 2011-10-01 (15 years before the query date)? no (built 1990); property type is duplex? no (apartment building).",
     "conflict_flag": false
    },
    {
@@ -28350,12 +28206,6 @@
    }
   ],
   "A0492": [
-   {
-    "team_rule_id": "LA-RENT-01",
-    "result": "unknown",
-    "explanation": "Coverage depends on facts not in the data: unit is a replacement unit under LAMC Section 151.28? unknown (not in the data).",
-    "conflict_flag": false
-   },
    {
     "team_rule_id": "LA-EVICT-01",
     "result": "applies",

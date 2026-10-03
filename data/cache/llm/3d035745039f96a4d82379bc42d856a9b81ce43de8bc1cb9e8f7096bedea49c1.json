@@ -1,0 +1,8 @@
+{
+ "key": "3d035745039f96a4d82379bc42d856a9b81ce43de8bc1cb9e8f7096bedea49c1",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Los Angeles, CA:security_deposits",
+ "created_at": "2026-10-03T21:16:04+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The code text states interest 'shall begin accruing on November 1, 1990,' showing the interest requirement began on that date, with no excerpt showing an earlier version in force (later annual rate changes do not alter that the requirement started then).\"}"
+}

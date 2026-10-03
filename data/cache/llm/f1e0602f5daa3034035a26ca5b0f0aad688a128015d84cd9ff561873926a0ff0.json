@@ -1,0 +1,8 @@
+{
+ "key": "f1e0602f5daa3034035a26ca5b0f0aad688a128015d84cd9ff561873926a0ff0",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:screening_restrictions",
+ "created_at": "2026-10-03T21:16:00+00:00",
+ "text": "{\"kind\": \"amendment\", \"in_force_since\": \"2020-01-01\", \"reason\": \"The 2024-01-01 date is when SB 267 (Stats. 2023, Ch. 776) amended Gov. Code § 12955, and the excerpts show source-of-income protections for Section 8 voucher holders already in force as of Jan. 1, 2020.\"}"
+}

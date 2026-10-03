@@ -1,0 +1,8 @@
+{
+ "key": "b3b785cff2cb95bf78f5b7c460d873888626ab04b06361122e9d99fcdd7b4a42",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Santa Ana, CA:rent_increase_limits",
+ "created_at": "2026-10-03T21:16:13+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The excerpts describe the rent cap as part of newly adopted ordinances that were not effective until November 19, 2021, with no indication of a prior rent increase limit in Santa Ana.\"}"
+}

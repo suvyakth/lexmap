@@ -15,11 +15,11 @@
 | B | every lookup references a rule in rules.json | PASS | [] |
 | B | rules only appear inside their own jurisdiction (geocoded legal city) | PASS | [] |
 | B | failed measures are never reported for an address | PASS | [] |
-| B | every 'unknown' names the missing fact | PASS | 490/490 |
-| B | every 'applies' answer is backed by a source URL and verbatim quote | PASS | 3491/3491 |
-| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 3354/3491 = 96% |
+| B | every 'unknown' names the missing fact | PASS | 444/444 |
+| B | every 'applies' answer is backed by a source URL and verbatim quote | PASS | 3512/3512 |
+| B | share of 'applies' answers whose quote is in the official corpus text (info) | PASS | 3375/3512 = 96% |
 | B | superseded answers name the governing local rule | PASS | 305 superseded |
-| B | result distribution (info) | PASS | {"superseded": 305, "applies": 3491, "not_yet_effective": 140, "unknown": 490, "pending": 220} |
+| B | result distribution (info) | PASS | {"superseded": 305, "applies": 3512, "not_yet_effective": 140, "unknown": 444, "pending": 220} |
 | B | addresses resolved by the Census geocoder (info) | PASS | 487/500 matched; 13 from mailing-city fallback (flagged low confidence) |
 | C | T1 affected set matches the expected behaviour (California AB 325 / SB 763 takes effect) | PASS | got 250, expected 250 |
 | C | T1: rule CA-ALG-01 exists in rules.json | PASS | Cartwright Act: ban on use or distribution of common pricing algorithms (AB 325) |

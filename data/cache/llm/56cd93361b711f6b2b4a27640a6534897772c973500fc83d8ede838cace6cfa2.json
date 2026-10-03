@@ -1,0 +1,8 @@
+{
+ "key": "56cd93361b711f6b2b4a27640a6534897772c973500fc83d8ede838cace6cfa2",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:San Francisco, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:16:10+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The SF.gov notice describes Section 37.10C as newly added to the Rent Ordinance and effective October 14, 2024, with no sign of an earlier version of the ban in force.\"}"
+}

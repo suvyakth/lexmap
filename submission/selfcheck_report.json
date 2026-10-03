@@ -75,19 +75,19 @@
    "group": "B",
    "check": "every 'unknown' names the missing fact",
    "ok": true,
-   "detail": "490/490"
+   "detail": "444/444"
   },
   {
    "group": "B",
    "check": "every 'applies' answer is backed by a source URL and verbatim quote",
    "ok": true,
-   "detail": "3491/3491"
+   "detail": "3512/3512"
   },
   {
    "group": "B",
    "check": "share of 'applies' answers whose quote is in the official corpus text (info)",
    "ok": true,
-   "detail": "3354/3491 = 96%"
+   "detail": "3375/3512 = 96%"
   },
   {
    "group": "B",
@@ -99,7 +99,7 @@
    "group": "B",
    "check": "result distribution (info)",
    "ok": true,
-   "detail": "{\"superseded\": 305, \"applies\": 3491, \"not_yet_effective\": 140, \"unknown\": 490, \"pending\": 220}"
+   "detail": "{\"superseded\": 305, \"applies\": 3512, \"not_yet_effective\": 140, \"unknown\": 444, \"pending\": 220}"
   },
   {
    "group": "B",

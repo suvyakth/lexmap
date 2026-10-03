@@ -1,0 +1,8 @@
+{
+ "key": "a795ba6e5ee4f6c083f5449354d1e743584c7bdd1c552680902881729ce4fff2",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:rent_increase_limits",
+ "created_at": "2026-10-03T21:15:56+00:00",
+ "text": "{\"kind\":\"amendment\",\"in_force_since\":\"2019-03-15\",\"reason\":\"The 2024-04-01 date is when SB 567's rewritten § 1947.12 became operative, replacing the AB 1482 rent cap that already applied to rent increases on or after March 15, 2019 (and the prior 8.8% cap in effect from Aug 2023 confirms an earlier version).\"}"
+}

@@ -1,0 +1,8 @@
+{
+ "key": "72ef6c88514c10ce4e569e0aade3edfe6a551da32c39cc247115c7428e0559ea",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:just_cause_eviction",
+ "created_at": "2026-10-03T21:15:59+00:00",
+ "text": "{\"kind\":\"amendment\",\"in_force_since\":null,\"reason\":\"The excerpts show § 1946.2 as a section with an operative date of April 1, 2024, later amended by Stats. 2025 (AB 1529), and a September 1, 2019 local-ordinance cutoff in its text. Together these indicate the 2024 date marks a re-enacted or amended version of an existing just-cause requirement, but the excerpts give no date on which the earlier version took effect, so in_force_since is null.\"}"
+}

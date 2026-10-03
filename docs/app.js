@@ -23,7 +23,7 @@
       tally_applies: "apply", tally_unknown: "unknown", tally_superseded: "superseded", tally_nye: "not yet effective", tally_pending: "pending",
       exemptions: "Exemptions", coverage: "Coverage logic", requirement: "Requirement",
       event_only: "Only if a specific event happens (demolition, conversion, temporary displacement)",
-      no_rule_short: "No rule found in the corpus", category: "Category", governs: "What governs here", citation: "Citation",
+      no_rule_short: "No rule found in the corpus", no_rule_covers: "No rule in the corpus covers this building", category: "Category", governs: "What governs here", citation: "Citation",
     },
     es: {
       applies: "Aplica", superseded: "Desplazada", unknown: "Desconocido", not_yet_effective: "Aún no vigente", pending: "Proyecto pendiente",
@@ -36,7 +36,7 @@
       tally_applies: "aplican", tally_unknown: "desconocidas", tally_superseded: "desplazadas", tally_nye: "aún no vigentes", tally_pending: "pendientes",
       exemptions: "Exenciones", coverage: "Lógica de cobertura", requirement: "Requisito",
       event_only: "Solo si ocurre un hecho específico (demolición, conversión, desplazamiento temporal)",
-      no_rule_short: "No se encontró ninguna norma en el corpus", category: "Categoría", governs: "Qué rige aquí", citation: "Cita",
+      no_rule_short: "No se encontró ninguna norma en el corpus", no_rule_covers: "Ninguna norma del corpus cubre este edificio", category: "Categoría", governs: "Qué rige aquí", citation: "Cita",
     },
   };
   const UI_ES = {
@@ -58,7 +58,7 @@
 
   // ------------------------------------------------------------------ data
   async function load() {
-    const names = ["rules", "addresses", "sources", "gaps", "changes", "selfcheck", "meta"];
+    const names = ["rules", "addresses", "sources", "gaps", "changes", "selfcheck", "meta", "unread"];
     const res = await Promise.all(names.map((n) => fetch(`data/${n}.json`).then((r) => r.json())));
     names.forEach((n, i) => (D[n] = res[i]));
     D.byId = Object.fromEntries(D.rules.map((r) => [r.team_rule_id, r]));
@@ -96,7 +96,7 @@
     return `<span class="c">${esc(r.citation)}</span>
       <span>${official ? t("official") : t("secondary")} · <a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_doc_id)}</a></span>
       <span>${t("retrieved")} ${esc(r.retrieved_at || s.retrieved_at || "")}</span>
-      <span class="conf" title="Model-reported confidence, capped at 0.6 for secondary sources and 0.75 for flagged conflicts">${t("confidence")} <span class="meter"><i style="width:${Math.round((r.confidence || 0) * 100)}%"></i></span> ${Math.round((r.confidence || 0) * 100)}%</span>`;
+      <span class="conf" title="Model-reported confidence (not a calibrated probability), capped at 0.6 for secondary-only sources and 0.75 for rules flagged for review">${t("confidence")} <span class="meter"><i style="width:${Math.round((r.confidence || 0) * 100)}%"></i></span> ${Math.round((r.confidence || 0) * 100)}%</span>`;
   }
 
   // ------------------------------------------------------------------ lookup view
@@ -111,7 +111,9 @@
     const count = (r) => entries.filter((e) => e.result === r).length;
     const f = addr.facts;
     const stackHtml = addr.stack.map((j) => `<span class="lvl">${esc(j.length === 2 ? D.meta.states[j] : j)}</span>`).join('<span class="sep">›</span>');
-    const flags = (meta.flags || []).map((x) => `<li>${esc(x)}</li>`).join("");
+    const unread = addr.stack.filter((j) => j.includes(",")).flatMap((j) => (D.unread[j] || []).map((u) => [j, u]));
+    const unreadNote = unread.length ? [`${unread.length} ${unread[0][0]} source document${unread.length === 1 ? " is" : "s are"} link-only (${[...new Set(unread.map(([, u]) => u.source_type))].join(", ")}) and could not be read, so local rules they contain (for example rent control) are not reflected here.`] : [];
+    const flags = (meta.flags || []).concat((f.flags || []).map((x) => "Assessor flag: " + x), unreadNote).map((x) => `<li>${esc(x)}</li>`).join("");
     const units = f.units_min == null || (f.units_min <= 1 && f.units_max == null) ? t("not_in_data") : Lexmap.unitsText(f);
     let html = `<div class="card addr">
       <div class="addr-top">
@@ -135,12 +137,12 @@
         ${entries.some((e) => e.conflict_flag) ? `<span class="pill conflict">⚑ ${t("conflict")}: ${entries.filter((e) => e.conflict_flag).length}</span>` : ""}
       </div>
     </div>`;
-    html += glance(by);
+    html += glance(by, addr, asOf);
     for (const c of D.meta.categories) {
       const es = by[c] || [];
       const ev = evBy[c] || [];
       html += `<section class="cat" id="cat-${c}"><div class="cat-h"><h3>${esc(catName(c))}</h3><span class="n">${es.length} rule${es.length === 1 ? "" : "s"}</span></div>`;
-      if (!es.length) html += noRuleCard(c, addr);
+      if (!es.length) html += noRuleCard(c, addr, asOf);
       for (const e of es) html += ruleCard(e);
       if (ev.length) html += `<details class="src evgroup"><summary>${t("event_only")} (${ev.length})</summary>${ev.map(ruleCard).join("")}</details>`;
       html += `</section>`;
@@ -149,24 +151,52 @@
   }
 
   // One line per category: what governs here, at a glance (mirrors the brief's illustrative output).
-  function glance(by) {
+  function glance(by, addr, asOf) {
     const rank = { applies: 0, unknown: 1, not_yet_effective: 2, superseded: 3, pending: 4 };
     let rows = "";
     for (const c of D.meta.categories) {
       const es = (by[c] || []).slice().sort((a, b) => rank[a.result] - rank[b.result]);
-      if (!es.length) { rows += `<tr><td>${esc(catName(c))}</td><td colspan="2" class="muted">${t("no_rule_short")}</td></tr>`; continue; }
+      const link = `<button class="catlink" data-cat="${c}">${esc(catName(c))}</button>`;
+      if (!es.length) {
+        const why = omittedRules(c, addr, asOf);
+        const bars = D.rules.filter((r) => r.category === c && addr.stack.includes(r.jurisdiction) && r.subject === "municipality" && r.status === "in_force" && !(r.coverage_logic || {}).covers);
+        const txt = bars.length ? `State law bars local rules of this kind (${bars.map((r) => r.citation).join(", ")})`
+          : why.length ? t("no_rule_covers") : t("no_rule_short");
+        rows += `<tr><td>${link}</td><td colspan="2" class="muted">${esc(txt)}</td></tr>`;
+        continue;
+      }
       const main = es[0], r = main.rule;
       const more = es.length > 1 ? ` <span class="muted">+${es.length - 1} more</span>` : "";
-      rows += `<tr><td><a href="#cat-${c}" class="catlink">${esc(catName(c))}</a></td>
-        <td>${pill(main.result)} <b>${esc(r.title)}</b>${more}${r.key_value ? `<div class="muted">${esc(r.key_value)}</div>` : ""}</td>
+      rows += `<tr><td>${link}</td>
+        <td>${pill(main.result)} ${main.conflict_flag ? '<span class="pill conflict">⚑</span> ' : ""}<b>${esc(r.title)}</b>${more}${r.key_value ? `<div class="muted">${esc(r.key_value)}</div>` : ""}</td>
         <td class="c">${esc(r.citation)}</td></tr>`;
     }
     return `<div class="card glance"><table><thead><tr><th>${t("category")}</th><th>${t("governs")}</th><th>${t("citation")}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   }
 
   // "No rule" is still an answer: show what the corpus says (state bars on local rules, failed measures).
-  function noRuleCard(c, addr) {
-    const bits = [];
+  // Rules of this category in force here that the engine left out, with the reason (exempt / not covered).
+  function omittedRules(c, addr, asOf) {
+    const out = [];
+    for (const r of D.rules) {
+      if (r.category !== c || !addr.stack.includes(r.jurisdiction) || r.subject === "municipality" || r.scope === "event") continue;
+      if (r.status === "failed" || r.status === "pending") continue;
+      const only = r.applies_only_in || [];
+      if (only.length && !only.some((x) => addr.stack.includes(x))) continue;
+      if (r.end_date && r.end_date <= asOf) { out.push([r, `expired ${r.end_date}`]); continue; }
+      const tc = [], te = [];
+      const cov = Lexmap.evaluate((r.coverage_logic || {}).covers, addr.facts, asOf, tc);
+      if (cov === false) { out.push([r, "outside its coverage: " + tc.filter((l) => l.result === false && !l.irrelevant).map((l) => Lexmap.describeLeaf(l, addr.facts)).join("; ")]); continue; }
+      const ex = (r.coverage_logic || {}).exempt ? Lexmap.evaluate(r.coverage_logic.exempt, addr.facts, asOf, te) : false;
+      if (ex === true) out.push([r, "exempt: " + te.filter((l) => l.result === true && !l.irrelevant).map((l) => Lexmap.describeLeaf(l, addr.facts)).join("; ")]);
+      else if (r.level === "city") out.push([r, "a state law exempts this building from local rules of this kind"]);
+    }
+    return out;
+  }
+
+  function noRuleCard(c, addr, asOf) {
+    const omitted = omittedRules(c, addr, asOf);
+    const bits = omitted.map(([r, why]) => `<li><b>${esc(r.team_rule_id)}</b> (${esc(r.citation)}) does not cover this building: ${esc(why)}.</li>`);
     for (const r of D.rules) {
       if (r.category !== c || !addr.stack.includes(r.jurisdiction)) continue;
       if (r.subject === "municipality" && r.status === "in_force" && !(r.coverage_logic || {}).covers)
@@ -174,7 +204,7 @@
       if (r.status === "failed")
         bits.push(`<li>${pill("failed")} <b>${esc(r.title)}</b> (${esc(r.citation)}): never became law, so it is not reported.</li>`);
     }
-    return `<div class="empty">${t("no_rule")}${bits.length ? `<ul class="flags">${bits.join("")}</ul>` : ""}</div>`;
+    return `<div class="empty">${omitted.length ? t("no_rule_covers") + "." : t("no_rule")}${bits.length ? `<ul class="flags">${bits.join("")}</ul>` : ""}</div>`;
   }
 
   function ruleCard(e) {
@@ -204,8 +234,10 @@
   }
 
   function showSample(id, push) {
-    const a = D.addrById[id];
+    const a = D.addrById[id] || D.addrById["A0016"];
     if (!a) return;
+    id = a.id;
+    syncChips();
     current = { kind: "sample", id };
     $("#q").value = `${a.street}, ${a.postal_city}, ${a.state}`;
     renderAddress({ stack: a.stack, facts: a.facts }, {
@@ -253,11 +285,15 @@
     $("#examples").addEventListener("click", (ev) => { const b = ev.target.closest("button[data-id]"); if (b) showSample(b.dataset.id); });
   }
 
+  function syncChips() {
+    $$("#date-chips .chip").forEach((c) => c.classList.toggle("active", c.dataset.d === $("#asof").value));
+  }
+
   function setupDates() {
     const chips = [["2025-12-31", "Dec 31, 2025"], ["2026-01-02", "Jan 2, 2026"], ["2026-10-01", "Oct 1, 2026 (corpus date)"], ["2027-07-02", "Jul 2, 2027"]];
     $("#date-chips").innerHTML = chips.map(([d, l]) => `<button class="chip${d === DEFAULT_ASOF ? " active" : ""}" data-d="${d}">${l}</button>`).join("");
     const rerender = () => {
-      $$("#date-chips .chip").forEach((c) => c.classList.toggle("active", c.dataset.d === $("#asof").value));
+      syncChips();
       if (!current) return;
       if (current.kind === "sample") showSample(current.id);
       else renderAddress(current.addr, current.meta);
@@ -316,8 +352,11 @@
         const addr = { stack: [st].concat(city ? [city] : []), facts };
         const meta = { title: address, matched: m.matchedAddress, flags, idLabel: "live lookup" };
         current = { kind: "custom", addr, meta };
+        history.replaceState(null, "", location.pathname);
         renderAddress(addr, meta);
       } catch (e) {
+        current = null;
+        history.replaceState(null, "", location.pathname);
         $("#result").innerHTML = `<div class="empty">${esc(e.message)}. The 500 sample addresses still work offline.</div>`;
       }
     });
@@ -422,7 +461,7 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
       <div class="steps">
         <div class="card step"><div class="num">${nSrc}</div><h3>Sources read</h3><p>${nSrc - nSupp} official corpus texts plus ${nSupp} organiser-listed secondary pages. Code publishers marked “check terms” were not fetched.</p></div>
         <div class="card step"><div class="num">${D.rules.length}</div><h3>Rules extracted</h3><p>An LLM reads each document and emits schema records with executable coverage logic. Every quote is matched verbatim against the source file.</p></div>
-        <div class="card step"><div class="num">2×</div><h3>Reconciled and reviewed</h3><p>A stronger model merges duplicates across sources and flags conflicts. A separate QA pass checks the direction of every cut-off.</p></div>
+        <div class="card step"><div class="num">3×</div><h3>Reconciled, reviewed, re-sourced</h3><p>A stronger model merges duplicates across sources. An independent QA pass checks every cut-off, its scope, citation and status. A third pass swaps secondary quotes for official text where one exists.</p></div>
         <div class="card step"><div class="num">${D.addresses.length}</div><h3>Addresses resolved</h3><p>Census Geocoder gives the legal city (Dorchester resolves to Boston). Out-of-state owner ZIPs are detected and ignored.</p></div>
         <div class="card step"><div class="num">${sc.passed}/${sc.total}</div><h3>Self-checks passing</h3><p>Schema, verbatim citations, jurisdiction boundaries, T1–T5, and no rent cap in Massachusetts.</p></div>
       </div>
@@ -483,6 +522,12 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
   async function boot() {
     try { await load(); } catch (e) { $("#result").innerHTML = `<div class="empty">Could not load data: ${esc(e.message)}</div>`; return; }
     $$(".tabs button").forEach((b) => b.addEventListener("click", () => switchTab(b.dataset.tab)));
+    $("#result").addEventListener("click", (ev) => {
+      const b = ev.target.closest("button.catlink");
+      if (!b) return;
+      const sec = document.getElementById("cat-" + b.dataset.cat);
+      if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     $$(".lang button").forEach((b) => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
     setupSearch(); setupDates(); setupCustom(); renderChanges(); renderRules(); renderMethod();
     const m = location.hash.match(/^#(A\d{4})(?:@(\d{4}-\d{2}-\d{2}))?/);

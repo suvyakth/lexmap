@@ -44,6 +44,12 @@ def build(rules, expl, geos, addrs, changes_detailed, ch_report, selfcheck_repor
             if (j, c) not in have:
                 gaps[j].append(c)
     _w("gaps.json", gaps)
+    from .corpus import read_manifest
+    unread = defaultdict(list)
+    for row in read_manifest():
+        if row["doc_id"] not in docs:
+            unread[row["jurisdictions"]].append({"doc_id": row["doc_id"], "url": row["url"], "source_type": row["source_type"]})
+    _w("unread.json", unread)
     whatifs = []
     for f in sorted((config.BUILD / "whatif").glob("*.json")) if (config.BUILD / "whatif").exists() else []:
         w = json.loads(f.read_text(encoding="utf-8"))

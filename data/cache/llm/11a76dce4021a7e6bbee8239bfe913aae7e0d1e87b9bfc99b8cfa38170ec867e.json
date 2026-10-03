@@ -1,0 +1,8 @@
+{
+ "key": "11a76dce4021a7e6bbee8239bfe913aae7e0d1e87b9bfc99b8cfa38170ec867e",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Hoboken, NJ:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:16:01+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The excerpts list the Hoboken ordinance as effective July 2025 among a series of newly enacted algorithmic rent-coordination bans, with no mention of any earlier version or amendment.\"}"
+}

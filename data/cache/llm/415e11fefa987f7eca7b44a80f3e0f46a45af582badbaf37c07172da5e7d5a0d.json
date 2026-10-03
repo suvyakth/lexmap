@@ -1,0 +1,8 @@
+{
+ "key": "415e11fefa987f7eca7b44a80f3e0f46a45af582badbaf37c07172da5e7d5a0d",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:MA:application_screening_fees",
+ "created_at": "2026-10-03T21:16:06+00:00",
+ "text": "{\"kind\":\"amendment\",\"in_force_since\":null,\"reason\":\"Section 87DDD 1/2 already existed before 2025-08-01 (requiring a broker license for finding dwelling accommodations for a fee), and St. 2025, c. 9, § 43 amended it effective 2025-08-01 to add the contracting and fee-payment provisions, but the excerpts do not show when the earlier text first took effect.\"}"
+}

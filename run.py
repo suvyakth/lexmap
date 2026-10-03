@@ -16,7 +16,8 @@ import sys
 import time
 from datetime import date, datetime, timezone
 
-sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 
 from lexmap import config, llm  # noqa: E402
 
@@ -52,7 +53,11 @@ def export_rules(rules: list[dict], explain: dict) -> dict:
             "supporting_spans": [s["text"] for s in r["verified_spans"][1:]],
             "corroborating_sources": r.get("corroborating_sources") or [],
             "plain_language": explain.get(r["team_rule_id"]),
+            "amendment": bool(r.get("amendment")),
+            "in_force_since": r.get("in_force_since"),
             "provenance": {"extraction_llm_call": r.get("llm_call"), "reconcile": r.get("reconcile"),
+                           "qa": {k: (r.get("qa") or {}).get(k) for k in ("llm_call", "ok", "issues", "changes")},
+                           "date_meaning": r.get("date_meaning"),
                            "validation_notes": r.get("validation_notes") or []},
         })
         out.append(rec)
@@ -107,6 +112,10 @@ def pipeline(args) -> int:
             print("     --prune-cache needs --extract (otherwise extraction calls look unused); skipped")
     print(f"done in {time.time() - t0:.0f}s; llm {llm.stats()}; self-check: "
           f"{report['summary']['passed']}/{report['summary']['total']} checks passed")
+    if llm.stats().get("misses"):
+        print(f"ERROR: {llm.stats()['misses']} model call(s) were not in the cache and no LLM backend is available; "
+              "the outputs above are incomplete. Set OPENROUTER_API_KEY or install the Claude Code CLI.")
+        return 2
     return 0 if report["summary"]["failed"] == 0 else 1
 
 
@@ -116,6 +125,7 @@ def one_lookup(args) -> int:
     eng = lookup.Engine(rules)
     addrs = {a["address_id"]: a for a in lookup.address_records()}
     a = addrs[args.address]
+    print("NOT LEGAL ADVICE. Summaries of public law from a fixed research corpus; check the cited source.")
     print(f"{a['row']['street_address']}, {a['row']['postal_city']} -> {a['stack']} | facts: "
           f"year {a['facts']['year_built']}, {lookup.units_label(a['facts'])} | as of {args.as_of}")
     for e in eng.lookup(a, date.fromisoformat(args.as_of)):

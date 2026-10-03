@@ -81,6 +81,75 @@ def _status_from_dates(r: dict, as_of: str) -> str:
     return st if st in STATUS else "in_force"
 
 
+def _is_other_leaf(p) -> bool:
+    return isinstance(p, dict) and p.get("field") == "other_fact"
+
+
+def _has_other(p) -> bool:
+    if not isinstance(p, dict):
+        return False
+    if _is_other_leaf(p):
+        return True
+    return any(_has_other(q) for key in ("all", "any") for q in (p.get(key) or [])) or _has_other(p.get("not"))
+
+
+def _norm_covers(p):
+    """An `other_fact` offered as an ALTERNATIVE to a real building test (any[CO <= 1978, "replacement
+    unit"]) would make every building outside the real test 'unknown'.  Keep the real test only."""
+    if not isinstance(p, dict):
+        return p
+    if "any" in p:
+        kids = [_norm_covers(q) for q in p["any"]]
+        real = [k for k in kids if not _is_other_leaf(k)]
+        if real and len(real) < len(kids):
+            return real[0] if len(real) == 1 else {"any": real}
+        return {"any": kids}
+    if "all" in p:
+        return {"all": [_norm_covers(q) for q in p["all"]]}
+    if "not" in p:
+        return {"not": _norm_covers(p["not"])}
+    return p
+
+
+def _norm_exempt(p):
+    """Exemptions may only use modelled building/owner fields; an exemption that turns on an
+    unmodelled fact is dropped from the logic (it stays in the exemptions text)."""
+    if not isinstance(p, dict) or _is_other_leaf(p):
+        return None
+    if "any" in p:
+        kids = [k for k in (_norm_exempt(q) for q in p["any"]) if k is not None]
+        return None if not kids else (kids[0] if len(kids) == 1 else {"any": kids})
+    if _has_other(p):
+        return None
+    return p
+
+
+def normalise_logic(r: dict) -> None:
+    cl = r.get("coverage_logic") or {}
+    new = {"covers": _norm_covers(cl.get("covers")), "exempt": _norm_exempt(cl.get("exempt"))}
+    if new != {"covers": cl.get("covers"), "exempt": cl.get("exempt")}:
+        r.setdefault("validation_notes", []).append(
+            "coverage logic normalised: unmodelled 'other fact' alternatives/exemptions removed (kept in text): "
+            + json.dumps(cl, ensure_ascii=False)[:300])
+        r["coverage_logic"] = new
+
+
+def fill_dates(r: dict) -> None:
+    """An official null should not erase a date that another source states."""
+    if r.get("effective_date") or r.get("status") in ("pending", "failed"):
+        return
+    # Only secondary members: an official member's date that the editor did not adopt is usually a
+    # rate-period date (annual adjustment notices), not the law's effective date.
+    md = [m for m in r.get("member_dates") or [] if m[0] and not m[2]]
+    if not md:
+        return
+    md.sort(key=lambda m: m[0])
+    r["effective_date"] = md[0][0]
+    r.setdefault("validation_notes", []).append(
+        f"effective_date {md[0][0]} taken from {md[0][1]} ({'official' if md[0][2] else 'secondary'} source); "
+        f"the primary source states no date")
+
+
 def _dates_conflict(dates: list[str]) -> bool:
     """True if two dates disagree at their common precision ('2024-10' vs '2024-10-14' agree)."""
     ds = sorted(set(dates))
@@ -145,6 +214,7 @@ def build_rule(jur: str, cat: str, g: dict, cands: dict[str, dict]) -> dict:
         corro.append({"doc_id": m["source_doc_id"], "url": m["source_url"], "source_type": m["source_type"],
                       "quoted_span": m["verified_spans"][0]["text"], "retrieved_at": m["retrieved_at"]})
     r["corroborating_sources"] = corro
+    r["member_dates"] = [(m.get("effective_date"), m["source_doc_id"], bool(m["official_source"])) for m in members]
     conf = float(prim.get("confidence") or 0.7)
     if len({m["source_doc_id"] for m in members}) >= 2:
         conf = min(0.98, conf + 0.05)
@@ -341,9 +411,14 @@ def run(skip_qa: bool = False) -> list[dict]:
                 else:                            # resolved: keep the explanation, drop the flag
                     r["source_notes"] = r.get("conflict_note")
                     r["conflict_note"] = None
+    for r in rules:
+        normalise_logic(r)
+        fill_dates(r)
+        r["status"] = _status_from_dates(r, config.DEFAULT_AS_OF)
     if not skip_qa:
-        from . import resource
+        from . import dates, resource
         resource.run(rules)
+        dates.run(rules)
     for r in rules:
         r["citation_full"] = r.get("citation")
         r["citation"] = clean_citation(r.get("citation") or "") or r.get("citation")
@@ -351,6 +426,9 @@ def run(skip_qa: bool = False) -> list[dict]:
     for r in rules:   # conflicts that come from the sources themselves (vs. preemption wiring below)
         r["source_conflict"] = bool(r.get("conflict_flag"))
     wire_relations(rules)
+    for r in rules:
+        if r.get("conflict_flag"):
+            r["confidence"] = round(min(float(r.get("confidence") or 0.75), 0.75), 2)
     rules.sort(key=lambda r: r["team_rule_id"])
     config.BUILD.mkdir(parents=True, exist_ok=True)
     (config.BUILD / "rules_full.json").write_text(json.dumps(rules, ensure_ascii=False, indent=1), encoding="utf-8")

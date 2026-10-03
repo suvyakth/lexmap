@@ -1,0 +1,8 @@
+{
+ "key": "2720bce202d01bb16afe82d888adaa936611cb349645aa5eea1375686fe5a7ad",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Los Angeles, CA:just_cause_eviction",
+ "created_at": "2026-10-03T21:16:06+00:00",
+ "text": "{\"kind\":\"amendment\",\"in_force_since\":null,\"reason\":\"The excerpt says the RPO, adopted February 11, 2025, 'codified and expanded upon' replacement and occupant protections that the Housing Crisis Act of 2019 (SB 330) had already introduced, so a version of the requirement applied before that date, but the excerpts give no full in-force date for it.\"}"
+}

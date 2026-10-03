@@ -1,0 +1,8 @@
+{
+ "key": "5f97c33440b5990cf114b67fc86befd5879d753a90530537a4ac63674cf31f72",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:NJ:screening_restrictions",
+ "created_at": "2026-10-03T21:16:07+00:00",
+ "text": "{\"kind\":\"new\",\"in_force_since\":null,\"reason\":\"The act was approved June 18, 2021 and took effect on the first day of the seventh month after enactment (January 1, 2022); the excerpts show it as a newly enacted ban on pre-offer criminal record inquiries with no earlier version of the requirement in force.\"}"
+}

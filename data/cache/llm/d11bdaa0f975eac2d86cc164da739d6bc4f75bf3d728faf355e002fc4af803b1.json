@@ -1,0 +1,8 @@
+{
+ "key": "d11bdaa0f975eac2d86cc164da739d6bc4f75bf3d728faf355e002fc4af803b1",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:NJ:application_screening_fees",
+ "created_at": "2026-10-03T21:16:06+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"P.L.2025, c.405 is a newly enacted act (approved Jan 20, 2026) that supplements Title 46 to create the $50 application fee cap, taking effect on the first day of the fourth month after enactment (May 1, 2026), and the excerpts show no earlier version of the requirement; the CPI adjustment only begins later.\"}"
+}

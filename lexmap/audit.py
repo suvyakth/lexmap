@@ -36,6 +36,17 @@ def write(rules: list[dict], full_lookups: dict, as_of: str) -> None:
         for d in json.loads(dropped.read_text(encoding="utf-8")):
             lines.append({"event": "rejected", "stage": "reconcile", "doc_id": d["candidate"]["source_doc_id"],
                           "title": d["candidate"].get("title"), "reasons": [d.get("reason")], "llm_call": d.get("llm_call")})
+    from . import llm as _llm
+    for key in sorted(_llm._used):
+        cp = config.LLM_CACHE / f"{key}.json"
+        if cp.exists():
+            rec = json.loads(cp.read_text(encoding="utf-8"))
+            lines.append({"event": "llm_call", "key": key, "tag": rec.get("tag"), "model": rec.get("model"),
+                          "backend": rec.get("backend"), "created_at": rec.get("created_at")})
+    for r in rules:
+        for field, ch in ((r.get("qa") or {}).get("changes") or {}).items():
+            lines.append({"event": "qa_change", "team_rule_id": r["team_rule_id"], "field": field,
+                          "from": ch.get("from"), "to": ch.get("to"), "llm_call": (r.get("qa") or {}).get("llm_call")})
     for r in rules:
         lines.append({"event": "rule", "team_rule_id": r["team_rule_id"], "status": r["status"],
                       "source_doc_id": r["source_doc_id"], "source_url": r["source_url"],

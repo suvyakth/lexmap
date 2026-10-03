@@ -56,6 +56,7 @@ def main(args) -> int:
         print("usage: python run.py whatif <law.txt> --jurisdiction 'City, ST' [--as-of YYYY-MM-DD]")
         return 2
     doc, new, bad, rec = extract_new(path, jur, use_cache=not args.live)
+    print("NOT LEGAL ADVICE. What-if analysis of a supplied document; check the cited text.")
     print(f"Extracted {len(new)} rule(s) from {path.name} (model call {rec['key'][:12]}..., cached={rec.get('cached')})")
     for b in bad:
         print("  rejected:", b["reasons"][-1])
@@ -91,7 +92,7 @@ def main(args) -> int:
                 now[e["team_rule_id"]] = now.get(e["team_rule_id"], {})
                 now[e["team_rule_id"]][e["result"]] = now[e["team_rule_id"]].get(e["result"], 0) + 1
     report = {
-        "document": str(path), "jurisdiction": jur, "as_of": args.as_of, "evaluated_at": d_eval.isoformat(),
+        "document": path.as_posix().split("/")[-1], "jurisdiction": jur, "as_of": args.as_of, "evaluated_at": d_eval.isoformat(),
         "new_rules": [{k: r.get(k) for k in ("team_rule_id", "jurisdiction", "category", "status", "title", "requirement",
                                               "key_value", "effective_date", "citation", "coverage_logic", "conflicts_with",
                                               "conflict_note")} | {"quoted_span": r["verified_spans"][0]["text"]} for r in new],

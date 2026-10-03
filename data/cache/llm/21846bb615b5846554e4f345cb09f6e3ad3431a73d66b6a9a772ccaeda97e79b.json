@@ -1,0 +1,8 @@
+{
+ "key": "21846bb615b5846554e4f345cb09f6e3ad3431a73d66b6a9a772ccaeda97e79b",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Berkeley, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:15:56+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"Ordinance No. 7,992-N.S. enacts new Chapter 13.63 and nothing in the excerpts shows an earlier Berkeley prohibition on coordinated pricing algorithms, so the 2026-01 date marks when the requirement first came into force.\"}"
+}

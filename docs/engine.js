@@ -29,7 +29,8 @@
   }
   function minusYears(asOf, n) {
     let [y, m, d] = asOf.split("-").map(Number);
-    if (m === 2 && d === 29) d = 28;
+    const ty = y - n;
+    if (m === 2 && d === 29 && !((ty % 4 === 0 && ty % 100 !== 0) || ty % 400 === 0)) d = 28;
     return iso(y - n, m, d);
   }
   function cmpInterval(lo, hi, op, v) {
@@ -116,7 +117,7 @@
   }
   function evaluate(p, facts, asOf, trace) {
     trace = trace || [];
-    if (p === null || p === undefined) return T;
+    if (p === null || p === undefined || (typeof p === "object" && !Array.isArray(p) && !Object.keys(p).length)) return T;
     if ("all" in p || "any" in p) {
       const start = trace.length;
       let res;
@@ -140,7 +141,7 @@
   }
   function unitsText(facts) {
     const lo = facts.units_min, hi = facts.units_max;
-    if (lo != null && lo === hi) return `${lo} units`;
+    if (lo != null && lo === hi) return `${lo} unit${lo === 1 ? "" : "s"}`;
     if (hi == null) return `${lo}+ units`;
     return `${lo}-${hi} units`;
   }
@@ -166,7 +167,10 @@
     if (l.field === "certificate_of_occupancy" || l.field === "year_built")
       have = facts.year_built ? `built ${facts.year_built}` : "year built not in the data";
     else if (l.field === "units") have = unitsText(facts);
-    else if (l.field === "property_type") have = "apartment building";
+    else if (l.field === "property_type") {
+      const pt = facts.property_type === undefined ? "multifamily" : facts.property_type;
+      have = pt === null ? "building type not given" : (pt === "multifamily" ? "apartment building" : String(pt).replace(/_/g, " "));
+    }
     else have = "not in the data";
     const verdict = l.result === T ? "yes" : l.result === F ? "no" : "unknown";
     return `${label} ${opWords(l.field, l.op)} ${val}? ${verdict} (${have})`;
@@ -223,11 +227,12 @@
       const tCov = [], tEx = [];
       const cov = evaluate(cl.covers, facts, asOf, tCov);
       if (cov === F) return null;
-      const ex = cl.exempt ? evaluate(cl.exempt, facts, asOf, tEx) : F;
+      const hasEx = cl.exempt && typeof cl.exempt === "object" && Object.keys(cl.exempt).length;
+      const ex = hasEx ? evaluate(cl.exempt, facts, asOf, tEx) : F;
       if (ex === T) return null;
       if (status === "pending") return { result: "pending", reason: "Bill or proposal, not law.", missing: [] };
-      const eff = dt(rule.effective_date);
-      if ((eff && eff > asOf) || (status === "not_yet_effective" && !eff))
+      const eff = rule.amendment ? dt(rule.in_force_since) : dt(rule.effective_date);
+      if ((eff && eff > asOf) || (status === "not_yet_effective" && !eff && !rule.amendment))
         return { result: "not_yet_effective", reason: `Enacted; takes effect ${rule.effective_date || "on a future date"}.`, missing: [] };
       if (rule.level === "city") {
         const st = rule.jurisdiction.split(", ")[1];
@@ -279,6 +284,9 @@
         const partners = (r.conflicts_with || []).filter((c) => present.has(c));
         const conflict = !!r.source_conflict || partners.length > 0;
         let expl = e.reason;
+        const ce = dt(r.effective_date);
+        if (r.amendment && ce && ce > asOf && ["applies", "superseded", "unknown"].includes(e.result))
+          expl += ` The version quoted takes effect ${r.effective_date}; an earlier version applies before then.`;
         const official = !!r.official_source || String(r.source_type || "").startsWith("official") || String(r.source_type || "").startsWith("user-supplied");
         if (!official) expl += " Source: a secondary summary (law-firm or news page); the enacting text is not in the corpus.";
         if (partners.length) expl += ` Possible conflict with ${partners.join(", ")}: flagged for human review.`;
@@ -292,7 +300,7 @@
       return entries;
     }
   }
-  const api = { Engine, evaluate, FIELD_LABEL, unitsText };
+  const api = { Engine, evaluate, describeLeaf, FIELD_LABEL, unitsText };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.Lexmap = api;
 })(typeof window !== "undefined" ? window : globalThis);

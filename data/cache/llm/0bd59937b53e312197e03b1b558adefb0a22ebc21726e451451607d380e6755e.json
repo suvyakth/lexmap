@@ -1,0 +1,8 @@
+{
+ "key": "0bd59937b53e312197e03b1b558adefb0a22ebc21726e451451607d380e6755e",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:15:56+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"Section 16729 was newly added to the Business and Professions Code by AB 325 (the excerpt says 'Section 16729 is added'), creating a prohibition on common pricing algorithms that did not exist before 2026-01-01, and the excerpts show no earlier version of the requirement.\"}"
+}

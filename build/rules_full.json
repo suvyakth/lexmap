@@ -17,7 +17,7 @@
   "interaction": null,
   "yields_to_local": false,
   "preempts_local": false,
-  "effective_date": null,
+  "effective_date": "2026-01",
   "effective_rule": null,
   "enacted_date": null,
   "end_date": null,
@@ -50,7 +50,9 @@
   "official_source": true,
   "supplementary_source": false,
   "llm_call": "9e9c706269aa23a79cb0e82358c09185e9d7b147de85ca25d1c6a6a1b1f35b0f",
-  "validation_notes": [],
+  "validation_notes": [
+   "effective_date 2026-01 taken from D002 (secondary source); the primary source states no date"
+  ],
   "conflict_flag": false,
   "corroborating_sources": [
    {
@@ -74,6 +76,28 @@
     "quoted_span": "Cities like San Francisco, San Diego and Berkeley have already banned similar software that uses algorithms to analyze private competitor data to set monthly rents.",
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D001",
+    true
+   ],
+   [
+    "2026-01",
+    "D002",
+    false
+   ],
+   [
+    "2026-01",
+    "D037",
+    false
+   ],
+   [
+    null,
+    "D086",
+    false
+   ]
   ],
   "reconcile": {
    "members": [
@@ -112,6 +136,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "21846bb615b5846554e4f345cb09f6e3ad3431a73d66b6a9a772ccaeda97e79b",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "Ordinance No. 7,992-N.S. enacts new Chapter 13.63 and nothing in the excerpts shows an earlier Berkeley prohibition on coordinated pricing algorithms, so the 2026-01 date marks when the requirement first came into force."
+  },
   "citation_full": "Berkeley Municipal Code § 13.63.030 (ch. 13.63); Ordinance No. 7,992-N.S.",
   "team_rule_id": "BERK-ALG-01",
   "source_conflict": false,
@@ -172,6 +202,18 @@
     "quoted_span": "Most units in multifamily properties built before 1980** Fully Covered Yes Yes Yes Yes",
     "retrieved_at": "2026-10-01 22:35 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D007",
+    true
+   ],
+   [
+    null,
+    "D009",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -300,6 +342,23 @@
     "retrieved_at": "2026-10-01 22:35 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D004",
+    true
+   ],
+   [
+    null,
+    "D006",
+    true
+   ],
+   [
+    null,
+    "D009",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D004",
@@ -393,6 +452,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D004",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D004"
@@ -474,6 +540,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D005",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D005"
@@ -590,6 +663,23 @@
     "retrieved_at": "2026-10-01 22:35 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D006",
+    true
+   ],
+   [
+    "2026-01-01",
+    "D008",
+    true
+   ],
+   [
+    null,
+    "D009",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D006",
@@ -697,6 +787,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D003",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D003"
@@ -786,6 +883,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D011",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D011"
@@ -886,6 +990,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D011",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D011"
@@ -987,6 +1098,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D010",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D010"
@@ -1086,6 +1204,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D012",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D012"
@@ -1173,6 +1298,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D022",
+    true
+   ],
+   [
+    "2026-01-01",
+    "D028",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D022",
@@ -1194,6 +1331,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "0bd59937b53e312197e03b1b558adefb0a22ebc21726e451451607d380e6755e",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "Section 16729 was newly added to the Business and Professions Code by AB 325 (the excerpt says 'Section 16729 is added'), creating a prohibition on common pricing algorithms that did not exist before 2026-01-01, and the excerpts show no earlier version of the requirement."
+  },
   "citation_full": "Cal. Bus. & Prof. Code § 16729 (added by Stats. 2025, ch. 338 (AB 325)); see also Cal. Bus. & Prof. Code § 16756.1",
   "team_rule_id": "CA-ALG-01",
   "source_conflict": false,
@@ -1270,6 +1413,18 @@
     "retrieved_at": "2026-10-01 22:35 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2024-07-01",
+    "D007",
+    true
+   ],
+   [
+    "2026-01-01",
+    "D025",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D007",
@@ -1292,6 +1447,14 @@
    "conflict_note": "2024-07-01 is the deposit cap's operative date (§ 1950.5(c)(6)) and 2026-01-01 is the effective date of the AB 414 amendment, so both are correct; both sources also include family-trust settlors and beneficiaries as small landlords."
   },
   "source_notes": "The sources give different effective dates. D007 (c1) gives 2024-07-01, when AB 12's deposit cap took effect. D025 (c2) gives 2026-01-01, which likely reflects the date of the currently operative amended version of § 1950.5. 2024-07-01 is kept as the cap's operative date, which c2's own coverage text supports. The sources also differ on small-landlord eligibility. D007 (c1) includes family trusts as qualifying owners. D025 (c2) lists only natural persons and all-natural-person LLCs. | Sources give different effective dates: 2024-07-01 (D007); 2026-01-01 (D025)",
+  "date_meaning": {
+   "llm_call": "56a928141a9fad1bd0c9027e38b271a4194ccef6d8a1934bfdb02c936743e32c",
+   "kind": "amendment",
+   "in_force_since": null,
+   "reason": "Civ. Code § 1950.5 is a long-standing security deposit statute (the excerpts reference a pre-existing cap and 2003 amendments to its text), and AB 12 amended it effective 2024-07-01, but the excerpts give no explicit date on which the original requirement first took effect."
+  },
+  "amendment": true,
+  "in_force_since": null,
   "citation_full": "Cal. Civ. Code § 1950.5",
   "team_rule_id": "CA-DEP-01",
   "source_conflict": false,
@@ -1424,6 +1587,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "2024-04-01",
+    "D023",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D023"
@@ -1455,6 +1625,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "72ef6c88514c10ce4e569e0aade3edfe6a551da32c39cc247115c7428e0559ea",
+   "kind": "amendment",
+   "in_force_since": null,
+   "reason": "The excerpts show § 1946.2 as a section with an operative date of April 1, 2024, later amended by Stats. 2025 (AB 1529), and a September 1, 2019 local-ordinance cutoff in its text. Together these indicate the 2024 date marks a re-enacted or amended version of an existing just-cause requirement, but the excerpts give no date on which the earlier version took effect, so in_force_since is null."
+  },
+  "amendment": true,
+  "in_force_since": null,
   "citation_full": "Cal. Civ. Code § 1946.2",
   "team_rule_id": "CA-EVICT-01",
   "source_conflict": false,
@@ -1517,6 +1695,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D043",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D043"
@@ -1605,6 +1790,18 @@
     "quoted_span": "The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D083",
+    true
+   ],
+   [
+    null,
+    "D082",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -1729,6 +1926,23 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D005",
+    true
+   ],
+   [
+    null,
+    "D017",
+    false
+   ],
+   [
+    "2026-01-01",
+    "D026",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D005",
@@ -1758,6 +1972,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "9433cd14dcb1712292da3afafa7fe4cac6e1896d36e3833034ebf0b04a556753",
+   "kind": "amendment",
+   "in_force_since": "1998-01-01",
+   "reason": "The excerpt shows § 1950.6 was amended by Stats. 2025, Ch. 67 (AB 1170) effective Jan. 1, 2026, and the $30 cap with CPI adjustment already ran from Jan. 1, 1998, so the requirement predates this date."
+  },
+  "amendment": true,
+  "in_force_since": "1998-01-01",
   "citation_full": "Cal. Civ. Code § 1950.6",
   "team_rule_id": "CA-FEE-01",
   "source_conflict": false,
@@ -1881,6 +2103,28 @@
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D023",
+    true
+   ],
+   [
+    "2024-04-01",
+    "D024",
+    true
+   ],
+   [
+    null,
+    "D040",
+    true
+   ],
+   [
+    null,
+    "D073",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D023",
@@ -1902,6 +2146,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "a795ba6e5ee4f6c083f5449354d1e743584c7bdd1c552680902881729ce4fff2",
+   "kind": "amendment",
+   "in_force_since": "2019-03-15",
+   "reason": "The 2024-04-01 date is when SB 567's rewritten § 1947.12 became operative, replacing the AB 1482 rent cap that already applied to rent increases on or after March 15, 2019 (and the prior 8.8% cap in effect from Aug 2023 confirms an earlier version)."
+  },
+  "amendment": true,
+  "in_force_since": "2019-03-15",
   "citation_full": "Cal. Civ. Code § 1947.12 (Stats. 2019, ch. 597 (AB 1482), as amended by Stats. 2023, ch. 290 (SB 567))",
   "team_rule_id": "CA-RENT-01",
   "source_conflict": false,
@@ -1972,6 +2224,13 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2020-01-01",
+    "D015",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D015"
@@ -1992,6 +2251,12 @@
   "source_notes": null,
   "provenance_resource": {
    "llm_call": "da2c504f963d9cf8ac0a9b9e922089378f5da1c037ec9dfa0ca90868cf3b39b7"
+  },
+  "date_meaning": {
+   "llm_call": "6bcc73c5939d3852f9a92f406d0922e85241cf8cf6ac901dc42ea14139ead2d1",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "Neither the record nor the excerpts show an earlier version of these housing criminal-history limits in force before 2020-01-01, so the date is treated as when the requirement first took effect."
   },
   "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
   "team_rule_id": "CA-SCREEN-01",
@@ -2085,6 +2350,28 @@
     "retrieved_at": "2026-10-01 22:35 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2024-01-01",
+    "D027",
+    true
+   ],
+   [
+    "2020-01-01",
+    "D015",
+    false
+   ],
+   [
+    null,
+    "D015",
+    false
+   ],
+   [
+    null,
+    "D016",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D027",
@@ -2109,6 +2396,14 @@
    "conflict_note": "The 2020-01-01 date is the SB 329 source-of-income/Section 8 amendment and the 2024-01-01 date is the SB 267 credit-history amendment to Gov. Code § 12955, so both are correct and the current text has been in force since 2024-01-01."
   },
   "source_notes": "Effective dates differ across members: D015 (c2) gives 2020-01-01 for the SB 329 source-of-income/Section 8 provision, and D027 (c5) gives 2024-01-01, which matches the later SB 267 credit-history amendment. Both appear to be accurate dates for different amendments to § 12955. 2024-01-01 is kept as the date of the current operative text. | Sources give different effective dates: 2020-01-01 (D015); 2024-01-01 (D027)",
+  "date_meaning": {
+   "llm_call": "f1e0602f5daa3034035a26ca5b0f0aad688a128015d84cd9ff561873926a0ff0",
+   "kind": "amendment",
+   "in_force_since": "2020-01-01",
+   "reason": "The 2024-01-01 date is when SB 267 (Stats. 2023, Ch. 776) amended Gov. Code § 12955, and the excerpts show source-of-income protections for Section 8 voucher holders already in force as of Jan. 1, 2020."
+  },
+  "amendment": true,
+  "in_force_since": "2020-01-01",
   "citation_full": "Cal. Gov. Code § 12955",
   "team_rule_id": "CA-SCREEN-02",
   "source_conflict": false,
@@ -2190,6 +2485,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D029",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D029"
@@ -2279,6 +2581,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2025-07",
+    "D002",
+    false
+   ],
+   [
+    "2025-07",
+    "D037",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D002",
@@ -2298,6 +2612,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "11a76dce4021a7e6bbee8239bfe913aae7e0d1e87b9bfc99b8cfa38170ec867e",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts list the Hoboken ordinance as effective July 2025 among a series of newly enacted algorithmic rent-coordination bans, with no mention of any earlier version or amendment."
+  },
   "citation_full": "Hoboken City Code, ch. 158-2",
   "team_rule_id": "HOB-ALG-01",
   "source_conflict": false,
@@ -2371,6 +2691,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2025-06",
+    "D002",
+    false
+   ],
+   [
+    "2025-06",
+    "D037",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D002",
@@ -2392,6 +2724,12 @@
   "source_notes": null,
   "provenance_resource": {
    "llm_call": "e1c6326dddcb65549acf5c2c7a9ed5183f8c13bd0e36139a448545ca8c9b9cfd"
+  },
+  "date_meaning": {
+   "llm_call": "d03ce36345d66493002f0535c6be3cedc9637b04c35c5d8ee80f389d74562ff0",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts describe Jersey City Code § 218-12 as a prohibition taking effect June 2025, with no indication of any earlier version of the ban, so the date marks first enactment."
   },
   "citation_full": "Jersey City Code § 218-12",
   "team_rule_id": "JC-ALG-01",
@@ -2467,6 +2805,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D036",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D036"
@@ -2571,6 +2916,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "1990-11-01",
+    "D044",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D044"
@@ -2622,6 +2974,12 @@
   "source_notes": null,
   "provenance_resource": {
    "llm_call": "37401109807271cc69a784b885869a9a31bb98901d90134f5d18e2da19daa13a"
+  },
+  "date_meaning": {
+   "llm_call": "3d035745039f96a4d82379bc42d856a9b81ce43de8bc1cb9e8f7096bedea49c1",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The code text states interest 'shall begin accruing on November 1, 1990,' showing the interest requirement began on that date, with no excerpt showing an earlier version in force (later annual rate changes do not alter that the requirement started then)."
   },
   "citation_full": "LAMC § 151.06.02",
   "team_rule_id": "LA-DEP-01",
@@ -2711,6 +3069,18 @@
     "quoted_span": "Relocation \nAssistance is paid per unit, not per tenant.",
     "retrieved_at": "2026-10-01 22:36 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D040",
+    true
+   ],
+   [
+    null,
+    "D043",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -2843,6 +3213,18 @@
     "retrieved_at": "2026-10-01 22:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D041",
+    true
+   ],
+   [
+    null,
+    "D043",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D041",
@@ -2891,18 +3273,9 @@
   "exemptions": null,
   "coverage_logic": {
    "covers": {
-    "any": [
-     {
-      "field": "certificate_of_occupancy",
-      "op": "<=",
-      "value": "1978-10-01"
-     },
-     {
-      "field": "other_fact",
-      "op": "==",
-      "value": "unit is a Protected Unit under the RPO for another reason: within the past five years it was subject to a recorded affordability covenant, ordinance or law, or to any public rent or price control, or was rented by a lower or very low income household; or within the past 10 years it was withdrawn from rent under the Ellis Act"
-     }
-    ]
+    "field": "certificate_of_occupancy",
+    "op": "<=",
+    "value": "1978-10-01"
    },
    "exempt": null
   },
@@ -2935,9 +3308,18 @@
   "official_source": true,
   "supplementary_source": false,
   "llm_call": "4c89ddedcac7bf185df2cdb125827e0cfb9ea9477686d7d7775a3247e306d1da",
-  "validation_notes": [],
+  "validation_notes": [
+   "coverage logic normalised: unmodelled 'other fact' alternatives/exemptions removed (kept in text): {\"covers\": {\"any\": [{\"field\": \"certificate_of_occupancy\", \"op\": \"<=\", \"value\": \"1978-10-01\"}, {\"field\": \"other_fact\", \"op\": \"==\", \"value\": \"unit is a Protected Unit under the RPO for another reason: within the past five years it was subject to a recorded affordability covenant, ordinance or law, or "
+  ],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "2025-02-11",
+    "D043",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D043"
@@ -2990,6 +3372,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "2720bce202d01bb16afe82d888adaa936611cb349645aa5eea1375686fe5a7ad",
+   "kind": "amendment",
+   "in_force_since": null,
+   "reason": "The excerpt says the RPO, adopted February 11, 2025, 'codified and expanded upon' replacement and occupant protections that the Housing Crisis Act of 2019 (SB 330) had already introduced, so a version of the requirement applied before that date, but the excerpts give no full in-force date for it."
+  },
+  "amendment": true,
+  "in_force_since": null,
   "citation_full": "L.A. Ordinance Nos. 188481 and 188482",
   "team_rule_id": "LA-EVICT-03",
   "source_conflict": false,
@@ -3011,18 +3401,9 @@
   "exemptions": "Rent amount is not regulated for condominium and townhome tenancies that commenced after December 31, 1995. A Luxury Exemption is available if the landlord can establish the monthly rent charged on or before May 31, 1978. The source mentions temporary exemptions but does not detail them.",
   "coverage_logic": {
    "covers": {
-    "any": [
-     {
-      "field": "certificate_of_occupancy",
-      "op": "<=",
-      "value": "1978-10-01"
-     },
-     {
-      "field": "other_fact",
-      "op": "==",
-      "value": "unit is a replacement unit under LAMC Section 151.28"
-     }
-    ]
+    "field": "certificate_of_occupancy",
+    "op": "<=",
+    "value": "1978-10-01"
    },
    "exempt": {
     "all": [
@@ -3076,7 +3457,9 @@
   "official_source": true,
   "supplementary_source": false,
   "llm_call": "f31c67674406a59e6f8dcc16c68ec2467b9771515fc146c4df64af55125e8763",
-  "validation_notes": [],
+  "validation_notes": [
+   "coverage logic normalised: unmodelled 'other fact' alternatives/exemptions removed (kept in text): {\"covers\": {\"any\": [{\"field\": \"certificate_of_occupancy\", \"op\": \"<=\", \"value\": \"1978-10-01\"}, {\"field\": \"other_fact\", \"op\": \"==\", \"value\": \"unit is a replacement unit under LAMC Section 151.28\"}]}, \"exempt\": {\"all\": [{\"field\": \"property_type\", \"op\": \"==\", \"value\": \"single_family\"}, {\"field\": \"units\""
+  ],
   "conflict_flag": false,
   "corroborating_sources": [
    {
@@ -3086,6 +3469,18 @@
     "quoted_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
     "retrieved_at": "2026-10-01 22:36 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D041",
+    true
+   ],
+   [
+    null,
+    "D042",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -3228,6 +3623,18 @@
     "retrieved_at": "2026-10-01 22:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D046",
+    true
+   ],
+   [
+    null,
+    "D047",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D046",
@@ -3307,6 +3714,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D045",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D045"
@@ -3393,6 +3807,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D052",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D052"
@@ -3495,6 +3916,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D052",
+    true
+   ],
+   [
+    null,
+    "D054",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D052",
@@ -3589,6 +4022,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "2025-08-01",
+    "D057",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D057"
@@ -3607,6 +4047,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "415e11fefa987f7eca7b44a80f3e0f46a45af582badbaf37c07172da5e7d5a0d",
+   "kind": "amendment",
+   "in_force_since": null,
+   "reason": "Section 87DDD 1/2 already existed before 2025-08-01 (requiring a broker license for finding dwelling accommodations for a fee), and St. 2025, c. 9, § 43 amended it effective 2025-08-01 to add the contracting and fee-payment provisions, but the excerpts do not show when the earlier text first took effect."
+  },
+  "amendment": true,
+  "in_force_since": null,
   "citation_full": "M.G.L. c. 112, § 87DDD 1/2; St. 2025, c. 9, § 43",
   "team_rule_id": "MA-FEE-02",
   "source_conflict": false,
@@ -3675,6 +4123,18 @@
     "quoted_span": "The petition would have repealed the Commonwealth’s existing statutory ban on rent control, G.L. c. 40P, and replaced it with a statewide cap on annual rent increases for most residential rental units.",
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D048",
+    true
+   ],
+   [
+    null,
+    "D055",
+    false
+   ]
   ],
   "reconcile": {
    "members": [
@@ -3795,6 +4255,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D055",
+    false
+   ],
+   [
+    null,
+    "D059",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D055",
@@ -3872,6 +4344,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D049",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D049"
@@ -3937,7 +4416,7 @@
    "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
    "e. any person to perform a coordinating function."
   ],
-  "confidence": 0.98,
+  "confidence": 0.75,
   "conflict_note": "P.L.2026, c.43 states municipalities may not enact conflicting ordinances (effective 2027-07-01); possible preemption of HOB-ALG-01 (Hoboken, NJ), JC-ALG-01 (Jersey City, NJ). Flagged for human review.",
   "verified_spans": [
    {
@@ -3977,6 +4456,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2027-07-01",
+    "D060",
+    false
+   ],
+   [
+    "2027-07-01",
+    "D069",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D060",
@@ -3996,6 +4487,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "b4de95ab92cd51898a41797f0cbb0b4f8426bb7eefdaf4e5244f3e423d4c362a",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The FAIR Act (P.L.2026, c.43) is newly enacted and takes effect on the first day of the twelfth month after enactment, creating a new algorithmic rent-setting and coordinating-function ban; the excerpts show no earlier version of this requirement in force, and the Antitrust Act reference is only a general enforcement backdrop that the Act says it supplements."
+  },
   "citation_full": "P.L.2026, c.43",
   "team_rule_id": "NJ-ALG-01",
   "source_conflict": false,
@@ -4087,6 +4584,18 @@
     "quoted_span": "If a landlord fails to return the security deposit within 30 days, or the tenant disagrees with \nthe amount deducted, the tenant may sue for double the amount of the security deposit that the \ntenant contends was wrongfully withheld.",
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ],
+   [
+    null,
+    "D067",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -4211,6 +4720,23 @@
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ],
+   [
+    null,
+    "D067",
+    true
+   ],
+   [
+    null,
+    "D067",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D067",
@@ -4304,6 +4830,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D067"
@@ -4415,6 +4948,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "2026-05-01",
+    "D066",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D066"
@@ -4453,6 +4993,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "d11bdaa0f975eac2d86cc164da739d6bc4f75bf3d728faf355e002fc4af803b1",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "P.L.2025, c.405 is a newly enacted act (approved Jan 20, 2026) that supplements Title 46 to create the $50 application fee cap, taking effect on the first day of the fourth month after enactment (May 1, 2026), and the excerpts show no earlier version of the requirement; the CPI adjustment only begins later."
+  },
   "citation_full": "N.J.S.A. 46:8-18.1 (P.L.2025, c.405, s.1)",
   "team_rule_id": "NJ-FEE-01",
   "source_conflict": false,
@@ -4520,6 +5066,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D067"
@@ -4632,6 +5185,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D067"
@@ -4766,6 +5326,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    "2022-01-01",
+    "D065",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D065"
@@ -4784,6 +5351,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "5f97c33440b5990cf114b67fc86befd5879d753a90530537a4ac63674cf31f72",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The act was approved June 18, 2021 and took effect on the first day of the seventh month after enactment (January 1, 2022); the excerpts show it as a newly enacted ban on pre-offer criminal record inquiries with no earlier version of the requirement in force."
+  },
   "citation_full": "P.L.2021, c.110 (N.J.S.A. 46:8-52 to 46:8-64)",
   "team_rule_id": "NJ-SCREEN-01",
   "source_conflict": false,
@@ -4883,6 +5456,18 @@
     "quoted_span": "Under State and federal laws, it is illegal for a landlord or rental agency to refuse to rent or \ndiscriminate in the rental of housing units.",
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D067",
+    true
+   ],
+   [
+    null,
+    "D068",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -4993,6 +5578,28 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2026-04-02",
+    "D002",
+    false
+   ],
+   [
+    "2026-04-02",
+    "D037",
+    false
+   ],
+   [
+    null,
+    "D086",
+    false
+   ],
+   [
+    null,
+    "D087",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D002",
@@ -5028,6 +5635,12 @@
   "source_notes": "Status differs: D087 (c4) records 'pending' with no effective date because it reports only first-reading approval on Feb. 17, 2026 and a final vote set for March 3, 2026. D002 (c1) and D037 (c2) record 'in_force' with an effective date of 2026-04-02, and D086 (c3) reports the final vote putting the ordinance into effect. The later adoption evidence supports in_force.",
   "provenance_resource": {
    "llm_call": "5f3c05f00d90365e8f3aab12aad1498678a9884a9d02462460b184f3546e6ff2"
+  },
+  "date_meaning": {
+   "llm_call": "ee5b7b65307e5bdc5f21f1e0f3ebb3ac4b5739fb146edce3a2d1f8d27e978193",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts describe NS-3090 as a new ordinance (first reading Feb. 17, 2026, final vote March 3, 2026) creating a ban on algorithmic rent-setting software, with no sign of any earlier local version, so the 2026-04-02 date is when the requirement first took effect."
   },
   "citation_full": "Santa Ana Ordinance No. NS-3090",
   "team_rule_id": "SA-ALG-01",
@@ -5111,6 +5724,18 @@
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D084",
+    true
+   ],
+   [
+    "2021-11-19",
+    "D085",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D084",
@@ -5130,6 +5755,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "bba72657a538fafcf2b817c67a136e1b4be3c4ae8f3a0dc92bf1a6b73009b748",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts describe the Just Cause Eviction Ordinance as newly adopted, with its notices and text published by November 19, 2021, and show no earlier local version of the requirement."
+  },
   "citation_full": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
   "team_rule_id": "SA-EVICT-01",
   "source_conflict": false,
@@ -5239,6 +5870,18 @@
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D084",
+    true
+   ],
+   [
+    "2021-11-19",
+    "D085",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D084",
@@ -5317,6 +5960,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "b3b785cff2cb95bf78f5b7c460d873888626ab04b06361122e9d99fcdd7b4a42",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts describe the rent cap as part of newly adopted ordinances that were not effective until November 19, 2021, with no indication of a prior rent increase limit in Santa Ana."
+  },
   "citation_full": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
   "team_rule_id": "SA-RENT-01",
   "source_conflict": false,
@@ -5344,7 +5993,7 @@
   "interaction": null,
   "yields_to_local": false,
   "preempts_local": false,
-  "effective_date": null,
+  "effective_date": "2025-06",
   "effective_rule": null,
   "enacted_date": null,
   "end_date": null,
@@ -5384,7 +6033,9 @@
   "official_source": true,
   "supplementary_source": false,
   "llm_call": "d869b2682910d59e26433ef01432424b4328be93ad7f8d3d19c1b2c74f51f3b6",
-  "validation_notes": [],
+  "validation_notes": [
+   "effective_date 2025-06 taken from D002 (secondary source); the primary source states no date"
+  ],
   "conflict_flag": false,
   "corroborating_sources": [
    {
@@ -5408,6 +6059,28 @@
     "quoted_span": "Cities like San Francisco, San Diego and Berkeley have already banned similar software that uses algorithms to analyze private competitor data to set monthly rents.",
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    "2025-06",
+    "D002",
+    false
+   ],
+   [
+    "2025-06",
+    "D037",
+    false
+   ],
+   [
+    null,
+    "D076",
+    true
+   ],
+   [
+    null,
+    "D086",
+    false
+   ]
   ],
   "reconcile": {
    "members": [
@@ -5434,6 +6107,12 @@
    "conflict_note": null
   },
   "source_notes": "Status conflict. The official source D076 (c3) is a proposed-ordinance document with no adoption shown, so it reports status 'pending'. The secondary sources D002 (c1), D037 (c2) and D086 (c4) report the ban as enacted and in force; c1 and c2 give an effective date of June 2025 (month only). Status is set to in_force because D076 predates adoption and does not contradict it. The exact effective date is unverified in official text, so it is left null.",
+  "date_meaning": {
+   "llm_call": "fdedf5e2de9790d3d96e9197163fc13e8778daf3776d596cfd838764a03f1f65",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts show the ordinance adds a new Division 11 (§§98.1101–98.1104) to the San Diego Municipal Code, taking effect 30 days after final passage, with no indication of any earlier version of this prohibition in the jurisdiction."
+  },
   "citation_full": "San Diego Mun. Code §§ 98.1101–98.1104",
   "team_rule_id": "SD-ALG-01",
   "source_conflict": false,
@@ -5576,6 +6255,18 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2023-06-24",
+    "D073",
+    true
+   ],
+   [
+    "2023-06-24",
+    "D077",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D073",
@@ -5714,6 +6405,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "d83df755d12d8e041aa029431785f39dc3e2d64e123bc049e81989f35682552c",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The excerpts show Division 7 (§§ 98.0701 et seq.) was added by Ord. O-21647 N.S., effective 6-24-2023, so this is the original enactment of the city's own just-cause requirement, not an amendment of an earlier local version."
+  },
   "citation_full": "San Diego Municipal Code §§ 98.0701–98.0710 (ch. 9, art. 8, div. 7; Ord. O-21647 N.S.)",
   "team_rule_id": "SD-EVICT-01",
   "source_conflict": false,
@@ -5813,6 +6510,38 @@
     "retrieved_at": "2026-10-03 19:36 UTC"
    }
   ],
+  "member_dates": [
+   [
+    "2024-10",
+    "D002",
+    false
+   ],
+   [
+    "2024-10",
+    "D037",
+    false
+   ],
+   [
+    null,
+    "D039",
+    true
+   ],
+   [
+    null,
+    "D076",
+    true
+   ],
+   [
+    "2024-10-14",
+    "D081",
+    true
+   ],
+   [
+    null,
+    "D086",
+    false
+   ]
+  ],
   "reconcile": {
    "members": [
     "D002",
@@ -5836,6 +6565,12 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "56cd93361b711f6b2b4a27640a6534897772c973500fc83d8ede838cace6cfa2",
+   "kind": "new",
+   "in_force_since": null,
+   "reason": "The SF.gov notice describes Section 37.10C as newly added to the Rent Ordinance and effective October 14, 2024, with no sign of an earlier version of the ban in force."
+  },
   "citation_full": "S.F. Admin. Code § 37.10C",
   "team_rule_id": "SF-ALG-01",
   "source_conflict": false,
@@ -5864,7 +6599,7 @@
   "effective_date": "2026-03-01",
   "effective_rule": null,
   "enacted_date": null,
-  "end_date": "2027-02-28",
+  "end_date": null,
   "penalty": null,
   "citation": "San Francisco Rent Board security deposit interest rate",
   "quoted_span": "4.2% for March 1, 2026 – February 28, 2027",
@@ -5889,6 +6624,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D083",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D083"
@@ -5911,10 +6653,6 @@
      "from": null,
      "to": "2026-03-01"
     },
-    "end_date": {
-     "from": null,
-     "to": "2027-02-28"
-    },
     "requirement": {
      "from": "The Rent Board publishes an annual interest rate on tenant security deposits. The rate for March 1, 2026 to February 28, 2027 is 4.2%. The prior periods were 5.0% (3/1/2025-2/28/2026) and 5.2% (3/1/2024-2/28/2025). The page does not state deposit maximums or return deadlines.",
      "to": "Interest on tenant security deposits in San Francisco is set at the Rent Board's annual rate, which is 4.2% for March 1, 2026 to February 28, 2027. The prior rates were 5.0% for 2025-26 and 5.2% for 2024-25."
@@ -5924,6 +6662,14 @@
    "conflict_note": null
   },
   "source_notes": null,
+  "date_meaning": {
+   "llm_call": "5caa87f6f98e7d301274a73be93480e09d23061edcf2ad93bbb5fd093600b298",
+   "kind": "amendment",
+   "in_force_since": "2024-03-01",
+   "reason": "The 4.2% figure is an annual rate update; the excerpt shows prior rates of 5.0% for 2025-26 and 5.2% for 2024-25, so the interest requirement was already in force, with the earliest date shown being 2024-03-01."
+  },
+  "amendment": true,
+  "in_force_since": "2024-03-01",
   "citation_full": "San Francisco Rent Board security deposit interest rate (SF.gov)",
   "team_rule_id": "SF-DEP-01",
   "source_conflict": false,
@@ -5999,6 +6745,23 @@
     "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
+  ],
+  "member_dates": [
+   [
+    null,
+    "D079",
+    true
+   ],
+   [
+    null,
+    "D082",
+    true
+   ],
+   [
+    null,
+    "D083",
+    true
+   ]
   ],
   "reconcile": {
    "members": [
@@ -6102,6 +6865,23 @@
     "retrieved_at": "2026-10-01 22:37 UTC"
    }
   ],
+  "member_dates": [
+   [
+    null,
+    "D079",
+    true
+   ],
+   [
+    "2026-03-01",
+    "D080",
+    true
+   ],
+   [
+    null,
+    "D083",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D079",
@@ -6181,6 +6961,13 @@
   "validation_notes": [],
   "conflict_flag": false,
   "corroborating_sources": [],
+  "member_dates": [
+   [
+    null,
+    "D078",
+    true
+   ]
+  ],
   "reconcile": {
    "members": [
     "D078"

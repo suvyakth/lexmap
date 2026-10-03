@@ -97,7 +97,8 @@ def _interval(field_: str, facts: dict, as_of: date):
     if field_ == "certificate_of_occupancy":
         return (date(yb, 1, 1), date(yb, 12, 31)) if yb else None
     if field_ == "units":
-        return (facts.get("units_min", 2), facts.get("units_max", INF))
+        lo, hi = facts.get("units_min"), facts.get("units_max")
+        return (2 if lo is None else lo, INF if hi is None else hi)
     return None
 
 
@@ -126,7 +127,8 @@ def _property_type_value(pt, facts: dict) -> bool | None:
     if "property_type" in facts and facts["property_type"] is None:
         return U          # building type not known (e.g. a typed-in address)
     pt = str(pt).lower().replace("-", "_").replace(" ", "_")
-    lo, hi = facts.get("units_min", 2), facts.get("units_max", INF)
+    lo, hi = facts.get("units_min"), facts.get("units_max")
+    lo, hi = (2 if lo is None else lo), (INF if hi is None else hi)
     if pt in ("multifamily", "multi_family", "apartment", "residential", "residential_rental"):
         return T
     if pt in ("single_family", "single_family_home", "sfr"):
@@ -179,7 +181,7 @@ def _leaf(p: dict, facts: dict, as_of: date, trace: Trace) -> bool | None:
 
 def evaluate(p, facts: dict, as_of: date, trace: Trace | None = None) -> bool | None:
     trace = trace if trace is not None else Trace()
-    if p is None:
+    if p is None or p == {}:
         return T
     if "all" in p or "any" in p:
         start = len(trace.leaves)
@@ -228,9 +230,12 @@ def describe_leaf(l: dict, facts: dict) -> str:
         have = f"built {facts['year_built']}" if facts.get("year_built") else "year built not in the data"
     elif f == "units":
         lo, hi = facts.get("units_min"), facts.get("units_max")
-        have = f"{int(lo)} units" if lo == hi else (f"{int(lo)}+ units" if hi == INF else f"{int(lo)}-{int(hi)} units")
+        lo = 2 if lo is None else lo
+        hi = INF if hi is None else hi
+        have = (f"{int(lo)} unit" + ("" if lo == 1 else "s")) if lo == hi else (f"{int(lo)}+ units" if hi == INF else f"{int(lo)}-{int(hi)} units")
     elif f == "property_type":
-        have = "apartment building"
+        pt = facts.get("property_type", "multifamily")
+        have = "building type not given" if pt is None else ("apartment building" if pt == "multifamily" else str(pt).replace("_", " "))
     else:
         have = "not in the data"
     verdict = {True: "yes", False: "no", None: "unknown"}[l["result"]]

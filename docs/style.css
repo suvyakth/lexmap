@@ -178,3 +178,7 @@ tr.detail td { background: var(--surface-2); }
 .catlink:hover { color: var(--accent); }
 details.evgroup { margin: 6px 0 4px; }
 details.evgroup > summary { color: var(--muted); }
+
+.kv, .res, .exp { overflow-wrap: anywhere; }
+button.catlink { background: none; border: 0; padding: 0; font: inherit; font-weight: 600; color: var(--text); cursor: pointer; text-align: left; }
+button.catlink:hover { color: var(--accent); }

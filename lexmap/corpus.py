@@ -55,7 +55,7 @@ def _parse(path: Path) -> tuple[str, str, str, str]:
 
 @lru_cache(maxsize=1)
 def load_docs() -> dict[str, Doc]:
-    """All documents that have text: the 55 corpus files plus fetched supplementary pages."""
+    """All documents that have text: the 54 corpus files plus fetched supplementary pages."""
     docs: dict[str, Doc] = {}
     for row in read_manifest():
         did = row["doc_id"]

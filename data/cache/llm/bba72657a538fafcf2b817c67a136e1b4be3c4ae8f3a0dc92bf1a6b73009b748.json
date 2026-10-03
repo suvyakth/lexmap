@@ -1,0 +1,8 @@
+{
+ "key": "bba72657a538fafcf2b817c67a136e1b4be3c4ae8f3a0dc92bf1a6b73009b748",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Santa Ana, CA:just_cause_eviction",
+ "created_at": "2026-10-03T21:16:14+00:00",
+ "text": "{\"kind\":\"new\",\"in_force_since\":null,\"reason\":\"The excerpts describe the Just Cause Eviction Ordinance as newly adopted, with its notices and text published by November 19, 2021, and show no earlier local version of the requirement.\"}"
+}

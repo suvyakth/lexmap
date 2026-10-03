@@ -1,0 +1,8 @@
+{
+ "key": "ee5b7b65307e5bdc5f21f1e0f3ebb3ac4b5739fb146edce3a2d1f8d27e978193",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Santa Ana, CA:algorithmic_rent_setting",
+ "created_at": "2026-10-03T21:16:11+00:00",
+ "text": "{\"kind\": \"new\", \"in_force_since\": null, \"reason\": \"The excerpts describe NS-3090 as a new ordinance (first reading Feb. 17, 2026, final vote March 3, 2026) creating a ban on algorithmic rent-setting software, with no sign of any earlier local version, so the 2026-04-02 date is when the requirement first took effect.\"}"
+}

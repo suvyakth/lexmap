@@ -27,7 +27,7 @@ from pathlib import Path
 from . import config
 
 _lock = threading.Lock()
-_stats = {"calls": 0, "cache_hits": 0, "failures": 0}
+_stats = {"calls": 0, "cache_hits": 0, "failures": 0, "misses": 0}
 _used: set[str] = set()      # cache keys touched in this process (for --prune-cache)
 
 
@@ -124,6 +124,8 @@ def complete(prompt: str, system: str, model: str | None = None, *, use_cache: b
         return rec
     be = backend()
     if be == "cache-only":
+        with _lock:
+            _stats["misses"] += 1
         raise LLMError("No LLM backend available and response not cached. Set OPENROUTER_API_KEY "
                        "or install the Claude Code CLI.")
     last: Exception | None = None

@@ -1,0 +1,8 @@
+{
+ "key": "56a928141a9fad1bd0c9027e38b271a4194ccef6d8a1934bfdb02c936743e32c",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:security_deposits",
+ "created_at": "2026-10-03T21:16:01+00:00",
+ "text": "{\"kind\":\"amendment\",\"in_force_since\":null,\"reason\":\"Civ. Code § 1950.5 is a long-standing security deposit statute (the excerpts reference a pre-existing cap and 2003 amendments to its text), and AB 12 amended it effective 2024-07-01, but the excerpts give no explicit date on which the original requirement first took effect.\"}"
+}

@@ -50,7 +50,7 @@ Return JSON (always include scope, applies_only_in, conflict_unresolved and conf
 {{"ok": true|false, "issues": ["..."], "scope": "core"|"event", "applies_only_in": [], "conflict_unresolved": false, "conflict_note": null,
   "fix": {{only the fields to change, from: status, effective_date, end_date, subject, coverage_logic, yields_to_local, preempts_local, requirement, key_value, citation, jurisdiction}}}}"""
 
-FIXABLE = {"status", "effective_date", "end_date", "subject", "coverage_logic", "yields_to_local", "preempts_local",
+FIXABLE = {"status", "effective_date", "subject", "coverage_logic", "yields_to_local", "preempts_local",
            "requirement", "key_value", "citation", "jurisdiction"}
 
 

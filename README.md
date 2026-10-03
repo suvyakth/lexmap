@@ -25,7 +25,7 @@ The participant pack we received was labelled `participant-final-no-hour16 … n
 | T5: MA rent-control ballot question struck | affected set empty; no rent cap on any MA address ✓ |
 | T6: hour-16 ordinance | not in our pack. The drop-in flow is ready and rehearsed ([checklist](SUBMISSION_CHECKLIST.md)) |
 | Quotes located verbatim in their source file | 129 / 129 |
-| `applies` answers whose quote is in the official corpus text | 96% (3,354 / 3,491). The rest come from organiser-listed secondary pages |
+| `applies` answers whose quote is in the official corpus text | 96% (3,375 / 3,512). The rest come from organiser-listed secondary pages |
 | Browser engine vs Python engine | 2,000 / 2,000 identical answers (500 addresses × 4 dates) |
 | Unit + end-to-end tests | 129 / 129 (`python -m unittest discover -s tests`) |
 
@@ -92,7 +92,7 @@ flowchart LR
 ## Run it
 
 ```bash
-pip install -r requirements.txt          # requests, beautifulsoup4, pandas, jsonschema
+pip install -r requirements.txt          # Python 3.9+; requests, beautifulsoup4, pandas, jsonschema
 python run.py                            # reproduce everything from cached model calls (no key needed)
 python run.py --address A0107 --as-of 2026-10-01     # one lookup in the terminal
 python run.py whatif data/whatif/fictional_cambridge_ordinance.txt --jurisdiction "Cambridge, MA"
@@ -122,7 +122,8 @@ To re-run the model calls live, set `OPENROUTER_API_KEY` in `.env` (see `.env.ex
 - **Enacted, not-yet-effective, pending and failed measures stay separate,** with an as-of date on every answer.
 - **`unknown` instead of guessing,** with the missing fact named. On the custom-address form, blank fields stay unknown.
 - **Conflict flags only for open questions.** Today that is 3 rules: the FAIR Act possibly preempting the Jersey City and Hoboken bans. Discrepancies that review resolved are kept in `source_notes` and shown on the site.
-- **Confidence is model-reported,** capped at 0.6 for secondary-only sources and 0.75 for flagged conflicts. It is not a calibrated probability. Answers built on secondary sources say so in their explanation.
+- **Confidence is model-reported,** capped at 0.6 for secondary-only sources and 0.75 for rules flagged for review. It is not a calibrated probability. Answers built on secondary sources say so in their explanation.
+- **Dates mean what they say.** `effective_date` is when the quoted version took effect. A separate pass marks amendments of long-standing rules (e.g. Civ. Code § 1950.5 as amended by AB 12), so an as-of query before that date says "an earlier version applies" instead of "not yet effective". The site's date picker starts at 2024-01-01.
 - **Public data only.** No owner names, no scraping against site terms. The custom-address box sends the address only to the U.S. Census Geocoder.
 
 ## Known limitations

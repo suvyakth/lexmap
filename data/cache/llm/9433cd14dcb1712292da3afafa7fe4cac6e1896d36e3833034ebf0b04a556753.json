@@ -1,0 +1,8 @@
+{
+ "key": "9433cd14dcb1712292da3afafa7fe4cac6e1896d36e3833034ebf0b04a556753",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:CA:application_screening_fees",
+ "created_at": "2026-10-03T21:15:56+00:00",
+ "text": "{\"kind\": \"amendment\", \"in_force_since\": \"1998-01-01\", \"reason\": \"The excerpt shows § 1950.6 was amended by Stats. 2025, Ch. 67 (AB 1170) effective Jan. 1, 2026, and the $30 cap with CPI adjustment already ran from Jan. 1, 1998, so the requirement predates this date.\"}"
+}

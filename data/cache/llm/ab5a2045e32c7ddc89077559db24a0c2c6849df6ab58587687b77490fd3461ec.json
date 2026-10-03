@@ -1,0 +1,8 @@
+{
+ "key": "ab5a2045e32c7ddc89077559db24a0c2c6849df6ab58587687b77490fd3461ec",
+ "model": "sonnet",
+ "backend": "claude-cli",
+ "tag": "dates:Berkeley, CA:rent_increase_limits",
+ "created_at": "2026-10-03T21:15:57+00:00",
+ "text": "{\"kind\": \"amendment\", \"in_force_since\": null, \"reason\": \"The AGA limit on annual rent increases for fully covered units already existed under the Rent Ordinance (Measure BB only added a 5% cap in Nov. 2024), and 2026-01-01 is the date of the annual AGA update, but the excerpts do not state when the original requirement took effect.\"}"
+}
