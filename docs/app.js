@@ -301,12 +301,26 @@
         ${ids.length ? `<details class="src"><summary>Affected addresses (${ids.length})</summary><div class="addr-list">${ids.map((i) => `<button data-id="${i}" data-t="${tid}">${i}</button>`).join("")}</div></details>` : `<div class="kv" style="margin-top:6px">No address is affected.</div>`}
       </article>`;
     }
+    for (const w of D.changes.whatif || []) {
+      const ids = w.affected_address_ids || [];
+      html += `<article class="card test">
+        <div class="test-top"><h3>What-if · a new ordinance, read by the same pipeline</h3><span class="pill pending">fictional test document</span></div>
+        <div class="exp">Document <code>${esc(w.document.split(/[\/]/).pop())}</code> (${esc(w.jurisdiction)}) was written by us to show how Lexmap handles a law it has never seen. It is not a real law.</div>
+        ${(w.new_rules || []).map((r) => `<div class="kv" style="margin-top:6px"><b>${esc(r.team_rule_id)}</b> · ${esc(r.title)} · ${pill(r.status)} effective <b>${esc(r.effective_date || "?")}</b> · ${esc(r.citation)}</div>
+          <blockquote>${esc(r.quoted_span)}</blockquote>
+          <div class="logic">covers: ${esc(describePred((r.coverage_logic || {}).covers))}
+exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.exempt) : "none")}</div>`).join("")}
+        <div class="res" style="margin-top:8px"><b>${ids.length}</b> sample addresses change once it takes effect (${esc(w.evaluated_at)}): ${esc(JSON.stringify(w.affected_by_city))}.</div>
+        ${ids.length ? `<details class="src"><summary>Affected addresses (${ids.length})</summary><div class="addr-list">${ids.map((i) => `<button data-id="${i}" data-asof="${esc(w.evaluated_at)}">${i}</button>`).join("")}</div></details>` : ""}
+      </article>`;
+    }
     $("#changes").innerHTML = html;
     $("#changes").addEventListener("click", (ev) => {
       const b = ev.target.closest("button[data-id]");
       if (!b) return;
       const test = { T1: "2026-01-02", T3: "2027-07-02" }[b.dataset.t];
       if (test) $("#asof").value = test;
+      if (b.dataset.asof) $("#asof").value = b.dataset.asof;
       switchTab("lookup");
       showSample(b.dataset.id);
     });
