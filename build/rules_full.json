@@ -22,7 +22,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": "City Attorney civil action for damages, injunctive relief, restitution/return of illegal profits and/or civil penalties of up to $1,000 per violation, plus attorney's fees and costs if the City prevails. Aggrieved tenant civil action for injunctive relief, money damages and/or civil penalties of up to $1,000 per violation, plus attorney's fees and costs if the tenant prevails.",
-  "citation": "Berkeley Municipal Code ch. 13.63; Ordinance No. 7,992-N.S.",
+  "citation": "Berkeley Municipal Code ch. 13.63",
   "quoted_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley landlords any coordinated pricing algorithm that sets or recommends rents or occupancy levels that may be achieved for residential dwelling units in the City of Berkeley.",
   "supporting_spans": [
    "It shall be unlawful for a landlord to use a coordinated pricing algorithm described in subsection A when setting rents or occupancy levels for residential dwelling units in the City of Berkeley."
@@ -98,6 +98,7 @@
     }
    }
   },
+  "citation_full": "Berkeley Municipal Code ch. 13.63; Ordinance No. 7,992-N.S.",
   "team_rule_id": "BERK-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -189,6 +190,7 @@
     }
    }
   },
+  "citation_full": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
   "team_rule_id": "BERK-DEP-01",
   "source_conflict": false,
   "yields_to": [],
@@ -218,7 +220,7 @@
   "enacted_date": "2024-11",
   "end_date": null,
   "penalty": null,
-  "citation": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance (also cited as the Rent Stabilization and Good Cause for Eviction Ordinance), as amended by Measure BB (Nov. 2024)",
+  "citation": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance",
   "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
   "supporting_spans": [
    "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
@@ -298,6 +300,7 @@
     }
    }
   },
+  "citation_full": "Berkeley Rent Stabilization and Eviction for Just Cause Ordinance (also cited as the Rent Stabilization and Good Cause for Eviction Ordinance), as amended by Measure BB (Nov. 2024)",
   "team_rule_id": "BERK-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -373,6 +376,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Berkeley Ellis Implementation Ordinance",
   "team_rule_id": "BERK-EVICT-02",
   "source_conflict": false,
   "yields_to": [],
@@ -448,6 +452,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "BMC 13.78.010, 13.78.016, 13.78.018",
   "team_rule_id": "BERK-FEE-01",
   "source_conflict": false,
   "yields_to": [],
@@ -490,7 +495,7 @@
   "enacted_date": "2024-11",
   "end_date": null,
   "penalty": null,
-  "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Just Cause Ordinance), § 13.76.110(A), as amended by Measure BB (Nov. 2024); Berkeley Rent Board Regulation 1148",
+  "citation": "Berkeley Municipal Code ch. 13.76, § 13.76.110(A)",
   "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
   "supporting_spans": [
    "The AGA is the amount by which the landlord of a fully-covered rental unit may raise the rent each year.",
@@ -560,6 +565,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Just Cause Ordinance), § 13.76.110(A), as amended by Measure BB (Nov. 2024); Berkeley Rent Board Regulation 1148",
   "team_rule_id": "BERK-RENT-01",
   "source_conflict": true,
   "yields_to": [],
@@ -667,6 +673,7 @@
     }
    }
   },
+  "citation_full": "BMC 13.106",
   "team_rule_id": "BERK-SCREEN-01",
   "source_conflict": false,
   "yields_to": [],
@@ -700,7 +707,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Boston Fair Chance Tenant Selection Policy (DND, February 2017)",
+  "citation": "Boston Fair Chance Tenant Selection Policy",
   "quoted_span": "Housing providers will consider applicants on a case-by-case basis.",
   "supporting_spans": [
    "b) Convictions that are subject to a form of judicial relief, such as expungement, sealing, and certificates for relief from disabilities."
@@ -744,6 +751,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Boston Fair Chance Tenant Selection Policy (DND, February 2017)",
   "team_rule_id": "BOS-SCREEN-01",
   "source_conflict": false,
   "yields_to": [],
@@ -824,6 +832,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Boston Fair Housing Regulations",
   "team_rule_id": "BOS-SCREEN-02",
   "source_conflict": false,
   "yields_to": [],
@@ -853,7 +862,7 @@
   "enacted_date": "2025-10-06",
   "end_date": null,
   "penalty": "Cartwright Act violations are punishable as a crime, per the Legislative Counsel's Digest; no specific penalty is stated in the bill text.",
-  "citation": "Cal. Bus. & Prof. Code § 16729 (added by Stats. 2025, ch. 338 (AB 325)); see also Cal. Bus. & Prof. Code § 16756.1",
+  "citation": "Cal. Bus. & Prof. Code § 16729",
   "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
   "supporting_spans": [
    "(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state."
@@ -906,6 +915,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Cal. Bus. & Prof. Code § 16729 (added by Stats. 2025, ch. 338 (AB 325)); see also Cal. Bus. & Prof. Code § 16756.1",
   "team_rule_id": "CA-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -995,6 +1005,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Cal. Civ. Code § 1950.5",
   "team_rule_id": "CA-DEP-01",
   "source_conflict": true,
   "yields_to": [],
@@ -1255,6 +1266,7 @@
     }
    }
   },
+  "citation_full": "Cal. Civ. Code § 1946.2",
   "team_rule_id": "CA-EVICT-01",
   "source_conflict": false,
   "yields_to": [
@@ -1336,6 +1348,7 @@
     }
    }
   },
+  "citation_full": "Cal. Gov. Code § 66300 et seq.",
   "team_rule_id": "CA-EVICT-02",
   "source_conflict": false,
   "yields_to": [],
@@ -1423,6 +1436,7 @@
     }
    }
   },
+  "citation_full": "Cal. Civ. Code § 1947.9",
   "team_rule_id": "CA-EVICT-03",
   "source_conflict": true,
   "yields_to": [],
@@ -1528,6 +1542,7 @@
     }
    }
   },
+  "citation_full": "Cal. Civ. Code § 1950.6",
   "team_rule_id": "CA-FEE-01",
   "source_conflict": false,
   "yields_to": [],
@@ -1590,7 +1605,7 @@
   "enacted_date": null,
   "end_date": "2030-01-01",
   "penalty": "Civil action by the tenant for injunctive relief, damages equal to the excess rent charged, and discretionary attorney's fees and costs. Damages up to three times the excess for willful, oppressive, fraudulent or malicious conduct. The Attorney General, city attorney or county counsel may also enforce. Actions must be brought within three years of accrual.",
-  "citation": "Cal. Civ. Code § 1947.12 (Stats. 2019, ch. 597 (AB 1482), as amended by Stats. 2023, ch. 290 (SB 567))",
+  "citation": "Cal. Civ. Code § 1947.12",
   "quoted_span": "Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase.",
   "supporting_spans": [
    "(4) Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome.",
@@ -1666,6 +1681,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Cal. Civ. Code § 1947.12 (Stats. 2019, ch. 597 (AB 1482), as amended by Stats. 2023, ch. 290 (SB 567))",
   "team_rule_id": "CA-RENT-01",
   "source_conflict": false,
   "yields_to": [
@@ -1778,6 +1794,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Cal. Gov. Code § 12955",
   "team_rule_id": "CA-SCREEN-01",
   "source_conflict": true,
   "yields_to": [],
@@ -1807,7 +1824,7 @@
   "enacted_date": "2019",
   "end_date": null,
   "penalty": null,
-  "citation": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
+  "citation": "California Civil Rights Council regulations on use of criminal history in housing",
   "quoted_span": "Blanket bans on applicants with a criminal record are prohibited, as are policies that consider arrests without convictions.",
   "supporting_spans": [
    "The California regulations include limits on what type of criminal history may be sought, how an applicant’s criminal history can be considered, and what actions a landlord may take based on an applicant’s criminal history."
@@ -1851,6 +1868,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "California Civil Rights Council (formerly Fair Employment and Housing Council) regulations on use of criminal history in housing",
   "team_rule_id": "CA-SCREEN-02",
   "source_conflict": false,
   "yields_to": [],
@@ -1951,6 +1969,7 @@
     }
    }
   },
+  "citation_full": "Cambridge Fair Housing Ordinance, chapter 14.04",
   "team_rule_id": "CAM-SCREEN-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2035,6 +2054,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Hoboken City Code, ch. 158-2",
   "team_rule_id": "HOB-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2121,6 +2141,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Jersey City Code § 218-12",
   "team_rule_id": "JC-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2156,7 +2177,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Jersey City Municipal Code, Chapter 260 (Rent Control Ordinance)",
+  "citation": "Jersey City Municipal Code, Chapter 260",
   "quoted_span": "The Office of Landlord Tenant Relations administers and enforces the\nRent Control Ordinance, Chapter 260\nof the Jersey City Municipal Code and provides education, information and referrals to city residents in connection with landlord/tenant issues.",
   "supporting_spans": [
    "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
@@ -2219,6 +2240,7 @@
     }
    }
   },
+  "citation_full": "Jersey City Municipal Code, Chapter 260 (Rent Control Ordinance)",
   "team_rule_id": "JC-RENT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2336,6 +2358,7 @@
     }
    }
   },
+  "citation_full": "LAMC § 151.06.02",
   "team_rule_id": "LA-DEP-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2369,7 +2392,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)",
+  "citation": "L.A.M.C. § 165.03",
   "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
   "supporting_spans": [
    "The JCO covers most residential properties in the City of Los Angeles that are not regulated by the City’s Rent Stabilization Ordinance (RSO).",
@@ -2451,6 +2474,7 @@
     }
    }
   },
+  "citation_full": "L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)",
   "team_rule_id": "LA-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2548,6 +2572,7 @@
     }
    }
   },
+  "citation_full": "L.A.M.C. § 151.09",
   "team_rule_id": "LA-EVICT-02",
   "source_conflict": false,
   "yields_to": [],
@@ -2615,6 +2640,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "L.A. Ordinance Nos. 188481 and 188482",
   "team_rule_id": "LA-EVICT-03",
   "source_conflict": false,
   "yields_to": [],
@@ -2650,7 +2676,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)",
+  "citation": "L.A.M.C. § 151.00 et seq.",
   "quoted_span": "Generally, the RSO applies to rental properties that were first built on or before October 1, 1978, as well as replacement units under",
   "supporting_spans": [
    "Effective February 2, 2026, the landlord can no longer include an additional percentage increase for utilities."
@@ -2710,6 +2736,7 @@
     }
    }
   },
+  "citation_full": "L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)",
   "team_rule_id": "LA-RENT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2741,7 +2768,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Mass. S.2983 (194th Gen. Ct.)",
+  "citation": "Mass. S.2983",
   "quoted_span": "An Act prohibiting algorithmic rent setting",
   "supporting_spans": [
    "Senate, March 12, 2026 -- The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting;"
@@ -2801,6 +2828,7 @@
     }
    }
   },
+  "citation_full": "Mass. S.2983 (194th Gen. Ct.)",
   "team_rule_id": "MA-ALG-P1",
   "source_conflict": false,
   "yields_to": [],
@@ -2830,7 +2858,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Mass. H.5222 (194th Gen. Ct.)",
+  "citation": "Mass. H.5222",
   "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
   "supporting_spans": [],
   "confidence": 0.3,
@@ -2866,6 +2894,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Mass. H.5222 (194th Gen. Ct.)",
   "team_rule_id": "MA-ALG-P2",
   "source_conflict": false,
   "yields_to": [],
@@ -2954,6 +2983,7 @@
     }
    }
   },
+  "citation_full": "M.G.L. c. 186, § 15B",
   "team_rule_id": "MA-DEP-01",
   "source_conflict": false,
   "yields_to": [],
@@ -2983,7 +3013,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Mass. H.3744 (193rd Gen. Ct.)",
+  "citation": "Mass. H.3744",
   "quoted_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
   "supporting_spans": [
    "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections."
@@ -3039,6 +3069,7 @@
     }
    }
   },
+  "citation_full": "Mass. H.3744 (193rd Gen. Ct.)",
   "team_rule_id": "MA-EVICT-P1",
   "source_conflict": true,
   "yields_to": [],
@@ -3128,6 +3159,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "M.G.L. c. 186, § 15B",
   "team_rule_id": "MA-FEE-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3157,7 +3189,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "M.G.L. c. 112, § 87DDD 1/2; St. 2025, c. 9, § 43",
+  "citation": "M.G.L. c. 112, § 87DDD 1/2",
   "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
   "supporting_spans": [
    "A licensed broker or salesperson may solely contract with a prospective tenant to find rental residential real property for a tenant and present an offer to lease to the landlord or landlord's agent and negotiate on behalf of the tenant or may solely contract with a landlord or landlord's agent to find a tenant for a property.",
@@ -3208,6 +3240,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "M.G.L. c. 112, § 87DDD 1/2; St. 2025, c. 9, § 43",
   "team_rule_id": "MA-FEE-02",
   "source_conflict": false,
   "yields_to": [],
@@ -3290,6 +3323,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "M.G.L. c. 40P, § 4",
   "team_rule_id": "MA-RENT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3343,7 +3377,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Initiative Petition 25-21; Cella v. Attorney General, SJC-13893",
+  "citation": "Initiative Petition 25-21",
   "quoted_span": "Under the proposed law, annual rent increases would have been limited to the lesser of the annual increase in the Consumer Price Index or 5%.",
   "supporting_spans": [
    "The petition included several exemptions, including owner-occupied buildings with four or fewer units, newly constructed units less than 10 years old, certain publicly regulated units, short-term rentals, and dwelling units in facilities operated solely for educational, religious, or nonprofit purposes.",
@@ -3403,6 +3437,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Initiative Petition 25-21; Cella v. Attorney General, SJC-13893",
   "team_rule_id": "MA-RENT-P1",
   "source_conflict": true,
   "yields_to": [],
@@ -3432,7 +3467,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "Mass. H.3744 (193rd Gen. Ct.)",
+  "citation": "Mass. H.3744",
   "quoted_span": "An Act petition for a special law authorizing the city of Boston to implement rent stabilization and tenant eviction protections",
   "supporting_spans": [
    "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections."
@@ -3476,6 +3511,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Mass. H.3744 (193rd Gen. Ct.)",
   "team_rule_id": "MA-RENT-P2",
   "source_conflict": true,
   "yields_to": [],
@@ -3549,6 +3585,7 @@
     }
    }
   },
+  "citation_full": "M.G.L. c. 151B, § 4(10)",
   "team_rule_id": "MA-SCREEN-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3642,6 +3679,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "P.L.2026, c.43",
   "team_rule_id": "NJ-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3796,6 +3834,7 @@
     }
    }
   },
+  "citation_full": "N.J.S.A. 46:8-19 to 46:8-21.5",
   "team_rule_id": "NJ-DEP-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3906,6 +3945,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "N.J.S.A. 2A:18-61.1 et seq.",
   "team_rule_id": "NJ-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -3983,6 +4023,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "N.J.S.A. 2A:18-61.22 to -61.39",
   "team_rule_id": "NJ-EVICT-02",
   "source_conflict": false,
   "yields_to": [],
@@ -4023,7 +4064,7 @@
   "enacted_date": "2026-01-20",
   "end_date": null,
   "penalty": "Up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, collected by summary proceedings under the Penalty Enforcement Law of 1999 in Superior Court, Special Civil Part, on complaint of the Director of Consumer Affairs or the Attorney General.",
-  "citation": "P.L.2025, c.405 (N.J.S.A. 46:8-18.1 et seq.)",
+  "citation": "P.L.2025, c.405",
   "quoted_span": "A landlord, or agent thereof, shall not require an application or other similar fee to apply to lease or sublease a residential rental property for dwelling purposes, which exceeds $50.",
   "supporting_spans": [
    "The requirements of subsection a. of this section shall not apply to: (1) a dwelling unit located in a one-family or two-family dwelling that is offered for rent; or (2) a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the residential rental property.",
@@ -4086,6 +4127,7 @@
     }
    }
   },
+  "citation_full": "P.L.2025, c.405 (N.J.S.A. 46:8-18.1 et seq.)",
   "team_rule_id": "NJ-FEE-01",
   "source_conflict": false,
   "yields_to": [],
@@ -4191,6 +4233,7 @@
     }
    }
   },
+  "citation_full": "N.J.S.A. 2A:42-84.5",
   "team_rule_id": "NJ-RENT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -4235,7 +4278,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-61.31",
+  "citation": "N.J.S.A. 2A:18-61.1 et seq.",
   "quoted_span": "The increase in rent must not be unconscionable; it must not be so unreasonable as to shock the conscience of a fair and honest person and must comply with any municipal ordinances governing rent increases.",
   "supporting_spans": [],
   "confidence": 0.7,
@@ -4297,6 +4340,7 @@
     }
    }
   },
+  "citation_full": "N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-61.31",
   "team_rule_id": "NJ-RENT-02",
   "source_conflict": false,
   "yields_to": [],
@@ -4343,7 +4387,7 @@
   "enacted_date": "2021-06-18",
   "end_date": null,
   "penalty": "Civil penalty up to $1,000 for a first violation, up to $5,000 for a second violation within 5 years, and up to $10,000 for two or more other violations within 7 years; the director may also order cease and desist, return of the application fee, up to $1,000 of the penalty paid to the applicant, and remedial offers.",
-  "citation": "P.L.2021, c.110 (N.J.S.A. 46:8-52 to 46:8-64)",
+  "citation": "P.L.2021, c.110",
   "quoted_span": "A housing provider shall not make any oral or written inquiry regarding an applicant’s criminal record prior to making a conditional offer.",
   "supporting_spans": [
    "This act shall take effect on the first day of the seventh month next following the date of enactment,",
@@ -4394,6 +4438,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "P.L.2021, c.110 (N.J.S.A. 46:8-52 to 46:8-64)",
   "team_rule_id": "NJ-SCREEN-01",
   "source_conflict": false,
   "yields_to": [],
@@ -4454,7 +4499,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "N.J.S.A. 10:5-1 et seq.; N.J.S.A. 10:5-12(g), (h)",
+  "citation": "N.J.S.A. 10:5-1 et seq.",
   "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses.",
   "supporting_spans": [
    "This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome."
@@ -4507,6 +4552,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "N.J.S.A. 10:5-1 et seq.; N.J.S.A. 10:5-12(g), (h)",
   "team_rule_id": "NJ-SCREEN-02",
   "source_conflict": false,
   "yields_to": [],
@@ -4619,6 +4665,7 @@
     }
    }
   },
+  "citation_full": "Santa Ana Ordinance No. NS-3090",
   "team_rule_id": "SA-ALG-01",
   "source_conflict": true,
   "yields_to": [],
@@ -4714,6 +4761,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
   "team_rule_id": "SA-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -4894,6 +4942,7 @@
     }
    }
   },
+  "citation_full": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
   "team_rule_id": "SA-RENT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -5001,6 +5050,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "San Diego Mun. Code §§ 98.1101–98.1104",
   "team_rule_id": "SD-ALG-01",
   "source_conflict": true,
   "yields_to": [],
@@ -5095,7 +5145,7 @@
   "enacted_date": "2023-05-25",
   "end_date": null,
   "penalty": "Tenants may sue for injunctive and equitable relief and money damages, including punitive damages. Wrongful eviction liability is not less than three times actual economic damages. Failure to pay relocation assistance carries liability of not less than three times the required assistance plus actual damages. Attorney's fees may be awarded. Notices that do not comply are void. The City may enforce under Chapter 1, Article 2, including civil and criminal remedies.",
-  "citation": "San Diego Municipal Code §§ 98.0701–98.0710 (ch. 9, art. 8, div. 7; Ord. O-21647 N.S.)",
+  "citation": "San Diego Municipal Code §§ 98.0701–98.0710",
   "quoted_span": "A landlord shall not terminate a tenancy without just cause. For purposes of this Division, just cause includes at-fault just cause and no-fault just cause.",
   "supporting_spans": [
    "housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome; and",
@@ -5275,6 +5325,7 @@
     }
    }
   },
+  "citation_full": "San Diego Municipal Code §§ 98.0701–98.0710 (ch. 9, art. 8, div. 7; Ord. O-21647 N.S.)",
   "team_rule_id": "SD-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -5391,6 +5442,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "S.F. Admin. Code § 37.10C",
   "team_rule_id": "SF-ALG-01",
   "source_conflict": false,
   "yields_to": [],
@@ -5420,7 +5472,7 @@
   "enacted_date": null,
   "end_date": "2027-02-28",
   "penalty": null,
-  "citation": "San Francisco Rent Board security deposit interest rate (SF.gov)",
+  "citation": "San Francisco Rent Board security deposit interest rate",
   "quoted_span": "4.2% for March 1, 2026 – February 28, 2027",
   "supporting_spans": [],
   "confidence": 0.55,
@@ -5472,6 +5524,7 @@
     }
    }
   },
+  "citation_full": "San Francisco Rent Board security deposit interest rate (SF.gov)",
   "team_rule_id": "SF-DEP-01",
   "source_conflict": false,
   "yields_to": [],
@@ -5562,6 +5615,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "S.F. Admin. Code §§ 37.9, 37.9C",
   "team_rule_id": "SF-EVICT-01",
   "source_conflict": false,
   "yields_to": [],
@@ -5597,7 +5651,7 @@
   "enacted_date": null,
   "end_date": null,
   "penalty": null,
-  "citation": "S.F. Admin. Code ch. 37 (Rent Ordinance)",
+  "citation": "S.F. Admin. Code ch. 37",
   "quoted_span": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979",
   "supporting_spans": [
    "Some tenancies that are exempt from the rent increase limitations of the Ordinance are still subject to the eviction provisions of the Ordinance"
@@ -5658,6 +5712,7 @@
    "issues": [],
    "changes": {}
   },
+  "citation_full": "S.F. Admin. Code ch. 37 (Rent Ordinance)",
   "team_rule_id": "SF-RENT-01",
   "source_conflict": false,
   "yields_to": [],

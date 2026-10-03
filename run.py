@@ -35,6 +35,7 @@ def export_rules(rules: list[dict], explain: dict) -> dict:
         if rec["effective_date"] in ("",):
             rec["effective_date"] = None
         rec.update({
+            "citation_full": r.get("citation_full"),
             "penalty": r.get("penalty"),
             "end_date": r.get("end_date"),
             "retrieved_at": r.get("retrieved_at"),

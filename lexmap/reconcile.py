@@ -220,6 +220,44 @@ def align_test_ids(rules: list[dict]) -> None:
                 by_id[want] = best
 
 
+def _top_level(c: str) -> tuple[str, list[str]]:
+    """Return text outside parentheses (depth 0) and the list of top-level parentheticals."""
+    out, groups, depth, cur = [], [], 0, []
+    for ch in c:
+        if ch == "(":
+            depth += 1
+            if depth == 1:
+                cur = []
+                continue
+        elif ch == ")" and depth > 0:
+            depth -= 1
+            if depth == 0:
+                groups.append("".join(cur))
+                continue
+        (cur if depth > 0 else out).append(ch)
+    return "".join(out), groups
+
+
+def clean_citation(c: str) -> str:
+    """Primary citation only: text before the first top-level ';' / 'see also', without
+    parentheticals or 'as amended by ...'.  Falls back to the original if nothing is left.
+    The full text is kept in citation_full."""
+    if not c:
+        return c
+    # protect subsection markers attached to a section number: § 4(10), 10:5-12(g), 13.76.110(A)
+    protected = re.sub(r"(?<=[\w.])\(([^()\s]{1,6})\)", lambda m: "⟨" + m.group(1) + "⟩", c)
+    outside, _ = _top_level(protected)
+    # split at the first top-level ';' or 'see also' (computed on the de-parenthesised text)
+    head = re.split(r";|\bsee also\b", outside, maxsplit=1)[0]
+    head = re.sub(r",?\s*as amended by .*$", "", head, flags=re.I)
+    head = re.sub(r"\s+", " ", head).strip().strip(",").strip()
+    head = re.sub(r"\s+,", ",", head)
+    head = re.sub(r"§(?=[^\s§])", "§ ", head)
+    head = re.sub(r"\(\s*\)", "", head).strip()
+    head = head.replace("⟨", "(").replace("⟩", ")")
+    return head if len(head) >= 4 else c
+
+
 def _append_note(note: str | None, msg: str) -> str:
     if note and msg in note:
         return note
@@ -289,6 +327,9 @@ def run(skip_qa: bool = False) -> list[dict]:
         qa.run(rules)
         for r in rules:
             r["status"] = _status_from_dates(r, config.DEFAULT_AS_OF)
+    for r in rules:
+        r["citation_full"] = r.get("citation")
+        r["citation"] = clean_citation(r.get("citation") or "") or r.get("citation")
     assign_ids(rules)
     for r in rules:   # conflicts that come from the sources themselves (vs. preemption wiring below)
         r["source_conflict"] = bool(r.get("conflict_flag"))

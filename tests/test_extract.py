@@ -66,6 +66,15 @@ class Jurisdiction(unittest.TestCase):
         for inp, want in cases.items():
             self.assertEqual(canonical_jurisdiction(inp), want, inp)
 
+    def test_full_state_name_after_city(self):
+        self.assertEqual(canonical_jurisdiction("Boston, Massachusetts"), "Boston, MA")
+        self.assertEqual(canonical_jurisdiction("Berkeley, California"), "Berkeley, CA")
+
+    # Regression test (bug fixed 2026-10-03).
+    def test_new_jersey_spelled_out(self):
+        self.assertEqual(canonical_jurisdiction("Jersey City, New Jersey"), "Jersey City, NJ")
+        self.assertEqual(canonical_jurisdiction("Hoboken, New Jersey"), "Hoboken, NJ")
+
 
 class Prune(unittest.TestCase):
     def test_any_drops_invalid_children(self):

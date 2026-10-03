@@ -39,8 +39,10 @@ def canonical_jurisdiction(j: str | None) -> str | None:
         return None          # county rules are out of scope (no county rules in the corpus)
     for city in config.CITIES:
         cname, st = city.split(", ")
-        if s.lower().startswith(cname.lower()) and (st in s.upper() or "," not in s):
-            return city
+        if s.lower().startswith(cname.lower()):
+            rest = s[len(cname):].strip(" ,.").upper()
+            if not rest or rest == st or rest == config.STATES[st].upper():
+                return city
     return None
 
 

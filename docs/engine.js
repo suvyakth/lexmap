@@ -221,7 +221,7 @@
         const st = rule.jurisdiction.split(", ")[1];
         for (const m of this.mods[st + "|" + rule.category] || []) {
           const meff = dt(m.effective_date);
-          if (m.status !== "in_force" || (meff && meff > asOf)) continue;
+          if (m.status === "pending" || m.status === "failed" || (meff && meff > asOf) || (m.status === "not_yet_effective" && !meff)) continue;
           const tm = [];
           const mv = evaluate(m.coverage_logic.covers, facts, asOf, tm);
           if (mv === T) return null;

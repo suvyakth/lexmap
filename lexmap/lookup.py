@@ -116,7 +116,8 @@ class Engine:
             st = rule["jurisdiction"].split(", ")[1]
             for m in self.state_modifiers.get((st, rule["category"]), []):
                 meff = _d(m.get("effective_date"))
-                if m.get("status") not in ("in_force",) or (meff and meff > as_of):
+                mst = m.get("status")
+                if mst in ("pending", "failed") or (meff and meff > as_of) or (mst == "not_yet_effective" and not meff):
                     continue
                 tm = Trace()
                 mv = evaluate(m["coverage_logic"]["covers"], facts, as_of, tm)

@@ -5,7 +5,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -191,7 +191,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -419,7 +419,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -817,7 +817,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -941,7 +941,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -1299,7 +1299,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -1441,7 +1441,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -1707,7 +1707,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -1887,7 +1887,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -1967,7 +1967,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2109,7 +2109,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2239,7 +2239,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2357,7 +2357,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2419,7 +2419,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2599,7 +2599,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -2841,7 +2841,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -3401,7 +3401,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -3699,7 +3699,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -3779,7 +3779,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -3859,7 +3859,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4089,7 +4089,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4151,7 +4151,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4281,7 +4281,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4449,7 +4449,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4573,7 +4573,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4853,7 +4853,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -4939,7 +4939,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -5169,7 +5169,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -5249,7 +5249,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -5429,7 +5429,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -6023,7 +6023,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -6987,7 +6987,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -7049,7 +7049,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -7295,7 +7295,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -7437,7 +7437,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -7741,7 +7741,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -7971,7 +7971,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8051,7 +8051,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8393,7 +8393,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8523,7 +8523,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8709,7 +8709,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8901,7 +8901,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -8981,7 +8981,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -9279,7 +9279,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -9645,7 +9645,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -9843,7 +9843,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -10299,7 +10299,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -10423,7 +10423,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -10795,7 +10795,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -10919,7 +10919,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -10999,7 +10999,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -11273,7 +11273,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -11353,7 +11353,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -11439,7 +11439,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -11711,7 +11711,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -12267,7 +12267,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -12545,7 +12545,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13001,7 +13001,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13279,7 +13279,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13359,7 +13359,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13645,7 +13645,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13731,7 +13731,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -13837,7 +13837,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14277,7 +14277,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14413,7 +14413,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14493,7 +14493,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14673,7 +14673,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14753,7 +14753,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -14877,7 +14877,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -15235,7 +15235,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -15315,7 +15315,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -15395,7 +15395,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -16051,7 +16051,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -16317,7 +16317,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -16379,7 +16379,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -16515,7 +16515,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -16781,7 +16781,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -17441,7 +17441,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -17639,7 +17639,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -18133,7 +18133,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -18275,7 +18275,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -18355,7 +18355,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -19129,7 +19129,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -19635,7 +19635,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -19783,7 +19783,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -20013,7 +20013,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -20293,7 +20293,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -20379,7 +20379,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -20989,7 +20989,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -21069,7 +21069,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -21261,7 +21261,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -21341,7 +21341,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -21793,7 +21793,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -22061,7 +22061,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -22365,7 +22365,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -22797,7 +22797,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -23069,7 +23069,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -23615,7 +23615,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -23881,7 +23881,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -24059,7 +24059,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -24355,7 +24355,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -24417,7 +24417,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -24839,7 +24839,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -25017,7 +25017,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -25901,7 +25901,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -25981,7 +25981,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -26167,7 +26167,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -26247,7 +26247,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -26445,7 +26445,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -26557,7 +26557,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -26637,7 +26637,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -27063,7 +27063,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -27581,7 +27581,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -27811,7 +27811,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -27965,7 +27965,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -28379,7 +28379,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -28459,7 +28459,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -28657,7 +28657,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -28855,7 +28855,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29009,7 +29009,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29189,7 +29189,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29543,7 +29543,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29605,7 +29605,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29729,7 +29729,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -29939,7 +29939,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -30019,7 +30019,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -30211,7 +30211,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -30999,7 +30999,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31185,7 +31185,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31339,7 +31339,7 @@
    {
     "team_rule_id": "CA-EVICT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03 (Just Cause for Eviction Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-EVICT-01 (L.A.M.C. § 165.03) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31469,7 +31469,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31611,7 +31611,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31691,7 +31691,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31815,7 +31815,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -31895,7 +31895,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -32243,7 +32243,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -32323,7 +32323,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37 (Rent Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule SF-RENT-01 (S.F. Admin. Code ch. 37) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -32651,7 +32651,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {
@@ -32731,7 +32731,7 @@
    {
     "team_rule_id": "CA-RENT-01",
     "result": "superseded",
-    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq. (Los Angeles Rent Stabilization Ordinance)) governs at this address.",
+    "explanation": "Covered, but the local rule LA-RENT-01 (L.A.M.C. § 151.00 et seq.) governs at this address.",
     "conflict_flag": false
    },
    {

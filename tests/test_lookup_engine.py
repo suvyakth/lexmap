@@ -178,13 +178,7 @@ class StateMunicipalityModifier(unittest.TestCase):
         self.assertEqual(results(self.rules(eff="2027-01-01"), addr(JC, 2010))["JC-RENT-01"]["result"], "applies")
         self.assertEqual(results(self.rules(status="pending"), addr(JC, 2010))["JC-RENT-01"]["result"], "applies")
 
-    # BUG (lexmap/lookup.py, Engine._evaluate, state-modifier loop): a modifier is skipped unless
-    # m["status"] == "in_force".  `status` is computed once at DEFAULT_AS_OF (2026-10-01), while the
-    # engine answers "for any as-of date".  A modifier with status "not_yet_effective" and
-    # effective_date 2027-01-01 queried at 2027-07-02 is ignored, so the city rule is reported
-    # "applies" for a new building; the rule-level path (step 2) treats the same status/date pair as
-    # in force once the date has passed.  Expected: omitted (same as an in_force modifier).
-    @unittest.expectedFailure
+    # Regression test (bug fixed 2026-10-03).
     def test_not_yet_effective_modifier_takes_effect_after_its_date(self):
         rs = self.rules(status="not_yet_effective", eff="2027-01-01")
         self.assertEqual(results(rs, addr(JC, 2010), date(2027, 7, 2)), {})
