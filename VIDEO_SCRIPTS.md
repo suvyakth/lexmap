@@ -1,6 +1,6 @@
 # Video scripts (each ≤ 60 seconds, MP4/MOV)
 
-Record with any screen recorder (Windows: Snipping Tool's screen recording, or Xbox Game Bar with Win+Alt+R; macOS: Shift+Cmd+5). Use 1080p and zoom the browser to 125%; no music under the voice. Use the live site https://suvyakth.github.io/lexmap/. About 140 spoken words fit in 60 seconds. The brief asks for your scores in the videos, so the technical video shows the self-check report and T1–T5.
+Record with any screen recorder (Windows: Snipping Tool's screen recording, or Xbox Game Bar with Win+Alt+R; macOS: Shift+Cmd+5). Use 1080p and zoom the browser to 125%; no music under the voice. Use the live site https://suvyakth.github.io/lexmap/. About 140 spoken words fit in 60 seconds. The organisers asked that videos show the team's own system output and validation (not score.py), so the technical video shows our self-check report, T1–T5 and the tests.
 
 ---
 

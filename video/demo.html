@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexmap demo video</title>
+<link rel="stylesheet" href="rec.css">
+<style>
+  #frame { position: absolute; left: 0; top: 0; width: 1536px; height: 864px; border: 0; transform: scale(1.25); transform-origin: 0 0; background: #f6f7f5; }
+  #cursor { position: absolute; left: 0; top: 0; z-index: 40; width: 44px; height: 44px; opacity: 0; pointer-events: none; filter: drop-shadow(0 4px 8px rgba(0,0,0,.35)); }
+  .ripple { position: absolute; z-index: 39; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%; border: 5px solid var(--accent); pointer-events: none; }
+  #ring { position: absolute; left: 0; top: 0; z-index: 38; border: 5px solid #f59e0b; border-radius: 16px; opacity: 0; pointer-events: none; box-shadow: 0 0 0 9999px rgba(0,0,0,.28); }
+  .card-ov { position: absolute; inset: 0; z-index: 45; display: grid; place-items: center; text-align: center;
+    background: radial-gradient(1200px 700px at 30% 20%, #12343a 0%, var(--bg) 60%); }
+  .card-ov .logo { display: block; width: 120px; height: 120px; margin: 0 auto 28px; }
+  .card-ov h1 { font-size: 120px; margin: 0; letter-spacing: -3px; }
+  .card-ov p { font-size: 44px; color: var(--muted); margin: 18px 0 0; max-width: 1400px; }
+  .card-ov .url { font-family: var(--mono); color: var(--accent); font-size: 40px; margin-top: 40px; }
+  .card-ov .nla { font-size: 28px; color: var(--muted); margin-top: 26px; }
+  .tag { position: absolute; z-index: 41; left: 60px; top: 50px; background: var(--accent-2); color: #fff; font-weight: 700; font-size: 34px; padding: 12px 24px; border-radius: 12px; opacity: 0; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <iframe id="frame" title="Lexmap live site"></iframe>
+  <div id="ring"></div>
+  <div class="tag" id="tag"></div>
+  <svg id="cursor" viewBox="0 0 24 24"><path d="M4 2l15 11-6.5 1.2L16 21l-3 1.4-3.4-6.9L4 20z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>
+  <div class="card-ov" id="intro">
+    <div>
+      <svg class="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0f766e"/><path d="M9 8v16h14" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="11" r="3" fill="#fff"/></svg>
+      <h1>Lexmap</h1>
+      <p>Which housing rules apply at this address, and what's about to change?</p>
+    </div>
+  </div>
+  <div class="card-ov" id="outro" style="opacity:0">
+    <div>
+      <svg class="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0f766e"/><path d="M9 8v16h14" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="11" r="3" fill="#fff"/></svg>
+      <h1>Lexmap</h1>
+      <p>Every answer quotes the law. "Unknown" instead of guessing.</p>
+      <div class="url">suvyakth.github.io/lexmap</div>
+      <div class="nla">Not legal advice</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="rec.js"></script>
+<script>
+  const frame = document.getElementById("frame");
+  const Z = 1.25;
+  const D = () => frame.contentDocument, W = () => frame.contentWindow;
+  const el = (s) => (typeof s === "function" ? s() : D().querySelector(s));
+  const box = (s) => { const e = el(s); if (!e) return { x: 960, y: 540, w: 0, h: 0 }; const b = e.getBoundingClientRect(); return { x: b.left * Z, y: b.top * Z, w: b.width * Z, h: b.height * Z }; };
+  const glanceRow = (cat) => () => { const b = D().querySelector(`.glance button[data-cat="${cat}"]`); return b && b.closest("tr"); };
+  const firstCard = (cat, cls) => () => D().querySelector(`#cat-${cat} article.rule${cls ? "." + cls : ""}`);
+
+  function prepare() {
+    return new Promise((resolve) => {
+      frame.onload = async () => {
+        for (let i = 0; i < 100 && !D().querySelector("#examples .chip"); i++) await new Promise((r) => setTimeout(r, 100));
+        W().Element.prototype.scrollIntoView = function () {};   // the video controls scrolling
+        const st = D().createElement("style");
+        st.textContent = "html{scrollbar-width:none;scroll-behavior:auto!important}html::-webkit-scrollbar{display:none}";
+        D().head.appendChild(st);
+        W().scrollTo(0, 0);
+        resolve();
+      };
+      frame.src = "../docs/index.html?video=" + Date.now();
+    });
+  }
+
+  // ---- timeline helpers
+  const S = { y: 0 };
+  function move(tl, s, at, dur = 0.7) {
+    tl.to("#cursor", { x: () => box(s).x + Math.min(box(s).w * 0.5, 60), y: () => box(s).y + box(s).h * 0.55, duration: dur, ease: "power2.inOut" }, at);
+  }
+  function click(tl, s, at) {
+    tl.call(() => {
+      const c = document.getElementById("cursor"), r = document.createElement("div");
+      r.className = "ripple"; r.style.left = gsap.getProperty(c, "x") + 6 + "px"; r.style.top = gsap.getProperty(c, "y") + 4 + "px";
+      document.getElementById("stage").appendChild(r);
+      gsap.fromTo(r, { scale: .3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: .6, onComplete: () => r.remove() });
+      gsap.fromTo(c, { scale: 1 }, { scale: .82, duration: .1, yoyo: true, repeat: 1 });
+      const e = el(s); if (e) e.click();
+    }, null, at);
+  }
+  function scroll(tl, target, at, dur = 0.9, offset = 120) {
+    tl.call(() => { S.y = W().scrollY; }, null, at - 0.02);
+    tl.to(S, {
+      y: () => typeof target === "number" ? target : Math.max(0, W().scrollY + el(target).getBoundingClientRect().top - offset),
+      duration: dur, ease: "power2.inOut", onUpdate: () => W().scrollTo(0, S.y),
+    }, at);
+  }
+  function ring(tl, s, at, hold = 2.5, pad = 10) {
+    tl.fromTo("#ring", { opacity: 0 }, {
+      x: () => box(s).x - pad, y: () => box(s).y - pad, width: () => box(s).w + 2 * pad, height: () => box(s).h + 2 * pad,
+      opacity: 1, duration: .35, ease: "power2.out", immediateRender: false,
+    }, at);
+    tl.to("#ring", { opacity: 0, duration: .3 }, at + hold);
+  }
+  function tag(tl, text, at, hold = 3) {
+    tl.call(() => { document.getElementById("tag").textContent = text; }, null, at);
+    tl.fromTo("#tag", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: .35, immediateRender: false }, at);
+    tl.to("#tag", { opacity: 0, duration: .3 }, at + hold);
+  }
+
+  Rec.init({
+    title: "Demo video · 58 s",
+    slug: "demo",
+    scrub: false,
+    duration: 58,
+    help: "Drives the real Lexmap site (served locally from docs/). Preview first; the map tiles need internet.",
+    prepare,
+    cues: [
+      { t: 0.3, say: "This is Lexmap: which housing rules apply at an address, today or on any date." },
+      { t: 6.5, say: "A 1926 building in San Francisco. Local rent control applies, so California's statewide cap is superseded." },
+      { t: 12.5, say: "Every answer quotes the law word for word, with the date it was retrieved." },
+      { t: 17.5, say: "Los Angeles, built 1978, the cut-off year. Year built isn't the occupancy date, so Lexmap says unknown and names the missing fact." },
+      { t: 25, say: "Dorchester is legally Boston. Massachusetts bars local rent control, so there's no rent cap, and Lexmap says why." },
+      { t: 32.5, say: "Hoboken bans algorithmic rent-setting software today." },
+      { t: 37, say: "Move to July 2027: New Jersey's FAIR Act takes effect, and the possible conflict is flagged for human review." },
+      { t: 44, say: "All five of the challenge's change tests pass, each with the exact buildings affected." },
+      { t: 51.5, say: "In English and Spanish. Lexmap. Not legal advice." },
+    ],
+    build(tl) {
+      tl.set("#intro", { opacity: 1 }, 0).set("#outro", { opacity: 0 }, 0).set("#cursor", { x: 1400, y: 800, opacity: 0 }, 0);
+      tl.fromTo("#intro .logo", { scale: .6, opacity: 0 }, { scale: 1, opacity: 1, duration: .7, ease: "back.out(2)" }, 0);
+      tl.fromTo("#intro h1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: .8, ease: "power3.out" }, 0.2);
+      tl.fromTo("#intro p", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: .8, ease: "power3.out" }, 0.5);
+      tl.to("#intro", { opacity: 0, duration: .6 }, 3.2);
+      tl.to("#cursor", { opacity: 1, duration: .3 }, 3.6);
+      ring(tl, "#stats", 3.8, 2.0);
+
+      // San Francisco, 1926
+      move(tl, '#examples [data-id="A0016"]', 5.4);
+      click(tl, '#examples [data-id="A0016"]', 6.2);
+      tag(tl, "San Francisco · built 1926", 6.4, 3.2);
+      scroll(tl, ".glance", 7.0);
+      ring(tl, glanceRow("rent_increase_limits"), 8.2, 3.6);
+      scroll(tl, firstCard("rent_increase_limits", "superseded"), 12.2, 1.0, 90);
+      ring(tl, firstCard("rent_increase_limits", "superseded"), 13.3, 1.2);
+      move(tl, () => { const c = firstCard("rent_increase_limits", "superseded")(); return c && c.querySelector("details.src summary"); }, 13.4);
+      click(tl, () => { const c = firstCard("rent_increase_limits", "superseded")(); return c && c.querySelector("details.src summary"); }, 14.2);
+      ring(tl, () => { const c = firstCard("rent_increase_limits", "superseded")(); return c && c.querySelector("details.src blockquote"); }, 14.6, 2.4);
+
+      // Los Angeles, built 1978
+      scroll(tl, 0, 17.2, .8);
+      move(tl, '#examples [data-id="A0107"]', 17.4);
+      click(tl, '#examples [data-id="A0107"]', 18.2);
+      tag(tl, "Los Angeles · built 1978", 18.4, 3);
+      scroll(tl, ".glance", 19.0);
+      ring(tl, glanceRow("rent_increase_limits"), 20.2, 2.0);
+      scroll(tl, firstCard("rent_increase_limits", "unknown"), 22.2, .8, 90);
+      ring(tl, () => { const c = firstCard("rent_increase_limits", "unknown")(); return c && (c.querySelector(".why") || c); }, 23.1, 1.6);
+
+      // Dorchester -> Boston
+      scroll(tl, 0, 24.8, .7);
+      move(tl, '#examples [data-id="A0065"]', 24.9);
+      click(tl, '#examples [data-id="A0065"]', 25.7);
+      tag(tl, "Dorchester → Boston", 25.9, 3);
+      scroll(tl, ".card.addr", 26.3, .6, 110);
+      ring(tl, ".stack", 27.0, 2.0);
+      scroll(tl, ".glance", 29.1, .7);
+      ring(tl, glanceRow("rent_increase_limits"), 29.9, 2.3);
+
+      // Hoboken, then July 2027
+      scroll(tl, 0, 32.3, .7);
+      move(tl, '#examples [data-id="A0002"]', 32.4);
+      click(tl, '#examples [data-id="A0002"]', 33.2);
+      tag(tl, "Hoboken, NJ", 33.4, 3);
+      scroll(tl, ".glance", 33.8, .7);
+      ring(tl, glanceRow("algorithmic_rent_setting"), 34.6, 2.0);
+      scroll(tl, 0, 36.7, .6);
+      move(tl, '#date-chips [data-d="2027-07-02"]', 36.9);
+      click(tl, '#date-chips [data-d="2027-07-02"]', 37.7);
+      tag(tl, "As of July 2, 2027", 37.9, 3.5);
+      ring(tl, "#date-chips", 38.0, 1.4);
+      const fair = () => [...D().querySelectorAll("#cat-algorithmic_rent_setting article.rule")].find((a) => /FAIR/.test(a.textContent)) || firstCard("algorithmic_rent_setting", "")();
+      scroll(tl, fair, 39.6, .9, 90);
+      ring(tl, () => { const f = fair(); return f && (f.querySelector(".rule-top") || f); }, 40.7, 1.3);
+      ring(tl, () => { const f = fair(); return f && (f.querySelector(".conflict-box") || f); }, 42.1, 1.4);
+
+      // What's changing: T1-T5
+      scroll(tl, 0, 43.6, .5);
+      move(tl, '.tabs [data-tab="changes"]', 43.7);
+      click(tl, '.tabs [data-tab="changes"]', 44.4);
+      tag(tl, "Change tests T1–T5", 44.6, 6.5);
+      ring(tl, () => D().querySelectorAll("#changes .test")[0], 45.2, 1.3);
+      scroll(tl, () => D().querySelectorAll("#changes .test")[2], 46.6, 1.2, 100);
+      ring(tl, () => D().querySelectorAll("#changes .test")[2], 47.9, 1.3);
+      scroll(tl, () => D().querySelectorAll("#changes .test")[4], 49.3, 1.0, 100);
+      ring(tl, () => D().querySelectorAll("#changes .test")[4], 50.4, 0.9);
+
+      // Spanish
+      scroll(tl, 0, 51.3, .5);
+      move(tl, '.lang [data-lang="es"]', 51.4, .6);
+      click(tl, '.lang [data-lang="es"]', 52.1);
+      move(tl, '.tabs [data-tab="lookup"]', 52.5, .5);
+      click(tl, '.tabs [data-tab="lookup"]', 53.1);
+      tl.to("#cursor", { opacity: 0, duration: .3 }, 54.6);
+      tl.to("#outro", { opacity: 1, duration: .7 }, 55.0);
+      tl.fromTo("#outro .logo, #outro h1, #outro p, #outro .url, #outro .nla", { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: .12, duration: .6, ease: "power3.out" }, 55.1);
+    },
+  });
+</script>
+</body>
+</html>

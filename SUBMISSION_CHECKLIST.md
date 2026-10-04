@@ -2,7 +2,8 @@
 
 Two submissions are required: the **HackOS platform form** and the **Google Form** linked at the top of the platform page.
 
-## If the organisers publish the hour-16 ordinance (change test T6)
+## Hour-16 ordinance: removed by the organisers (kept for reference)
+The organisers confirmed this edition uses only T1–T5. The drop-in path below still works for any new ordinance.
 The brief mentions a fictional Cambridge ordinance released mid-event in the starter-pack Google Drive folder. Our pack was the "no-hour16" version. If a new file appears:
 1. Save its text as `data/hour16/<name>.txt` (UTF-8). Optionally the first two lines can be `SOURCE: <url>` and `RETRIEVED: <date> UTC`, then a blank line.
 2. Create `data/hour16/<name>.json` containing `{"jurisdiction": "Cambridge, MA"}`, using the city the document names.

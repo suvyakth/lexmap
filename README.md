@@ -15,7 +15,7 @@ Built for the Hack-Nation 7th Global AI Hackathon, RealPage challenge "Rental Ho
 
 ## Scores we can measure
 
-The participant pack we received was labelled `participant-final-no-hour16 … no-scoring`. It contained no `score.py`, no dev answer key and no hour-16 ordinance. So `lexmap/selfcheck.py` implements every check the brief and the participant guide state explicitly, and we report those.
+The organisers confirmed that the v5 participant release is current. `score.py` and the dev answer key are not shared with participants, and the hour-16 ordinance is removed (five change tests, T1–T5). So `lexmap/selfcheck.py` implements every check the brief and the participant guide state explicitly, and we report those. The organisers also confirmed that the citation metric counts only supplied corpus text. That is why 96% of our `applies` answers quote official corpus text; the few rules known only from organiser-listed secondary pages are kept for coverage and marked as secondary.
 
 | Check | Result |
 |---|---|
@@ -25,7 +25,7 @@ The participant pack we received was labelled `participant-final-no-hour16 … n
 | T3: NJ FAIR Act, `not_yet_effective` now and `applies` on 2027-07-02, with conflict flags | 140 NJ addresses, 90 flagged (JC + Hoboken) ✓ |
 | T4: MA S.2983 / H.5222, pending, never in force | 110 MA addresses would be affected if enacted ✓ |
 | T5: MA rent-control ballot question struck | affected set empty; no rent cap on any MA address ✓ |
-| T6: hour-16 ordinance | not in our pack. The drop-in flow is ready and rehearsed ([checklist](SUBMISSION_CHECKLIST.md)) |
+| T6 | removed by the organisers (this edition uses five change tests). A drop-in path for new ordinances is still built in and rehearsed ([checklist](SUBMISSION_CHECKLIST.md)) |
 | Quotes located verbatim in their source file | 129 / 129 |
 | `applies` answers whose quote is in the official corpus text | 96% (3,375 / 3,512). The rest come from organiser-listed secondary pages |
 | Browser engine vs Python engine | 2,000 / 2,000 identical answers (500 addresses × 4 dates) |

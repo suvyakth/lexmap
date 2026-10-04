@@ -12,4 +12,5 @@ Live: https://suvyakth.github.io/lexmap/  Repo: https://github.com/suvyakth/lexm
 - [x] Final numbers in README/METHOD_NOTE re-checked after last pipeline run
 - [x] Final independent review round (regressions) and fixes: dates stage (amendments), coverage normalisation, confidence cap, no-rule reasons, unread-source notes, cache-miss exit code
 - [x] CI reproduce workflow green (Linux, cache-only, byte-identical outputs)
+- [x] Organisers confirmed: v5 is current, no score.py/dev key, hour-16 removed (T1–T5 only), citation metric = corpus text only. Hourly Drive check cancelled.
 - [ ] Morning: user records 3 videos, team photo, submits platform + Google Form (SUBMISSION_CHECKLIST.md)

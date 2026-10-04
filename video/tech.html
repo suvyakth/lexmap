@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexmap tech video</title>
+<link rel="stylesheet" href="rec.css">
+<style>
+  #stage { background: radial-gradient(1400px 800px at 15% 0%, #10292d 0%, var(--bg) 55%); }
+  .scene { opacity: 0; }
+  .kicker { position: absolute; left: 110px; top: 70px; font: 600 26px var(--mono); color: var(--accent); letter-spacing: 2px; text-transform: uppercase; }
+  .h2 { position: absolute; left: 110px; top: 112px; font-size: 76px; font-weight: 800; letter-spacing: -2px; margin: 0; }
+  .h2 em { font-style: normal; color: var(--accent); }
+  .node { position: absolute; width: 300px; height: 150px; padding: 20px 22px; border-radius: 20px; background: var(--card); border: 2px solid var(--line);
+          font-size: 29px; font-weight: 600; line-height: 1.22; display: flex; align-items: center; }
+  .node small { display: block; font: 500 20px var(--mono); color: var(--muted); margin-top: 6px; }
+  .node.ai { border-color: #b45309; }
+  .node.code { border-color: var(--accent); background: #0f2f2c; }
+  .brk { position: absolute; font: 700 26px var(--mono); padding: 6px 16px; border-radius: 10px; }
+  .brk.ai { color: #fbbf24; background: #2f2510; }
+  .brk.code { color: var(--accent); background: #0f2f2c; }
+  svg.wires { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+  svg.wires path { fill: none; stroke: #5b7a82; stroke-width: 4; marker-end: url(#arrow); }
+  .panel { position: absolute; background: var(--card); border: 2px solid var(--line); border-radius: 22px; padding: 30px 34px; }
+  .panel .lbl { font: 600 22px var(--mono); color: var(--muted); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
+  .quote { font: 400 30px/1.55 var(--mono);
+           background: linear-gradient(90deg, #4ade80 0 50%, #7d9095 50% 100%); background-size: 200% 100%; background-position: 100% 0;
+           -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .verdict { font-size: 30px; font-weight: 700; margin-top: 18px; }
+  .ok { color: var(--applies); } .bad { color: var(--bad); } .unk { color: var(--unknown); }
+  .stat { position: absolute; font-size: 40px; font-weight: 700; }
+  .stat b { color: var(--accent); }
+  .chip3 { display: inline-block; padding: 12px 26px; border-radius: 40px; font: 700 30px var(--mono); margin-right: 18px; }
+  .chip3.t { background: #10291a; color: var(--applies); } .chip3.f { background: #252a31; color: var(--superseded); } .chip3.u { background: #2f2510; color: var(--unknown); }
+  .bar { position: absolute; height: 70px; border-radius: 12px; }
+  .term { position: absolute; left: 160px; top: 270px; width: 1600px; height: 560px; background: #070b0d; border: 2px solid var(--line); border-radius: 18px; overflow: hidden; }
+  .term .tb { height: 46px; background: #121a1e; display: flex; gap: 10px; align-items: center; padding-left: 18px; }
+  .term .tb i { width: 15px; height: 15px; border-radius: 50%; background: #3a4a50; display: block; }
+  .term pre { margin: 0; padding: 22px 30px; font: 400 27px/1.5 var(--mono); color: #c9d6d9; white-space: pre-wrap; }
+  .term .cmd { color: #fff; } .term .cmd::before { content: "$ "; color: var(--accent); }
+  .term .hl { color: #0b1215; background: var(--accent); padding: 0 6px; border-radius: 4px; }
+  .score { position: absolute; left: 110px; top: 250px; font-size: 230px; font-weight: 800; letter-spacing: -8px; color: var(--accent); line-height: 1; }
+  .score-l { position: absolute; left: 120px; top: 500px; font-size: 38px; color: var(--muted); width: 560px; }
+  .trow { position: absolute; left: 780px; width: 1030px; height: 104px; display: flex; align-items: center; gap: 26px; padding: 0 30px;
+          background: var(--card); border: 2px solid var(--line); border-radius: 18px; font-size: 29px; }
+  .trow .id { font: 700 32px var(--mono); color: var(--accent); width: 60px; }
+  .trow .d { flex: 1; } .trow .n { font: 700 30px var(--mono); } .trow .ck { font-size: 40px; color: var(--applies); }
+  .lim { position: absolute; left: 110px; width: 1700px; font-size: 38px; line-height: 1.35; padding-left: 64px; }
+  .lim::before { content: "–"; position: absolute; left: 0; color: var(--unknown); font-weight: 800; }
+  .lim span { color: var(--muted); }
+  .next { position: absolute; left: 110px; top: 830px; font-size: 36px; color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <svg width="0" height="0" style="position:absolute"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b7a82"/></marker></defs></svg>
+
+  <!-- 1. Pipeline -->
+  <div class="scene" id="s1">
+    <div class="kicker">How it's built</div>
+    <h2 class="h2">The AI reads the law. <em>Code decides.</em></h2>
+    <div class="brk ai" style="left:470px;top:262px">AI reads the law</div>
+    <div class="node" style="left:110px;top:320px"><div>67 law documents<small>54 official · 13 secondary</small></div></div>
+    <div class="node ai" style="left:470px;top:320px"><div>LLM extracts rules<small>schema + coverage logic</small></div></div>
+    <div class="node ai" style="left:830px;top:320px"><div>Quotes verified<small>char for char vs source</small></div></div>
+    <div class="node ai" style="left:1190px;top:320px"><div>Second-model legal QA<small>cut-offs · scope · citations</small></div></div>
+    <div class="node" style="left:1550px;top:320px"><div>Rule graph<small>precedence · preemption</small></div></div>
+    <div class="node" style="left:110px;top:660px"><div>500 addresses<small>+ any typed address</small></div></div>
+    <div class="node" style="left:470px;top:660px"><div>Census geocoder<small>+ public parcel facts</small></div></div>
+    <div class="node code" style="left:930px;top:630px;width:520px;height:210px;font-size:36px"><div>Deterministic three-valued evaluator<small>any address · any date</small></div></div>
+    <div class="node" style="left:1550px;top:660px"><div>rules.json<br>lookups.json<br>website</div></div>
+    <div class="brk code" style="left:940px;top:572px">Code decides</div>
+    <svg class="wires">
+      <path d="M410 395 H462"/><path d="M770 395 H822"/><path d="M1130 395 H1182"/><path d="M1490 395 H1542"/>
+      <path d="M1700 470 C1700 560 1420 540 1300 622"/>
+      <path d="M410 735 H462"/><path d="M770 735 H922"/><path d="M1450 735 H1542"/>
+    </svg>
+  </div>
+
+  <!-- 2. Challenge 1 -->
+  <div class="scene" id="s2">
+    <div class="kicker">Challenge 1</div>
+    <h2 class="h2">Language models <em>invent law.</em></h2>
+    <div class="panel" id="c2q" style="left:110px;top:270px;width:930px;height:520px">
+      <div class="lbl">Source file · Cal. Civ. Code § 1947.12</div>
+      <div class="quote" id="q">Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower…</div>
+    </div>
+    <div class="panel" id="c2a" style="left:1100px;top:270px;width:710px;height:252px">
+      <div class="lbl">Extracted quote</div>
+      <div style="font:400 26px/1.45 var(--mono);color:#c9d6d9">“…shall not, over the course of any 12-month period, increase the gross rental rate…”</div>
+      <div class="verdict ok">✓ found verbatim in the source</div>
+    </div>
+    <div class="panel" id="c2b" style="left:1100px;top:540px;width:710px;height:252px">
+      <div class="lbl">Paraphrase (illustration)</div>
+      <div style="font:400 26px/1.45 var(--mono);color:#c9d6d9">“…landlords may not raise rent more than 5% plus inflation…”</div>
+      <div class="verdict bad">✗ not in the source: repaired or rejected</div>
+    </div>
+    <div class="stat" id="st2" style="left:110px;top:840px"><b>56 / 56</b> quotes verbatim · a second model re-checks every cut-off</div>
+  </div>
+
+  <!-- 3. Challenge 2 -->
+  <div class="scene" id="s3">
+    <div class="kicker">Challenge 2</div>
+    <h2 class="h2">Real data is <em>incomplete.</em></h2>
+    <div class="panel" style="left:110px;top:260px;width:820px;height:200px">
+      <div class="lbl">Rule · Los Angeles RSO</div>
+      <div style="font:600 32px/1.4 var(--mono)">covers: certificate of occupancy<br>≤ Oct 1, 1978</div>
+    </div>
+    <div class="panel" style="left:990px;top:260px;width:820px;height:200px">
+      <div class="lbl">Building · 1978, Los Angeles</div>
+      <div style="font:600 32px/1.4 var(--mono)">year built: 1978<br>occupancy date: <span class="unk">not in data</span></div>
+    </div>
+    <div style="position:absolute;left:110px;top:520px;font:600 26px var(--mono);color:var(--muted)">Jan 1, 1978</div>
+    <div style="position:absolute;left:1590px;top:520px;font:600 26px var(--mono);color:var(--muted)">Dec 31, 1978</div>
+    <div class="bar" style="left:110px;top:565px;width:1700px;background:#1a2a30"></div>
+    <div class="bar" id="b-in" style="left:110px;top:565px;width:1275px;background:#1c4a33;transform-origin:left"></div>
+    <div class="bar" id="b-out" style="left:1385px;top:565px;width:425px;background:#3a3f48;transform-origin:left"></div>
+    <div id="cut" style="position:absolute;left:1383px;top:540px;width:5px;height:120px;background:#fbbf24"></div>
+    <div id="cutl" style="position:absolute;left:1270px;top:668px;font:700 26px var(--mono);color:#fbbf24">cut-off Oct 1</div>
+    <div id="b-txt" style="position:absolute;left:150px;top:582px;font:600 28px var(--mono);color:#d1fae5">covered if finished before Oct 1 …</div>
+    <div id="b-txt2" style="position:absolute;left:1410px;top:582px;font:600 28px var(--mono);color:#cbd5e1">… not covered after</div>
+    <div id="tri" style="position:absolute;left:110px;top:760px"><span class="chip3 t">TRUE</span><span class="chip3 f">FALSE</span><span class="chip3 u">UNKNOWN</span></div>
+    <div class="stat" id="st3" style="left:110px;top:860px;font-size:38px">Answer: <span class="unk">unknown</span> · missing fact named: <b>certificate-of-occupancy date</b></div>
+  </div>
+
+  <!-- 4. Challenge 3 -->
+  <div class="scene" id="s4">
+    <div class="kicker">Challenge 3</div>
+    <h2 class="h2">A mailing address <em>isn't a legal city.</em></h2>
+    <div class="panel" id="g1" style="left:110px;top:380px;width:520px;height:220px"><div class="lbl">Mailing address</div><div style="font-size:40px;font-weight:700">63 Bailey St<br>Dorchester, MA</div></div>
+    <div class="panel" id="g2" style="left:700px;top:380px;width:520px;height:220px"><div class="lbl">U.S. Census Geocoder</div><div style="font-size:36px;font-weight:600">Incorporated place lookup</div></div>
+    <div class="panel" id="g3" style="left:1290px;top:380px;width:520px;height:220px;border-color:var(--accent)"><div class="lbl">Legal jurisdiction</div><div style="font-size:48px;font-weight:800;color:var(--accent)">Boston, MA ✓</div></div>
+    <svg class="wires"><path id="w41" d="M635 490 H692"/><path id="w42" d="M1225 490 H1282"/></svg>
+    <div class="stat" id="st4" style="left:110px;top:700px;font-size:38px"><b>487 / 500</b> matched by the geocoder · 13 fallbacks flagged low-confidence</div>
+  </div>
+
+  <!-- 5. Reproducible -->
+  <div class="scene" id="s5">
+    <div class="kicker">Reproducible</div>
+    <h2 class="h2">Every model call is <em>cached.</em></h2>
+    <div class="term"><div class="tb"><i></i><i></i><i></i></div><pre id="tpre"></pre></div>
+  </div>
+
+  <!-- 6. Scores -->
+  <div class="scene" id="s6">
+    <div class="kicker">Scores</div>
+    <div class="score" id="sc">0/44</div>
+    <div class="score-l">self-checks passing: schema, verbatim quotes, jurisdiction limits, T1–T5</div>
+    <div class="trow" style="top:200px"><span class="id">T1</span><span class="d">California AB 325 takes effect</span><span class="n">250</span><span class="ck">✓</span></div>
+    <div class="trow" style="top:322px"><span class="id">T2</span><span class="d">Hoboken vs Jersey City bans</span><span class="n">90</span><span class="ck">✓</span></div>
+    <div class="trow" style="top:444px"><span class="id">T3</span><span class="d">NJ FAIR Act · 90 conflict flags</span><span class="n">140</span><span class="ck">✓</span></div>
+    <div class="trow" style="top:566px"><span class="id">T4</span><span class="d">Massachusetts pending bills</span><span class="n">110</span><span class="ck">✓</span></div>
+    <div class="trow" style="top:688px"><span class="id">T5</span><span class="d">MA ballot question struck</span><span class="n">0</span><span class="ck">✓</span></div>
+  </div>
+
+  <!-- 7. Limitations -->
+  <div class="scene" id="s7">
+    <div class="kicker">Remaining limitations</div>
+    <h2 class="h2">What it <em>can't</em> do yet</h2>
+    <div class="lim" style="top:290px">No ordinance text for Newark, or Hoboken and Jersey City rent control <span>→ shown as gaps</span></div>
+    <div class="lim" style="top:420px">Owner facts aren't in the data <span>→ owner exemptions stay unknown</span></div>
+    <div class="lim" style="top:550px">Year built stands in for the occupancy date</div>
+    <div class="lim" style="top:680px">Confidence is model-reported, not calibrated</div>
+    <div class="next" id="nx">Next: live bill tracking · county parcel data · reviewer UI</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="rec.js"></script>
+<script>
+  const TERM = [
+    ["cmd", "python run.py"],
+    ["out", "[A2] reconciling candidates ...\n     legal QA pass over 56 rules ...\n[B1] geocoding addresses ...\n[B2] address lookups ...\n[C ] change tests ...\n[V ] self-check ..."],
+    ["out", "done in 1s; llm {<span class=\"hl\">'calls': 0, 'cache_hits': 121</span>, 'failures': 0}; self-check: 44/44 checks passed"],
+    ["cmd", "node tests/parity.js"],
+    ["out", "parity: <span class=\"hl\">2000/2000</span> (address, date) lookups identical"],
+  ];
+
+  // Scene in/out on the timeline. Each scene: [id, start, end]
+  const SCENES = [["s1", 0, 10], ["s2", 10, 19], ["s3", 19, 28], ["s4", 28, 34], ["s5", 34, 41], ["s6", 41, 46.5], ["s7", 46.5, 58.5]];
+
+  function drawPaths(tl, sel, at, stagger = .15, dur = .5) {
+    document.querySelectorAll(sel).forEach((p, i) => {
+      const L = p.getTotalLength();
+      tl.fromTo(p, { strokeDasharray: L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut" }, at + i * stagger);
+    });
+  }
+  const IN = (y = 30) => [{ opacity: 0, y }, { opacity: 1, y: 0, duration: .55, ease: "power3.out" }];
+
+  Rec.init({
+    title: "Tech video · 58 s",
+    slug: "tech",
+    duration: 58,
+    help: "Challenges, how they were solved, remaining limitations, plus the scores. Every number comes from submission/selfcheck_report.md and a real cached run.",
+    cues: [
+      { t: 0.3, say: "How Lexmap is built: a language model reads 67 housing-law documents and compiles each rule into checkable logic. A deterministic engine, not the model, decides what applies." },
+      { t: 10.2, say: "Challenge one: models invent law. So every quote is matched character for character against its source, and a second model re-checks every cut-off." },
+      { t: 19.2, say: "Challenge two: real data is incomplete. With three-valued logic, a missing fact gives 'unknown', with the fact named, never a guess." },
+      { t: 28.2, say: "Challenge three: a mailing address isn't a legal city. The Census geocoder resolves Dorchester to Boston." },
+      { t: 34.2, say: "Every model call is cached, so the build replays offline, and the browser engine matches Python on all 2,000 test lookups." },
+      { t: 41.2, say: "Result: 44 of 44 self-checks, and all five change tests match." },
+      { t: 46.7, say: "Limits: no ordinance text for Newark, owner exemptions stay unknown, and confidence isn't calibrated. Next: live bill tracking." },
+    ],
+    build(tl) {
+      // reset every animated thing so a rebuild starts clean
+      tl.set(".scene", { opacity: 0 }, 0);
+      tl.set("#tpre", { innerHTML: "" }, 0);
+      SCENES.forEach(([id, a, b]) => {
+        tl.to("#" + id, { opacity: 1, duration: .45 }, a);
+        if (b < 58) tl.to("#" + id, { opacity: 0, duration: .35 }, b - .35);
+      });
+
+      // 1. pipeline
+      tl.fromTo("#s1 .kicker, #s1 .h2", ...IN(), 0.1);
+      tl.fromTo("#s1 .node", { opacity: 0, scale: .85 }, { opacity: 1, scale: 1, duration: .45, stagger: .28, ease: "back.out(1.6)" }, 0.8);
+      drawPaths(tl, "#s1 svg.wires path", 1.2, .3);
+      tl.fromTo("#s1 .brk.ai", ...IN(-20), 3.6);
+      tl.fromTo("#s1 .brk.code", ...IN(20), 6.2);
+      tl.fromTo("#s1 .node.code", { boxShadow: "0 0 0 0 rgba(45,212,191,0)" }, { boxShadow: "0 0 0 14px rgba(45,212,191,.25)", duration: .6, yoyo: true, repeat: 3 }, 6.4);
+
+      // 2. invented law
+      tl.fromTo("#s2 .kicker, #s2 .h2", ...IN(), 10.1);
+      tl.fromTo("#c2q", ...IN(), 10.6);
+      tl.fromTo("#q", { backgroundPosition: "100% 0" }, { backgroundPosition: "0% 0", duration: 3.2, ease: "none" }, 11.4);
+      tl.fromTo("#c2a", ...IN(), 12.6);
+      tl.fromTo("#c2b", ...IN(), 14.4);
+      tl.fromTo("#c2b", { x: 0 }, { x: 14, duration: .07, yoyo: true, repeat: 5 }, 15.2);
+      tl.fromTo("#st2", ...IN(), 16.2);
+
+      // 3. incomplete data
+      tl.fromTo("#s3 .kicker, #s3 .h2", ...IN(), 19.1);
+      tl.fromTo("#s3 .panel", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .5, stagger: .5 }, 19.6);
+      tl.fromTo("#b-in, #b-out", { scaleX: 0 }, { scaleX: 1, duration: .9, stagger: .7, ease: "power2.out" }, 21.4);
+      tl.fromTo("#cut, #cutl", { opacity: 0 }, { opacity: 1, duration: .3 }, 22.6);
+      tl.fromTo("#b-txt, #b-txt2", { opacity: 0 }, { opacity: 1, duration: .4, stagger: .5 }, 22.4);
+      tl.fromTo("#tri .chip3", { opacity: 0, scale: .7 }, { opacity: 1, scale: 1, duration: .35, stagger: .25, ease: "back.out(2)" }, 23.8);
+      tl.fromTo("#tri .chip3.u", { boxShadow: "0 0 0 0 rgba(251,191,36,0)" }, { boxShadow: "0 0 0 12px rgba(251,191,36,.3)", duration: .5, yoyo: true, repeat: 3 }, 24.7);
+      tl.fromTo("#st3", ...IN(), 25.2);
+
+      // 4. legal city
+      tl.fromTo("#s4 .kicker, #s4 .h2", ...IN(), 28.1);
+      tl.fromTo("#g1", ...IN(), 28.6);
+      drawPaths(tl, "#w41", 29.4);
+      tl.fromTo("#g2", ...IN(), 29.7);
+      drawPaths(tl, "#w42", 30.5);
+      tl.fromTo("#g3", { opacity: 0, scale: .8 }, { opacity: 1, scale: 1, duration: .5, ease: "back.out(2)" }, 30.8);
+      tl.fromTo("#st4", ...IN(), 31.8);
+
+      // 5. terminal
+      tl.fromTo("#s5 .kicker, #s5 .h2", ...IN(), 34.1);
+      tl.fromTo("#s5 .term", ...IN(), 34.4);
+      let t = 35.0;
+      const html = [];
+      TERM.forEach(([kind, text]) => {
+        if (kind === "cmd") {
+          const o = { n: 0 };
+          const pre = html.join("");
+          tl.to(o, { n: text.length, duration: text.length * .045, ease: "none",
+            onUpdate: () => { document.getElementById("tpre").innerHTML = pre + `<div class="cmd">${text.slice(0, Math.round(o.n))}</div>`; } }, t);
+          t += text.length * .045 + .25;
+          html.push(`<div class="cmd">${text}</div>`);
+        } else {
+          html.push(`<div>${text}</div>`);
+          const snap = html.join("");
+          tl.call(() => { document.getElementById("tpre").innerHTML = snap; }, null, t);
+          t += .9;
+        }
+      });
+
+      // 6. scores
+      tl.fromTo("#s6 .kicker", ...IN(), 41.1);
+      const sc = { n: 0 };
+      tl.fromTo(sc, { n: 0 }, { n: 44, duration: 1.4, ease: "power2.out", onUpdate: () => { document.getElementById("sc").textContent = `${Math.round(sc.n)}/44`; } }, 41.3);
+      tl.fromTo("#s6 .score-l", ...IN(), 42.0);
+      tl.fromTo("#s6 .trow", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: .4, stagger: .3, ease: "power3.out" }, 41.6);
+      tl.fromTo("#s6 .ck", { scale: 0 }, { scale: 1, duration: .3, stagger: .3, ease: "back.out(3)" }, 43.0);
+
+      // 7. limitations
+      tl.fromTo("#s7 .kicker, #s7 .h2", ...IN(), 46.6);
+      tl.fromTo("#s7 .lim", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .45, stagger: 1.5, ease: "power3.out" }, 47.4);
+      tl.fromTo("#nx", ...IN(), 53.6);
+    },
+  });
+</script>
+</body>
+</html>
