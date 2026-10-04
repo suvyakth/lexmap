@@ -729,6 +729,53 @@
     switchTab("lookup");
   }
 
+  // ------------------------------------------------------------------ coverage dashboard (advocates & agencies)
+  const COV_CLASSES = {
+    rent_increase_limits: [["local", "Local rent control", "applies"], ["state", "State law only", "nye"], ["unknown", "Unknown (missing fact)", "unknown"], ["none", "No cap", "superseded"]],
+    just_cause_eviction: [["local", "Local just-cause law", "applies"], ["state", "State just-cause law", "nye"], ["unknown", "Unknown (missing fact)", "unknown"], ["none", "No just-cause rule", "superseded"]],
+  };
+  function classify(entries, cat) {
+    const es = entries.filter((e) => e.category === cat && !e.event_only);
+    if (es.some((e) => e.result === "applies" && e.rule.level === "city")) return "local";
+    if (es.some((e) => e.result === "unknown" && e.rule.level === "city")) return "unknown";   // a local rule may apply
+    if (es.some((e) => e.result === "applies")) return "state";
+    if (es.some((e) => e.result === "unknown")) return "unknown";
+    return "none";
+  }
+  function renderCoverage() {
+    const asOf = $("#asof").value || DEFAULT_ASOF;
+    const rows = {};
+    for (const a of D.addresses) {
+      const city = a.city || a.state;
+      const entries = engine.lookup({ stack: a.stack, facts: a.facts }, asOf);
+      const r = rows[city] = rows[city] || { city, n: 0, ids: [], rent_increase_limits: {}, just_cause_eviction: {}, flagged: 0 };
+      r.n++; r.ids.push(a.id);
+      for (const cat of Object.keys(COV_CLASSES)) { const k = classify(entries, cat); r[cat][k] = (r[cat][k] || 0) + 1; }
+      if (entries.some((e) => e.conflict_flag && !e.event_only)) r.flagged++;
+    }
+    const bar = (r, cat) => `<div class="bar" title="${COV_CLASSES[cat].map(([k, l]) => `${l}: ${r[cat][k] || 0}`).join(" · ")}">${COV_CLASSES[cat]
+      .map(([k, l, cls]) => (r[cat][k] ? `<span class="seg-${cls}" style="flex:${r[cat][k]}">${r[cat][k]}</span>` : "")).join("")}</div>`;
+    const legend = (cat) => COV_CLASSES[cat].map(([, l, cls]) => `<span class="lg"><i class="seg-${cls}"></i>${esc(l)}</span>`).join("");
+    const order = Object.values(rows).sort((a, b) => a.city.localeCompare(b.city));
+    $("#coverage").innerHTML = `<div class="card covcard">
+      <div class="cov-head"><span>as of <b>${esc(asOf)}</b> (change the date on the Address lookup tab)</span></div>
+      <div class="tbl-wrap"><table class="cov"><thead><tr><th>City</th><th>Buildings</th><th>Rent increases</th><th>Just-cause eviction</th><th>Flagged</th></tr></thead><tbody>
+      ${order.map((r) => `<tr class="cov-row" data-city="${esc(r.city)}"><td><b>${esc(r.city)}</b></td><td>${r.n}</td><td>${bar(r, "rent_increase_limits")}</td><td>${bar(r, "just_cause_eviction")}</td><td>${r.flagged ? `<span class="pill conflict">⚑ ${r.flagged}</span>` : "—"}</td></tr>
+        <tr class="cov-list" data-for="${esc(r.city)}" hidden><td colspan="5"><div class="addr-list">${r.ids.map((i) => `<button data-id="${i}">${i}</button>`).join("")}</div></td></tr>`).join("")}
+      </tbody></table></div>
+      <div class="legend"><b>Rent:</b> ${legend("rent_increase_limits")}<br><b>Eviction:</b> ${legend("just_cause_eviction")}</div>
+      <p class="muted" style="margin:8px 0 0">"Unknown" means the answer depends on a fact the public records do not hold (for example the year a Berkeley or San Diego building was built). Newark and Hoboken rent control ordinances are not in the corpus, so their buildings show the state picture only.</p>
+    </div>`;
+  }
+  function setupCoverage() {
+    $("#coverage").addEventListener("click", (ev) => {
+      const b = ev.target.closest("button[data-id]");
+      if (b) { switchTab("lookup"); showSample(b.dataset.id); return; }
+      const tr = ev.target.closest("tr.cov-row");
+      if (tr) { const l = $$("tr.cov-list").find((x) => x.dataset.for === tr.dataset.city); if (l) l.hidden = !l.hidden; }
+    });
+  }
+
   // ------------------------------------------------------------------ change tests
   function renderChanges() {
     const rep = D.changes.report, det = D.changes.detailed;
@@ -872,6 +919,7 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
 
   // ------------------------------------------------------------------ tabs, language, boot
   function switchTab(name) {
+    if (name === "changes" && D.addresses) { try { renderCoverage(); } catch (e) { /* keep tab usable */ } }
     $$(".tabs button").forEach((b) => { b.classList.toggle("active", b.dataset.tab === name); b.setAttribute && b.setAttribute("aria-selected", String(b.dataset.tab === name)); });
     $$(".tab-panel").forEach((p) => p.classList.toggle("active", p.id === "tab-" + name));
     window.scrollTo({ top: 0 });
@@ -898,7 +946,7 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
     });
     $$(".lang button").forEach((b) => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
     $("#home").addEventListener("click", (ev) => { ev.preventDefault(); goHome(); });
-    setupSearch(); setupDates(); setupQuestions(); setupTakeaways(); renderStats(); renderChanges(); renderRules(); renderMethod();
+    setupSearch(); setupDates(); setupQuestions(); setupTakeaways(); setupCoverage(); renderStats(); renderChanges(); renderRules(); renderMethod();
     const m = location.hash.match(/^#(A\d{4})(?:@(\d{4}-\d{2}-\d{2}))?/);
     if (m) { if (m[2] && m[2] >= "2024-01-01") $("#asof").value = m[2]; syncChips(); showSample(m[1], false); }
     window.__lexmap = { liveLookup, showSample, render, answer: (k, v) => { if (current) { if (v) current.answers[k] = v; else delete current.answers[k]; render(); } }, state: () => current };

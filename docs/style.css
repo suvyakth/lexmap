@@ -285,3 +285,19 @@ details.allrules > summary:hover { border-color: var(--accent); box-shadow: var(
   .foot { background: #fff; border: 0; padding: 0; }
   .addr-grid { grid-template-columns: 1fr; }
 }
+
+/* coverage dashboard */
+.covcard { padding: 16px 18px; }
+.cov-head { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+table.cov { border: 0; }
+.cov-row { cursor: pointer; }
+.cov-row:hover td { background: var(--surface-2); }
+.bar { display: flex; height: 22px; border-radius: 7px; overflow: hidden; min-width: 180px; background: var(--surface-2); }
+.bar span { display: grid; place-items: center; font-size: 11.5px; font-weight: 700; color: #fff; min-width: 18px; }
+.seg-applies { background: var(--applies); }
+.seg-nye { background: var(--nye); }
+.seg-unknown { background: var(--unknown); }
+.seg-superseded { background: var(--superseded); }
+.legend { font-size: 12.5px; color: var(--muted); margin-top: 10px; line-height: 2; }
+.lg { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; }
+.lg i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
