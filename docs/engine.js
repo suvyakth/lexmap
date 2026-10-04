@@ -74,8 +74,34 @@
     }
     return v;
   }
+  const PT_ALIASES = { multi_family: "multifamily", apartment: "multifamily", residential: "multifamily",
+    residential_rental: "multifamily", single_family_home: "single_family", sfr: "single_family",
+    condominium: "condo", townhouse: "condo", townhome: "condo", mobilehome: "mobile_home" };
+  const normPt = (pt) => { const s = String(pt).toLowerCase().replace(/-/g, "_").replace(/ /g, "_"); return PT_ALIASES[s] || s; };
+  function ownerValue(f, op, rawV, facts) {
+    const v = facts[f];
+    if (f === "other_fact" || v === null || v === undefined) return U;
+    if (f === "owner_occupied") {
+      const want = typeof rawV === "boolean" ? rawV : ["true", "yes", "1"].includes(String(rawV).toLowerCase());
+      if (op === "==") return !!v === want;
+      if (op === "!=") return !!v !== want;
+      return U;
+    }
+    if (f === "owner_type") {
+      const have = String(v).toLowerCase();
+      if (op === "in" && Array.isArray(rawV)) return rawV.map((x) => String(x).toLowerCase()).includes(have);
+      if (op === "==") return have === String(rawV).toLowerCase();
+      if (op === "!=") return have !== String(rawV).toLowerCase();
+      return U;
+    }
+    const n = Number(v), target = Number(rawV);
+    if (isNaN(n) || isNaN(target) || rawV === null || rawV === "" || typeof rawV === "boolean") return U;
+    return cmpInterval(n, n, op, target);
+  }
   function propertyTypeValue(pt, facts) {
     if (facts.property_type === null) return U;   // building type unknown (typed-in address)
+    const declared = facts.property_type;
+    if (declared !== undefined && normPt(declared) !== "multifamily") return normPt(pt) === normPt(declared) ? T : F;
     pt = String(pt).toLowerCase().replace(/-/g, "_").replace(/ /g, "_");
     const lo = facts.units_min == null ? 2 : facts.units_min;
     const hi = facts.units_max == null ? INF : facts.units_max;
@@ -89,7 +115,7 @@
   function leaf(p, facts, asOf, trace) {
     const f = p.field, op = p.op, rawV = p.value;
     let res;
-    if (OWNER_FIELDS.has(f)) res = U;
+    if (OWNER_FIELDS.has(f)) res = ownerValue(f, op, rawV, facts);
     else if (f === "property_type") {
       if (op === "in" && Array.isArray(rawV)) {
         const vals = rawV.map((x) => propertyTypeValue(x, facts));

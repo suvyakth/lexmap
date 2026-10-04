@@ -122,10 +122,23 @@ def _resolve_value(v, field_: str, op: str, as_of: date):
     return v
 
 
+PT_ALIASES = {"multi_family": "multifamily", "apartment": "multifamily", "residential": "multifamily",
+              "residential_rental": "multifamily", "single_family_home": "single_family", "sfr": "single_family",
+              "condominium": "condo", "townhouse": "condo", "townhome": "condo", "mobilehome": "mobile_home"}
+
+
+def _norm_pt(pt) -> str:
+    s = str(pt).lower().replace("-", "_").replace(" ", "_")
+    return PT_ALIASES.get(s, s)
+
+
 def _property_type_value(pt, facts: dict) -> bool | None:
     """Is the building of property type `pt`?  The sample is all assessor apartment parcels."""
     if "property_type" in facts and facts["property_type"] is None:
         return U          # building type not known (e.g. a typed-in address)
+    declared = facts.get("property_type")
+    if declared is not None and _norm_pt(declared) != "multifamily":
+        return T if _norm_pt(pt) == _norm_pt(declared) else F   # user/assessor says e.g. condo or single family
     pt = str(pt).lower().replace("-", "_").replace(" ", "_")
     lo, hi = facts.get("units_min"), facts.get("units_max")
     lo, hi = (2 if lo is None else lo), (INF if hi is None else hi)
@@ -142,11 +155,39 @@ def _property_type_value(pt, facts: dict) -> bool | None:
     return U
 
 
+def _owner_value(f: str, op: str, raw_v, facts: dict) -> bool | None:
+    """Owner facts are unknown unless supplied (e.g. answered by the user on the site)."""
+    v = facts.get(f)
+    if f == "other_fact" or v is None:
+        return U
+    if f == "owner_occupied":
+        want = raw_v if isinstance(raw_v, bool) else str(raw_v).lower() in ("true", "yes", "1")
+        if op == "==":
+            return bool(v) == want
+        if op == "!=":
+            return bool(v) != want
+        return U
+    if f == "owner_type":
+        have = str(v).lower()
+        if op == "in" and isinstance(raw_v, list):
+            return have in [str(x).lower() for x in raw_v]
+        if op == "==":
+            return have == str(raw_v).lower()
+        if op == "!=":
+            return have != str(raw_v).lower()
+        return U
+    try:
+        n, target = float(v), float(raw_v)
+    except (TypeError, ValueError):
+        return U
+    return _cmp_interval(n, n, op, target)
+
+
 def _leaf(p: dict, facts: dict, as_of: date, trace: Trace) -> bool | None:
     f, op, raw_v = p.get("field"), p.get("op"), p.get("value")
     res: bool | None
     if f in OWNER_FIELDS:
-        res = U
+        res = _owner_value(f, op, raw_v, facts)
     elif f == "property_type":
         if op == "in" and isinstance(raw_v, list):
             vals = [_property_type_value(x, facts) for x in raw_v]

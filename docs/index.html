@@ -4,22 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lexmap · Rental Housing Law Navigator</title>
-<meta name="description" content="Which rental housing rules apply at this address today, and what is about to change. Every answer cites the source text. Not legal advice.">
+<meta name="description" content="Which rental housing rules apply at this address today, and what is about to change. Every answer quotes the law it comes from. Not legal advice.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M9 8v16h14' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='21' cy='11' r='3' fill='white'/%3E%3C/svg%3E">
 </head>
 <body>
 <header class="top">
   <div class="wrap top-inner">
-    <a class="brand" href="#" aria-label="Lexmap home">
+    <a class="brand" href="#" id="home" aria-label="Lexmap home">
       <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M9 8v16h14" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="11" r="3" fill="#fff"/></svg>
       <span>Lexmap</span>
     </a>
     <nav class="tabs" role="tablist">
-      <button role="tab" data-tab="lookup" class="active" data-i18n="tab_lookup">Address lookup</button>
-      <button role="tab" data-tab="changes" data-i18n="tab_changes">What's changing</button>
-      <button role="tab" data-tab="rules" data-i18n="tab_rules">All rules</button>
-      <button role="tab" data-tab="method" data-i18n="tab_method">How it works</button>
+      <button role="tab" data-tab="lookup" class="active" aria-selected="true" data-i18n="tab_lookup">Address lookup</button>
+      <button role="tab" data-tab="changes" aria-selected="false" data-i18n="tab_changes">What's changing</button>
+      <button role="tab" data-tab="rules" aria-selected="false" data-i18n="tab_rules">All rules</button>
+      <button role="tab" data-tab="method" aria-selected="false" data-i18n="tab_method">How it works</button>
     </nav>
     <div class="top-right">
       <div class="lang" role="group" aria-label="Language">
@@ -30,93 +31,105 @@
   </div>
 </header>
 
-<div class="notice" role="note">
-  <div class="wrap"><strong data-i18n="nla">Not legal advice.</strong> <span data-i18n="nla_body">Lexmap shows what public housing law says, built from a fixed research corpus (retrieved Oct 1, 2026). It is not a compliance certification. Check the cited source, and talk to a lawyer or tenant organisation before acting.</span></div>
-</div>
-
-<main class="wrap">
-  <!-- ============================ LOOKUP ============================ -->
+<main>
+  <!-- ============================ LOOKUP (landing + results) ============================ -->
   <section id="tab-lookup" class="tab-panel active">
     <div class="hero">
-      <h1 data-i18n="hero">Which housing rules apply at this address, and what is about to change?</h1>
-      <p class="sub" data-i18n="hero_sub">Rent caps, just-cause eviction, deposits, fees, screening and algorithmic rent-setting across California, New Jersey and Massachusetts. Every answer quotes the law it comes from.</p>
-    </div>
-
-    <div class="controls card">
-      <div class="search">
-        <label for="q" data-i18n="search_label">Sample address (500 buildings in 9 cities)</label>
-        <div class="search-box">
-          <input id="q" type="search" autocomplete="off" placeholder="Try “Fillmore”, “Dorchester”, “Clinton St”, or A0002" aria-autocomplete="list" aria-controls="suggest">
-          <ul id="suggest" class="suggest" role="listbox" hidden></ul>
+      <div class="wrap hero-inner">
+        <p class="eyebrow" data-i18n="eyebrow">California · New Jersey · Massachusetts</p>
+        <h1 data-i18n="hero">Which housing rules apply at this address, and what is about to change?</h1>
+        <p class="sub" data-i18n="hero_sub">Rent caps, just-cause eviction, deposits, fees, tenant screening and algorithmic rent-setting. Every answer quotes the law it comes from, and says "unknown" instead of guessing.</p>
+        <div class="searchbar card">
+          <div class="search-box">
+            <svg class="search-ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" type="search" autocomplete="off" aria-label="Address" aria-autocomplete="list" aria-controls="suggest"
+                   placeholder="Type any address in CA, NJ or MA, or a sample like “Fillmore”, “Dorchester”, A0002">
+            <ul id="suggest" class="suggest" role="listbox" hidden></ul>
+          </div>
+          <button id="go" class="btn" data-i18n="search_go">Look up</button>
         </div>
-        <div class="examples" id="examples"></div>
-      </div>
-      <div class="asof">
-        <label for="asof" data-i18n="asof_label">Answer as of</label>
-        <input id="asof" type="date" value="2026-10-01" min="2024-01-01" max="2035-12-31" title="Dates from 2024 on; earlier dates are outside the corpus window">
+        <div class="hero-row">
+          <div class="examples" id="examples"></div>
+          <div class="asof">
+            <label for="asof" data-i18n="asof_label">Answer as of</label>
+            <input id="asof" type="date" value="2026-10-01" min="2024-01-01" max="2035-12-31" title="Dates from 2024 on">
+          </div>
+        </div>
         <div class="chips" id="date-chips"></div>
       </div>
     </div>
 
-    <details class="card custom" id="custom">
-      <summary data-i18n="custom_title">Look up any address in CA, NJ or MA (live Census geocoding)</summary>
-      <form id="custom-form" class="custom-form">
-        <input id="c-addr" required placeholder="e.g. 1600 Grand St, Hoboken, NJ 07030" aria-label="Street address">
-        <input id="c-year" type="number" min="1700" max="2035" placeholder="Year built (optional)" aria-label="Year built">
-        <input id="c-units" type="number" min="1" max="5000" placeholder="Units in building (optional)" aria-label="Units">
-        <select id="c-type" aria-label="Building type"><option value="">Building type: not sure</option><option value="multifamily">Apartment building (2+ units)</option></select>
-        <button type="submit" class="btn" data-i18n="custom_go">Look up</button>
-      </form>
-      <p class="hint" data-i18n="custom_hint">The address is sent only to the U.S. Census Geocoder to find its legal city. Facts you leave blank are treated as unknown, never guessed.</p>
-    </details>
-
-    <div id="result" aria-live="polite"></div>
+    <div class="wrap">
+      <div id="landing" class="landing">
+        <div class="stats" id="stats"></div>
+        <div class="features">
+          <div class="card feature"><div class="ic">❝</div><h3 data-i18n="f1_h">Quotes the law, word for word</h3><p data-i18n="f1_p">Every rule carries a quote that is matched character-for-character against the official source text, with its retrieval date.</p></div>
+          <div class="card feature"><div class="ic">?</div><h3 data-i18n="f2_h">Honest about what it doesn't know</h3><p data-i18n="f2_p">Missing a fact, like the year a building was finished? Lexmap says "unknown", names the fact, and asks you for it.</p></div>
+          <div class="card feature"><div class="ic">⧗</div><h3 data-i18n="f3_h">Any date, past or future</h3><p data-i18n="f3_p">Move the date to see laws that are pending, not yet effective, or about to take over from a city ordinance.</p></div>
+          <div class="card feature"><div class="ic">⚑</div><h3 data-i18n="f4_h">Flags conflicts for review</h3><p data-i18n="f4_p">When a state law may preempt a city ban, or sources disagree, the answer is flagged for a human, not silently resolved.</p></div>
+        </div>
+        <div class="how card">
+          <h2 data-i18n="how_h">How an answer is made</h2>
+          <ol class="how-steps">
+            <li><b>Read.</b> An AI model reads 67 state and city law documents and turns each rule into machine-checkable conditions.</li>
+            <li><b>Verify.</b> Every quote is located in the source file, and a second review pass checks each cut-off date and exemption.</li>
+            <li><b>Locate.</b> The U.S. Census Geocoder finds the address's legal city; public parcel records add building facts where available.</li>
+            <li><b>Decide.</b> A deterministic engine applies the rules: <i>applies</i>, <i>unknown</i>, <i>superseded</i>, <i>not yet effective</i> or <i>pending</i>.</li>
+          </ol>
+        </div>
+      </div>
+      <div id="result" aria-live="polite"></div>
+    </div>
   </section>
 
   <!-- ============================ CHANGES ============================ -->
   <section id="tab-changes" class="tab-panel">
-    <div class="hero small">
+    <div class="wrap page">
       <h1 data-i18n="changes_h">What's changing</h1>
-      <p class="sub" data-i18n="changes_sub">The five change cases from the challenge, computed by the same engine. Each one lists the addresses it affects and the before/after result.</p>
+      <p class="sub" data-i18n="changes_sub">The challenge's change cases, computed by the same engine. Each one lists the addresses it affects and the before/after result.</p>
+      <div id="changes"></div>
     </div>
-    <div id="changes"></div>
   </section>
 
   <!-- ============================ RULES ============================ -->
   <section id="tab-rules" class="tab-panel">
-    <div class="hero small">
+    <div class="wrap page">
       <h1 data-i18n="rules_h">All extracted rules</h1>
       <p class="sub" data-i18n="rules_sub">Every rule was extracted automatically from the corpus, verified against the source text, and reviewed by a second model pass. Click a row for its source quote and machine-readable coverage logic.</p>
+      <div class="filters card">
+        <input id="rf-q" type="search" placeholder="Filter by text, citation or id" aria-label="Filter rules">
+        <select id="rf-state" aria-label="State"><option value="">All states</option><option>CA</option><option>NJ</option><option>MA</option></select>
+        <select id="rf-cat" aria-label="Category"><option value="">All categories</option></select>
+        <select id="rf-status" aria-label="Status"><option value="">Any status</option><option value="in_force">In force</option><option value="not_yet_effective">Not yet effective</option><option value="pending">Pending</option><option value="failed">Failed</option></select>
+      </div>
+      <div id="rules-table"></div>
+      <h2 class="gaps-h" data-i18n="gaps_h">Where the corpus has no rule</h2>
+      <p class="sub" data-i18n="gaps_sub">Jurisdiction and category pairs for which no in-force rule was found in the supplied corpus. Lexmap reports these as gaps instead of guessing.</p>
+      <div id="gaps"></div>
     </div>
-    <div class="filters card">
-      <input id="rf-q" type="search" placeholder="Filter by text, citation or id" aria-label="Filter rules">
-      <select id="rf-state" aria-label="State"><option value="">All states</option><option>CA</option><option>NJ</option><option>MA</option></select>
-      <select id="rf-cat" aria-label="Category"><option value="">All categories</option></select>
-      <select id="rf-status" aria-label="Status"><option value="">Any status</option><option value="in_force">In force</option><option value="not_yet_effective">Not yet effective</option><option value="pending">Pending</option><option value="failed">Failed</option></select>
-    </div>
-    <div id="rules-table"></div>
-    <h2 class="gaps-h" data-i18n="gaps_h">Where the corpus has no rule</h2>
-    <p class="sub" data-i18n="gaps_sub">Jurisdiction and category pairs for which no in-force rule was found in the supplied corpus. Lexmap reports these as gaps instead of guessing.</p>
-    <div id="gaps"></div>
   </section>
 
   <!-- ============================ METHOD ============================ -->
   <section id="tab-method" class="tab-panel">
-    <div class="hero small">
+    <div class="wrap page">
       <h1 data-i18n="method_h">How Lexmap works</h1>
       <p class="sub">Rules compile to executable coverage logic, so each answer is an evaluation you can audit, not a generated guess.</p>
+      <div id="method"></div>
     </div>
-    <div id="method"></div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <span>Lexmap · Hack-Nation 2026 · RealPage challenge · public data only.</span>
-    <span id="foot-meta"></span>
+    <div class="disclaimer" role="note"><b data-i18n="nla">Not legal advice.</b> <span data-i18n="nla_body">Lexmap shows what public housing law says, built from a fixed research corpus (retrieved Oct 1, 2026). It is not a compliance certification. Check the cited source, and talk to a lawyer or tenant organisation before acting.</span></div>
+    <div class="foot-row">
+      <span>Lexmap · Hack-Nation 2026 · RealPage challenge · public data only · map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+      <span id="foot-meta"></span>
+    </div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="engine.js"></script>
 <script src="app.js"></script>
 </body>

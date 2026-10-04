@@ -90,7 +90,7 @@ flowchart LR
 | Change tests | `lexmap/changes.py` | Runs T1–T5 generically from `change_tests.json`, plus a T6 for every hour-16 release. |
 | What-if | `lexmap/whatif.py` | Runs any new law through the same pipeline and lists the addresses that change, before and after. |
 | Plain language | `lexmap/explain.py` | English and Spanish summaries. Any number not in the rule record discards the summary. |
-| Site | `docs/` | Static page. `docs/engine.js` is a line-for-line port of the evaluator, so any address or date is answered in the browser. |
+| Site | `docs/` | Static page. `docs/engine.js` is a line-for-line port of the evaluator, so any address or date is answered in the browser. Typed-in addresses are geocoded live (Census). In New Jersey the statewide public parcel layer (NJOGIS MOD-IV) adds property class, year built and dwellings, so a shop is recognised as "not a residential rental". Any fact still missing becomes a short question, and every rule is re-checked as you answer. The map uses OpenStreetMap. |
 
 ## Run it
 

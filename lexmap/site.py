@@ -30,7 +30,8 @@ def build(rules, expl, geos, addrs, changes_detailed, ch_report, selfcheck_repor
         "source_dataset": a["row"]["source_dataset"], "city": a["geo"]["city"], "stack": a["stack"],
         "matched": a["geo"].get("matched_address"), "geo_method": a["geo"]["method"],
         "geo_confidence": a["geo"]["confidence"], "flags": a["geo"]["flags"],
-        "lat": a["geo"].get("lat"), "lon": a["geo"].get("lon"),
+        "lat": a["geo"].get("lat"), "lon": a["geo"].get("lon"), "county": a["geo"].get("county"),
+        "census_place": a["geo"].get("census_place"), "use_code": a["row"].get("use_code"),
         "facts": {k: (None if v == float("inf") else v) for k, v in a["facts"].items()},
     } for a in addrs])
     _w("sources.json", {d.doc_id: {"url": d.url, "retrieved_at": d.retrieved_at, "source_type": d.source_type,
