@@ -20,13 +20,12 @@ Record with any screen recorder (Windows: Snipping Tool's screen recording, or X
 
 | Time | Show | Say |
 |---|---|---|
-| 0–6 s | Home page, "Not legal advice" banner | "Lexmap: which housing rules apply at this address, today or on any date." |
-| 6–17 s | Click the chip **San Francisco, 1926**. Point at the at-a-glance table, then open one **Source quote** | "A 1926 San Francisco building. Local rent control applies, so California's statewide cap is *superseded*. Every line quotes the law and when it was retrieved." |
-| 17–25 s | Click **Los Angeles, built 1978** | "Built in the cut-off year. Year built isn't the certificate-of-occupancy date, so Lexmap says *unknown* and names the missing fact. It never guesses." |
-| 25–33 s | Click **Dorchester → Boston**. Scroll to Rent increases | "Dorchester is legally Boston. Massachusetts bars local rent control, and the 2026 ballot question was struck. So no rent cap, and the card explains why." |
-| 33–45 s | Click **Hoboken**, then the date chip **Jul 2, 2027** | "Hoboken's algorithmic-pricing ban applies today. Move the date to July 2027: New Jersey's FAIR Act takes effect, and Lexmap flags a possible preemption for human review." |
-| 45–55 s | **What's changing** tab: T1–T5 green, then the what-if card | "All five change tests pass, with every affected address listed. A brand-new ordinance goes through the same pipeline, with its future effective date and the 45 buildings it would cover." |
-| 55–60 s | Click **ES** for two seconds | "In English and Spanish. Not legal advice." |
+| 0–6 s | Landing page: headline, search box, feature cards | "Lexmap answers one question: which housing rules apply at this address, today or on any date." |
+| 6–20 s | Click the chip **San Francisco, 1926**. Point at **What matters most at this address** | "For a renter it says what matters here: rent can rise at most 1.6% this year, because this building is older than San Francisco's 1979 cut-off. Each point cites the law; click it to see the exact quote." Click the citation. |
+| 20–26 s | Click **Landlord** in the View-as switch | "Same building, worded for the landlord." |
+| 26–38 s | Click **A shop in NJ (live)** | "Any real address works. Here New Jersey's public parcel records show it's a commercial property, so Lexmap says these rules don't apply instead of guessing." |
+| 38–48 s | Type a house address, e.g. `387 Spring Valley Road, Paramus, NJ`, then answer **Does the owner live in the building?** | "When a fact is missing it asks one question, and every answer updates instantly." |
+| 48–60 s | **What's changing** tab: the city coverage bars, then T1–T5 | "Advocates see who is protected city by city, and all five change tests pass. Not legal advice." |
 
 ---
 

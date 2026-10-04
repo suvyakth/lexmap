@@ -49,6 +49,12 @@ Most systems ask a model "which rules apply here?" Lexmap uses the model only to
    - A re-sourcing pass replaces a secondary quote with official corpus text wherever an official document states the same requirement.
 6. **Reproducible and auditable.** Every model call is cached by the SHA-256 of model and prompt. `python run.py` reproduces every file in `submission/` and `docs/data/` offline, with no API key. `submission/audit_log.jsonl` records sources with hashes, model-call keys, rejected candidates, rule provenance and every answer.
 
+### Built for each user named in the brief
+- **Renters:** "What matters most at this address" gives up to six building-specific answers ("How much can my rent go up?") in plain English or Spanish. Each says why it applies to this building and cites the law.
+- **Small landlords:** the same view, worded as obligations ("How much can I raise rent?").
+- **Advocates and agencies:** a city-by-city coverage dashboard shows how many of the 500 buildings have local rent control, state law only, no cap, or an unknown status, on any date. The change tests list every affected building.
+- **Anyone with a real address:** live Census geocoding finds the legal city. In New Jersey, public parcel records add building facts, so a shop is recognised as not a rental. Anything still missing becomes one short question, answered instantly.
+
 ### What we deliberately do not report as "applies"
 - **Failed measures**, such as the struck MA ballot question. They are kept in `rules.json` as `failed`.
 - **Laws that only restrict cities**, such as M.G.L. c. 40P. They are shown as context on the "no rule" card.
