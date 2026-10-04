@@ -10,6 +10,7 @@ amendments; `effective_date` itself is left unchanged.
 from __future__ import annotations
 
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor
 
 from . import config, llm
@@ -66,4 +67,11 @@ def run(rules: list[dict], workers: int = 6) -> list[dict]:
         if res["kind"] == "amendment" and (res.get("in_force_since") or "0000") < r["effective_date"]:
             r["amendment"] = True
             r["in_force_since"] = res.get("in_force_since")   # None = in force before the records start
+            # A published annual rate (rent adjustment, deposit interest) only starts a rate PERIOD; the duty itself
+            # is older, so its earliest listed period is not the date the rule began.
+            txt = " ".join(str(r.get(k) or "") for k in ("title", "key_value"))
+            if re.search(r"\b(rate|interest|allowable (rent )?increase|annual general adjustment|adjustment)\b", txt, re.I) \
+                    and re.search(r"\d+(\.\d+)?\s*%", str(r.get("key_value") or "")):
+                r["in_force_since"] = None
+                r["date_meaning"]["note"] = "rate period: effective_date marks the current rate, not the start of the rule"
     return rules

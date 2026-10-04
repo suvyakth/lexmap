@@ -289,7 +289,7 @@ details.allrules > summary:hover { border-color: var(--accent); box-shadow: var(
 
 /* print: a one-page summary */
 @media print {
-  .top, .hero, .landing, .ask, .segs, .foot-row, .map, details.allrules, .chips, .examples { display: none !important; }
+  .top, .hero, .landing, .ask, .segs, .foot-row, .map, details.allrules, details.timeline, details.compare, .chips, .examples { display: none !important; }
   body { background: #fff; color: #000; }
   .card, .take { box-shadow: none !important; border-color: #ccc; transform: none !important; }
   .foot { background: #fff; border: 0; padding: 0; }
@@ -330,7 +330,7 @@ details.timeline[open] > summary h3::before, details.compare[open] > summary h3:
 .tl-track:hover { outline: 1px solid var(--accent); }
 .tl-seg { position: absolute; top: 3px; height: 12px; border-radius: 4px; transition: filter .12s; }
 .tl-seg:hover { filter: brightness(1.15); }
-.tl-now { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--text); border-radius: 2px; pointer-events: none; }
+.tl-now { position: absolute; top: -3px; bottom: -3px; width: 2px; transform: translateX(-1px); background: var(--text); border-radius: 2px; pointer-events: none; }
 .seg-pending { background: var(--pending); }
 .tl-events { margin-top: 10px; font-size: 13px; }
 .tl-events ul { margin: 6px 0 0; padding-left: 18px; columns: 2; column-gap: 28px; }
@@ -340,7 +340,7 @@ details.timeline[open] > summary h3::before, details.compare[open] > summary h3:
 .cmp-form input { flex: 1; }
 table.cmp { margin-top: 12px; }
 table.cmp th { vertical-align: top; }
-table.cmp tr.diff td { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+table.cmp tr.diff td { background: var(--accent-soft); background: color-mix(in srgb, var(--accent) 7%, transparent); }
 table.cmp tr.diff td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 
 /* theme toggle, review badge, quote */

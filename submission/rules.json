@@ -5872,7 +5872,7 @@
     "landlord_es": "Usted debe usar la tasa de interés de 4.2% de la Junta de Alquileres para los depósitos de seguridad del 1 de marzo de 2026 al 28 de febrero de 2027."
    },
    "amendment": true,
-   "in_force_since": "2024-03-01",
+   "in_force_since": null,
    "provenance": {
     "extraction_llm_call": "f6ea9751f561183e1eaace9d0c91041c1faa94b8993e1ba0e313573db8e0b60e",
     "reconcile": {
@@ -5905,7 +5905,8 @@
      "llm_call": "5caa87f6f98e7d301274a73be93480e09d23061edcf2ad93bbb5fd093600b298",
      "kind": "amendment",
      "in_force_since": "2024-03-01",
-     "reason": "The 4.2% figure is an annual rate update; the excerpt shows prior rates of 5.0% for 2025-26 and 5.2% for 2024-25, so the interest requirement was already in force, with the earliest date shown being 2024-03-01."
+     "reason": "The 4.2% figure is an annual rate update; the excerpt shows prior rates of 5.0% for 2025-26 and 5.2% for 2024-25, so the interest requirement was already in force, with the earliest date shown being 2024-03-01.",
+     "note": "rate period: effective_date marks the current rate, not the start of the rule"
     },
     "validation_notes": []
    }

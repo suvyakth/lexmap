@@ -64,12 +64,22 @@
     quote: "«El modelo lee la ley. Nunca decide qué se aplica.»",
     cov_h: "Quién está protegido, ciudad por ciudad",
     cov_sub: "Para organizaciones y agencias: cómo están protegidos los 500 edificios de muestra en la fecha elegida, calculado con el mismo motor. Haga clic en una ciudad para ver sus edificios.",
-    f1_p: "Cada norma lleva una cita comparada carácter por carácter con el texto oficial, con su fecha de consulta.",
+    f1_p: "Cada norma lleva una cita comparada carácter por carácter con su texto fuente, con su fecha de consulta. Las normas basadas solo en una fuente secundaria se marcan «Revisar».",
     f2_p: "¿Falta un dato, como el año de construcción? Lexmap dice «desconocido», nombra el dato y se lo pregunta.",
     f3_p: "Mueva la fecha para ver leyes pendientes, aún no vigentes o a punto de reemplazar una ordenanza local.",
     f4_p: "Cuando una ley estatal podría desplazar una prohibición local, o las fuentes no coinciden, la respuesta se marca para revisión humana.",
   });
   const tr = (en, es) => (lang === "es" ? es : en);
+  const FIELD_ES = { certificate_of_occupancy: "la fecha del certificado de ocupación", year_built: "el año de construcción", units: "el número de unidades",
+    property_type: "el tipo de propiedad", owner_occupied: "si el propietario vive en el edificio", owner_type: "el tipo de propietario",
+    owner_unit_count: "cuántas unidades tiene el propietario", owner_property_count: "cuántas propiedades tiene el propietario", other_fact: "una condición del edificio que no está en los datos" };
+  const fieldName = (m) => (lang === "es" && FIELD_ES[m]) || Lexmap.FIELD_LABEL[m] || m;
+  const MONTHS = { en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    es: ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"] };
+  function fmtDate(d) {
+    const m = /^(\d{4})-(\d{2})$/.exec(String(d || ""));
+    return m ? `${MONTHS[lang === "es" ? "es" : "en"][Number(m[2]) - 1]} ${m[1]}` : String(d || "");
+  }
   const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
 
   // ------------------------------------------------------------------ data
@@ -207,10 +217,10 @@
     const facts = mergedFacts(current);
     const addr = { stack: current.base.stack, facts };
     const all = engine.lookup(addr, asOf);
-    const residential = current.answers.residential || current.meta.residential || "";
+    const residential = (current.answers.residential === "unsure" ? "" : current.answers.residential) || (current.answers.residential === "unsure" ? "" : current.meta.residential) || "";
     document.body.classList.add("has-result");
     $("#landing").hidden = true;
-    let html = addressCard(addr, all, asOf);
+    let html = addressCard(addr, residential === "no" ? [] : all, asOf);
     if (residential === "no") {
       html += questionsPanel([], current, facts);
       html += `<div class="card notres"><h3>${tr("Not a residential rental, so these rules do not apply", "No es un alquiler residencial, así que estas normas no aplican")}</h3>
@@ -234,7 +244,7 @@
     for (const c of D.meta.categories) {
       const es = by[c] || [];
       const ev = evBy[c] || [];
-      html += `<section class="cat" id="cat-${c}"><div class="cat-h"><h3>${esc(catName(c))}</h3><span class="n">${es.length} rule${es.length === 1 ? "" : "s"}</span></div>`;
+      html += `<section class="cat" id="cat-${c}"><div class="cat-h"><h3>${esc(catName(c))}</h3><span class="n">${es.length} ${tr(es.length === 1 ? "rule" : "rules", es.length === 1 ? "norma" : "normas")}</span></div>`;
       if (!es.length) html += noRuleCard(c, addr, asOf);
       for (const e of es) html += ruleCard(e);
       if (ev.length) html += `<details class="src evgroup"><summary>${t("event_only")} (${ev.length})</summary>${ev.map(ruleCard).join("")}</details>`;
@@ -318,19 +328,32 @@
     landlord: { rent_increase_limits: "¿Cuánto puedo subir la renta?", just_cause_eviction: "¿Cuándo puedo terminar un alquiler?", security_deposits: "¿Qué depósito puedo cobrar?",
       application_screening_fees: "¿Qué puedo cobrar a los solicitantes?", screening_restrictions: "¿Qué no puedo considerar al evaluar?", algorithmic_rent_setting: "¿Puedo usar software de precios?" },
   };
+  // Deposits: the statewide cap is the headline; a city's interest-rate rule is the add-on.
+  function levelPref(c, e) { return c === "security_deposits" ? (e.rule.level === "state" ? 0 : 1) : (e.rule.level === "city" ? 0 : 1); }
+  function unreadCity(addr) {
+    const c = addr.stack.find((j) => j.includes(",") && (D.unread[j] || []).length);
+    return c ? c.split(",")[0] : "";
+  }
   function takeawaysPanel(by, entries, addr, asOf) {
     const items = [];
     for (const c of TAKE_ORDER) {
       const es = by[c] || [];
-      const applies = es.filter((e) => e.result === "applies").sort((a, b) => (a.rule.level === "city" ? 0 : 1) - (b.rule.level === "city" ? 0 : 1));
-      const unknown = es.filter((e) => e.result === "unknown");
+      const applies = es.filter((e) => e.result === "applies").sort((a, b) => levelPref(c, a) - levelPref(c, b));
+      const unknown = es.filter((e) => e.result === "unknown").sort((a, b) => (a.rule.level === "city" ? 0 : 1) - (b.rule.level === "city" ? 0 : 1));
       const q = ((lang === "es" ? TAKE_TITLE_ES : TAKE_TITLE)[persona] || {})[c] || catName(c);
       if (applies.length) {
         const e = applies[0];
-        items.push({ c, q, status: "applies", e, text: personaLine(e.rule), why: whyHere(e, addr), more: applies.length - 1 });
+        let why = whyHere(e, addr);
+        if (e.rule.amendment && e.rule.effective_date && isoDay(e.rule.effective_date) > asOf)
+          why += " " + tr(`This describes the version that takes effect ${fmtDate(e.rule.effective_date)}; an earlier version applies on this date.`,
+                          `Esto describe la versión que entra en vigor el ${fmtDate(e.rule.effective_date)}; en esta fecha aplica una versión anterior.`);
+        if ((c === "rent_increase_limits" || c === "just_cause_eviction") && unreadCity(addr))
+          why += " " + tr(`${unreadCity(addr)}'s own ordinances could not be read, so local rules may add stricter limits.`,
+                          `No se pudieron leer las ordenanzas propias de ${unreadCity(addr)}, así que normas locales podrían añadir límites más estrictos.`);
+        items.push({ c, q, status: "applies", e, text: personaLine(e.rule), why, more: applies.length - 1 });
       } else if (unknown.length) {
         const e = unknown[0];
-        const miss = [...new Set(unknown.flatMap((u) => u.missing_facts || []))].map((m) => (Lexmap.FIELD_LABEL[m] || m)).join(", ");
+        const miss = [...new Set(unknown.flatMap((u) => u.missing_facts || []))].map(fieldName).join(", ");
         items.push({ c, q, status: "unknown", e, text: personaLine(e.rule), why: tr(`Not settled: depends on ${miss || "facts not in the data"}. Answer the questions below to settle it.`, `Sin resolver: depende de ${miss || "datos que no están disponibles"}. Responda las preguntas de abajo para resolverlo.`) });
       } else if (c === "rent_increase_limits" || c === "just_cause_eviction") {
         const om = omittedRules(c, addr, asOf);
@@ -346,7 +369,7 @@
     const coming = entries.filter((e) => e.result === "not_yet_effective").sort((a, b) => String(a.rule.effective_date).localeCompare(String(b.rule.effective_date)));
     const pending = entries.filter((e) => e.result === "pending");
     const changeItems = coming.slice(0, 1).map((e) => ({ c: e.category, q: persona === "landlord" ? tr("What changes soon for me?", "¿Qué cambia pronto para mí?") : tr("What's about to change?", "¿Qué está por cambiar?"), status: "not_yet_effective", e,
-      text: tr(`${e.rule.title} takes effect ${e.rule.effective_date}.`, `${e.rule.title} entra en vigor el ${e.rule.effective_date}.`), why: personaLine(e.rule) }))
+      text: tr(`${e.rule.title} takes effect ${fmtDate(e.rule.effective_date)}.`, `${e.rule.title} entra en vigor el ${fmtDate(e.rule.effective_date)}.`), why: personaLine(e.rule) }))
       .concat(pending.slice(0, 1).map((e) => ({ c: e.category, q: tr("What's being proposed?", "¿Qué se está proponiendo?"), status: "pending", e, text: tr(`${e.rule.title}: a pending bill, not law.`, `${e.rule.title}: un proyecto pendiente, no es ley.`), why: personaLine(e.rule) })));
     const top = items.filter((i) => ["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
     const rest = items.filter((i) => !["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
@@ -357,7 +380,7 @@
       const r = i.e && i.e.rule;
       const flag = (i.e && i.e.conflict_flag ? ` <span class="pill conflict">⚑ ${t("conflict")}</span>` : "") + (r ? reviewPill(r) : "");
       return `<div class="take ${i.status}">
-        <div class="take-top"><span class="take-q">${esc(i.q)}</span>${i.status === "none" ? `<span class="pill superseded">${tr("No cap / no rule", "Sin tope / sin norma")}</span>` : pill(i.status)}${flag}</div>
+        <div class="take-top"><span class="take-q">${esc(i.q)}</span>${i.status === "none" ? `<span class="pill superseded">${i.c === "rent_increase_limits" ? tr("No cap found", "Sin tope") : tr("No rule found", "Sin norma")}</span>` : pill(i.status)}${flag}</div>
         <div class="take-a">${esc(i.text)}${i.more > 0 ? ` <span class="muted">(+${i.more} ${tr(i.more === 1 ? "more rule" : "more rules", i.more === 1 ? "norma más" : "normas más")})</span>` : ""}</div>
         <div class="take-why">${esc(i.why)}</div>
         ${r ? `<div class="take-cite"><button class="linkish" data-goto="${esc(r.team_rule_id)}">${esc(r.citation)}</button> · ${(r.source_type || "").startsWith("official") ? t("official") : t("secondary")}</div>` : ""}
@@ -366,6 +389,8 @@
     return `<div class="card takeaways">
       <div class="take-head"><h3>${tr("What matters most at this address", "Lo más importante en esta dirección")}</h3>
         <div class="segs" role="group" aria-label="View as">${persBtn("renter", tr("Renter", "Inquilino"))}${persBtn("landlord", tr("Landlord", "Propietario"))}${persBtn("researcher", tr("Researcher", "Investigador"))}<button class="seg print" data-print="1" title="Print a one-page summary">${tr("Print", "Imprimir")}</button></div></div>
+      ${asOf !== DEFAULT_ASOF ? `<p class="muted">${tr(`Coverage is recomputed for ${asOf}. Published rates and figures are those in the corpus (retrieved Oct 1, 2026); for other periods they may differ.`,
+        `La cobertura se recalcula para ${asOf}. Las tasas y cifras publicadas son las del corpus (consultado el 1 de octubre de 2026); para otros periodos pueden diferir.`)}</p>` : ""}
       <div class="take-grid">${cards}</div>
     </div>`;
   }
@@ -409,7 +434,7 @@
     return { ds, rows };
   }
   const RES_WORD = { applies: ["applies", "aplica"], unknown: ["unknown", "desconocido"], superseded: ["superseded", "desplazada"],
-    not_yet_effective: ["not yet effective", "aún no vigente"], pending: ["pending", "pendiente"], none: ["not reported", "no se informa"] };
+    not_yet_effective: ["not yet effective", "aún no vigente"], pending: ["pending", "pendiente"], none: ["does not apply", "no aplica"] };
   const resWord = (v) => (RES_WORD[v] || [v, v])[lang === "es" ? 1 : 0];
   function timelinePanel(addr, asOf) {
     let data;
@@ -433,7 +458,7 @@
     const sub = lang === "es" ? "Cada barra es la respuesta del motor para esa fecha. Haga clic en la línea de tiempo para ver la dirección en esa fecha."
       : "Each bar is the engine's answer for that date. Click anywhere on the timeline to see the address on that date.";
     const legend = ["applies", "unknown", "superseded", "not_yet_effective", "pending"].map((v) => `<span class="lg"><i class="seg-${v === "not_yet_effective" ? "nye" : v}"></i>${esc(resWord(v))}</span>`).join("");
-    return `<details class="card timeline" open><summary><h3>${esc(head)}</h3><span class="muted">${changing.length} ${lang === "es" ? "normas cambian" : "rules change"} · ${data.rows.length} ${lang === "es" ? "en total" : "in total"}</span></summary>
+    return `<details class="card timeline" open><summary><h3>${esc(head)}</h3><span class="muted">${changing.length} ${lang === "es" ? (changing.length === 1 ? "norma cambia" : "normas cambian") : (changing.length === 1 ? "rule changes" : "rules change")} · ${data.rows.length} ${lang === "es" ? "en total" : "in total"}</span></summary>
       <p class="muted">${esc(sub)}</p>
       <div class="tl"><div class="tl-axis"><div class="tl-label"></div><div class="tl-years">${years}</div></div>${rowsHtml}</div>
       <div class="legend">${legend}</div>
@@ -445,10 +470,10 @@
   // ------------------------------------------------------------------ compare with another building
   function governing(entries, c) {
     const es = entries.filter((e) => e.category === c && !e.event_only);
-    const a = es.filter((e) => e.result === "applies").sort((x, y) => (x.rule.level === "city" ? 0 : 1) - (y.rule.level === "city" ? 0 : 1))[0];
+    const a = es.filter((e) => e.result === "applies").sort((x, y) => levelPref(c, x) - levelPref(c, y))[0];
     if (a) return { key: a.team_rule_id, html: `${pill("applies")} <b>${esc(a.rule.title)}</b>${a.rule.key_value ? `<div class="muted">${esc(a.rule.key_value)}</div>` : ""}` };
     const u = es.find((e) => e.result === "unknown");
-    if (u) return { key: "u:" + u.team_rule_id, html: `${pill("unknown")} <b>${esc(u.rule.title)}</b><div class="muted">${esc((u.missing_facts || []).map((m) => Lexmap.FIELD_LABEL[m] || m).join(", "))}</div>` };
+    if (u) return { key: "u:" + u.team_rule_id, html: `${pill("unknown")} <b>${esc(u.rule.title)}</b><div class="muted">${esc((u.missing_facts || []).map(fieldName).join(", "))}</div>` };
     const n = es.find((e) => e.result === "not_yet_effective" || e.result === "pending");
     if (n) return { key: "n:" + n.team_rule_id, html: `${pill(n.result)} <b>${esc(n.rule.title)}</b>` };
     return { key: "none", html: `<span class="muted">${lang === "es" ? "Ninguna norma la cubre" : "No rule covers it"}</span>` };
@@ -473,9 +498,9 @@
       if (diff) diffs++;
       return `<tr class="${diff ? "diff" : ""}"><td><b>${esc(catName(c))}</b></td><td>${ga.html}</td><td>${gb.html}</td></tr>`;
     }).join("");
-    const yb = b.facts.year_built ? `built ${b.facts.year_built}` : "year unknown";
-    const ya = addr.facts.year_built ? `built ${addr.facts.year_built}` : "year unknown";
-    return `<details class="card compare" open><summary><h3>${esc(title)}</h3><span class="muted">${diffs} ${lang === "es" ? "temas difieren" : diffs === 1 ? "topic differs" : "topics differ"} · ${esc(asOf)}</span></summary>
+    const yb = b.facts.year_built ? tr(`built ${b.facts.year_built}`, `construido en ${b.facts.year_built}`) : tr("year unknown", "año desconocido");
+    const ya = addr.facts.year_built ? tr(`built ${addr.facts.year_built}`, `construido en ${addr.facts.year_built}`) : tr("year unknown", "año desconocido");
+    return `<details class="card compare" open><summary><h3>${esc(title)}</h3><span class="muted">${diffs} ${lang === "es" ? (diffs === 1 ? "tema difiere" : "temas difieren") : diffs === 1 ? "topic differs" : "topics differ"} · ${esc(asOf)}</span></summary>
       ${form}
       <div class="tbl-wrap"><table class="cmp"><thead><tr><th></th><th>${esc(current.meta.title)}<div class="muted">${esc(addr.stack.slice(-1)[0])} · ${esc(ya)}</div></th>
         <th>${esc(b.street)}, ${esc(b.postal_city)}<div class="muted">${esc(b.city || b.state)} · ${esc(yb)} · <button class="linkish" data-open="${b.id}">${lang === "es" ? "abrir" : "open"}</button> · <button class="linkish" data-cmp-clear="1">${lang === "es" ? "quitar" : "clear"}</button></div></th></tr></thead>
@@ -493,8 +518,8 @@
     const unreadNote = unread.length ? [`${unread.length} ${unread[0][0]} source document${unread.length === 1 ? " is" : "s are"} link-only (${[...new Set(unread.map(([, u]) => u.source_type))].join(", ")}) and could not be read, so local rules they contain (for example rent control) are not reflected here.`] : [];
     const flags = (m.flags || []).concat((f.flags || []).map((x) => "Assessor flag: " + x), unreadNote).map((x) => `<li>${esc(x)}</li>`).join("");
     const unitsTxt = f.units_min == null || (f.units_min <= 1 && f.units_max == null) ? t("not_in_data") : Lexmap.unitsText(f);
-    const typeTxt = f.property_type === undefined || f.property_type === "multifamily" ? (f.units_max != null && f.units_max <= 4 && f.units_min < 3 ? "small residential (1–4 units)" : "apartment building")
-      : f.property_type === null ? "unknown" : f.property_type.replace(/_/g, " ");
+    const typeTxt = f.property_type === undefined || f.property_type === "multifamily" ? (f.units_max != null && f.units_max <= 4 && f.units_min < 3 ? tr("small residential (1–4 units)", "residencial pequeño (1–4 unidades)") : tr("apartment building", "edificio de apartamentos"))
+      : f.property_type === null ? tr("unknown", "desconocido") : f.property_type.replace(/_/g, " ");
     const ownerTxt = f.owner_occupied != null || f.owner_type ? [f.owner_occupied != null ? (f.owner_occupied ? "owner lives there" : "owner does not live there") : "", f.owner_type ? f.owner_type.replace(/_/g, " ") : ""].filter(Boolean).join(", ") : t("not_in_data");
     const details = (m.details || []).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("");
     const hasMap = m.lat != null && m.lon != null;
@@ -508,12 +533,12 @@
             <div class="fact"><div class="k">${t("year")}</div><div class="v">${f.year_built || "—"}</div><div class="p">${esc(f.year_source || "")}</div></div>
             <div class="fact"><div class="k">${t("units")}</div><div class="v">${esc(unitsTxt)}</div><div class="p">${esc(f.units_source || "")}</div></div>
             <div class="fact"><div class="k">${t("type")}</div><div class="v">${esc(typeTxt)}</div><div class="p">${esc(f.property_type_source || "")}</div></div>
-            <div class="fact"><div class="k">${t("owner")}</div><div class="v">${esc(ownerTxt)}</div><div class="p">${ownerTxt === t("not_in_data") ? "No owner data is used; owner-based exemptions stay “unknown” unless you answer or building facts rule them out." : "your answer"}</div></div>
+            <div class="fact"><div class="k">${t("owner")}</div><div class="v">${esc(ownerTxt)}</div><div class="p">${ownerTxt === t("not_in_data") ? tr("No owner data is used; owner-based exemptions stay “unknown” unless you answer or building facts rule them out.", "No se usan datos del propietario; las exenciones que dependen de él siguen «desconocidas» salvo que usted responda o los datos del edificio las descarten.") : tr("your answer", "su respuesta")}</div></div>
           </div>
           ${details ? `<details class="details" open><summary>${t("details")}</summary><dl class="dl">${details}</dl></details>` : ""}
           ${flags ? `<ul class="flags">${flags}</ul>` : ""}
         </div>
-        <div>${hasMap ? `<div id="map" class="map" role="img" aria-label="Map of the address"></div>` : `<div class="map nomap">No coordinates for this address (the Census geocoder found no exact match), so no map.</div>`}</div>
+        <div>${hasMap ? `<div id="map" class="map" role="img" aria-label="Map of the address"></div>` : `<div class="map nomap">${tr("No coordinates for this address (the Census geocoder found no exact match), so no map.", "No hay coordenadas para esta dirección (el geocodificador del Censo no encontró coincidencia exacta), así que no hay mapa.")}</div>`}</div>
       </div>
       <div class="tally">
         ${pill("applies", count("applies"))} ${pill("unknown", count("unknown"))} ${pill("superseded", count("superseded"))}
@@ -601,7 +626,7 @@
     const sup = e.superseded_by ? `<div class="kv"><b>${t("superseded_by")}:</b> ${esc(e.superseded_by)} — ${esc((D.byId[e.superseded_by] || {}).citation || "")}</div>` : "";
     return `<article class="card rule ${e.result}" id="rule-${esc(r.team_rule_id)}">
       <div class="rule-top">
-        <div><div class="rule-title">${esc(r.title)}</div><div class="rid">${esc(r.team_rule_id)} · ${esc(r.jurisdiction)}${r.effective_date ? " · effective " + esc(r.effective_date) : ""}</div></div>
+        <div><div class="rule-title">${esc(r.title)}</div><div class="rid">${esc(r.team_rule_id)} · ${esc(r.jurisdiction)}${r.effective_date ? " · " + tr("effective ", "vigente desde ") + esc(fmtDate(r.effective_date)) : ""}</div></div>
         <div>${pill(e.result)}${reviewPill(r)} ${e.conflict_flag ? `<span class="pill conflict">⚑ ${t("conflict")}</span>` : ""}</div>
       </div>
       <p class="plain">${esc(plain(r))}</p>
@@ -636,7 +661,7 @@
     if (a.lat != null) details.push(["Coordinates", `${Number(a.lat).toFixed(5)}, ${Number(a.lon).toFixed(5)}`]);
     const keep = current && current.id === a.id;
     current = { kind: "sample", id: a.id, base: { stack: a.stack, facts: a.facts }, answers: keep ? current.answers : {}, compareId: keep ? current.compareId : null,
-      meta: { title: `${a.street}, ${a.postal_city}, ${a.state}`, matched: a.matched, flags: a.flags, idLabel: `${a.id} · sample address`,
+      meta: { title: `${a.street}, ${a.postal_city}, ${a.state}`, matched: a.matched, flags: a.flags, idLabel: `${a.id} · ${tr("sample address", "dirección de muestra")}`,
         lat: a.lat, lon: a.lon, details, residential: "yes" } };
     $("#q").value = `${a.street}, ${a.postal_city}, ${a.state}`;
     render();
@@ -657,7 +682,7 @@
     "NJ|Hoboken city": "Hoboken, NJ", "NJ|Newark city": "Newark, NJ", "MA|Boston city": "Boston, MA", "MA|Cambridge city": "Cambridge, MA",
   };
   const NJ_CLASS = {
-    "1": ["Vacant land", "no"], "2": ["Residential (four families or fewer)", "yes"], "3A": ["Farm (regular)", "no"], "3B": ["Farm (qualified)", "no"],
+    "1": ["Vacant land", "no"], "2": ["Residential (four families or fewer)", ""], "3A": ["Farm (regular)", "no"], "3B": ["Farm (qualified)", "no"],
     "4A": ["Commercial", "no"], "4B": ["Industrial", "no"], "4C": ["Apartment (five or more units)", "yes"],
     "5A": ["Railroad", "no"], "5B": ["Railroad", "no"], "6A": ["Business personal property", "no"], "6B": ["Petroleum refinery", "no"],
     "15A": ["Public school", "no"], "15B": ["Other school", "no"], "15C": ["Public property", ""], "15D": ["Church or charitable", "no"],
@@ -737,19 +762,22 @@
     return { facts, details, residential: resi, residentialWhy: resi === "no" ? `New Jersey's parcel record classes this property as ${cls} (${clsName}), not housing.` : "", cls };
   }
 
+  let liveSeq = 0;
   async function liveLookup(address) {
     $("#suggest").hidden = true;
     $("#landing").hidden = true;
-    $("#result").innerHTML = `<div class="spinner">Finding the legal jurisdiction with the U.S. Census Geocoder…</div>`;
+    const seq = (liveSeq = (liveSeq || 0) + 1);
+    $("#result").innerHTML = `<div class="spinner">${tr("Finding the legal jurisdiction with the U.S. Census Geocoder…", "Buscando la jurisdicción legal con el Geocodificador del Censo de EE. UU.…")}</div>`;
     $("#result").scrollIntoView && $("#result").scrollIntoView({ behavior: "smooth", block: "start" });
     try {
       const data = await jsonp("https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?benchmark=Public_AR_Current&vintage=Current_Current&address=" + encodeURIComponent(address));
+      if (seq !== liveSeq) return;          // a newer lookup started; drop this one
       const m = ((data.result || {}).addressMatches || [])[0];
-      if (!m) { $("#result").innerHTML = `<div class="empty">The Census geocoder found no match for that address. Check the spelling and include the city and state.</div>`; current = null; setHash(); return; }
+      if (!m) { $("#result").innerHTML = `<div class="empty">${tr("The Census geocoder found no match for that address. Check the spelling and include the city and state.", "El geocodificador del Censo no encontró esa dirección. Revise la ortografía e incluya la ciudad y el estado.")}</div>`; current = null; setHash(); return; }
       const g = m.geographies || {};
       const stName = ((g.States || [])[0] || {}).NAME;
       const st = STATE_CODES[stName];
-      if (!st) { $("#result").innerHTML = `<div class="empty">That address is in ${esc(stName || "another state")}. Lexmap's corpus covers California, New Jersey and Massachusetts only.</div>`; current = null; setHash(); return; }
+      if (!st) { $("#result").innerHTML = `<div class="empty">${tr(`That address is in ${esc(stName || "another state")}. Lexmap's corpus covers California, New Jersey and Massachusetts only.`, `Esa dirección está en ${esc(stName || "otro estado")}. El corpus de Lexmap cubre solo California, Nueva Jersey y Massachusetts.`)}</div>`; current = null; setHash(); return; }
       const place = ((g["Incorporated Places"] || [])[0] || {}).NAME;
       let city = place ? PLACE_TO_CITY[st + "|" + place] : null;
       if (!city) for (const cs of g["County Subdivisions"] || []) city = city || PLACE_TO_CITY[st + "|" + cs.NAME];
@@ -763,8 +791,9 @@
         ["Coordinates", lat != null ? `${lat.toFixed(5)}, ${lon.toFixed(5)}` : "—"]];
       let residential = "", residentialWhy = "", parcel = false;
       if (st === "NJ" && lon != null) {
-        $("#result").innerHTML = `<div class="spinner">Reading New Jersey's public parcel record for building facts…</div>`;
+        $("#result").innerHTML = `<div class="spinner">${tr("Reading New Jersey's public parcel record for building facts…", "Leyendo el registro público de parcelas de Nueva Jersey…")}</div>`;
         const p = await njParcel(lon, lat, m.matchedAddress);
+        if (seq !== liveSeq) return;
         if (p) {
           const nf = njFacts(p);
           facts = nf.facts; details.push(...nf.details); residential = nf.residential; residentialWhy = nf.residentialWhy; parcel = true;
@@ -780,7 +809,8 @@
     } catch (e) {
       current = null;
       setHash();
-      $("#result").innerHTML = `<div class="empty">${esc(e.message)}. The 500 sample addresses still work offline.</div>`;
+      if (seq !== liveSeq) return;
+      $("#result").innerHTML = `<div class="empty">${esc(e.message)}. ${tr("The 500 sample addresses still work offline.", "Las 500 direcciones de muestra siguen funcionando sin conexión.")}</div>`;
     }
   }
 
@@ -846,6 +876,13 @@
   }
 
   function setupTakeaways() {
+    $("#result").addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter" && ev.target && ev.target.id === "cmp-input") {
+        ev.preventDefault();
+        const go = document.querySelector && document.querySelector("[data-cmp-go]");
+        if (go) go.click();
+      }
+    });
     $("#result").addEventListener("click", (ev) => {
       const pb = ev.target.closest("[data-persona]");
       if (pb) {
@@ -866,11 +903,23 @@
       }
       const cg = ev.target.closest("[data-cmp-go]");
       if (cg) {
-        const v = (document.getElementById("cmp-input") || {}).value || "";
+        const inp = document.getElementById("cmp-input") || {};
+        const v = inp.value || "";
         const m = v.toUpperCase().match(/A\d{4}/);
         let id = m && D.addrById[m[0]] ? m[0] : null;
-        if (!id && v.trim()) { const low = v.trim().toLowerCase(); const hit = D.addresses.find((a) => `${a.street} ${a.postal_city}`.toLowerCase().includes(low)); id = hit && hit.id; }
+        const nz = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        if (!id && v.trim()) {
+          const want = nz(v);
+          const hit = D.addresses.find((a) => a.id !== current.id && nz(`${a.id} ${a.street} ${a.postal_city} ${a.state}`).includes(want));
+          id = hit && hit.id;
+        }
+        if (id && current.kind === "sample" && id === current.id) id = null;
         if (id) { current.compareId = id; const y = window.scrollY; render(); window.scrollTo(0, y); }
+        else if (inp.setCustomValidity) {
+          inp.setCustomValidity(tr("No other sample address matches. Try an id like A0105 or a street name.", "Ninguna otra dirección de muestra coincide. Pruebe un id como A0105 o un nombre de calle."));
+          inp.reportValidity && inp.reportValidity();
+          setTimeout(() => inp.setCustomValidity && inp.setCustomValidity(""), 2500);
+        }
         return;
       }
       const cp = ev.target.closest("[data-cmp]");
@@ -893,7 +942,9 @@
       const el = ev.target.closest("[data-q]");
       if (!el || !current) return;
       const k = el.dataset.q, v = String(el.value || "").trim();
-      if (v) current.answers[k] = v; else delete current.answers[k];
+      if (v) current.answers[k] = v;
+      else if (k === "residential") current.answers[k] = "unsure";   // explicit "not sure" overrides a parcel-based default
+      else delete current.answers[k];
       const y = window.scrollY;
       render();
       window.scrollTo(0, y);
@@ -916,7 +967,7 @@
     const sc = D.selfcheck.summary;
     const cities = new Set(D.addresses.map((a) => a.city).filter(Boolean)).size;
     $("#stats").innerHTML = [
-      [D.rules.length, "rules extracted from 67 law documents"],
+      [D.rules.length, "rules extracted from 67 source documents"],
       [D.addresses.length, `sample buildings in ${cities} cities, plus any address you type`],
       ["100%", "of quotes found word for word in their source"],
       [`${sc.passed}/${sc.total}`, "self-checks passing, incl. all change tests"],
@@ -1159,6 +1210,7 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
   }
 
   async function boot() {
+    try { setupTheme(); } catch (e) { /* theme is cosmetic */ }
     try { await load(); } catch (e) { $("#result").innerHTML = `<div class="empty">Could not load data: ${esc(e.message)}</div>`; return; }
     $$(".tabs button").forEach((b) => b.addEventListener("click", () => switchTab(b.dataset.tab)));
     $("#result").addEventListener("click", (ev) => {
@@ -1169,7 +1221,6 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
     });
     $$(".lang button").forEach((b) => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
     $("#home").addEventListener("click", (ev) => { ev.preventDefault(); goHome(); });
-    setupTheme();
     setupSearch(); setupDates(); setupQuestions(); setupTakeaways(); setupCoverage(); renderStats(); renderChanges(); renderRules(); renderMethod();
     const m = location.hash.match(/^#(A\d{4})(?:@(\d{4}-\d{2}-\d{2}))?/);
     if (m) { if (m[2] && m[2] >= "2024-01-01") $("#asof").value = m[2]; syncChips(); showSample(m[1], false); }

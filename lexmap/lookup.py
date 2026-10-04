@@ -108,7 +108,7 @@ class Engine:
         eff = _d(rule.get("in_force_since")) if rule.get("amendment") else _d(rule.get("effective_date"))
         if (eff and eff > as_of) or (status == "not_yet_effective" and not eff and not rule.get("amendment")):
             return {"result": "not_yet_effective",
-                    "reason": f"Enacted; takes effect {rule.get('effective_date') or 'on a future date'}.",
+                    "reason": f"Enacted; takes effect {(rule.get('in_force_since') if rule.get('amendment') else rule.get('effective_date')) or 'on a future date'}.",
                     "missing": []}
         if rule["level"] == "city":
             st = rule["jurisdiction"].split(", ")[1]

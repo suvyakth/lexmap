@@ -66,7 +66,7 @@
       <div id="landing" class="landing">
         <div class="stats" id="stats"></div>
         <div class="features">
-          <div class="card feature"><div class="ic">❝</div><h3 data-i18n="f1_h">Quotes the law, word for word</h3><p data-i18n="f1_p">Every rule carries a quote that is matched character-for-character against the official source text, with its retrieval date.</p></div>
+          <div class="card feature"><div class="ic">❝</div><h3 data-i18n="f1_h">Quotes the law, word for word</h3><p data-i18n="f1_p">Every rule carries a quote matched character-for-character against its source text, with its retrieval date. Rules that rest only on a secondary source are marked “Needs review”.</p></div>
           <div class="card feature"><div class="ic">?</div><h3 data-i18n="f2_h">Honest about what it doesn't know</h3><p data-i18n="f2_p">Missing a fact, like the year a building was finished? Lexmap says "unknown", names the fact, and asks you for it.</p></div>
           <div class="card feature"><div class="ic">⧗</div><h3 data-i18n="f3_h">Any date, past or future</h3><p data-i18n="f3_p">Move the date to see laws that are pending, not yet effective, or about to take over from a city ordinance.</p></div>
           <div class="card feature"><div class="ic">⚑</div><h3 data-i18n="f4_h">Flags conflicts for review</h3><p data-i18n="f4_p">When a state law may preempt a city ban, or sources disagree, the answer is flagged for a human, not silently resolved.</p></div>
@@ -74,7 +74,7 @@
         <div class="how card">
           <h2 data-i18n="how_h">How an answer is made</h2>
           <ol class="how-steps">
-            <li><b>Read.</b> An AI model reads 67 state and city law documents and turns each rule into machine-checkable conditions.</li>
+            <li><b>Read.</b> An AI model reads 67 source documents (54 official law texts plus 13 organiser-listed secondary pages) and turns each rule into machine-checkable conditions.</li>
             <li><b>Verify.</b> Every quote is located in the source file, and a second review pass checks each cut-off date and exemption.</li>
             <li><b>Locate.</b> The U.S. Census Geocoder finds the address's legal city; public parcel records add building facts where available.</li>
             <li><b>Decide.</b> A deterministic engine applies the rules: <i>applies</i>, <i>unknown</i>, <i>superseded</i>, <i>not yet effective</i> or <i>pending</i>.</li>

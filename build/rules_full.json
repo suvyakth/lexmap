@@ -6666,10 +6666,11 @@
    "llm_call": "5caa87f6f98e7d301274a73be93480e09d23061edcf2ad93bbb5fd093600b298",
    "kind": "amendment",
    "in_force_since": "2024-03-01",
-   "reason": "The 4.2% figure is an annual rate update; the excerpt shows prior rates of 5.0% for 2025-26 and 5.2% for 2024-25, so the interest requirement was already in force, with the earliest date shown being 2024-03-01."
+   "reason": "The 4.2% figure is an annual rate update; the excerpt shows prior rates of 5.0% for 2025-26 and 5.2% for 2024-25, so the interest requirement was already in force, with the earliest date shown being 2024-03-01.",
+   "note": "rate period: effective_date marks the current rate, not the start of the rule"
   },
   "amendment": true,
-  "in_force_since": "2024-03-01",
+  "in_force_since": null,
   "citation_full": "San Francisco Rent Board security deposit interest rate (SF.gov)",
   "team_rule_id": "SF-DEP-01",
   "source_conflict": false,

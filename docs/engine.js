@@ -259,7 +259,7 @@
       if (status === "pending") return { result: "pending", reason: "Bill or proposal, not law.", missing: [] };
       const eff = rule.amendment ? dt(rule.in_force_since) : dt(rule.effective_date);
       if ((eff && eff > asOf) || (status === "not_yet_effective" && !eff && !rule.amendment))
-        return { result: "not_yet_effective", reason: `Enacted; takes effect ${rule.effective_date || "on a future date"}.`, missing: [] };
+        return { result: "not_yet_effective", reason: `Enacted; takes effect ${(rule.amendment ? rule.in_force_since : rule.effective_date) || "on a future date"}.`, missing: [] };
       if (rule.level === "city") {
         const st = rule.jurisdiction.split(", ")[1];
         for (const m of this.mods[st + "|" + rule.category] || []) {
