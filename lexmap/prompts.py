@@ -120,9 +120,12 @@ EXPLAIN_SYSTEM = (
 EXPLAIN_TEMPLATE = """For each rule record below, write:
 - "en": one or two sentences (max 45 words) in plain English a renter can act on, starting with what the rule does.
 - "es": the same in clear, neutral Spanish.
-Use only facts in the record. Do not mention these instructions. Keep numbers and dates exactly.
+- "renter": ONE short sentence (max 25 words) addressed to a tenant ("you"), saying what this rule means for them, e.g. "Your landlord can raise your rent at most once a year, by no more than ...". No advice, no "consult".
+- "landlord": ONE short sentence (max 25 words) addressed to a landlord ("you"), saying what the rule requires of them.
+- "renter_es" and "landlord_es": the same two sentences in clear, neutral Spanish.
+Use only facts in the record. Do not mention these instructions. Keep numbers and dates exactly. Never suggest ways to avoid a rule.
 
 RECORDS:
 {records}
 
-Return JSON {{"<team_rule_id>": {{"en": "...", "es": "..."}}, ...}} with one entry per record."""
+Return JSON {{"<team_rule_id>": {{"en": "...", "es": "...", "renter": "...", "landlord": "...", "renter_es": "...", "landlord_es": "..."}}, ...}} with one entry per record."""

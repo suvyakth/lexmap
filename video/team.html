@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexmap team video</title>
+<link rel="stylesheet" href="rec.css">
+<style>
+  #stage { background: radial-gradient(1300px 800px at 80% 10%, #123a3a 0%, var(--bg) 58%); }
+  .scene { opacity: 0; }
+  .kicker { position: absolute; left: 130px; top: 120px; font: 600 28px var(--mono); color: var(--accent); letter-spacing: 2px; text-transform: uppercase; }
+  .hello { position: absolute; left: 130px; top: 300px; font-size: 150px; font-weight: 800; letter-spacing: -5px; line-height: 1.02; margin: 0; width: 1150px; }
+  .hello em { font-style: normal; color: var(--accent); }
+  .sub { position: absolute; left: 136px; top: 640px; font-size: 44px; color: var(--muted); width: 1100px; }
+  .avatar { position: absolute; right: 150px; top: 250px; width: 480px; height: 480px; border-radius: 50%; overflow: hidden;
+            border: 8px solid var(--accent); background: #0f2f2c; display: grid; place-items: center; font-size: 180px; font-weight: 800; color: var(--accent); }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .big { position: absolute; left: 130px; top: 190px; font-size: 92px; font-weight: 800; letter-spacing: -3px; line-height: 1.1; width: 1660px; margin: 0; }
+  .big em { font-style: normal; color: var(--accent); }
+  .tags { position: absolute; left: 130px; top: 560px; display: flex; gap: 26px; flex-wrap: wrap; width: 1660px; }
+  .tags span { font-size: 44px; font-weight: 700; padding: 22px 40px; border-radius: 60px; background: var(--card); border: 2px solid var(--line); }
+  .grid { position: absolute; left: 130px; top: 300px; width: 1660px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+  .cell { background: var(--card); border: 2px solid var(--line); border-radius: 26px; padding: 34px 40px; height: 230px; }
+  .cell .n { font-size: 104px; font-weight: 800; color: var(--accent); letter-spacing: -3px; line-height: 1; }
+  .cell .l { font-size: 34px; color: var(--muted); margin-top: 14px; }
+  .vals { position: absolute; left: 130px; top: 360px; width: 1660px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .val { background: var(--card); border: 2px solid var(--line); border-radius: 28px; padding: 46px 50px; height: 360px; }
+  .val .ic { font-size: 90px; color: var(--accent); line-height: 1; font-weight: 800; }
+  .val h3 { font-size: 54px; margin: 22px 0 12px; letter-spacing: -1px; }
+  .val p { font-size: 34px; color: var(--muted); margin: 0; }
+  .mission { position: absolute; left: 130px; top: 300px; font-size: 118px; font-weight: 800; letter-spacing: -4px; line-height: 1.08; width: 1660px; margin: 0; }
+  .mission span { display: block; }
+  .mission span:nth-child(2) { color: var(--accent); }
+  .end { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+  .end .logo { display: block; width: 130px; height: 130px; margin: 0 auto 30px; }
+  .end h1 { font-size: 128px; margin: 0; letter-spacing: -4px; }
+  .end p { font-size: 44px; color: var(--muted); margin: 14px 0 0; }
+  .end .url { font: 600 40px var(--mono); color: var(--accent); margin-top: 36px; }
+  body.with-cam #s1 .avatar { visibility: hidden; }
+  /* In the team video the webcam takes the avatar's place */
+  #cam { right: 150px; top: 250px; bottom: auto; width: 480px; height: 480px; border-width: 8px; }
+</style>
+</head>
+<body>
+<script>
+  // ============ EDIT ME ============
+  const TEAM = {
+    name: "suvyakth",                       // your name as you want it shown and said
+    tagline: "Solo builder · Claude as my pair programmer",
+    photo: "",                              // optional: put e.g. "me.jpg" in this folder and write "me.jpg" here
+    whatIDo: "I build software: audio tools, games, and data apps like this one.",
+    tags: ["Audio plugins", "Games", "Data apps", "Legal tech, as of this weekend"],
+  };
+  // ==================================
+</script>
+<div id="stage">
+  <div class="scene" id="s1">
+    <div class="kicker">Team Lexmap</div>
+    <h1 class="hello">Hi, I'm <em id="nm"></em>.</h1>
+    <div class="sub" id="tagl"></div>
+    <div class="avatar" id="av"></div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="kicker">What I do</div>
+    <h2 class="big" id="what"></h2>
+    <div class="tags" id="tags"></div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="kicker">Why this team is awesome · one weekend</div>
+    <div class="grid">
+      <div class="cell"><div class="n" data-n="67">0</div><div class="l">law documents read</div></div>
+      <div class="cell"><div class="n" data-n="56">0</div><div class="l">rules, every quote verified</div></div>
+      <div class="cell"><div class="n" data-n="500">0</div><div class="l">buildings, plus any address</div></div>
+      <div class="cell"><div class="n" data-n="44" data-of="44">0</div><div class="l">self-checks passing</div></div>
+      <div class="cell"><div class="n" data-n="5" data-of="5">0</div><div class="l">change tests matched</div></div>
+      <div class="cell"><div class="n" data-n="2">0</div><div class="l">languages: EN + ES</div></div>
+    </div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="kicker">What I'm proudest of</div>
+    <div class="vals">
+      <div class="val"><div class="ic">❝</div><h3>It quotes the law</h3><p>Every answer carries the exact words of its source, with the date it was retrieved.</p></div>
+      <div class="val"><div class="ic">?</div><h3>It says "unknown"</h3><p>When a fact is missing, Lexmap names it and asks, instead of guessing.</p></div>
+    </div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="kicker">Why it matters</div>
+    <h2 class="mission"><span>Renters: know your rights.</span><span>Landlords: know your duties.</span><span style="font-size:60px;color:var(--muted);letter-spacing:-1px;margin-top:30px">No lawyer needed to read the code.</span></h2>
+  </div>
+  <div class="scene" id="s6">
+    <div class="end"><div>
+      <svg class="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0f766e"/><path d="M9 8v16h14" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="11" r="3" fill="#fff"/></svg>
+      <h1>Lexmap</h1>
+      <p id="endname"></p>
+      <div class="url">suvyakth.github.io/lexmap</div>
+    </div></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="rec.js"></script>
+<script>
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  document.getElementById("nm").textContent = TEAM.name;
+  document.getElementById("tagl").textContent = TEAM.tagline;
+  document.getElementById("what").textContent = TEAM.whatIDo;
+  document.getElementById("tags").innerHTML = TEAM.tags.map((t) => `<span>${esc(t)}</span>`).join("");
+  document.getElementById("endname").textContent = `${TEAM.name} · RealPage Rental Housing Law Navigator · Hack-Nation 2026`;
+  document.getElementById("av").innerHTML = TEAM.photo ? `<img src="${esc(TEAM.photo)}" alt="">` : esc(TEAM.name.trim()[0] || "L").toUpperCase();
+
+  const SCENES = [["s1", 0, 7], ["s2", 7, 14], ["s3", 14, 33], ["s4", 33, 44], ["s5", 44, 52], ["s6", 52, 58.5]];
+  const IN = (y = 30) => [{ opacity: 0, y }, { opacity: 1, y: 0, duration: .6, ease: "power3.out" }];
+
+  Rec.init({
+    title: "Team video · 58 s",
+    slug: "team",
+    duration: 58,
+    help: "Edit the TEAM block at the top of team.html (name, photo, what you do). Tick “Webcam bubble” to put your face where the avatar is.",
+    cues: [
+      { t: 0.3, say: `Hi, I'm ${TEAM.name}. I'm a team of one, and I built Lexmap for the RealPage housing-law challenge.` },
+      { t: 7.2, say: `What I do: ${TEAM.whatIDo}` },
+      { t: 14.2, say: "Why this team is awesome: in one weekend, with Claude as my pair programmer, Lexmap read 67 law documents and turned them into 56 verified rules." },
+      { t: 23.5, say: "It answers 500 sample buildings, plus any address you type, in English and Spanish, and passes all 44 of its own checks." },
+      { t: 33.2, say: "What I'm proudest of is honesty: every answer quotes the law, and when the data runs out, Lexmap says unknown instead of guessing." },
+      { t: 44.2, say: "Renters should know their rights, and landlords their duties, without a lawyer to read the code." },
+      { t: 52.2, say: `I'm ${TEAM.name}, this is Lexmap. Thanks for watching.` },
+    ],
+    build(tl) {
+      tl.set(".scene", { opacity: 0 }, 0);
+      tl.set(".cell .n", { textContent: "0" }, 0);
+      SCENES.forEach(([id, a, b]) => {
+        tl.to("#" + id, { opacity: 1, duration: .45 }, a);
+        if (b < 58) tl.to("#" + id, { opacity: 0, duration: .35 }, b - .35);
+      });
+      tl.fromTo("#s1 .kicker", ...IN(), 0.1);
+      tl.fromTo("#s1 .hello", ...IN(50), 0.3);
+      tl.fromTo("#s1 .sub", ...IN(), 1.0);
+      tl.fromTo("#av", { opacity: 0, scale: .7 }, { opacity: 1, scale: 1, duration: .8, ease: "back.out(1.6)" }, 0.5);
+
+      tl.fromTo("#s2 .kicker", ...IN(), 7.1);
+      tl.fromTo("#what", ...IN(40), 7.3);
+      tl.fromTo("#tags span", { opacity: 0, y: 30, scale: .9 }, { opacity: 1, y: 0, scale: 1, duration: .45, stagger: .4, ease: "back.out(1.8)" }, 8.6);
+
+      tl.fromTo("#s3 .kicker", ...IN(), 14.1);
+      document.querySelectorAll(".cell").forEach((c, i) => {
+        const at = (i < 3 ? 14.6 : 23.6) + (i % 3) * 1.4;
+        tl.fromTo(c, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .5, ease: "power3.out" }, at);
+        const n = c.querySelector(".n"), to = +n.dataset.n, of = n.dataset.of, o = { v: 0 };
+        tl.fromTo(o, { v: 0 }, { v: to, duration: 1.1, ease: "power2.out", onUpdate: () => { n.textContent = Math.round(o.v) + (of ? "/" + of : ""); } }, at + .1);
+      });
+
+      tl.fromTo("#s4 .kicker", ...IN(), 33.1);
+      tl.fromTo("#s4 .val", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: .6, stagger: 3.2, ease: "power3.out" }, 33.6);
+
+      tl.fromTo("#s5 .kicker", ...IN(), 44.1);
+      tl.fromTo("#s5 .mission span", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .6, stagger: 1.6, ease: "power3.out" }, 44.4);
+
+      tl.fromTo("#s6 .logo, #s6 h1, #s6 p, #s6 .url", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .6, stagger: .15, ease: "power3.out" }, 52.3);
+    },
+  });
+</script>
+</body>
+</html>

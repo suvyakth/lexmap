@@ -12,6 +12,8 @@
   let lang = "en";
   let current = null;   // { kind: "sample"|"live", id?, base: {stack, facts}, meta: {...}, answers: {} }
   let mapInstance = null;
+  let persona = "renter";      // renter | landlord | researcher
+  try { persona = localStorage.getItem("lexmap.persona") || "renter"; } catch (e) { /* storage blocked */ }
   const DEFAULT_ASOF = "2026-10-01";
 
   const I18N = {
@@ -187,7 +189,9 @@
     const by = {}, evBy = {};
     for (const e of entries) (by[e.category] = by[e.category] || []).push(e);
     for (const e of events) (evBy[e.category] = evBy[e.category] || []).push(e);
+    html += takeawaysPanel(by, entries, addr, asOf);
     html += questionsPanel(entries, current, facts);
+    html += `<details class="allrules"${persona === "researcher" ? " open" : ""}><summary><span>All ${all.length} rules checked for this address, with sources and reasoning</span><span class="muted">${entries.filter((e) => e.result === "applies").length} apply · ${entries.filter((e) => e.result === "unknown").length} unknown · ${entries.filter((e) => e.result === "superseded").length} superseded</span></summary>`;
     html += glance(by, addr, asOf);
     for (const c of D.meta.categories) {
       const es = by[c] || [];
@@ -198,8 +202,105 @@
       if (ev.length) html += `<details class="src evgroup"><summary>${t("event_only")} (${ev.length})</summary>${ev.map(ruleCard).join("")}</details>`;
       html += `</section>`;
     }
+    html += `</details>`;
     $("#result").innerHTML = html;
     initMap();
+  }
+
+  // ------------------------------------------------------------------ "what matters most here"
+  // A short, ranked summary tied to this building: the rule that actually governs each topic,
+  // the building fact that makes it apply, and what is changing.  Wording follows the persona.
+  function personaLine(r) {
+    const pl = r.plain_language || {};
+    const es = lang === "es";
+    if (persona === "renter") return (es ? pl.renter_es : pl.renter) || plain(r);
+    if (persona === "landlord") return (es ? pl.landlord_es : pl.landlord) || plain(r);
+    return plain(r);
+  }
+  // Turn engine leaf descriptions ("certificate-of-occupancy date after 1979-06-13? no (built 1926)")
+  // into a readable reason ("built 1926, so the exemption for buildings first occupied after 1979-06-13 does not apply").
+  const LEAF_RE = /^(certificate-of-occupancy date|year built|number of units|property type|whether the owner lives on site|owner type|how many units the owner has|how many properties the owner has) (.+?) (.+?)\? (yes|no|unknown) \((.*)\)$/;
+  function phrase(label, op, val) {
+    if (label === "certificate-of-occupancy date") return `buildings first occupied ${op} ${val}`;
+    if (label === "year built") return `buildings built ${op} ${val}`;
+    if (label === "number of units") return `buildings with ${op} ${val} units`;
+    if (label === "property type") return `${val} properties`.replace(/^(\S+) properties$/, (m, x) => `${x} properties`);
+    return `${label} ${op} ${val}`;
+  }
+  function readable(leafText, kind) {
+    const m = LEAF_RE.exec(leafText.trim());
+    if (!m) return leafText;
+    const [, label, op, val, , have] = m;
+    if (kind === "exempt") return `${have}, so the exemption for ${phrase(label, op, val)} does not apply`;
+    return `${have}, and it covers ${phrase(label, op, val)}`;
+  }
+  function whyHere(e, addr) {
+    const r = e.rule;
+    const where = r.level === "city" ? `Inside ${r.jurisdiction.split(",")[0]} city limits` : `Statewide in ${D.meta.states[r.jurisdiction] || r.jurisdiction}`;
+    const ex = e.explanation || "";
+    const bits = [];
+    const cov = ex.match(/Covered: ([^]*?)\.(?: |$)/);
+    const exm = ex.match(/Exemption cannot apply: ([^]*?)\.(?: |$)/);
+    if (cov) bits.push(...cov[1].split("; ").slice(0, 1).map((x) => readable(x, "cover")));
+    if (exm) bits.push(...exm[1].split("; ").filter((x) => !/property type/.test(x)).slice(0, 1).map((x) => readable(x, "exempt")));
+    return where + (bits.length ? "; " + bits.join("; ") : "") + ".";
+  }
+  const TAKE_ORDER = ["rent_increase_limits", "just_cause_eviction", "security_deposits", "application_screening_fees", "screening_restrictions", "algorithmic_rent_setting"];
+  const TAKE_TITLE = {
+    renter: { rent_increase_limits: "How much can my rent go up?", just_cause_eviction: "Can I be evicted without a reason?", security_deposits: "How big can my deposit be?",
+      application_screening_fees: "What can I be charged to apply?", screening_restrictions: "What can't be held against me when I apply?", algorithmic_rent_setting: "Can my rent be set by pricing software?" },
+    landlord: { rent_increase_limits: "How much can I raise rent?", just_cause_eviction: "When can I end a tenancy?", security_deposits: "What deposit can I take?",
+      application_screening_fees: "What can I charge applicants?", screening_restrictions: "What can't I screen on?", algorithmic_rent_setting: "Can I use rent-pricing software?" },
+  };
+  function takeawaysPanel(by, entries, addr, asOf) {
+    const items = [];
+    for (const c of TAKE_ORDER) {
+      const es = by[c] || [];
+      const applies = es.filter((e) => e.result === "applies").sort((a, b) => (a.rule.level === "city" ? 0 : 1) - (b.rule.level === "city" ? 0 : 1));
+      const unknown = es.filter((e) => e.result === "unknown");
+      const q = (TAKE_TITLE[persona] || {})[c] || catName(c);
+      if (applies.length) {
+        const e = applies[0];
+        items.push({ c, q, status: "applies", e, text: personaLine(e.rule), why: whyHere(e, addr), more: applies.length - 1 });
+      } else if (unknown.length) {
+        const e = unknown[0];
+        const miss = [...new Set(unknown.flatMap((u) => u.missing_facts || []))].map((m) => (Lexmap.FIELD_LABEL[m] || m)).join(", ");
+        items.push({ c, q, status: "unknown", e, text: personaLine(e.rule), why: `Not settled: depends on ${miss || "facts not in the data"}. Answer the questions below to settle it.` });
+      } else if (c === "rent_increase_limits" || c === "just_cause_eviction") {
+        const om = omittedRules(c, addr, asOf);
+        const bars = D.rules.filter((r) => r.category === c && addr.stack.includes(r.jurisdiction) && r.subject === "municipality" && r.status === "in_force" && !(r.coverage_logic || {}).covers);
+        const text = c === "rent_increase_limits" ? (persona === "landlord" ? "No rent-increase cap in the corpus covers this building." : "No rent-increase cap in the corpus covers this building.")
+          : "No just-cause eviction rule in the corpus covers this building.";
+        const omWhy = om.length ? om[0][1].replace(/^exempt: /, "").split("; ").filter((x) => !/property type/.test(x)).slice(0, 1).map((x) => { const m = LEAF_RE.exec(x.trim()); return m ? `${m[5]}, so it falls under the exemption for ${phrase(m[1], m[2], m[3])}` : x; }).join("") : "";
+        const why = bars.length ? `${bars[0].citation}: ${plain(bars[0])}` : om.length ? `${om[0][0].citation} does not cover it: ${omWhy || om[0][1]}.` : "No rule of this kind was found for this state or city.";
+        items.push({ c, q, status: "none", text, why });
+      }
+    }
+    const coming = entries.filter((e) => e.result === "not_yet_effective").sort((a, b) => String(a.rule.effective_date).localeCompare(String(b.rule.effective_date)));
+    const pending = entries.filter((e) => e.result === "pending");
+    const changeItems = coming.slice(0, 1).map((e) => ({ c: e.category, q: persona === "landlord" ? "What changes soon for me?" : "What's about to change?", status: "not_yet_effective", e,
+      text: `${e.rule.title} takes effect ${e.rule.effective_date}.`, why: personaLine(e.rule) }))
+      .concat(pending.slice(0, 1).map((e) => ({ c: e.category, q: "What's being proposed?", status: "pending", e, text: `${e.rule.title}: a pending bill, not law.`, why: personaLine(e.rule) })));
+    const top = items.filter((i) => ["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
+    const rest = items.filter((i) => !["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
+    const shown = top.concat(changeItems, rest).slice(0, 6);
+    if (!shown.length) return "";
+    const persBtn = (p, l) => `<button class="seg${persona === p ? " on" : ""}" data-persona="${p}">${l}</button>`;
+    const cards = shown.map((i) => {
+      const r = i.e && i.e.rule;
+      const flag = i.e && i.e.conflict_flag ? ` <span class="pill conflict">⚑ ${t("conflict")}</span>` : "";
+      return `<div class="take ${i.status}">
+        <div class="take-top"><span class="take-q">${esc(i.q)}</span>${i.status === "none" ? '<span class="pill superseded">No cap / no rule</span>' : pill(i.status)}${flag}</div>
+        <div class="take-a">${esc(i.text)}${i.more > 0 ? ` <span class="muted">(+${i.more} more ${i.more === 1 ? "rule" : "rules"})</span>` : ""}</div>
+        <div class="take-why">${esc(i.why)}</div>
+        ${r ? `<div class="take-cite"><button class="linkish" data-goto="${esc(r.team_rule_id)}">${esc(r.citation)}</button> · ${(r.source_type || "").startsWith("official") ? t("official") : t("secondary")}</div>` : ""}
+      </div>`;
+    }).join("");
+    return `<div class="card takeaways">
+      <div class="take-head"><h3>What matters most at this address</h3>
+        <div class="segs" role="group" aria-label="View as">${persBtn("renter", "Renter")}${persBtn("landlord", "Landlord")}${persBtn("researcher", "Researcher")}<button class="seg print" data-print="1" title="Print a one-page summary">Print</button></div></div>
+      <div class="take-grid">${cards}</div>
+    </div>`;
   }
 
   function addressCard(addr, all, asOf) {
@@ -317,7 +418,7 @@
     const r = e.rule;
     const corro = (r.corroborating_sources || []).map((c) => `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.doc_id)}</a>`).join(", ");
     const sup = e.superseded_by ? `<div class="kv"><b>${t("superseded_by")}:</b> ${esc(e.superseded_by)} — ${esc((D.byId[e.superseded_by] || {}).citation || "")}</div>` : "";
-    return `<article class="card rule ${e.result}">
+    return `<article class="card rule ${e.result}" id="rule-${esc(r.team_rule_id)}">
       <div class="rule-top">
         <div><div class="rule-title">${esc(r.title)}</div><div class="rid">${esc(r.team_rule_id)} · ${esc(r.jurisdiction)}${r.effective_date ? " · effective " + esc(r.effective_date) : ""}</div></div>
         <div>${pill(e.result)} ${e.conflict_flag ? `<span class="pill conflict">⚑ ${t("conflict")}</span>` : ""}</div>
@@ -562,6 +663,26 @@
     });
   }
 
+  function setupTakeaways() {
+    $("#result").addEventListener("click", (ev) => {
+      const pb = ev.target.closest("[data-persona]");
+      if (pb) {
+        persona = pb.dataset.persona;
+        try { localStorage.setItem("lexmap.persona", persona); } catch (e) { /* ignore */ }
+        const y = window.scrollY; render(); window.scrollTo(0, y);
+        return;
+      }
+      if (ev.target.closest("[data-print]")) { window.print(); return; }
+      const g = ev.target.closest("[data-goto]");
+      if (g) {
+        const det = document.querySelector("details.allrules");
+        if (det) det.open = true;
+        const card = document.getElementById("rule-" + g.dataset.goto);
+        if (card) { card.scrollIntoView({ behavior: "smooth", block: "center" }); const d = card.querySelector("details.src"); if (d) d.open = true; }
+      }
+    });
+  }
+
   function setupQuestions() {
     $("#result").addEventListener("change", (ev) => {
       const el = ev.target.closest("[data-q]");
@@ -777,7 +898,7 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
     });
     $$(".lang button").forEach((b) => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
     $("#home").addEventListener("click", (ev) => { ev.preventDefault(); goHome(); });
-    setupSearch(); setupDates(); setupQuestions(); renderStats(); renderChanges(); renderRules(); renderMethod();
+    setupSearch(); setupDates(); setupQuestions(); setupTakeaways(); renderStats(); renderChanges(); renderRules(); renderMethod();
     const m = location.hash.match(/^#(A\d{4})(?:@(\d{4}-\d{2}-\d{2}))?/);
     if (m) { if (m[2] && m[2] >= "2024-01-01") $("#asof").value = m[2]; syncChips(); showSample(m[1], false); }
     window.__lexmap = { liveLookup, showSample, render, answer: (k, v) => { if (current) { if (v) current.answers[k] = v; else delete current.answers[k]; render(); } }, state: () => current };

@@ -39,8 +39,8 @@
   .term pre { margin: 0; padding: 22px 30px; font: 400 27px/1.5 var(--mono); color: #c9d6d9; white-space: pre-wrap; }
   .term .cmd { color: #fff; } .term .cmd::before { content: "$ "; color: var(--accent); }
   .term .hl { color: #0b1215; background: var(--accent); padding: 0 6px; border-radius: 4px; }
-  .score { position: absolute; left: 110px; top: 250px; font-size: 230px; font-weight: 800; letter-spacing: -8px; color: var(--accent); line-height: 1; }
-  .score-l { position: absolute; left: 120px; top: 500px; font-size: 38px; color: var(--muted); width: 560px; }
+  .score { position: absolute; left: 110px; top: 250px; font-size: 196px; font-weight: 800; letter-spacing: -7px; color: var(--accent); line-height: 1; }
+  .score-l { position: absolute; left: 120px; top: 470px; font-size: 38px; color: var(--muted); width: 560px; }
   .trow { position: absolute; left: 780px; width: 1030px; height: 104px; display: flex; align-items: center; gap: 26px; padding: 0 30px;
           background: var(--card); border: 2px solid var(--line); border-radius: 18px; font-size: 29px; }
   .trow .id { font: 700 32px var(--mono); color: var(--accent); width: 60px; }
@@ -48,7 +48,7 @@
   .lim { position: absolute; left: 110px; width: 1700px; font-size: 38px; line-height: 1.35; padding-left: 64px; }
   .lim::before { content: "–"; position: absolute; left: 0; color: var(--unknown); font-weight: 800; }
   .lim span { color: var(--muted); }
-  .next { position: absolute; left: 110px; top: 830px; font-size: 36px; color: var(--accent); font-weight: 600; }
+  .next { position: absolute; left: 110px; top: 800px; font-size: 36px; color: var(--accent); font-weight: 600; }
 </style>
 </head>
 <body>
@@ -95,7 +95,7 @@
       <div style="font:400 26px/1.45 var(--mono);color:#c9d6d9">“…landlords may not raise rent more than 5% plus inflation…”</div>
       <div class="verdict bad">✗ not in the source: repaired or rejected</div>
     </div>
-    <div class="stat" id="st2" style="left:110px;top:840px"><b>56 / 56</b> quotes verbatim · a second model re-checks every cut-off</div>
+    <div class="stat" id="st2" style="left:110px;top:830px"><b>56 / 56</b> quotes verbatim · a second model re-checks every cut-off</div>
   </div>
 
   <!-- 3. Challenge 2 -->
@@ -119,8 +119,8 @@
     <div id="cutl" style="position:absolute;left:1270px;top:668px;font:700 26px var(--mono);color:#fbbf24">cut-off Oct 1</div>
     <div id="b-txt" style="position:absolute;left:150px;top:582px;font:600 28px var(--mono);color:#d1fae5">covered if finished before Oct 1 …</div>
     <div id="b-txt2" style="position:absolute;left:1410px;top:582px;font:600 28px var(--mono);color:#cbd5e1">… not covered after</div>
-    <div id="tri" style="position:absolute;left:110px;top:760px"><span class="chip3 t">TRUE</span><span class="chip3 f">FALSE</span><span class="chip3 u">UNKNOWN</span></div>
-    <div class="stat" id="st3" style="left:110px;top:860px;font-size:38px">Answer: <span class="unk">unknown</span> · missing fact named: <b>certificate-of-occupancy date</b></div>
+    <div id="tri" style="position:absolute;left:110px;top:735px"><span class="chip3 t">TRUE</span><span class="chip3 f">FALSE</span><span class="chip3 u">UNKNOWN</span></div>
+    <div class="stat" id="st3" style="left:110px;top:828px;font-size:38px">Answer: <span class="unk">unknown</span> · missing fact named: <b>certificate-of-occupancy date</b></div>
   </div>
 
   <!-- 4. Challenge 3 -->
@@ -146,6 +146,7 @@
     <div class="kicker">Scores</div>
     <div class="score" id="sc">0/44</div>
     <div class="score-l">self-checks passing: schema, verbatim quotes, jurisdiction limits, T1–T5</div>
+    <div style="position:absolute;left:1580px;top:150px;font:600 22px var(--mono);color:var(--muted)">ADDRESSES</div>
     <div class="trow" style="top:200px"><span class="id">T1</span><span class="d">California AB 325 takes effect</span><span class="n">250</span><span class="ck">✓</span></div>
     <div class="trow" style="top:322px"><span class="id">T2</span><span class="d">Hoboken vs Jersey City bans</span><span class="n">90</span><span class="ck">✓</span></div>
     <div class="trow" style="top:444px"><span class="id">T3</span><span class="d">NJ FAIR Act · 90 conflict flags</span><span class="n">140</span><span class="ck">✓</span></div>
@@ -171,7 +172,7 @@
   const TERM = [
     ["cmd", "python run.py"],
     ["out", "[A2] reconciling candidates ...\n     legal QA pass over 56 rules ...\n[B1] geocoding addresses ...\n[B2] address lookups ...\n[C ] change tests ...\n[V ] self-check ..."],
-    ["out", "done in 1s; llm {<span class=\"hl\">'calls': 0, 'cache_hits': 121</span>, 'failures': 0}; self-check: 44/44 checks passed"],
+    ["out", "done in 1s; llm {<span class=\"hl\">'calls': 0, 'cache_hits': 121</span>, 'failures': 0, 'misses': 0}; self-check: 44/44 checks passed"],
     ["cmd", "node tests/parity.js"],
     ["out", "parity: <span class=\"hl\">2000/2000</span> (address, date) lookups identical"],
   ];

@@ -48,4 +48,9 @@ def run(rules: list[dict], batch: int = 10) -> dict:
             out[rid] = {"en": en if ok_en else rec["requirement"], "es": es if ok_es else None,
                         "guard": {"en": "ok" if ok_en else "fallback_to_extracted_requirement",
                                   "es": "ok" if ok_es else "omitted"}}
+            for k in ("renter", "landlord", "renter_es", "landlord_es"):
+                v = got.get(k) if isinstance(got, dict) else None
+                ok = isinstance(v, str) and bool(v.strip()) and _guard(v, rec)
+                out[rid][k] = v.strip() if ok else None
+                out[rid]["guard"][k] = "ok" if ok else "omitted"
     return out

@@ -65,12 +65,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bans selling or using coordinated pricing algorithms to set rents or occupancy levels in Berkeley homes. The City Attorney or an affected tenant can sue, and civil penalties can reach $1,000 per violation.",
-    "es": "Esta regla prohíbe vender o usar algoritmos de precios coordinados para fijar alquileres u ocupación en viviendas de Berkeley. La Fiscalía Municipal o un inquilino afectado pueden demandar, y las multas civiles pueden llegar a $1,000 por infracción.",
+    "en": "Berkeley bans selling or using coordinated pricing algorithms to set or recommend rents or occupancy levels for residential units. Each unit and each month of use is a separate violation, with civil penalties up to $1,000 per violation.",
+    "es": "Berkeley prohíbe vender o usar algoritmos de precios coordinados para fijar o recomendar alquileres u ocupación de unidades residenciales. Cada unidad y cada mes de uso es una infracción distinta, con sanciones civiles de hasta $1,000 por infracción.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your Berkeley landlord uses a coordinated pricing algorithm to set your rent, you may sue for an injunction, damages and civil penalties up to $1,000 per violation.",
+    "landlord": "You may not use a coordinated pricing algorithm to set or recommend rents or occupancy levels in Berkeley; each unit and month of use counts as a violation.",
+    "renter_es": "Si su arrendador de Berkeley usa un algoritmo de precios coordinado para fijar su alquiler, usted puede demandar para obtener una orden judicial, daños y sanciones civiles de hasta $1,000 por infracción.",
+    "landlord_es": "Usted no puede usar un algoritmo de precios coordinado para fijar o recomendar alquileres u ocupación en Berkeley; cada unidad y cada mes de uso cuenta como una infracción."
    },
    "amendment": false,
    "in_force_since": null,
@@ -168,12 +176,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule requires Berkeley landlords of units covered by the Rent Ordinance to pay tenants interest on security deposits at the end of each year. If you move out earlier, you get a prorated amount. Exempt units are not covered.",
-    "es": "Esta regla exige que los propietarios de Berkeley con unidades cubiertas por la Ordenanza de Alquileres paguen a los inquilinos intereses sobre el depósito de garantía al final de cada año. Si se muda antes, recibe un monto prorrateado. Las unidades exentas no están cubiertas.",
+    "en": "Berkeley requires landlords to pay tenants interest on security deposits at the end of each year in units fully or partially covered by the Rent Ordinance. If a tenant moves out mid-year, the interest is prorated.",
+    "es": "Berkeley exige que los arrendadores paguen a los inquilinos intereses sobre el depósito de garantía al final de cada año en unidades total o parcialmente cubiertas por la Ordenanza de Alquileres. Si el inquilino se muda antes, el interés se prorratea.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is covered by Berkeley's Rent Ordinance, your landlord must pay you interest on your security deposit each year, prorated if you move out early.",
+    "landlord": "You must pay tenants interest on their security deposit at the end of each year in covered units, prorated if the tenant moves out earlier.",
+    "renter_es": "Si su unidad está cubierta por la Ordenanza de Alquileres de Berkeley, su arrendador debe pagarle intereses sobre su depósito cada año, prorrateados si se muda antes.",
+    "landlord_es": "Usted debe pagar a los inquilinos intereses sobre su depósito de garantía al final de cada año en unidades cubiertas, prorrateados si el inquilino se muda antes."
    },
    "amendment": false,
    "in_force_since": null,
@@ -281,12 +297,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bars Berkeley landlords from evicting tenants in covered units without just cause. Nonpayment evictions need rental debt of at least one month of HUD Fair Market Rent, and notices must be filed with the Rent Board within 3 business days.",
-    "es": "Esta regla prohíbe que los propietarios de Berkeley desalojen sin causa justa a inquilinos de unidades cubiertas. El desalojo por falta de pago requiere una deuda de al menos un mes de la renta justa de mercado de HUD, y los avisos deben presentarse a la Junta de Alquileres en 3 días hábiles.",
+    "en": "Berkeley bars evictions without just cause in fully or partially covered units. Nonpayment evictions require debt of at least one month of HUD Fair Market Rent, and owner move-in evictions require relocation payments (standard $19,413 from 2026-01-01).",
+    "es": "Berkeley prohíbe desalojos sin causa justa en unidades total o parcialmente cubiertas. Los desalojos por falta de pago requieren una deuda de al menos un mes del alquiler justo de mercado de HUD, y los de mudanza del propietario requieren pagos de reubicación ($19,413 estándar desde 2026-01-01).",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is covered, you can be evicted only for just cause, and for nonpayment only if you owe at least one month of HUD Fair Market Rent.",
+    "landlord": "You need just cause to evict in covered units, must file termination notices with the Rent Board within 3 business days of service, and must pay relocation for owner move-ins.",
+    "renter_es": "Si su unidad está cubierta, solo pueden desalojarle por causa justa, y por falta de pago solo si debe al menos un mes del alquiler justo de mercado de HUD.",
+    "landlord_es": "Usted necesita causa justa para desalojar en unidades cubiertas, debe presentar los avisos de terminación ante la Junta de Alquileres dentro de 3 días hábiles desde su entrega y pagar reubicación en mudanzas del propietario."
    },
    "amendment": false,
    "in_force_since": null,
@@ -368,12 +392,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule requires Berkeley owners who evict tenants to remove a property from the rental market (Ellis Act) to pay relocation assistance. From 2026-01-01, the standard payment is $19,413, plus $6,471 for qualifying households.",
-    "es": "Esta regla exige que los propietarios de Berkeley que desalojan inquilinos para retirar una propiedad del mercado de alquiler (Ley Ellis) paguen asistencia de reubicación. Desde 2026-01-01, el pago estándar es de $19,413, más $6,471 para hogares que califican.",
+    "en": "Berkeley requires owners who evict tenants to remove a property from the rental market (Ellis Act) to pay the same relocation assistance as for an owner move-in. From 2026-01-01 it is $19,413, plus $6,471 for qualifying households.",
+    "es": "Berkeley exige que los propietarios que desalojan inquilinos para retirar una propiedad del mercado de alquiler (Ley Ellis) paguen la misma asistencia de reubicación que en una mudanza del propietario. Desde 2026-01-01 es $19,413, más $6,471 para hogares calificados.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you are evicted so the owner can remove the property from the rental market, you are owed relocation payments of $19,413 from 2026-01-01, plus $6,471 if your household qualifies.",
+    "landlord": "You must pay the same relocation assistance as for an owner move-in when evicting tenants to remove a property from the rental market: $19,413 from 2026-01-01, plus $6,471 for qualifying households.",
+    "renter_es": "Si le desalojan para que el propietario retire la propiedad del mercado de alquiler, le corresponden pagos de reubicación de $19,413 desde 2026-01-01, más $6,471 si su hogar califica.",
+    "landlord_es": "Usted debe pagar la misma asistencia de reubicación que en una mudanza del propietario al desalojar inquilinos para retirar una propiedad del mercado de alquiler: $19,413 desde 2026-01-01, más $6,471 para hogares calificados."
    },
    "amendment": false,
    "in_force_since": null,
@@ -439,12 +471,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule requires Berkeley owners who charge a screening fee to give a Tenant Screening Fee Rights Statement and the maximum fee cap before taking the fee. Owners may not charge existing tenants non-refundable fees to renew a tenancy.",
-    "es": "Esta regla exige que los propietarios de Berkeley que cobran una tarifa de evaluación entreguen una Declaración de Derechos sobre la Tarifa de Evaluación del Inquilino y el límite máximo de la tarifa antes de cobrarla. No pueden cobrar a inquilinos actuales tarifas no reembolsables para renovar el contrato.",
+    "en": "Berkeley requires owners charging a screening fee to give a Tenant Screening Fee Rights Statement and the maximum fee cap before receiving the fee. Owners may not charge existing tenants a non-refundable fee to renew a tenancy or change roommates.",
+    "es": "Berkeley exige que los propietarios que cobran una tarifa de evaluación entreguen una Declaración de Derechos sobre la Tarifa de Evaluación y el límite máximo de la tarifa antes de recibirla. No pueden cobrar a inquilinos existentes una tarifa no reembolsable por renovar o cambiar compañeros de cuarto.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord must give you a Tenant Screening Fee Rights Statement before taking a screening fee, and cannot charge you a non-refundable fee to renew or change roommates.",
+    "landlord": "You must provide the Tenant Screening Fee Rights Statement and the fee cap before receiving a screening fee, and may not charge existing tenants non-refundable renewal fees.",
+    "renter_es": "Su arrendador debe entregarle una Declaración de Derechos sobre la Tarifa de Evaluación antes de cobrar la tarifa, y no puede cobrarle una tarifa no reembolsable por renovar o cambiar compañeros de cuarto.",
+    "landlord_es": "Usted debe entregar la Declaración de Derechos sobre la Tarifa de Evaluación y el límite de la tarifa antes de recibirla, y no puede cobrar a inquilinos existentes tarifas de renovación no reembolsables."
    },
    "amendment": false,
    "in_force_since": null,
@@ -541,12 +581,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule limits yearly rent increases for fully covered Berkeley units to the Annual General Adjustment, 65% of the Bay Area CPI increase and capped at 5%. The 2026 adjustment is 1.0%, effective no earlier than 2026-01-01.",
-    "es": "Esta regla limita los aumentos anuales de alquiler en unidades de Berkeley totalmente cubiertas al Ajuste General Anual, el 65% del aumento del IPC del Área de la Bahía, con un tope del 5%. El ajuste de 2026 es del 1.0%, vigente no antes del 2026-01-01.",
+    "en": "Berkeley limits yearly rent increases in fully covered units to the Annual General Adjustment: 65% of the Bay Area CPI increase, capped at 5%. The 2026 AGA is 1.0%, effective no earlier than 2026-01-01.",
+    "es": "Berkeley limita los aumentos anuales de alquiler en unidades totalmente cubiertas al Ajuste General Anual: 65% del aumento del IPC del Área de la Bahía, con tope de 5%. El AGA de 2026 es 1.0%, vigente no antes del 2026-01-01.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is fully covered, your landlord can raise your rent each year only by the Annual General Adjustment, which is 1.0% for 2026.",
+    "landlord": "In fully covered units you may raise rent each year only by the Annual General Adjustment, 1.0% for 2026, under the Rent Board's eligibility and notice conditions.",
+    "renter_es": "Si su unidad está totalmente cubierta, su arrendador solo puede aumentar su alquiler cada año por el Ajuste General Anual, que es 1.0% para 2026.",
+    "landlord_es": "En unidades totalmente cubiertas, usted solo puede aumentar el alquiler cada año por el Ajuste General Anual, 1.0% para 2026, según las condiciones de elegibilidad y aviso de la Junta de Alquileres."
    },
    "amendment": false,
    "in_force_since": null,
@@ -634,12 +682,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule bars Berkeley rental housing providers from asking about or using criminal history in advertising, applications, or tenancy decisions. Before any action based on it, they must give written notice and a chance to respond. Fines are $1,000 to $10,000 per violation.",
-    "es": "Esta regla prohíbe que los proveedores de vivienda de alquiler en Berkeley pregunten sobre antecedentes penales o los usen en anuncios, solicitudes o decisiones de arrendamiento. Antes de actuar con base en ellos, deben dar aviso por escrito y oportunidad de responder. Las multas son de $1,000 a $10,000 por infracción.",
+    "en": "Berkeley's Fair Chance ordinance bars rental housing providers from asking about or using criminal history in advertising, applications, tenant selection or tenancy decisions. Any action based on criminal history requires written notice and a chance to respond. Fines are $1,000 to $10,000 per violation.",
+    "es": "La ordenanza de Oportunidad Justa de Berkeley prohíbe a los proveedores de vivienda preguntar o usar antecedentes penales en anuncios, solicitudes, selección de inquilinos o decisiones del arrendamiento. Toda medida basada en ellos requiere aviso escrito y oportunidad de responder. Las multas son de $1,000 a $10,000 por infracción.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your Berkeley landlord generally cannot ask about or use your criminal history, and must give you written notice and a chance to respond before any action based on it.",
+    "landlord": "You may not ask about or use criminal history in advertising, applications, tenant selection or tenancy decisions, and must give written notice and a chance to respond before acting on it.",
+    "renter_es": "Su arrendador de Berkeley generalmente no puede preguntar ni usar sus antecedentes penales, y debe darle aviso escrito y oportunidad de responder antes de cualquier medida basada en ellos.",
+    "landlord_es": "Usted no puede preguntar ni usar antecedentes penales en anuncios, solicitudes, selección de inquilinos o decisiones del arrendamiento, y debe dar aviso escrito y oportunidad de responder antes de actuar con base en ellos."
    },
    "amendment": false,
    "in_force_since": null,
@@ -717,12 +773,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This proposal (H.3744) would have let Boston adopt tenant eviction protections. It was not enacted: it went to a study order on 9/9/2024 and died with the 2023-2024 session, so it sets no eviction rules.",
-    "es": "Esta propuesta (H.3744) habría permitido a Boston adoptar protecciones contra el desalojo. No fue aprobada: pasó a una orden de estudio el 9/9/2024 y caducó con la sesión 2023-2024, por lo que no establece reglas de desalojo.",
+    "en": "H.3744 was a proposed Massachusetts special law that would have let Boston adopt tenant eviction protections. It was sent to a study order on 9/9/2024 and died with the 2023-2024 session, so it sets no eviction rules.",
+    "es": "H.3744 fue una propuesta de ley especial de Massachusetts que habría permitido a Boston adoptar protecciones contra desalojos. Pasó a una orden de estudio el 9/9/2024 y caducó con la sesión 2023-2024, por lo que no establece reglas de desalojo.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "This proposal failed and was never enacted, so it gives you no eviction protections.",
+    "landlord": "This proposal failed and was never enacted, so it places no eviction requirements on you.",
+    "renter_es": "Esta propuesta fracasó y nunca se promulgó, por lo que no le da protecciones contra desalojos.",
+    "landlord_es": "Esta propuesta fracasó y nunca se promulgó, por lo que no le impone requisitos de desalojo."
    },
    "amendment": false,
    "in_force_since": null,
@@ -809,12 +873,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This proposal (H.3744) would have let Boston adopt rent stabilization. It was not enacted: it went to a study order on 9/9/2024 and lapsed when the 2023-2024 session ended, so it sets no rent cap or rules.",
-    "es": "Esta propuesta (H.3744) habría permitido a Boston adoptar la estabilización de alquileres. No fue aprobada: pasó a una orden de estudio el 9/9/2024 y caducó al terminar la sesión 2023-2024, por lo que no establece ningún límite ni reglas de alquiler.",
+    "en": "H.3744 was a proposed Massachusetts special law that would have let Boston adopt rent stabilization. It was sent to a study order on 9/9/2024 and lapsed when the 2023-2024 session ended, so it sets no rent cap.",
+    "es": "H.3744 fue una propuesta de ley especial de Massachusetts que habría permitido a Boston adoptar estabilización de alquileres. Pasó a una orden de estudio el 9/9/2024 y caducó al terminar la sesión 2023-2024, por lo que no fija ningún límite de alquiler.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "This proposal failed and was never enacted, so it does not limit your rent increases.",
+    "landlord": "This proposal failed and was never enacted, so it places no rent increase limits on you.",
+    "renter_es": "Esta propuesta fracasó y nunca se promulgó, por lo que no limita los aumentos de su alquiler.",
+    "landlord_es": "Esta propuesta fracasó y nunca se promulgó, por lo que no le impone límites de aumento de alquiler."
    },
    "amendment": false,
    "in_force_since": null,
@@ -900,12 +972,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This policy bars covered Boston housing providers from blanket bans on applicants with arrests or convictions. They must review each case and may not consider non-conviction arrests, expunged or sealed convictions, juvenile records, or convictions over 5 years old.",
-    "es": "Esta política prohíbe que los proveedores de vivienda cubiertos en Boston apliquen prohibiciones generales a solicitantes con arrestos o condenas. Deben evaluar cada caso y no pueden considerar arrestos sin condena, condenas borradas o selladas, registros juveniles ni condenas de más de 5 años.",
+    "en": "Boston's Fair Chance policy bars covered housing providers from blanket bans on applicants with arrests or convictions and requires case-by-case review. They may not consider non-conviction arrests, expunged or sealed convictions, juvenile records, or convictions over 5 years old.",
+    "es": "La política de Oportunidad Justa de Boston prohíbe a los proveedores cubiertos las prohibiciones generales contra solicitantes con arrestos o condenas y exige una revisión caso por caso. No pueden considerar arrestos sin condena, condenas anuladas o selladas, registros juveniles ni condenas de más de 5 años.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your housing provider is covered, it must review your application case by case and cannot consider non-conviction arrests, sealed records, juvenile records or convictions over 5 years old.",
+    "landlord": "If you are a covered provider, you may not use blanket bans and must review applicants case by case, excluding non-conviction arrests, sealed or expunged convictions, juvenile records and convictions over 5 years old.",
+    "renter_es": "Si su proveedor de vivienda está cubierto, debe revisar su solicitud caso por caso y no puede considerar arrestos sin condena, registros sellados, registros juveniles ni condenas de más de 5 años.",
+    "landlord_es": "Si usted es un proveedor cubierto, no puede usar prohibiciones generales y debe revisar a los solicitantes caso por caso, excluyendo arrestos sin condena, condenas selladas o anuladas, registros juveniles y condenas de más de 5 años."
    },
    "amendment": false,
    "in_force_since": null,
@@ -985,12 +1065,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Boston bans discrimination against renters who use rental assistance, including Section 8, social security disability and veterans vouchers. A landlord telling you rental assistance is not accepted is housing discrimination.",
-    "es": "Boston prohíbe discriminar a inquilinos que usan ayuda para el alquiler, incluidos Section 8 y los vales por discapacidad del seguro social o para veteranos. Que un propietario diga que no acepta ayuda para el alquiler es discriminación de vivienda.",
+    "en": "This rule bars Boston landlords from discriminating against renters who use rental assistance, including Section 8, social security disability and veterans vouchers. Telling an applicant that rental assistance is not accepted is housing discrimination.",
+    "es": "Esta regla prohíbe a los arrendadores de Boston discriminar contra inquilinos que usan asistencia para el alquiler, incluidos Section 8, y vales por discapacidad del seguro social o para veteranos. Decir que no se acepta asistencia para el alquiler es discriminación en la vivienda.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "You cannot be refused housing in Boston because you use rental assistance such as Section 8, social security disability or veterans vouchers.",
+    "landlord": "You may not refuse applicants who use rental assistance, and telling them you do not accept it is housing discrimination.",
+    "renter_es": "En Boston no se le puede negar vivienda porque usted use asistencia para el alquiler, como Section 8 o vales por discapacidad del seguro social o para veteranos.",
+    "landlord_es": "Usted no puede rechazar a solicitantes que usan asistencia para el alquiler, y decirles que no la acepta es discriminación en la vivienda."
    },
    "amendment": false,
    "in_force_since": null,
@@ -1064,12 +1152,20 @@
     }
    ],
    "plain_language": {
-    "en": "Starting 2026-01-01, California bans using or distributing a common pricing algorithm, which uses competitor data, as part of a conspiracy to restrain trade or while coercing others to adopt its recommended price. This reaches residential rent-setting.",
-    "es": "Desde el 2026-01-01, California prohíbe usar o distribuir un algoritmo de precios común, que usa datos de competidores, como parte de una conspiración para restringir el comercio o al coaccionar a otros a adoptar su precio recomendado. Incluye la fijación de alquileres residenciales.",
+    "en": "This California law makes it unlawful to use or distribute a common pricing algorithm as part of a restraint-of-trade conspiracy, or while coercing others to adopt its recommended price. It covers all industries, including residential rent-setting. Effective 2026-01-01.",
+    "es": "Esta ley de California prohíbe usar o distribuir un algoritmo de precios común como parte de una conspiración para restringir el comercio, o mientras se presiona a otros a adoptar su precio recomendado. Abarca todas las industrias, incluida la fijación de rentas residenciales. Vigente desde 2026-01-01.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord may not use a common pricing algorithm, based on competitor data, as part of a conspiracy to restrain trade or while coercing others to adopt its recommended price.",
+    "landlord": "You may not use or distribute a common pricing algorithm as part of a restraint-of-trade conspiracy or while coercing others to adopt its recommended rent.",
+    "renter_es": "Su arrendador no puede usar un algoritmo de precios común, basado en datos de competidores, como parte de una conspiración para restringir el comercio ni para presionar a otros a adoptar su precio recomendado.",
+    "landlord_es": "Usted no puede usar ni distribuir un algoritmo de precios común como parte de una conspiración para restringir el comercio ni mientras presiona a otros a adoptar su renta recomendada."
    },
    "amendment": false,
    "in_force_since": null,
@@ -1152,12 +1248,20 @@
     }
    ],
    "plain_language": {
-    "en": "California caps security deposits at one month's rent, or two months for small landlords (not for service-member tenants). Landlords must return the remaining deposit with an itemized statement within 21 calendar days after you move out.",
-    "es": "California limita los depósitos de seguridad a un mes de renta, o dos meses para propietarios pequeños (no para inquilinos miembros del servicio militar). El propietario debe devolver el depósito restante con un estado detallado dentro de 21 días calendario después de que usted se mude.",
+    "en": "California caps security deposits at one month's rent, or two months for small landlords (not for service-member tenants). Landlords must return the remaining deposit with an itemized statement within 21 calendar days after the tenant vacates. Effective 2024-07-01.",
+    "es": "California limita los depósitos de seguridad a un mes de renta, o dos meses para arrendadores pequeños (no para inquilinos miembros del servicio militar). El arrendador debe devolver el depósito restante con un estado detallado dentro de 21 días calendario después de que el inquilino desocupe. Vigente desde 2024-07-01.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord generally cannot demand more than one month's rent as a deposit, and must return what remains with an itemized statement within 21 calendar days after you move out.",
+    "landlord": "You may not demand more than one month's rent as security (two months if you are a small landlord, but not for service-member tenants) and must return the rest within 21 calendar days.",
+    "renter_es": "Por lo general, su arrendador no puede exigir más de un mes de renta como depósito y debe devolver el resto con un estado detallado dentro de 21 días calendario después de que usted se mude.",
+    "landlord_es": "Usted no puede exigir más de un mes de renta como depósito (dos meses si es arrendador pequeño, pero no para inquilinos miembros del servicio militar) y debe devolver el resto dentro de 21 días calendario."
    },
    "amendment": true,
    "in_force_since": null,
@@ -1315,12 +1419,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "After 12 months of continuous, lawful occupancy, California requires a just cause, stated in the written notice, to end a tenancy. For no-fault terminations, the owner must pay one month's rent within 15 calendar days of the notice or waive the final month's rent.",
-    "es": "Después de 12 meses de ocupación continua y legal, California exige una causa justa, indicada en el aviso escrito, para terminar un arrendamiento. En terminaciones sin culpa, el propietario debe pagar un mes de renta dentro de 15 días calendario del aviso o perdonar el último mes de renta.",
+    "en": "After a tenant has lived in a unit continuously and lawfully for 12 months, California lets the owner end the tenancy only for a just cause stated in the written notice. For no-fault terminations, the owner must pay one month's rent in relocation assistance or waive the final month's rent.",
+    "es": "Después de que un inquilino haya vivido en la unidad de forma continua y legal durante 12 meses, California permite al propietario terminar el contrato solo por una causa justificada indicada en el aviso escrito. En terminaciones sin culpa, debe pagar un mes de renta como asistencia de reubicación o perdonar el último mes de renta.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "After 12 months in your unit, your landlord can end your tenancy only for a just cause stated in the written notice, if your unit is covered.",
+    "landlord": "You must state a just cause in the written notice, and for no-fault terminations pay one month's rent within 15 calendar days of serving it or waive the final month's rent.",
+    "renter_es": "Después de 12 meses en su unidad, su arrendador solo puede terminar su contrato por una causa justificada indicada en el aviso escrito, si su unidad está cubierta.",
+    "landlord_es": "Usted debe indicar una causa justificada en el aviso escrito y, en terminaciones sin culpa, pagar un mes de renta dentro de 15 días calendario de entregarlo o perdonar el último mes de renta."
    },
    "amendment": true,
    "in_force_since": null,
@@ -1402,12 +1514,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new construction must receive relocation benefits under Gov. Code § 7260 et seq. In Los Angeles, the landlord pays the higher of the state or City amount.",
-    "es": "Los hogares de bajos ingresos (80% del AMI o menos) desplazados cuando se demuelen Unidades Protegidas para nueva construcción deben recibir beneficios de reubicación según Gov. Code § 7260 y siguientes. En Los Ángeles, el propietario paga el monto más alto entre el estatal y el de la Ciudad.",
+    "en": "Lower-income households (80% AMI or lower) displaced when Protected Units are demolished for new construction must receive relocation benefits consistent with Gov. Code § 7260 et seq. In Los Angeles, the landlord pays the higher of the Housing Crisis Act or City relocation amount.",
+    "es": "Los hogares de bajos ingresos (80% del AMI o menos) desplazados cuando se demuelen Unidades Protegidas para nueva construcción deben recibir beneficios de reubicación conforme al Gov. Code § 7260 y siguientes. En Los Ángeles, el arrendador paga el monto mayor entre el de la Ley de Crisis de Vivienda y el de la Ciudad.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you are a lower-income household (80% AMI or lower) displaced by demolition of a Protected Unit for new construction, you must receive relocation benefits.",
+    "landlord": "You must provide relocation benefits to lower-income households displaced by demolition of Protected Units; in Los Angeles, pay the higher of the Housing Crisis Act or City amount.",
+    "renter_es": "Si su hogar es de bajos ingresos (80% del AMI o menos) y es desplazado por la demolición de una Unidad Protegida para nueva construcción, usted debe recibir beneficios de reubicación.",
+    "landlord_es": "Usted debe dar beneficios de reubicación a los hogares de bajos ingresos desplazados por la demolición de Unidades Protegidas; en Los Ángeles, pague el monto mayor entre el de la Ley de Crisis de Vivienda y el de la Ciudad."
    },
    "amendment": false,
    "in_force_since": null,
@@ -1491,12 +1611,20 @@
     }
    ],
    "plain_language": {
-    "en": "In San Francisco, a landlord who temporarily displaces a household for less than 20 days for capital improvements must pay $446.00 per day per household plus actual moving expenses (notices served 3/01/26–2/28/27).",
-    "es": "En San Francisco, un propietario que desplaza temporalmente a un hogar por menos de 20 días por mejoras de capital debe pagar $446.00 por día por hogar más los gastos reales de mudanza (avisos entregados del 3/01/26 al 2/28/27).",
+    "en": "In San Francisco, a landlord who temporarily displaces a tenant household for less than 20 days for capital improvement work must pay $446.00 per day per household plus actual moving expenses (notices served 3/01/26–2/28/27), under Civ. Code § 1947.9.",
+    "es": "En San Francisco, un arrendador que desplace temporalmente a un hogar inquilino por menos de 20 días por obras de mejora de capital debe pagar $446.00 por día por hogar más los gastos de mudanza reales (avisos entregados 3/01/26–2/28/27), según el Civ. Code § 1947.9.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you are temporarily displaced in San Francisco for less than 20 days for capital improvements, you are owed $446.00 per day plus actual moving expenses.",
+    "landlord": "You must pay $446.00 per day per tenant household plus actual moving expenses when temporary capital improvement displacement lasts less than 20 days (notices served 3/01/26–2/28/27).",
+    "renter_es": "Si le desplazan temporalmente en San Francisco por menos de 20 días por mejoras de capital, le corresponden $446.00 por día más los gastos de mudanza reales.",
+    "landlord_es": "Usted debe pagar $446.00 por día por hogar inquilino más los gastos de mudanza reales cuando el desplazamiento temporal por mejoras de capital dure menos de 20 días (avisos entregados 3/01/26–2/28/27)."
    },
    "amendment": false,
    "in_force_since": null,
@@ -1598,12 +1726,20 @@
     }
    ],
    "plain_language": {
-    "en": "California limits application screening fees to actual costs plus the reasonable value of time, capped at $30 per applicant, adjusted for CPI. No fee may be charged if no unit is or will soon be available. You must get an itemized receipt and a copy of your credit report within 7 days.",
-    "es": "California limita las cuotas de evaluación de solicitudes a los costos reales más el valor razonable del tiempo, con tope de $30 por solicitante, ajustado por CPI. No se puede cobrar si no hay una unidad disponible o próxima a estarlo. Debe recibir un recibo detallado y una copia de su informe de crédito en 7 días.",
+    "en": "California limits application screening fees to actual out-of-pocket costs plus the reasonable value of time spent, capped at $30 per applicant, adjusted annually for CPI since Jan. 1, 1998. No fee may be charged when no unit is or will soon be available.",
+    "es": "California limita las tarifas de evaluación de solicitudes a los costos reales más el valor razonable del tiempo dedicado, con un tope de $30 por solicitante, ajustado anualmente por el IPC desde el 1 de enero de 1998. No se puede cobrar si no hay una unidad disponible ni pronto lo estará.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A landlord can charge you a screening fee of no more than actual costs plus the reasonable value of time, capped at $30 (CPI-adjusted), and none if no unit is available.",
+    "landlord": "You may charge only actual screening costs plus time, up to $30 (CPI-adjusted), give an itemized receipt, and give applicants their credit report copy within 7 days of receiving it.",
+    "renter_es": "Un arrendador puede cobrarle una tarifa de evaluación de no más de los costos reales más el valor razonable del tiempo, con tope de $30 (ajustado por el IPC), y ninguna si no hay unidad disponible.",
+    "landlord_es": "Usted solo puede cobrar los costos reales de evaluación más el tiempo, hasta $30 (ajustado por el IPC), dar un recibo detallado y entregar al solicitante copia de su informe de crédito dentro de 7 días de recibirlo."
    },
    "amendment": true,
    "in_force_since": "1998-01-01",
@@ -1751,12 +1887,20 @@
     }
    ],
    "plain_language": {
-    "en": "California limits rent increases on covered housing to 5 percent plus the local cost-of-living change, or 10 percent, whichever is lower, over any 12 months. No more than two increases are allowed in 12 months for the same tenant.",
-    "es": "California limita los aumentos de renta en viviendas cubiertas a 5 por ciento más el cambio local en el costo de vida, o 10 por ciento, lo que sea menor, en cualquier período de 12 meses. No se permiten más de dos aumentos en 12 meses para el mismo inquilino.",
+    "en": "Over any 12 months, California covered landlords may not raise rent by more than 5 percent plus the change in the cost of living, or 10 percent, whichever is lower. No more than two increases are allowed in 12 months for the same tenant.",
+    "es": "En cualquier período de 12 meses, los arrendadores cubiertos de California no pueden subir la renta más de 5 por ciento más el cambio en el costo de vida, o 10 por ciento, lo que sea menor. No se permiten más de dos aumentos en 12 meses para el mismo inquilino.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is covered, your rent can rise at most 5% plus the cost-of-living change, or 10%, whichever is lower, with no more than two increases in 12 months.",
+    "landlord": "If your property is covered, you may not raise rent over 12 months by more than 5% plus the cost-of-living change or 10%, whichever is lower, nor more than twice.",
+    "renter_es": "Si su unidad está cubierta, su renta puede subir como máximo 5% más el cambio en el costo de vida, o 10%, lo que sea menor, con no más de dos aumentos en 12 meses.",
+    "landlord_es": "Si su propiedad está cubierta, usted no puede subir la renta en 12 meses más de 5% más el cambio en el costo de vida o 10%, lo que sea menor, ni más de dos veces."
    },
    "amendment": true,
    "in_force_since": "2019-03-15",
@@ -1836,12 +1980,20 @@
     }
    ],
    "plain_language": {
-    "en": "California regulations limit how landlords may use criminal history. Blanket bans on applicants with a criminal record are prohibited, and arrests without convictions may not be considered, though landlords may still check criminal history in limited ways.",
-    "es": "Las regulaciones de California limitan cómo los propietarios pueden usar los antecedentes penales. Se prohíben las exclusiones generales de solicitantes con antecedentes penales y no se pueden considerar arrestos sin condena, aunque los propietarios aún pueden revisar antecedentes de forma limitada.",
+    "en": "California Civil Rights Council regulations limit what criminal history housing providers may seek and how they may consider it. Blanket bans on applicants with a criminal record and policies considering arrests without convictions are prohibited. Landlords are not entirely barred from checking criminal history.",
+    "es": "Las regulaciones del Consejo de Derechos Civiles de California limitan qué antecedentes penales pueden solicitar los proveedores de vivienda y cómo pueden considerarlos. Se prohíben las exclusiones generales de solicitantes con antecedentes y las políticas que consideren arrestos sin condena. No se prohíbe por completo revisar antecedentes penales.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A landlord cannot refuse you just because you have a criminal record or consider arrests that did not lead to convictions.",
+    "landlord": "You may not use blanket bans on applicants with a criminal record or consider arrests without convictions, though you are not entirely barred from checking criminal history.",
+    "renter_es": "Un arrendador no puede rechazarle solo por tener antecedentes penales ni considerar arrestos que no resultaron en condena.",
+    "landlord_es": "Usted no puede usar exclusiones generales contra solicitantes con antecedentes penales ni considerar arrestos sin condena, aunque no se le prohíbe por completo revisar antecedentes penales."
    },
    "amendment": false,
    "in_force_since": null,
@@ -1937,12 +2089,20 @@
     }
    ],
    "plain_language": {
-    "en": "California bars refusing to rent based on lawful, verifiable source of income, including Section 8 and HUD-VASH vouchers. Income standards must count everyone's combined income. Blanket criminal-history bans are prohibited, and arrests without conviction, sealed or expunged, and juvenile records may not be considered.",
-    "es": "California prohíbe negarse a alquilar por una fuente de ingresos legal y verificable, incluidos los vales Section 8 y HUD-VASH. Los estándares de ingresos deben contar los ingresos combinados de todos. Se prohíben las exclusiones generales por antecedentes penales y no se pueden considerar arrestos sin condena, registros sellados o borrados, ni registros juveniles.",
+    "en": "California bars housing providers from refusing to rent based on lawful, verifiable source of income, including Section 8 and HUD-VASH vouchers, and requires counting aggregate income of people living together. Criminal-history blanket bans are prohibited, and with a government rent subsidy, credit history needs alternative evidence.",
+    "es": "California prohíbe a los proveedores de vivienda negarse a alquilar por fuente de ingresos legal y verificable, incluidos los vales Section 8 y HUD-VASH, y exige contar los ingresos combinados de quienes viven juntos. Se prohíben las exclusiones generales por antecedentes penales y, con subsidio de renta gubernamental, el historial de crédito requiere evidencia alternativa.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A landlord cannot refuse to rent to you because of lawful, verifiable income, including Section 8 or HUD-VASH vouchers, and must count the combined income of people living together.",
+    "landlord": "You may not refuse to rent based on lawful, verifiable source of income, must count aggregate household income, and may not use criminal-history blanket bans.",
+    "renter_es": "Un arrendador no puede negarse a alquilarle por ingresos legales y verificables, incluidos los vales Section 8 o HUD-VASH, y debe contar los ingresos combinados de quienes viven juntos.",
+    "landlord_es": "Usted no puede negarse a alquilar por fuente de ingresos legal y verificable, debe contar los ingresos combinados del hogar y no puede usar exclusiones generales por antecedentes penales."
    },
    "amendment": true,
    "in_force_since": "2020-01-01",
@@ -2035,12 +2195,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Cambridge's Fair Housing Ordinance protects source of income, including Section 8 and public benefits, in renting. Landlords may use reasonable standards applied equally to all applicants. Owner-occupied 2-family dwellings are exempt. Fines can reach $300 per violation.",
-    "es": "La Ordenanza de Vivienda Justa de Cambridge protege la fuente de ingresos, incluidos Section 8 y los beneficios públicos, al alquilar. Los propietarios pueden usar estándares razonables aplicados por igual a todos los solicitantes. Las viviendas de 2 familias donde vive el dueño están exentas. Las multas pueden llegar a $300 por infracción.",
+    "en": "Cambridge's Fair Housing Ordinance protects source of income, including Section 8 and public benefits, in housing. Landlords may not discriminate in showing or renting an apartment or in tenancy terms, and must apply any selection standard equally to all applicants.",
+    "es": "La Ordenanza de Vivienda Justa de Cambridge protege la fuente de ingresos, incluidos Section 8 y los beneficios públicos, en la vivienda. Los propietarios no pueden discriminar al mostrar o alquilar un apartamento ni en los términos del alquiler, y deben aplicar cualquier criterio de selección por igual a todos los solicitantes.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "You are protected from discrimination based on your source of income, including Section 8 and public benefits, when viewing or renting an apartment in Cambridge.",
+    "landlord": "You may not discriminate based on source of income, including Section 8, and any standard you use to select applicants must apply equally to everyone.",
+    "renter_es": "Usted está protegido contra la discriminación por su fuente de ingresos, incluidos Section 8 y los beneficios públicos, al ver o alquilar un apartamento en Cambridge.",
+    "landlord_es": "Usted no puede discriminar por la fuente de ingresos, incluido Section 8, y cualquier criterio que use para seleccionar solicitantes debe aplicarse por igual a todos."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2116,12 +2284,20 @@
     }
    ],
    "plain_language": {
-    "en": "Hoboken bans landlords from using software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy. It applies to all rentals in Hoboken and has been in effect since 2025-07.",
-    "es": "Hoboken prohíbe que los propietarios usen software, algoritmos o plataformas de intercambio de datos para coordinar o recomendar alquileres, condiciones del contrato u ocupación. Se aplica a todos los alquileres en Hoboken y rige desde 2025-07.",
+    "en": "Hoboken bans landlords from using software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy. It applies to all rentals in the city and has been in effect since July 2025.",
+    "es": "Hoboken prohíbe que los propietarios usen software, algoritmos o plataformas de intercambio de datos para coordinar o recomendar alquileres, términos de contrato u ocupación. Se aplica a todos los alquileres de la ciudad y rige desde julio de 2025.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord in Hoboken may not use software, algorithms or data-sharing platforms to coordinate or recommend your rent, lease terms, or occupancy.",
+    "landlord": "You may not use software, algorithms or data-sharing platforms to coordinate or recommend rents, lease terms, or occupancy for Hoboken rentals.",
+    "renter_es": "Su propietario en Hoboken no puede usar software, algoritmos ni plataformas de intercambio de datos para coordinar o recomendar su alquiler, los términos del contrato o la ocupación.",
+    "landlord_es": "Usted no puede usar software, algoritmos ni plataformas de intercambio de datos para coordinar o recomendar alquileres, términos de contrato u ocupación en Hoboken."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2205,12 +2381,20 @@
     }
    ],
    "plain_language": {
-    "en": "Jersey City bans landlords from using algorithmic rent coordination services, in effect since 2025-06. The city can enforce it, and private action is also allowed. Fines can reach $2,000 per day.",
-    "es": "Jersey City prohíbe que los propietarios usen servicios algorítmicos de coordinación de alquileres, desde 2025-06. La ciudad puede hacerlo cumplir, y también se permite la acción privada. Las multas pueden llegar a $2,000 por día.",
+    "en": "Jersey City bans landlords from using algorithmic rent coordination services. Both the city and private parties can enforce the ban, and fines can reach $2,000 per day. It has been in effect since June 2025.",
+    "es": "Jersey City prohíbe que los propietarios usen servicios algorítmicos de coordinación de alquileres. Tanto la ciudad como particulares pueden hacer cumplir la prohibición, y las multas pueden llegar a $2,000 por día. Rige desde junio de 2025.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your Jersey City landlord may not use algorithmic rent coordination services, and the ban can be enforced by the city or through private action.",
+    "landlord": "You may not use algorithmic rent coordination services in Jersey City; violations can bring fines up to $2,000 per day.",
+    "renter_es": "Su propietario en Jersey City no puede usar servicios algorítmicos de coordinación de alquileres, y la prohibición puede ser aplicada por la ciudad o mediante acción privada.",
+    "landlord_es": "Usted no puede usar servicios algorítmicos de coordinación de alquileres en Jersey City; las infracciones pueden acarrear multas de hasta $2,000 por día."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2289,12 +2473,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Jersey City's Rent Control Ordinance (Chapter 260) regulates rents in properties with 5 or more units. All 1-4 unit properties are exempt. The source does not state the allowable increase percentage.",
-    "es": "La Ordenanza de Control de Alquileres de Jersey City (Capítulo 260) regula los alquileres en propiedades de 5 o más unidades. Todas las propiedades de 1 a 4 unidades están exentas. La fuente no indica el porcentaje de aumento permitido.",
+    "en": "Jersey City's Rent Control Ordinance (Chapter 260) regulates rents in properties with 5 or more units. All 1-4 unit properties are exempt. The sources do not state the allowable increase percentage.",
+    "es": "La Ordenanza de Control de Alquileres de Jersey City (Capítulo 260) regula los alquileres en propiedades de 5 o más unidades. Todas las propiedades de 1 a 4 unidades están exentas. Las fuentes no indican el porcentaje de aumento permitido.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you rent in a Jersey City property with 5 or more units, your rent is regulated by the Rent Control Ordinance; 1-4 unit properties are exempt.",
+    "landlord": "If your Jersey City property has 5 or more units, you must submit rent-increase applications, annual registrations and exemption requests through the city's Tyler portal.",
+    "renter_es": "Si alquila en una propiedad de 5 o más unidades en Jersey City, su alquiler está regulado por la Ordenanza de Control de Alquileres; las propiedades de 1 a 4 unidades están exentas.",
+    "landlord_es": "Si su propiedad en Jersey City tiene 5 o más unidades, debe presentar las solicitudes de aumento de alquiler, los registros anuales y las solicitudes de exención a través del portal Tyler de la ciudad."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2379,12 +2571,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Landlords of Los Angeles rent-stabilized units must pay tenants interest on security deposits, at a rate the City sets yearly. Interest must be paid monthly or yearly, directly or as a rent credit. Paying it only at move-out does not comply.",
-    "es": "Los propietarios de unidades de Los Ángeles bajo estabilización de rentas deben pagar a los inquilinos intereses sobre el depósito de seguridad, a una tasa que la Ciudad fija cada año. Deben pagarse mensual o anualmente, directamente o como crédito de renta. Pagarlos solo al mudarse no cumple.",
+    "en": "Landlords of Los Angeles rent-stabilized units must pay tenants security deposit interest, which accrues monthly at a rate the City sets each year. It must be paid monthly or yearly, directly or as a rent credit, not only at move-out.",
+    "es": "Los propietarios de unidades con estabilización de alquiler en Los Ángeles deben pagar a los inquilinos intereses sobre el depósito de seguridad, que se acumulan mensualmente a una tasa que la Ciudad fija cada año. Deben pagarse mensual o anualmente, directamente o como crédito de alquiler, no solo al mudarse.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you live in a rent-stabilized Los Angeles unit, your landlord must pay you security deposit interest monthly or yearly, not only when you move out.",
+    "landlord": "You must pay security deposit interest monthly or yearly, directly or as a rent credit, using a method you state to the tenant in writing.",
+    "renter_es": "Si vive en una unidad con estabilización de alquiler en Los Ángeles, su propietario debe pagarle intereses del depósito de seguridad mensual o anualmente, no solo cuando se mude.",
+    "landlord_es": "Usted debe pagar los intereses del depósito de seguridad mensual o anualmente, directamente o como crédito de alquiler, con un método que indique al inquilino por escrito."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2510,12 +2710,20 @@
     }
    ],
    "plain_language": {
-    "en": "Los Angeles's Just Cause Ordinance lets landlords end a tenancy of covered units only for a listed at-fault or no-fault reason. For no-fault evictions, they must pay relocation assistance within 15 days of serving notice. Notices must be filed with LAHD within 3 business days.",
-    "es": "La Ordenanza de Causa Justa de Los Ángeles permite a los propietarios terminar un arrendamiento de unidades cubiertas solo por una causa listada, con culpa o sin culpa. En desalojos sin culpa, deben pagar asistencia de reubicación dentro de 15 días de entregar el aviso. Los avisos se presentan ante LAHD dentro de 3 días hábiles.",
+    "en": "Under Los Angeles's Just Cause Ordinance, landlords may end a tenancy only for a listed at-fault or no-fault just cause. No-fault evictions require a filing with LAHD and relocation assistance paid within 15 days of notice.",
+    "es": "Bajo la Ordenanza de Causa Justa de Los Ángeles, los propietarios solo pueden terminar un arrendamiento por una causa justa listada, con culpa o sin culpa. Los desalojos sin culpa requieren una presentación ante LAHD y asistencia de reubicación pagada dentro de 15 días del aviso.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your Los Angeles unit is covered, your landlord can end your tenancy only for a listed just cause, and must pay relocation assistance for no-fault evictions.",
+    "landlord": "You must file all eviction notices with LAHD within 3 business days of service and, for no-fault evictions, file a Declaration of Intent to Evict and pay relocation within 15 days.",
+    "renter_es": "Si su unidad en Los Ángeles está cubierta, su propietario solo puede terminar su arrendamiento por una causa justa listada, y debe pagar asistencia de reubicación en los desalojos sin culpa.",
+    "landlord_es": "Usted debe presentar todos los avisos de desalojo ante LAHD dentro de 3 días hábiles de la notificación y, en desalojos sin culpa, presentar una Declaración de Intención de Desalojar y pagar la reubicación dentro de 15 días."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2631,12 +2839,20 @@
     }
    ],
    "plain_language": {
-    "en": "Los Angeles's Rent Stabilization Ordinance allows ending a tenancy only for legal at-fault or no-fault reasons. For no-fault evictions, landlords must file a Declaration of Intent to Evict with LAHD and pay relocation within 15 days of serving notice. The notice copy goes to LAHD within 3 days.",
-    "es": "La Ordenanza de Estabilización de Rentas de Los Ángeles permite terminar un arrendamiento solo por razones legales, con culpa o sin culpa. En desalojos sin culpa, el propietario debe presentar a LAHD una Declaración de Intención de Desalojar y pagar la reubicación dentro de 15 días de entregar el aviso. La copia del aviso va a LAHD dentro de 3 días.",
+    "en": "Tenants in Los Angeles RSO units may be evicted only for legal at-fault or no-fault reasons. For no-fault evictions, landlords must file a Declaration with LAHD, give written notice, and pay relocation assistance within 15 days of serving notice.",
+    "es": "Los inquilinos de unidades RSO en Los Ángeles solo pueden ser desalojados por razones legales con culpa o sin culpa. En desalojos sin culpa, los propietarios deben presentar una Declaración ante LAHD, dar aviso por escrito y pagar la asistencia de reubicación dentro de 15 días de la notificación.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you live in an RSO unit in Los Angeles, your landlord can evict you only for legal reasons and must pay relocation assistance for no-fault evictions.",
+    "landlord": "You must file a Declaration of Intent to Evict with LAHD, give written notice, pay relocation within 15 days of notice, and file the notice with LAHD within 3 days.",
+    "renter_es": "Si vive en una unidad RSO en Los Ángeles, su propietario solo puede desalojarle por razones legales y debe pagar asistencia de reubicación en los desalojos sin culpa.",
+    "landlord_es": "Usted debe presentar una Declaración de Intención de Desalojar ante LAHD, dar aviso por escrito, pagar la reubicación dentro de 15 días del aviso y presentar el aviso ante LAHD dentro de 3 días."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2717,12 +2933,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Los Angeles's Resident Protections Ordinance sets rules when owners demolish Protected Units for new construction. Occupants have rights to relocation payments, to stay up to 6 months before construction, and to return if demolition does not proceed. Penalties start at $250,000 per displaced unit.",
-    "es": "La Ordenanza de Protección de Residentes de Los Ángeles fija reglas cuando los propietarios demuelen Unidades Protegidas para nueva construcción. Los ocupantes tienen derecho a pagos de reubicación, a permanecer hasta 6 meses antes de la construcción y a regresar si la demolición no avanza. Las sanciones comienzan en $250,000 por unidad desplazada.",
+    "en": "Los Angeles's Resident Protections Ordinance applies when owners demolish Protected Units for new construction within 5 years after filing a withdrawal or eviction notice with LAHD. Occupants get relocation payments and rights to stay, return, and sometimes first refusal.",
+    "es": "La Ordenanza de Protección de Residentes de Los Ángeles se aplica cuando los propietarios demuelen Unidades Protegidas para nueva construcción dentro de 5 años después de presentar ante LAHD un aviso de retiro o de desalojo. Los ocupantes reciben pagos de reubicación y derechos a permanecer, regresar y, a veces, preferencia de readquisición.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your Protected Unit is demolished for new construction, you have rights to relocation, to remain up to 6 months before construction with 6 months' notice, and to return if demolition does not proceed.",
+    "landlord": "You must follow RPO relocation rules and pay the highest applicable State or City relocation amount; penalties start at $250,000 per displaced unit.",
+    "renter_es": "Si su Unidad Protegida es demolida para nueva construcción, tiene derecho a reubicación, a permanecer hasta 6 meses antes de la construcción con aviso de 6 meses, y a regresar si la demolición no avanza.",
+    "landlord_es": "Usted debe seguir las reglas de reubicación de la RPO y pagar el monto de reubicación estatal o municipal más alto aplicable; las sanciones comienzan en $250,000 por unidad desplazada."
    },
    "amendment": true,
    "in_force_since": null,
@@ -2856,12 +3080,20 @@
     }
    ],
    "plain_language": {
-    "en": "Los Angeles's Rent Stabilization Ordinance lets landlords raise rent only once every 12 months, by no more than the percentage LAHD publishes. From February 2, 2026, no extra utilities percentage or 10% for an added dependent is allowed. A 10% increase for an additional non-dependent tenant is still allowed.",
-    "es": "La Ordenanza de Estabilización de Rentas de Los Ángeles permite aumentar la renta solo una vez cada 12 meses, sin exceder el porcentaje que publica LAHD. Desde el 2 de febrero de 2026 ya no se permite añadir un porcentaje por servicios ni 10% por un dependiente adicional. Sigue permitido un aumento de 10% por un inquilino adicional no dependiente.",
+    "en": "Los Angeles RSO-covered units may have rent increased only once every 12 months, by no more than the annual percentage published by LAHD. Since February 2, 2026, no utilities percentage or extra 10% for an added dependent may be added.",
+    "es": "En las unidades cubiertas por la RSO de Los Ángeles, el alquiler solo puede aumentarse una vez cada 12 meses, sin exceder el porcentaje anual publicado por LAHD. Desde el 2 de febrero de 2026 no se puede añadir un porcentaje por servicios públicos ni un 10% adicional por un dependiente agregado.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord can raise your rent only once every 12 months, by no more than the annual percentage LAHD publishes.",
+    "landlord": "You may raise rent only once every 12 months, by no more than the LAHD annual allowable percentage, with no added utilities or dependent percentage.",
+    "renter_es": "Su propietario solo puede aumentar su alquiler una vez cada 12 meses, sin exceder el porcentaje anual que publica LAHD.",
+    "landlord_es": "Usted solo puede aumentar el alquiler una vez cada 12 meses, sin exceder el porcentaje anual permitido por LAHD, sin añadir porcentaje por servicios públicos ni por dependientes."
    },
    "amendment": false,
    "in_force_since": null,
@@ -2989,12 +3221,20 @@
     }
    ],
    "plain_language": {
-    "en": "Massachusetts bill S.2983 would prohibit algorithmic rent setting, but it is not law. On March 12, 2026 a committee reported it favorably and sent it to Senate Ways and Means. The source does not state its prohibitions or penalties.",
-    "es": "El proyecto de ley S.2983 de Massachusetts prohibiría la fijación algorítmica de alquileres, pero aún no es ley. El 12 de marzo de 2026 un comité lo informó favorablemente y lo envió a Senate Ways and Means. La fuente no indica sus prohibiciones ni sanciones.",
+    "en": "S.2983 is a pending Massachusetts bill that would prohibit algorithmic rent setting. On March 12, 2026, the Joint Committee on Housing reported it favorably and sent it to Senate Ways and Means. Its details are not stated.",
+    "es": "S.2983 es un proyecto de ley pendiente en Massachusetts que prohibiría la fijación algorítmica de alquileres. El 12 de marzo de 2026, el Comité Conjunto de Vivienda lo reportó favorablemente y lo envió a Ways and Means del Senado. Sus detalles no se indican.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "This bill is not yet law, so it does not currently change your rights as a tenant in Massachusetts.",
+    "landlord": "This bill is not yet law, so it does not currently place new requirements on you as a Massachusetts landlord.",
+    "renter_es": "Este proyecto aún no es ley, por lo que actualmente no cambia sus derechos como inquilino en Massachusetts.",
+    "landlord_es": "Este proyecto aún no es ley, por lo que actualmente no impone nuevos requisitos a usted como propietario en Massachusetts."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3066,12 +3306,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This is a pending Massachusetts House bill, H.5222, that would prevent algorithmic rent fixing. The source gives no operative text, so what it would prohibit, how terms are defined, and penalties are not stated. It is not yet law.",
-    "es": "Este es un proyecto de ley pendiente en la Cámara de Massachusetts, H.5222, que buscaría prevenir la fijación algorítmica de alquileres. La fuente no incluye el texto operativo, así que no se indican prohibiciones, definiciones ni sanciones. Todavía no es ley.",
+    "en": "H.5222 is a pending Massachusetts House bill about preventing algorithmic rent fixing in rental housing. The source gives no operative text, so what it would prohibit, define or penalize is not stated.",
+    "es": "H.5222 es un proyecto de ley pendiente en la Cámara de Massachusetts sobre prevenir la fijación algorítmica de alquileres. La fuente no incluye texto operativo, así que no se indican prohibiciones, definiciones ni sanciones.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "This bill is still pending, and the source does not say what it would require or prohibit, so it does not yet change your rights.",
+    "landlord": "This bill is still pending, and the source does not state what it would require of you.",
+    "renter_es": "Este proyecto sigue pendiente y la fuente no dice qué exigiría o prohibiría, por lo que aún no cambia sus derechos.",
+    "landlord_es": "Este proyecto sigue pendiente y la fuente no indica qué le exigiría a usted."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3138,12 +3386,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule limits a Massachusetts security deposit to the first month's rent. The landlord must keep it in a separate interest-bearing account, give a receipt within 30 days, pay 5% yearly interest after 1 year, and return it within 30 days after the tenancy ends, less only allowed deductions.",
-    "es": "Esta regla limita el depósito de seguridad en Massachusetts al alquiler del primer mes. El propietario debe guardarlo en una cuenta separada que genere intereses, dar un recibo en 30 días, pagar 5% anual de intereses después de 1 año y devolverlo en 30 días tras terminar el arrendamiento, descontando solo lo permitido.",
+    "en": "Massachusetts limits a security deposit to one month's rent and requires it to be held in a separate interest-bearing account. It must be returned within 30 days after the tenancy ends, with only allowed deductions supported by a sworn itemized list.",
+    "es": "Massachusetts limita el depósito de seguridad a un mes de alquiler y exige guardarlo en una cuenta separada que genere intereses. Debe devolverse dentro de 30 días después de terminar el contrato, con solo deducciones permitidas y una lista jurada detallada.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your deposit can be at most one month's rent, you get a receipt within 30 days, and you get interest at 5% per year (or the lesser bank rate) after 1 year.",
+    "landlord": "You must hold the deposit in a separate interest-bearing account, give a receipt within 30 days, pay yearly interest after 1 year, and return it within 30 days of tenancy end.",
+    "renter_es": "Su depósito puede ser como máximo un mes de alquiler, recibe un recibo en 30 días y recibe intereses del 5% anual (o la tasa menor del banco) después de 1 año.",
+    "landlord_es": "Usted debe guardar el depósito en una cuenta separada con intereses, dar un recibo en 30 días, pagar intereses anuales después de 1 año y devolverlo en 30 días tras terminar el contrato."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3226,12 +3482,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule caps what a Massachusetts landlord or agent can require at or before a tenancy starts: first month's rent, last month's rent, a security deposit up to one month's rent, and the cost of a key and lock. Landlord application or screening fees are not permitted.",
-    "es": "Esta regla limita lo que un propietario o agente en Massachusetts puede exigir al inicio del arrendamiento o antes: el primer mes, el último mes, un depósito de seguridad de hasta un mes de alquiler y el costo de una llave y cerradura. No se permiten cargos del propietario por solicitud o evaluación.",
+    "en": "At or before a Massachusetts tenancy starts, a landlord or agent may only require first month's rent, last month's rent, a security deposit of up to one month's rent, and the cost of a key and lock. Application or screening fees are not permitted.",
+    "es": "Al inicio de un alquiler en Massachusetts, o antes, el propietario o su agente solo puede exigir el primer mes, el último mes, un depósito de hasta un mes de alquiler y el costo de llave y cerradura. No se permiten cargos por solicitud o evaluación.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Before moving in, you can be required to pay only first month's rent, last month's rent, a deposit of up to one month's rent, and the key and lock cost.",
+    "landlord": "You may not require any upfront payment beyond first month's rent, last month's rent, a deposit of up to one month's rent, and the key and lock cost.",
+    "renter_es": "Antes de mudarse, solo pueden exigirle el primer mes, el último mes, un depósito de hasta un mes de alquiler y el costo de llave y cerradura.",
+    "landlord_es": "Usted no puede exigir pagos iniciales más allá del primer mes, el último mes, un depósito de hasta un mes de alquiler y el costo de llave y cerradura."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3306,12 +3570,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "Since 2025-08-01, a Massachusetts broker fee may be paid only by the party, landlord or tenant, who hired the broker. A tenant cannot be charged the fee of a broker engaged by the landlord. Anyone finding rentals for a fee must be a licensed broker or salesperson.",
-    "es": "Desde el 2025-08-01, en Massachusetts la comisión de un corredor solo la paga la parte, propietario o inquilino, que contrató al corredor. No se puede cobrar al inquilino la comisión de un corredor contratado por el propietario. Quien busca viviendas en alquiler por una tarifa debe ser corredor o vendedor con licencia.",
+    "en": "In Massachusetts, anyone who finds rental housing for a fee must be a licensed broker or salesperson. A broker fee may be paid only by the party, landlord or tenant, who engaged the broker. Effective Aug 1, 2025.",
+    "es": "En Massachusetts, quien encuentre vivienda en alquiler por una tarifa debe ser corredor o vendedor con licencia. La tarifa del corredor solo puede pagarla la parte, propietario o inquilino, que contrató al corredor. Vigente desde el 1 de agosto de 2025.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "You cannot be charged the fee of a broker who was engaged by the landlord.",
+    "landlord": "If you engaged the broker, you are the one who must pay the broker's fee, not the tenant.",
+    "renter_es": "No pueden cobrarle la tarifa de un corredor que fue contratado por el propietario.",
+    "landlord_es": "Si usted contrató al corredor, usted debe pagar la tarifa del corredor, no el inquilino."
    },
    "amendment": true,
    "in_force_since": null,
@@ -3390,12 +3662,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bans rent control by any Massachusetts city or town. A town that accepts Chapter 40P may adopt only limited rent control that is voluntary for owners after six months, excludes owners of fewer than ten rental units and units with fair market rent over $400, and compensates owners.",
-    "es": "Esta regla prohíbe el control de alquileres en cualquier ciudad o pueblo de Massachusetts. Un municipio que acepte el Capítulo 40P solo puede adoptar un control limitado, voluntario para los propietarios después de seis meses, que excluye a dueños de menos de diez unidades y unidades con alquiler de mercado superior a $400, y que compensa a los propietarios.",
+    "en": "Massachusetts bans rent control by cities and towns. A town that accepts Chapter 40P may adopt only limited rent control that is voluntary for owners after six months, excludes owners of fewer than ten rental units, and compensates owners.",
+    "es": "Massachusetts prohíbe el control de alquileres por ciudades y pueblos. Un pueblo que acepte el Capítulo 40P solo puede adoptar un control limitado, voluntario para los propietarios después de seis meses, que excluya a dueños de menos de diez unidades y compense a los propietarios.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your city or town generally cannot enact, maintain or enforce rent control, apart from the limited voluntary program allowed under Chapter 40P.",
+    "landlord": "You are generally not subject to local rent control, and any limited program under Chapter 40P excludes owners of fewer than ten rental units.",
+    "renter_es": "Su ciudad o pueblo generalmente no puede aprobar, mantener ni aplicar control de alquileres, salvo el programa limitado y voluntario del Capítulo 40P.",
+    "landlord_es": "Usted generalmente no está sujeto al control local de alquileres, y cualquier programa limitado del Capítulo 40P excluye a dueños de menos de diez unidades."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3495,12 +3775,20 @@
     }
    ],
    "plain_language": {
-    "en": "This proposed statewide cap on annual rent increases (the lesser of the Consumer Price Index increase or 5%) failed to reach the ballot. The SJC ruled in Cella v. Attorney General, SJC-13893, that it could not appear on the November 2026 ballot. It is not law.",
-    "es": "Esta propuesta de límite estatal a los aumentos anuales de alquiler (el menor entre el aumento del Índice de Precios al Consumidor o 5%) no llegó a la boleta. La SJC resolvió en Cella v. Attorney General, SJC-13893, que no podía aparecer en la boleta de noviembre de 2026. No es ley.",
+    "en": "Initiative Petition 25-21 would have capped annual rent increases at the lesser of the Consumer Price Index increase or 5%. The SJC ruled it cannot appear on the November 2026 ballot, so the proposal failed.",
+    "es": "La Petición de Iniciativa 25-21 habría limitado los aumentos anuales de alquiler al menor entre el aumento del Índice de Precios al Consumidor o el 5%. La SJC dictaminó que no puede aparecer en la boleta de noviembre de 2026, por lo que la propuesta fracasó.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "This proposed rent cap is blocked from the November 2026 ballot, so it does not limit your rent increases.",
+    "landlord": "This proposed rent cap is blocked from the November 2026 ballot, so it does not currently limit your rent increases.",
+    "renter_es": "Este límite de alquiler propuesto fue bloqueado de la boleta de noviembre de 2026, así que no limita sus aumentos de alquiler.",
+    "landlord_es": "Este límite de alquiler propuesto fue bloqueado de la boleta de noviembre de 2026, así que actualmente no limita sus aumentos de alquiler."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3567,12 +3855,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule bars anyone offering rental accommodations in Massachusetts from discriminating against a person who receives federal, state or local public assistance or housing subsidies, including rental assistance. It applies whether the reason is the person's status or a requirement of the assistance program.",
-    "es": "Esta regla prohíbe que quien ofrece vivienda en alquiler en Massachusetts discrimine contra una persona que recibe asistencia pública o subsidios de vivienda federales, estatales o locales, incluida la ayuda para el alquiler. Aplica ya sea por su condición de beneficiario o por un requisito del programa.",
+    "en": "Massachusetts bans discrimination in rental accommodations against people who receive public assistance or housing subsidies, including rental assistance. This covers discrimination based on receiving aid or on any requirement of the aid program.",
+    "es": "Massachusetts prohíbe la discriminación en alquileres contra personas que reciben asistencia pública o subsidios de vivienda, incluida asistencia para el alquiler. Incluye la discriminación por recibir ayuda o por cualquier requisito del programa.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A landlord cannot discriminate against you because you receive public assistance or a housing subsidy, or because of a requirement of that program.",
+    "landlord": "You may not discriminate against a person because they receive public assistance or housing subsidies, or because of a requirement of that program.",
+    "renter_es": "Un propietario no puede discriminarlo porque usted recibe asistencia pública o un subsidio de vivienda, ni por un requisito de ese programa.",
+    "landlord_es": "Usted no puede discriminar a una persona porque recibe asistencia pública o subsidios de vivienda, ni por un requisito de ese programa."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3657,12 +3953,20 @@
     }
    ],
    "plain_language": {
-    "en": "Starting 2027-07-01, this New Jersey law bars residential rental owners from paying for a coordinator's services, and bars anyone from using algorithms that rely on competitors' competitively sensitive information to set or recommend rents, lease terms or occupancy levels. Violations fall under the New Jersey Antitrust Act.",
-    "es": "A partir del 2027-07-01, esta ley de Nueva Jersey prohíbe a los propietarios de alquileres residenciales pagar por los servicios de un coordinador, y prohíbe a cualquier persona usar algoritmos que dependan de información competitivamente sensible de competidores para fijar o recomendar alquileres, condiciones de contrato o niveles de ocupación. Las violaciones quedan bajo la Ley Antimonopolio de Nueva Jersey.",
+    "en": "New Jersey's FAIR Act bans using algorithms that rely on competitors' competitively sensitive information to set or recommend rents, lease terms or occupancy levels. Violations are unlawful under the state Antitrust Act. It is effective July 1, 2027.",
+    "es": "La Ley FAIR de Nueva Jersey prohíbe usar algoritmos que dependan de información competitiva sensible de competidores para fijar o recomendar alquileres, condiciones de contrato u ocupación. Las violaciones son ilegales bajo la Ley Antimonopolio estatal. Vigente el 1 de julio de 2027.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Starting July 1, 2027, your landlord may not use algorithmic coordination tools based on competitors' sensitive information to set or recommend your rent.",
+    "landlord": "Starting July 1, 2027, you may not pay for or subscribe to a coordinator's services that use competitors' sensitive information to set rents or lease terms.",
+    "renter_es": "A partir del 1 de julio de 2027, su propietario no podrá usar herramientas algorítmicas de coordinación basadas en información sensible de competidores para fijar o recomendar su alquiler.",
+    "landlord_es": "A partir del 1 de julio de 2027, usted no puede pagar ni suscribirse a servicios de un coordinador que use información sensible de competidores para fijar alquileres o condiciones."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3756,12 +4060,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule caps a New Jersey security deposit at 1.5 times one month's rent, with yearly increases of no more than 10% of the current deposit. The landlord must hold it in an insured New Jersey interest-bearing account, give written notice, and return it with interest, less itemized deductions, within 30 days after the tenancy ends.",
-    "es": "Esta regla limita el depósito de seguridad en Nueva Jersey a 1.5 veces el alquiler de un mes, con aumentos anuales de no más del 10% del depósito actual. El propietario debe guardarlo en una cuenta asegurada de Nueva Jersey que genere intereses, avisar por escrito y devolverlo con intereses, menos deducciones detalladas, en 30 días tras terminar el arrendamiento.",
+    "en": "New Jersey caps a security deposit at 1.5 times one month's rent, with yearly increases limited to 10% of the current deposit. It must be held in an insured New Jersey interest-bearing account and returned with interest, less itemized deductions, within 30 days.",
+    "es": "Nueva Jersey limita el depósito de seguridad a 1.5 veces el alquiler mensual, con aumentos anuales de máximo 10% del depósito actual. Debe guardarse en una cuenta asegurada con intereses en Nueva Jersey y devolverse con intereses, menos deducciones detalladas, en 30 días.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your deposit can be at most 1.5 times one month's rent, and you must get it back with interest, less itemized deductions, within 30 days after your tenancy ends.",
+    "landlord": "You must hold the deposit in an insured New Jersey interest-bearing account, notify the tenant in writing, and return it with interest within 30 days after tenancy ends.",
+    "renter_es": "Su depósito puede ser como máximo 1.5 veces el alquiler mensual, y debe devolvérselo con intereses, menos deducciones detalladas, dentro de 30 días después de terminar su contrato.",
+    "landlord_es": "Usted debe guardar el depósito en una cuenta asegurada con intereses en Nueva Jersey, avisar por escrito al inquilino y devolverlo con intereses dentro de 30 días tras terminar el contrato."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3865,12 +4177,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule lets a New Jersey landlord evict a tenant or refuse to renew a lease only for a statutory good cause, through a court order, after any required written notice. Lease expiry alone is not a ground, and lockouts and self-help evictions are illegal.",
-    "es": "Esta regla permite que un propietario en Nueva Jersey desaloje a un inquilino o se niegue a renovar el contrato solo por una causa justificada establecida en la ley, mediante orden judicial y tras cualquier aviso escrito requerido. El vencimiento del contrato por sí solo no es motivo, y los desalojos por cuenta propia y los cambios de cerradura son ilegales.",
+    "en": "New Jersey's Anti-Eviction Act allows a landlord to evict a tenant or refuse to renew a lease only for a statutory good cause, through a court order, after any required written notice. Lease expiry alone is not a ground, and lockouts are illegal.",
+    "es": "La Ley Contra el Desalojo de Nueva Jersey permite desalojar o negarse a renovar un contrato solo por una causa justa establecida por ley, mediante orden judicial y tras el aviso escrito requerido. El vencimiento del contrato no basta, y los cierres de acceso son ilegales.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord can evict you or refuse to renew your lease only for a statutory good cause and through a court order; lockouts are illegal.",
+    "landlord": "You may evict or refuse to renew only for a statutory good cause, with any required written notice and a court order; lockouts are illegal.",
+    "renter_es": "Su propietario solo puede desalojarlo o negarse a renovar su contrato por una causa justa establecida por ley y mediante orden judicial; los cierres de acceso son ilegales.",
+    "landlord_es": "Usted solo puede desalojar o negarse a renovar por una causa justa establecida por ley, con el aviso escrito requerido y una orden judicial; los cierres de acceso son ilegales."
    },
    "amendment": false,
    "in_force_since": null,
@@ -3950,12 +4270,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "When a building converts to condominium, cooperative or fee simple ownership, qualified tenants (age 62+, permanently disabled, or 60%+ service-disabled veterans) who meet the income limit and apply, generally within 60 days, may be protected from eviction for 40 years.",
-    "es": "Cuando un edificio se convierte en condominio, cooperativa o propiedad en dominio absoluto, los inquilinos calificados (62 años o más, con discapacidad permanente o veteranos con discapacidad de servicio del 60% o más) que cumplan el límite de ingresos y presenten solicitud, por lo general dentro de 60 días, pueden estar protegidos contra el desalojo por 40 años.",
+    "en": "When a building converts to condominium, cooperative or fee simple ownership, eligible tenants who are 62+, permanently disabled, or 60%+ service-disabled veterans, meet the income limit and apply (generally within 60 days) may be protected from eviction for 40 years.",
+    "es": "Cuando un edificio se convierte en condominio, cooperativa o propiedad absoluta, los inquilinos elegibles de 62 años o más, con discapacidad permanente o veteranos con 60% o más de discapacidad, que cumplan el límite de ingresos y soliciten (generalmente en 60 días) pueden estar protegidos contra el desalojo por 40 años.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you qualify by age, disability or veteran status, meet the income limit and apply, you may be protected from eviction for 40 years after a conversion.",
+    "landlord": "You must honor the 40-year protected tenancy of qualified tenants in a building being converted to a condominium, cooperative or fee simple ownership.",
+    "renter_es": "Si califica por edad, discapacidad o condición de veterano, cumple el límite de ingresos y presenta la solicitud, puede estar protegido contra el desalojo por 40 años tras una conversión.",
+    "landlord_es": "Usted debe respetar el arrendamiento protegido de 40 años de los inquilinos calificados en un edificio que se convierte en condominio, cooperativa o propiedad absoluta."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4043,12 +4371,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule bars landlords and agents from charging more than $50 to apply to rent a residential unit. Overcharges are refunded to the applicant. One- and two-family dwellings are exempt. Beginning January 1, 2027, the cap adjusts annually with CPI.",
-    "es": "Esta regla prohíbe que los propietarios y agentes cobren más de $50 por solicitar el alquiler de una vivienda residencial. El cobro en exceso se reembolsa al solicitante. Las viviendas unifamiliares y bifamiliares están exentas. A partir del 1 de enero de 2027, el límite se ajusta cada año según el IPC.",
+    "en": "This rule bars landlords and agents from charging more than $50 to apply to lease or sublease a residential rental. Starting January 1, 2027, the cap adjusts yearly for CPI. Overcharges are refunded, and penalties apply. One-family and two-family dwellings are exempt.",
+    "es": "Esta regla prohíbe que propietarios y agentes cobren más de $50 por solicitar el alquiler o subarriendo de una vivienda residencial. Desde el 1 de enero de 2027, el límite se ajusta cada año según el IPC. Se reembolsa el exceso y hay sanciones. Las viviendas unifamiliares y bifamiliares están exentas.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "You generally should not be charged more than $50 to apply for a rental, and any overcharge is refunded to you.",
+    "landlord": "You may not charge more than $50 for a rental application, and violations carry penalties of up to $500, $750 or $1,000.",
+    "renter_es": "Por lo general, no se le debe cobrar más de $50 por solicitar un alquiler, y se le reembolsa cualquier cobro en exceso.",
+    "landlord_es": "Usted no puede cobrar más de $50 por una solicitud de alquiler, y las infracciones conllevan sanciones de hasta $500, $750 o $1,000."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4145,12 +4481,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "New Jersey has no statewide rent cap, but towns may adopt rent control. This rule exempts newly constructed multiple dwellings from any local rent control ordinance for 30 years after construction is completed.",
-    "es": "Nueva Jersey no tiene un tope estatal de alquiler, pero los municipios pueden adoptar control de alquileres. Esta regla exime a los edificios multifamiliares de nueva construcción de cualquier ordenanza local de control de alquileres durante 30 años después de terminada la construcción.",
+    "en": "New Jersey has no statewide rent cap, but towns may adopt rent control. Newly constructed multiple dwellings are exempt from local rent control for 30 years after construction is completed.",
+    "es": "Nueva Jersey no tiene un límite estatal de alquiler, pero los municipios pueden adoptar control de alquileres. Los edificios multifamiliares recién construidos están exentos del control local de alquileres durante 30 años después de terminada la construcción.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your building is a newly constructed multiple dwelling, local rent control does not apply to it for 30 years after construction is completed.",
+    "landlord": "You are exempt from local rent control for 30 years after completing construction of a newly constructed multiple dwelling.",
+    "renter_es": "Si su edificio es un edificio multifamiliar recién construido, el control local de alquileres no se aplica durante 30 años después de terminada la construcción.",
+    "landlord_es": "Usted está exento del control local de alquileres durante 30 años después de terminar la construcción de un edificio multifamiliar recién construido."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4255,12 +4599,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule bars mid-lease rent increases; the old lease must end with written notice of the new rent. Any increase must not be unconscionable and must follow any local rent ordinance. There is no numeric cap.",
-    "es": "Esta regla prohíbe aumentar el alquiler a mitad del contrato; el contrato anterior debe terminar con aviso escrito del nuevo alquiler. Todo aumento no debe ser abusivo (unconscionable) y debe cumplir cualquier ordenanza local. No hay un tope numérico.",
+    "en": "Under the Anti-Eviction Act, rent cannot be raised mid-lease, and the old lease must end with written notice of the new rent. Increases must not be unconscionable and must follow any local rent increase ordinance. There is no numeric cap.",
+    "es": "Según la Ley contra el Desalojo, no se puede subir el alquiler durante el contrato, y el contrato anterior debe terminar con aviso escrito del nuevo alquiler. Los aumentos no deben ser abusivos y deben cumplir cualquier ordenanza local. No hay un límite numérico.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Your landlord cannot raise your rent mid-lease, and any increase must come with written notice and must not be unconscionable.",
+    "landlord": "You must end the old lease with written notice of the increased rent, and the increase must not be unconscionable or follow from conversion costs.",
+    "renter_es": "Su arrendador no puede subir su alquiler durante el contrato, y todo aumento debe notificarse por escrito y no debe ser abusivo.",
+    "landlord_es": "Usted debe terminar el contrato anterior con aviso escrito del aumento, y el aumento no debe ser abusivo ni cubrir costos derivados de una conversión."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4371,12 +4723,20 @@
    ],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This law bars most criminal record questions before a conditional offer. Afterward, landlords may consider only certain convictions within 6, 4 or 1 year look-backs, and may withdraw an offer only after an individualized assessment with written notice and a chance to appeal.",
-    "es": "Esta ley prohíbe la mayoría de las preguntas sobre antecedentes penales antes de una oferta condicional. Después, solo pueden considerarse ciertas condenas dentro de plazos de 6, 4 o 1 año, y la oferta solo puede retirarse tras una evaluación individualizada, con aviso escrito y oportunidad de apelar.",
+    "en": "Housing providers may not ask about criminal records before a conditional offer, with limited exceptions. Afterward, they may consider only certain convictions within set look-back periods, and may withdraw an offer only after an individualized assessment with written notice and a chance to appeal.",
+    "es": "Los proveedores de vivienda no pueden preguntar sobre antecedentes penales antes de una oferta condicional, con excepciones limitadas. Después, solo pueden considerar ciertas condenas dentro de plazos definidos, y solo pueden retirar la oferta tras una evaluación individualizada con aviso escrito y oportunidad de apelar.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A housing provider generally cannot ask about your criminal record until after a conditional offer, and then may look back only 6, 4 or 1 years depending on the offense.",
+    "landlord": "You may not ask about criminal records before a conditional offer, and must do an individualized assessment with written notice and appeal opportunity before withdrawing it.",
+    "renter_es": "Por lo general, un proveedor de vivienda no puede preguntar sobre sus antecedentes penales hasta después de una oferta condicional, y solo puede revisar 6, 4 o 1 años según el delito.",
+    "landlord_es": "Usted no puede preguntar sobre antecedentes penales antes de una oferta condicional, y debe hacer una evaluación individualizada con aviso escrito y oportunidad de apelar antes de retirarla."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4486,12 +4846,20 @@
     }
    ],
    "plain_language": {
-    "en": "This law prohibits housing discrimination based on a tenant's lawful source of income or rent payment. A landlord cannot deny a lawful Section 8 voucher holder an apartment based solely on that income source.",
-    "es": "Esta ley prohíbe la discriminación en vivienda por la fuente legal de ingresos o de pago del alquiler del inquilino. Un propietario no puede negar un apartamento a quien recibe legalmente un voucher de la Sección 8 basándose únicamente en esa fuente de ingresos.",
+    "en": "The NJ Law Against Discrimination bans housing discrimination based on a tenant's lawful source of income or rent payment. A landlord cannot deny a Section 8 voucher holder an apartment based solely on that income source.",
+    "es": "La Ley contra la Discriminación de NJ prohíbe la discriminación en la vivienda por la fuente legal de ingresos o de pago del alquiler. Un arrendador no puede negar un apartamento a quien tiene un voucher de la Sección 8 basándose solo en esa fuente de ingresos.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "A landlord cannot refuse to rent to you based solely on your Section 8 voucher or other lawful source of income.",
+    "landlord": "You may not deny a rental to a Section 8 voucher holder based solely on that source of income or rent payment.",
+    "renter_es": "Un arrendador no puede negarse a alquilarle basándose solo en su voucher de la Sección 8 u otra fuente legal de ingresos.",
+    "landlord_es": "Usted no puede negar un alquiler a quien tiene un voucher de la Sección 8 basándose solo en esa fuente de ingresos o de pago."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4581,12 +4949,20 @@
     }
    ],
    "plain_language": {
-    "en": "Effective 2026-04-02, Santa Ana bans selling, providing or using rent-setting software that relies on nonpublic competitor data for residential rentals. Affected tenants may sue for damages, civil penalties of up to $1,000 per violation, and attorney's fees.",
-    "es": "Desde el 2026-04-02, Santa Ana prohíbe vender, proveer o usar software de fijación de alquileres que se base en datos no públicos de competidores en viviendas de alquiler. Los inquilinos afectados pueden demandar por daños, sanciones civiles de hasta $1,000 por infracción y honorarios de abogado.",
+    "en": "Santa Ana bans selling, providing and using software that sets rents with nonpublic competitor data for residential rentals. Affected tenants may sue for relief, damages or civil penalties, plus attorney's fees.",
+    "es": "Santa Ana prohíbe vender, proporcionar y usar software que fije alquileres con datos no públicos de competidores en viviendas residenciales. Los inquilinos afectados pueden demandar para obtener medidas cautelares, daños o sanciones civiles, más honorarios de abogado.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If a landlord sets your rent using banned rent-setting software, you may sue for relief, damages or civil penalties of up to $1,000 per violation.",
+    "landlord": "You may not use algorithmic rent-setting software that relies on nonpublic competitor data for residential rental property in Santa Ana.",
+    "renter_es": "Si un arrendador fija su alquiler con software prohibido, usted puede demandar para obtener medidas cautelares, daños o sanciones civiles de hasta $1,000 por infracción.",
+    "landlord_es": "Usted no puede usar software de fijación de alquileres que se base en datos no públicos de competidores en propiedades residenciales de Santa Ana."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4689,12 +5065,20 @@
     }
    ],
    "plain_language": {
-    "en": "After 30 days of tenancy, Santa Ana owners need a just cause stated in a written notice to end a tenancy. For no-fault terminations, owners must give 3 months of relocation assistance or waive rent for the final 3 months.",
-    "es": "Después de 30 días de arrendamiento, los propietarios en Santa Ana necesitan una causa justa indicada en un aviso escrito para terminar el arrendamiento. En terminaciones sin culpa del inquilino, deben dar 3 meses de asistencia de reubicación o perdonar el alquiler de los últimos 3 meses.",
+    "en": "In Santa Ana, after 30 days of tenancy an owner needs just cause, stated in a written notice, to end a tenancy. For no-fault terminations, the owner must provide 3 months of relocation assistance or waive the final 3 months' rent.",
+    "es": "En Santa Ana, después de 30 días de arrendamiento, el propietario necesita una causa justa, indicada en un aviso escrito, para terminarlo. En terminaciones sin culpa, debe dar 3 meses de asistencia de reubicación o perdonar la renta de los últimos 3 meses.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "After 30 days of tenancy, your landlord needs just cause in a written notice to end your tenancy, and no-fault endings bring 3 months of relocation help or free rent.",
+    "landlord": "You must state just cause in a written notice, give a notice to cure before at-fault termination, and provide 3 months' relocation assistance or rent waiver for no-fault terminations.",
+    "renter_es": "Después de 30 días de arrendamiento, su arrendador necesita causa justa en un aviso escrito para terminarlo, y las terminaciones sin culpa conllevan 3 meses de asistencia de reubicación o renta gratis.",
+    "landlord_es": "Usted debe indicar la causa justa en un aviso escrito, dar un aviso para corregir antes de una terminación por culpa, y dar 3 meses de asistencia de reubicación o perdonar la renta en terminaciones sin culpa."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4808,12 +5192,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule caps annual rent increases in covered Santa Ana units at the lesser of 3% or 80% of the CPI change, with no increase if CPI is negative. It covers buildings constructed on or before February 1, 1995.",
-    "es": "Esta regla limita los aumentos anuales de alquiler en unidades cubiertas de Santa Ana al menor entre 3% u 80% del cambio del IPC, y no permite aumento si el IPC es negativo. Cubre edificios construidos el 1 de febrero de 1995 o antes.",
+    "en": "In Santa Ana, covered landlords may not raise rent more than the lesser of 3% per year or 80% of the CPI change, and no increase is allowed if CPI change is negative. The City publishes the allowable increase by June 30, effective September 1.",
+    "es": "En Santa Ana, los arrendadores cubiertos no pueden subir el alquiler más que el menor entre 3% al año u 80% del cambio del IPC, y no se permite aumento si el cambio del IPC es negativo. La Ciudad publica el aumento permitido antes del 30 de junio, vigente el 1 de septiembre.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your Santa Ana unit is covered, your rent can rise each year by no more than the lesser of 3% or 80% of the CPI change.",
+    "landlord": "You may not raise rent on a covered unit by more than the lesser of 3% or 80% of the CPI change, and not at all if CPI is negative.",
+    "renter_es": "Si su unidad en Santa Ana está cubierta, su alquiler puede subir cada año no más que el menor entre 3% u 80% del cambio del IPC.",
+    "landlord_es": "Usted no puede subir el alquiler de una unidad cubierta más que el menor entre 3% u 80% del cambio del IPC, y no puede subirlo si el IPC es negativo."
    },
    "amendment": false,
    "in_force_since": null,
@@ -4967,12 +5359,20 @@
     }
    ],
    "plain_language": {
-    "en": "San Diego makes it unlawful to provide or use software that uses nonpublic competitor data to set rents or occupancy levels for residential rentals. Tenants may sue for damages and civil penalties of up to $1,000 per violation, plus attorney's fees.",
-    "es": "San Diego declara ilegal proveer o usar software que utilice datos no públicos de competidores para fijar alquileres o niveles de ocupación en viviendas de alquiler. Los inquilinos pueden demandar por daños y sanciones civiles de hasta $1,000 por infracción, más honorarios de abogado.",
+    "en": "San Diego makes it unlawful to sell, provide or use software that uses nonpublic competitor data to recommend rents or occupancy levels for residential rentals. Tenants may sue for relief, damages or civil penalties, plus costs and attorney's fees.",
+    "es": "San Diego prohíbe vender, proporcionar o usar software que utilice datos no públicos de competidores para recomendar alquileres u ocupación en viviendas residenciales. Los inquilinos pueden demandar para obtener medidas cautelares, daños o sanciones civiles, más costos y honorarios de abogado.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If a landlord uses banned rent-setting software on your home, you may sue for relief, damages or civil penalties of up to $1,000 per violation.",
+    "landlord": "You may not use software that relies on nonpublic competitor data to set rental rates or occupancy levels for residential property in San Diego.",
+    "renter_es": "Si un arrendador usa software prohibido de fijación de alquileres en su vivienda, usted puede demandar para obtener medidas cautelares, daños o sanciones civiles de hasta $1,000 por infracción.",
+    "landlord_es": "Usted no puede usar software que se base en datos no públicos de competidores para fijar alquileres u ocupación en propiedades residenciales de San Diego."
    },
    "amendment": false,
    "in_force_since": null,
@@ -5127,12 +5527,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bars San Diego landlords from ending a covered tenancy without just cause, and the notice must state the cause. For no-fault terminations, tenants get 2 months' actual rent in relocation help, or 3 months' if 62+ or disabled.",
-    "es": "Esta regla prohíbe que los arrendadores de San Diego terminen un contrato cubierto sin causa justificada, y el aviso debe indicar la causa. En terminaciones sin culpa, el inquilino recibe ayuda de reubicación de 2 meses de renta real, o 3 meses si tiene 62 años o más o una discapacidad.",
+    "en": "San Diego requires a landlord to have a stated just cause to end a covered tenancy. For no-fault reasons, the landlord must give 30 or 60 days' notice and pay relocation assistance of 2 months' rent, or 3 months' if the tenant is 62+ or disabled.",
+    "es": "San Diego exige que el propietario tenga una causa justificada indicada para terminar un arrendamiento cubierto. En causas sin culpa, debe dar aviso de 30 o 60 días y pagar asistencia de reubicación de 2 meses de renta, o 3 meses si el inquilino tiene 62 años o más o una discapacidad.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your tenancy is covered, your landlord needs a stated just cause to end it, and a no-fault ending entitles you to 2 months' rent, or 3 if you are 62+ or disabled.",
+    "landlord": "You must state a just cause in the termination notice and, for no-fault terminations, give 30 or 60 days' notice and pay or waive the required relocation assistance.",
+    "renter_es": "Si su arrendamiento está cubierto, su propietario necesita una causa justificada indicada para terminarlo, y una terminación sin culpa le da derecho a 2 meses de renta, o 3 si tiene 62 años o más o una discapacidad.",
+    "landlord_es": "Usted debe indicar una causa justificada en el aviso de terminación y, en terminaciones sin culpa, dar aviso de 30 o 60 días y pagar o conceder como exención de renta la asistencia de reubicación exigida."
    },
    "amendment": false,
    "in_force_since": null,
@@ -5361,12 +5769,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule bans selling or using algorithmic devices that analyze nonpublic competitor rental data to recommend rents or manage occupancy for San Francisco residential units. Tenants or the City Attorney may sue; civil penalties are up to $1,000 per violation.",
-    "es": "Esta regla prohíbe vender o usar dispositivos algorítmicos que analizan datos privados de alquileres de competidores para recomendar rentas o manejar la ocupación de viviendas en San Francisco. Inquilinos o la Fiscalía de la Ciudad pueden demandar; las multas civiles llegan hasta $1,000 por infracción.",
+    "en": "San Francisco bans selling or using algorithmic devices that analyze nonpublic competitor rental data to recommend rents or manage occupancy for residential units. Tenants or the City Attorney may sue, and civil penalties can reach $1,000 per violation.",
+    "es": "San Francisco prohíbe vender o usar dispositivos algorítmicos que analizan datos no públicos de alquileres de la competencia para recomendar rentas o administrar la ocupación de unidades residenciales. Los inquilinos o la Fiscalía Municipal pueden demandar, y las multas civiles pueden llegar a $1,000 por infracción.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "You or the City Attorney may sue if a landlord uses an algorithmic device that analyzes nonpublic competitor rental data to set your rent.",
+    "landlord": "You may not sell or use an algorithmic device that analyzes nonpublic competitor rental data to recommend rents or manage occupancy for San Francisco residential units.",
+    "renter_es": "Usted o la Fiscalía Municipal pueden demandar si un propietario usa un dispositivo algorítmico que analiza datos no públicos de alquileres de la competencia para fijar su renta.",
+    "landlord_es": "Usted no puede vender ni usar un dispositivo algorítmico que analice datos no públicos de alquileres de la competencia para recomendar rentas o administrar la ocupación de unidades residenciales en San Francisco."
    },
    "amendment": false,
    "in_force_since": null,
@@ -5440,12 +5856,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This rule sets the interest on San Francisco tenant security deposits at the Rent Board's annual rate. For March 1, 2026 to February 28, 2027, the rate is 4.2%.",
-    "es": "Esta regla fija el interés de los depósitos de seguridad de inquilinos en San Francisco según la tasa anual de la Junta de Alquileres. Del 1 de marzo de 2026 al 28 de febrero de 2027, la tasa es 4.2%.",
+    "en": "San Francisco sets the interest rate on tenant security deposits each year. The rate is 4.2% for March 1, 2026 to February 28, 2027, down from 5.0% for 2025-26 and 5.2% for 2024-25.",
+    "es": "San Francisco fija cada año la tasa de interés de los depósitos de seguridad de los inquilinos. La tasa es 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027, menor que el 5.0% de 2025-26 y el 5.2% de 2024-25.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "Interest on your security deposit is set at 4.2% for March 1, 2026 to February 28, 2027.",
+    "landlord": "You must use the Rent Board's 4.2% interest rate on tenant security deposits for March 1, 2026 to February 28, 2027.",
+    "renter_es": "El interés de su depósito de seguridad es del 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027.",
+    "landlord_es": "Usted debe usar la tasa de interés de 4.2% de la Junta de Alquileres para los depósitos de seguridad del 1 de marzo de 2026 al 28 de febrero de 2027."
    },
    "amendment": true,
    "in_force_since": "2024-03-01",
@@ -5546,12 +5970,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule lets San Francisco landlords of covered units evict only for one of the just causes listed in Section 37.9(a). Lease expiration or a change in ownership is not just cause. Some evictions also require relocation payments.",
-    "es": "Esta regla permite que los arrendadores de unidades cubiertas en San Francisco desalojen solo por una de las causas justas de la Sección 37.9(a). El vencimiento del contrato o un cambio de propietario no es causa justa. Algunos desalojos también requieren pagos de reubicación.",
+    "en": "San Francisco allows a landlord of a covered unit to evict only for one of the just causes listed in Section 37.9(a), and it must be the dominant motive. Some no-fault evictions also require relocation payments under Section 37.9C.",
+    "es": "San Francisco permite que el propietario de una unidad cubierta desaloje solo por una de las causas justificadas de la Sección 37.9(a), y debe ser el motivo dominante. Algunos desalojos sin culpa también requieren pagos de reubicación según la Sección 37.9C.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is covered, your landlord can evict you only for a listed just cause; an expired rental agreement or a change in ownership is not one.",
+    "landlord": "You may evict only for a just cause listed in Section 37.9(a) as your dominant motive, and must make required Section 37.9C relocation payments.",
+    "renter_es": "Si su unidad está cubierta, su propietario solo puede desalojarle por una causa justificada de la lista; el vencimiento del contrato o un cambio de propietario no lo es.",
+    "landlord_es": "Usted solo puede desalojar por una causa justificada de la Sección 37.9(a) como motivo dominante, y debe hacer los pagos de reubicación exigidos por la Sección 37.9C."
    },
    "amendment": false,
    "in_force_since": null,
@@ -5640,12 +6072,20 @@
     }
    ],
    "plain_language": {
-    "en": "This rule limits annual rent increases for covered San Francisco units. From March 1, 2026 through February 28, 2027, the allowable increase is 1.6% of the tenant's base rent.",
-    "es": "Esta regla limita los aumentos anuales de renta en unidades cubiertas de San Francisco. Del 1 de marzo de 2026 al 28 de febrero de 2027, el aumento permitido es 1.6% de la renta base del inquilino.",
+    "en": "For units covered by the San Francisco Rent Ordinance's rent increase limits, the annual allowable increase from March 1, 2026 through February 28, 2027 is 1.6% of the tenant's base rent (base rent × .016). The prior periods were 1.4% (3/1/2025–2/28/2026) and 1.7% (3/1/2024–2/28/2025).",
+    "es": null,
     "guard": {
-     "en": "ok",
-     "es": "ok"
-    }
+     "en": "fallback_to_extracted_requirement",
+     "es": "omitted",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If your unit is covered, your rent can increase by at most 1.6% of your base rent from March 1, 2026 through February 28, 2027.",
+    "landlord": "For covered units, you may raise rent by no more than 1.6% of base rent (base rent × .016) from March 1, 2026 through February 28, 2027.",
+    "renter_es": "Si su unidad está cubierta, su renta puede aumentar como máximo un 1.6% de su renta base del 1 de marzo de 2026 al 28 de febrero de 2027.",
+    "landlord_es": "En unidades cubiertas, usted no puede aumentar la renta más del 1.6% de la renta base (renta base × .016) del 1 de marzo de 2026 al 28 de febrero de 2027."
    },
    "amendment": false,
    "in_force_since": null,
@@ -5715,12 +6155,20 @@
    "supporting_spans": [],
    "corroborating_sources": [],
    "plain_language": {
-    "en": "This ordinance protects applicants and residents with arrest or conviction history in San Francisco affordable housing decisions. The source does not say which screening practices are restricted or what procedures are required.",
-    "es": "Esta ordenanza protege a solicitantes y residentes con antecedentes de arresto o condena en decisiones de vivienda asequible en San Francisco. La fuente no indica qué prácticas de evaluación están restringidas ni qué procedimientos se exigen.",
+    "en": "San Francisco's Fair Chance Ordinance protects applicants and residents with arrest or conviction history in affordable housing decisions. The source does not specify which screening practices are restricted or the required procedures.",
+    "es": "La Ordenanza de Segunda Oportunidad de San Francisco protege a los solicitantes y residentes con antecedentes de arresto o condena en decisiones de vivienda asequible. La fuente no especifica qué prácticas de evaluación están restringidas ni los procedimientos requeridos.",
     "guard": {
      "en": "ok",
-     "es": "ok"
-    }
+     "es": "ok",
+     "renter": "ok",
+     "landlord": "ok",
+     "renter_es": "ok",
+     "landlord_es": "ok"
+    },
+    "renter": "If you have an arrest or conviction history, San Francisco's Fair Chance Ordinance protects you in affordable housing decisions.",
+    "landlord": "In affordable housing decisions, you are covered by San Francisco's Fair Chance Ordinance protecting applicants and residents with arrest or conviction history.",
+    "renter_es": "Si tiene antecedentes de arresto o condena, la Ordenanza de Segunda Oportunidad de San Francisco le protege en decisiones de vivienda asequible.",
+    "landlord_es": "En decisiones de vivienda asequible, usted está sujeto a la Ordenanza de Segunda Oportunidad de San Francisco, que protege a solicitantes y residentes con antecedentes de arresto o condena."
    },
    "amendment": false,
    "in_force_since": null,
