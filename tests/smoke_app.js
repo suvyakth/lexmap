@@ -14,10 +14,11 @@ function el(sel) {
   };
   return (els[sel] = e);
 }
-const document = { querySelector: el, querySelectorAll: () => [], addEventListener() {}, body: el("body"), documentElement: {}, createElement: () => el("new" + Math.random()) };
+const document = { querySelector: el, querySelectorAll: () => [], addEventListener() {}, body: el("body"), documentElement: { setAttribute() {}, removeAttribute() {} }, getElementById: () => null, createElement: () => el("new" + Math.random()) };
 const fetch = async (u) => ({ json: async () => JSON.parse(fs.readFileSync(path.join(root, u), "utf8")) });
 const ctx = { window: {}, document, fetch, history: { replaceState() {} }, location: { hash: process.argv[2] || "" },
-  console, setTimeout, clearTimeout, Promise, Object, JSON, Math, Array, String, Number, Set, Date, Infinity, isNaN, parseInt, encodeURIComponent };
+  console, setTimeout, clearTimeout, Promise, Object, JSON, Math, Array, String, Number, Set, Map, Date, Infinity, isNaN, parseInt, encodeURIComponent,
+  URLSearchParams, localStorage: { getItem: () => null, setItem() {} }, scrollTo() {}, scrollY: 0 };
 ctx.window = ctx; ctx.globalThis = ctx;
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "engine.js"), "utf8"), ctx);

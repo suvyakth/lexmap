@@ -12,6 +12,7 @@ Record with any screen recorder (Windows: Snipping Tool's screen recording, or X
 > Renters don't know their rights, and small landlords don't know their obligations.
 > Lexmap turns 67 documents of state and city law into executable rules. It answers any address, on any date, with a quote from the law itself.
 > My focus was trust: no invented rules, honest "unknown" answers, and an audit trail behind every answer.
+> The one-line version: the model reads the law. It never decides what applies.
 > Thanks for watching. The demo and the technical walkthrough are next.
 
 ---

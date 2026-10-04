@@ -60,6 +60,16 @@
     method_h: "Cómo funciona Lexmap",
   };
   const UI_EN = {};
+  Object.assign(UI_ES, {
+    quote: "«El modelo lee la ley. Nunca decide qué se aplica.»",
+    cov_h: "Quién está protegido, ciudad por ciudad",
+    cov_sub: "Para organizaciones y agencias: cómo están protegidos los 500 edificios de muestra en la fecha elegida, calculado con el mismo motor. Haga clic en una ciudad para ver sus edificios.",
+    f1_p: "Cada norma lleva una cita comparada carácter por carácter con el texto oficial, con su fecha de consulta.",
+    f2_p: "¿Falta un dato, como el año de construcción? Lexmap dice «desconocido», nombra el dato y se lo pregunta.",
+    f3_p: "Mueva la fecha para ver leyes pendientes, aún no vigentes o a punto de reemplazar una ordenanza local.",
+    f4_p: "Cuando una ley estatal podría desplazar una prohibición local, o las fuentes no coinciden, la respuesta se marca para revisión humana.",
+  });
+  const tr = (en, es) => (lang === "es" ? es : en);
   const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
 
   // ------------------------------------------------------------------ data
@@ -80,6 +90,18 @@
     algorithmic_rent_setting: "Fijación algorítmica de rentas",
   };
   const catName = (c) => (lang === "es" ? CAT_ES[c] : catLabel(c));
+  // Answers that rest on a secondary source or low model confidence are marked for human review.
+  function needsReview(r) {
+    const official = !!r.official_source || String(r.source_type || "").startsWith("official");
+    return !official || (r.confidence || 0) < 0.65;
+  }
+  function reviewPill(r) {
+    if (!needsReview(r)) return "";
+    const why = !(r.official_source || String(r.source_type || "").startsWith("official"))
+      ? (lang === "es" ? "Fuente secundaria: el texto de la ley no está en el corpus" : "Secondary source: the enacting text is not in the corpus")
+      : (lang === "es" ? "Confianza del modelo baja" : "Low model confidence");
+    return ` <span class="pill review" title="${esc(why)}">${lang === "es" ? "Revisar" : "Needs review"}</span>`;
+  }
   function pill(status, extra) { return `<span class="pill ${status}">${esc(t(status))}${extra != null && extra !== "" ? " " + extra : ""}</span>`; }
   function describePred(p) {
     if (!p) return "everyone in the jurisdiction";
@@ -108,6 +130,16 @@
   // ------------------------------------------------------------------ follow-up questions
   // Each missing fact the engine names becomes one question; answers are applied to the
   // building facts and every rule is re-evaluated immediately.
+  const QUESTIONS_ES = {
+    residential: ["¿Es un alquiler residencial (viviendas o apartamentos que se alquilan)?", [["", "No estoy seguro"], ["yes", "Sí"], ["no", "No (tienda, oficina, vivienda propia, terreno…)"]]],
+    property_type: ["¿Qué tipo de edificio es?", [["", "No estoy seguro"], ["multifamily", "Edificio de apartamentos (3+ unidades)"], ["duplex", "Casa de dos unidades (dúplex)"], ["single_family", "Casa unifamiliar"], ["condo", "Condominio o casa adosada"]]],
+    year_built: ["Año de construcción (o primera ocupación)", null, "Muchas normas de renta y desalojo dependen de la antigüedad del edificio."],
+    units: ["Número de unidades en el edificio", null, "Los edificios pequeños suelen estar exentos."],
+    owner_occupied: ["¿El propietario vive en el edificio?", [["", "No estoy seguro"], ["yes", "Sí"], ["no", "No"]]],
+    owner_type: ["¿Quién es el propietario?", [["", "No estoy seguro"], ["natural_person", "Una persona o familia"], ["llc", "Una LLC"], ["corporation", "Una corporación"], ["reit", "Un REIT"], ["government", "Un organismo público"]]],
+    owner_unit_count: ["¿Cuántas unidades de alquiler tiene el propietario en total?", null],
+    owner_property_count: ["¿Cuántas propiedades de alquiler tiene el propietario?", null],
+  };
   const QUESTIONS = {
     residential: { label: "Is this a residential rental (homes or apartments people rent)?", type: "select",
       options: [["", "Not sure"], ["yes", "Yes"], ["no", "No (shop, office, owner's own home, vacant land…)"]] },
@@ -153,15 +185,18 @@
     for (const k of Object.keys(c.answers)) if (!keys.includes(k) && QUESTIONS[k]) keys.push(k);   // keep answered questions visible
     if (!keys.length) return "";
     const fields = [...new Set(keys)].map((k) => {
-      const q = QUESTIONS[k], val = c.answers[k] != null ? c.answers[k] : (k === "residential" ? (c.meta.residential || "") : "");
+      const qe = QUESTIONS[k], es = QUESTIONS_ES[k];
+      const q = lang === "es" && es ? Object.assign({}, qe, { label: es[0], options: es[1] || qe.options, hint: es[2] || (es[1] ? qe.hint : qe.hint && es[2]) }) : qe;
+      const val = c.answers[k] != null ? c.answers[k] : (k === "residential" ? (c.meta.residential || "") : "");
       const input = q.type === "select"
         ? `<select data-q="${k}" id="q-${k}">${q.options.map(([v, l]) => `<option value="${v}"${String(val) === v ? " selected" : ""}>${esc(l)}</option>`).join("")}</select>`
-        : `<input data-q="${k}" id="q-${k}" type="number" min="${q.min}" max="${q.max}" value="${esc(val)}" placeholder="Not sure">`;
+        : `<input data-q="${k}" id="q-${k}" type="number" min="${q.min}" max="${q.max}" value="${esc(val)}" placeholder="${tr("Not sure", "No estoy seguro")}">`;
       return `<div class="q"><label for="q-${k}">${esc(q.label)}</label>${input}${q.hint ? `<div class="hint">${esc(q.hint)}</div>` : ""}</div>`;
     }).join("");
     const head = unknown.length
-      ? `${unknown.length} answer${unknown.length === 1 ? " is" : "s are"} unknown because a fact is missing. Answer what you know and every rule is re-checked instantly. Leave a question as “Not sure” and Lexmap keeps saying “unknown”.`
-      : `Answer what you know to refine the result. Nothing is guessed.`;
+      ? tr(`${unknown.length} answer${unknown.length === 1 ? " is" : "s are"} unknown because a fact is missing. Answer what you know and every rule is re-checked instantly. Leave a question as “Not sure” and Lexmap keeps saying “unknown”.`,
+           `${unknown.length} respuesta${unknown.length === 1 ? " es desconocida" : "s son desconocidas"} porque falta un dato. Responda lo que sepa y cada norma se vuelve a comprobar al instante. Si deja «No estoy seguro», Lexmap sigue diciendo «desconocido».`)
+      : tr(`Answer what you know to refine the result. Nothing is guessed.`, `Responda lo que sepa para afinar el resultado. Nada se adivina.`);
     return `<div class="card ask"><h3>${t("ask_h")}</h3><p>${esc(head)}</p><div class="qs">${fields}</div></div>`;
   }
 
@@ -178,8 +213,9 @@
     let html = addressCard(addr, all, asOf);
     if (residential === "no") {
       html += questionsPanel([], current, facts);
-      html += `<div class="card notres"><h3>Not a residential rental, so these rules do not apply</h3>
-        <p>${esc(current.meta.residentialWhy || "You said this property is not a residential rental.")} The rules Lexmap covers govern residential tenancies: rent increases, evictions, deposits, application fees, tenant screening and rent-setting software. If part of the property is rented as housing, change the answer above to “Yes”.</p></div>`;
+      html += `<div class="card notres"><h3>${tr("Not a residential rental, so these rules do not apply", "No es un alquiler residencial, así que estas normas no aplican")}</h3>
+        <p>${esc(current.meta.residentialWhy || tr("You said this property is not a residential rental.", "Usted indicó que esta propiedad no es un alquiler residencial."))} ${tr("The rules Lexmap covers govern residential tenancies: rent increases, evictions, deposits, application fees, tenant screening and rent-setting software. If part of the property is rented as housing, change the answer above to “Yes”.",
+          "Las normas que cubre Lexmap regulan alquileres residenciales: aumentos de renta, desalojos, depósitos, tarifas de solicitud, selección de inquilinos y software de precios. Si parte de la propiedad se alquila como vivienda, cambie la respuesta de arriba a «Sí».")}</p></div>`;
       $("#result").innerHTML = html;
       initMap();
       return;
@@ -191,7 +227,9 @@
     for (const e of events) (evBy[e.category] = evBy[e.category] || []).push(e);
     html += takeawaysPanel(by, entries, addr, asOf);
     html += questionsPanel(entries, current, facts);
-    html += `<details class="allrules"${persona === "researcher" ? " open" : ""}><summary><span>All ${all.length} rules checked for this address, with sources and reasoning</span><span class="muted">${entries.filter((e) => e.result === "applies").length} apply · ${entries.filter((e) => e.result === "unknown").length} unknown · ${entries.filter((e) => e.result === "superseded").length} superseded</span></summary>`;
+    html += timelinePanel(addr, asOf);
+    html += comparePanel(addr, asOf);
+    html += `<details class="allrules"${persona === "researcher" ? " open" : ""}><summary><span>${tr(`All ${all.length} rules checked for this address, with sources and reasoning`, `Las ${all.length} normas revisadas para esta dirección, con fuentes y razonamiento`)}</span><span class="muted">${entries.filter((e) => e.result === "applies").length} ${tr("apply", "aplican")} · ${entries.filter((e) => e.result === "unknown").length} ${tr("unknown", "desconocidas")} · ${entries.filter((e) => e.result === "superseded").length} ${tr("superseded", "desplazadas")}</span></summary>`;
     html += glance(by, addr, asOf);
     for (const c of D.meta.categories) {
       const es = by[c] || [];
@@ -219,8 +257,23 @@
   }
   // Turn engine leaf descriptions ("certificate-of-occupancy date after 1979-06-13? no (built 1926)")
   // into a readable reason ("built 1926, so the exemption for buildings first occupied after 1979-06-13 does not apply").
-  const LEAF_RE = /^(certificate-of-occupancy date|year built|number of units|property type|whether the owner lives on site|owner type|how many units the owner has|how many properties the owner has) (.+?) (.+?)\? (yes|no|unknown) \((.*)\)$/;
+  const LEAF_RE = /^(certificate-of-occupancy date|year built|number of units|property type|whether the owner lives on site|owner type|how many units the owner has|how many properties the owner has) (on or before|on or after|in or before|in or after|is one of|is not|at most|at least|more than|fewer than|exactly|not on|not in|one of|after|before|on|in|is|not) (.+?)\? (yes|no|unknown) \((.*)\)$/;
+  const OP_ES = { "after": "después del", "on or before": "en o antes del", "before": "antes del", "on or after": "en o después del", "on": "el", "not on": "no el",
+    "at most": "como máximo", "at least": "al menos", "more than": "más de", "fewer than": "menos de", "exactly": "exactamente", "not": "no",
+    "in or before": "en o antes de", "in or after": "en o después de", "in": "en", "not in": "no en", "is": "es", "is not": "no es", "is one of": "es uno de", "one of": "uno de" };
+  function haveEs(h) {
+    return h.replace(/^built (\d+)/, "construido en $1").replace(/(\d+)\+ units/, "$1+ unidades").replace(/(\d+)-(\d+) units/, "$1-$2 unidades")
+      .replace(/(\d+) units?/, "$1 unidades").replace("year built not in the data", "año de construcción no disponible").replace("apartment building", "edificio de apartamentos")
+      .replace("building type not given", "tipo de edificio no indicado");
+  }
   function phrase(label, op, val) {
+    if (lang === "es") {
+      const o = OP_ES[op] || op, v = String(val).replace("(15 years before the query date)", "(15 años antes de la fecha consultada)");
+      if (label === "certificate-of-occupancy date") return `edificios ocupados por primera vez ${o} ${v}`;
+      if (label === "year built") return `edificios construidos ${o} ${v}`;
+      if (label === "number of units") return `edificios con ${o} ${v} unidades`;
+      return `${label} ${o} ${v}`;
+    }
     if (label === "certificate-of-occupancy date") return `buildings first occupied ${op} ${val}`;
     if (label === "year built") return `buildings built ${op} ${val}`;
     if (label === "number of units") return `buildings with ${op} ${val} units`;
@@ -231,12 +284,19 @@
     const m = LEAF_RE.exec(leafText.trim());
     if (!m) return leafText;
     const [, label, op, val, , have] = m;
+    if (lang === "es") {
+      if (kind === "exempt") return `${haveEs(have)}, así que la exención para ${phrase(label, op, val)} no aplica`;
+      if (kind === "falls") return `${haveEs(have)}, así que entra en la exención para ${phrase(label, op, val)}`;
+      return `${haveEs(have)}; cubre ${phrase(label, op, val)}`;
+    }
     if (kind === "exempt") return `${have}, so the exemption for ${phrase(label, op, val)} does not apply`;
+    if (kind === "falls") return `${have}, so it falls under the exemption for ${phrase(label, op, val)}`;
     return `${have}, and it covers ${phrase(label, op, val)}`;
   }
   function whyHere(e, addr) {
     const r = e.rule;
-    const where = r.level === "city" ? `Inside ${r.jurisdiction.split(",")[0]} city limits` : `Statewide in ${D.meta.states[r.jurisdiction] || r.jurisdiction}`;
+    const where = r.level === "city" ? tr(`Inside ${r.jurisdiction.split(",")[0]} city limits`, `Dentro de los límites de ${r.jurisdiction.split(",")[0]}`)
+      : tr(`Statewide in ${D.meta.states[r.jurisdiction] || r.jurisdiction}`, `En todo el estado de ${D.meta.states[r.jurisdiction] || r.jurisdiction}`);
     const ex = e.explanation || "";
     const bits = [];
     const cov = ex.match(/Covered: ([^]*?)\.(?: |$)/);
@@ -252,35 +312,42 @@
     landlord: { rent_increase_limits: "How much can I raise rent?", just_cause_eviction: "When can I end a tenancy?", security_deposits: "What deposit can I take?",
       application_screening_fees: "What can I charge applicants?", screening_restrictions: "What can't I screen on?", algorithmic_rent_setting: "Can I use rent-pricing software?" },
   };
+  const TAKE_TITLE_ES = {
+    renter: { rent_increase_limits: "¿Cuánto puede subir mi renta?", just_cause_eviction: "¿Me pueden desalojar sin motivo?", security_deposits: "¿Cuánto puede ser mi depósito?",
+      application_screening_fees: "¿Cuánto me pueden cobrar por solicitar?", screening_restrictions: "¿Qué no pueden usar en mi contra al solicitar?", algorithmic_rent_setting: "¿Puede un software fijar mi renta?" },
+    landlord: { rent_increase_limits: "¿Cuánto puedo subir la renta?", just_cause_eviction: "¿Cuándo puedo terminar un alquiler?", security_deposits: "¿Qué depósito puedo cobrar?",
+      application_screening_fees: "¿Qué puedo cobrar a los solicitantes?", screening_restrictions: "¿Qué no puedo considerar al evaluar?", algorithmic_rent_setting: "¿Puedo usar software de precios?" },
+  };
   function takeawaysPanel(by, entries, addr, asOf) {
     const items = [];
     for (const c of TAKE_ORDER) {
       const es = by[c] || [];
       const applies = es.filter((e) => e.result === "applies").sort((a, b) => (a.rule.level === "city" ? 0 : 1) - (b.rule.level === "city" ? 0 : 1));
       const unknown = es.filter((e) => e.result === "unknown");
-      const q = (TAKE_TITLE[persona] || {})[c] || catName(c);
+      const q = ((lang === "es" ? TAKE_TITLE_ES : TAKE_TITLE)[persona] || {})[c] || catName(c);
       if (applies.length) {
         const e = applies[0];
         items.push({ c, q, status: "applies", e, text: personaLine(e.rule), why: whyHere(e, addr), more: applies.length - 1 });
       } else if (unknown.length) {
         const e = unknown[0];
         const miss = [...new Set(unknown.flatMap((u) => u.missing_facts || []))].map((m) => (Lexmap.FIELD_LABEL[m] || m)).join(", ");
-        items.push({ c, q, status: "unknown", e, text: personaLine(e.rule), why: `Not settled: depends on ${miss || "facts not in the data"}. Answer the questions below to settle it.` });
+        items.push({ c, q, status: "unknown", e, text: personaLine(e.rule), why: tr(`Not settled: depends on ${miss || "facts not in the data"}. Answer the questions below to settle it.`, `Sin resolver: depende de ${miss || "datos que no están disponibles"}. Responda las preguntas de abajo para resolverlo.`) });
       } else if (c === "rent_increase_limits" || c === "just_cause_eviction") {
         const om = omittedRules(c, addr, asOf);
         const bars = D.rules.filter((r) => r.category === c && addr.stack.includes(r.jurisdiction) && r.subject === "municipality" && r.status === "in_force" && !(r.coverage_logic || {}).covers);
-        const text = c === "rent_increase_limits" ? (persona === "landlord" ? "No rent-increase cap in the corpus covers this building." : "No rent-increase cap in the corpus covers this building.")
-          : "No just-cause eviction rule in the corpus covers this building.";
-        const omWhy = om.length ? om[0][1].replace(/^exempt: /, "").split("; ").filter((x) => !/property type/.test(x)).slice(0, 1).map((x) => { const m = LEAF_RE.exec(x.trim()); return m ? `${m[5]}, so it falls under the exemption for ${phrase(m[1], m[2], m[3])}` : x; }).join("") : "";
-        const why = bars.length ? `${bars[0].citation}: ${plain(bars[0])}` : om.length ? `${om[0][0].citation} does not cover it: ${omWhy || om[0][1]}.` : "No rule of this kind was found for this state or city.";
+        const text = c === "rent_increase_limits" ? tr("No rent-increase cap in the corpus covers this building.", "Ningún tope de aumento de renta del corpus cubre este edificio.")
+          : tr("No just-cause eviction rule in the corpus covers this building.", "Ninguna norma de desalojo con causa justa del corpus cubre este edificio.");
+        const omWhy = om.length ? om[0][1].replace(/^exempt: /, "").split("; ").filter((x) => !/property type/.test(x)).slice(0, 1).map((x) => readable(x, "falls")).join("") : "";
+        const why = bars.length ? `${bars[0].citation}: ${plain(bars[0])}` : om.length ? tr(`${om[0][0].citation} does not cover it: ${omWhy || om[0][1]}.`, `${om[0][0].citation} no lo cubre: ${omWhy || om[0][1]}.`)
+          : tr("No rule of this kind was found for this state or city.", "No se encontró ninguna norma de este tipo para este estado o ciudad.");
         items.push({ c, q, status: "none", text, why });
       }
     }
     const coming = entries.filter((e) => e.result === "not_yet_effective").sort((a, b) => String(a.rule.effective_date).localeCompare(String(b.rule.effective_date)));
     const pending = entries.filter((e) => e.result === "pending");
-    const changeItems = coming.slice(0, 1).map((e) => ({ c: e.category, q: persona === "landlord" ? "What changes soon for me?" : "What's about to change?", status: "not_yet_effective", e,
-      text: `${e.rule.title} takes effect ${e.rule.effective_date}.`, why: personaLine(e.rule) }))
-      .concat(pending.slice(0, 1).map((e) => ({ c: e.category, q: "What's being proposed?", status: "pending", e, text: `${e.rule.title}: a pending bill, not law.`, why: personaLine(e.rule) })));
+    const changeItems = coming.slice(0, 1).map((e) => ({ c: e.category, q: persona === "landlord" ? tr("What changes soon for me?", "¿Qué cambia pronto para mí?") : tr("What's about to change?", "¿Qué está por cambiar?"), status: "not_yet_effective", e,
+      text: tr(`${e.rule.title} takes effect ${e.rule.effective_date}.`, `${e.rule.title} entra en vigor el ${e.rule.effective_date}.`), why: personaLine(e.rule) }))
+      .concat(pending.slice(0, 1).map((e) => ({ c: e.category, q: tr("What's being proposed?", "¿Qué se está proponiendo?"), status: "pending", e, text: tr(`${e.rule.title}: a pending bill, not law.`, `${e.rule.title}: un proyecto pendiente, no es ley.`), why: personaLine(e.rule) })));
     const top = items.filter((i) => ["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
     const rest = items.filter((i) => !["rent_increase_limits", "just_cause_eviction", "security_deposits"].includes(i.c));
     const shown = top.concat(changeItems, rest).slice(0, 6);
@@ -288,19 +355,133 @@
     const persBtn = (p, l) => `<button class="seg${persona === p ? " on" : ""}" data-persona="${p}">${l}</button>`;
     const cards = shown.map((i) => {
       const r = i.e && i.e.rule;
-      const flag = i.e && i.e.conflict_flag ? ` <span class="pill conflict">⚑ ${t("conflict")}</span>` : "";
+      const flag = (i.e && i.e.conflict_flag ? ` <span class="pill conflict">⚑ ${t("conflict")}</span>` : "") + (r ? reviewPill(r) : "");
       return `<div class="take ${i.status}">
-        <div class="take-top"><span class="take-q">${esc(i.q)}</span>${i.status === "none" ? '<span class="pill superseded">No cap / no rule</span>' : pill(i.status)}${flag}</div>
-        <div class="take-a">${esc(i.text)}${i.more > 0 ? ` <span class="muted">(+${i.more} more ${i.more === 1 ? "rule" : "rules"})</span>` : ""}</div>
+        <div class="take-top"><span class="take-q">${esc(i.q)}</span>${i.status === "none" ? `<span class="pill superseded">${tr("No cap / no rule", "Sin tope / sin norma")}</span>` : pill(i.status)}${flag}</div>
+        <div class="take-a">${esc(i.text)}${i.more > 0 ? ` <span class="muted">(+${i.more} ${tr(i.more === 1 ? "more rule" : "more rules", i.more === 1 ? "norma más" : "normas más")})</span>` : ""}</div>
         <div class="take-why">${esc(i.why)}</div>
         ${r ? `<div class="take-cite"><button class="linkish" data-goto="${esc(r.team_rule_id)}">${esc(r.citation)}</button> · ${(r.source_type || "").startsWith("official") ? t("official") : t("secondary")}</div>` : ""}
       </div>`;
     }).join("");
     return `<div class="card takeaways">
-      <div class="take-head"><h3>What matters most at this address</h3>
-        <div class="segs" role="group" aria-label="View as">${persBtn("renter", "Renter")}${persBtn("landlord", "Landlord")}${persBtn("researcher", "Researcher")}<button class="seg print" data-print="1" title="Print a one-page summary">Print</button></div></div>
+      <div class="take-head"><h3>${tr("What matters most at this address", "Lo más importante en esta dirección")}</h3>
+        <div class="segs" role="group" aria-label="View as">${persBtn("renter", tr("Renter", "Inquilino"))}${persBtn("landlord", tr("Landlord", "Propietario"))}${persBtn("researcher", tr("Researcher", "Investigador"))}<button class="seg print" data-print="1" title="Print a one-page summary">${tr("Print", "Imprimir")}</button></div></div>
       <div class="take-grid">${cards}</div>
     </div>`;
+  }
+
+  // ------------------------------------------------------------------ timeline: how this address changes 2024-2028
+  // The engine is evaluated at every month start plus every exact rule date in the window, so each
+  // bar is the same deterministic answer the page gives for that date.
+  const TL_START = "2024-01-01", TL_END = "2028-12-31";
+  const dayNum = (s) => Date.parse(s + "T00:00:00Z") / 864e5;
+  const isoDay = (s) => { if (!s) return null; const p = String(s).split("-"); return p.length === 1 ? `${p[0]}-01-01` : p.length === 2 ? `${p[0]}-${p[1]}-01` : s; };
+  function timelineData(addr) {
+    const dates = new Set();
+    for (let y = 2024; y <= 2028; y++) for (let m = 1; m <= 12; m++) dates.add(`${y}-${String(m).padStart(2, "0")}-01`);
+    for (const r of D.rules) {
+      if (!addr.stack.includes(r.jurisdiction)) continue;
+      for (const d of [r.effective_date, r.amendment ? r.in_force_since : null, r.end_date]) {
+        const x = isoDay(d);
+        if (x && x >= TL_START && x <= TL_END) dates.add(x);
+      }
+    }
+    const ds = [...dates].sort();
+    const snaps = ds.map((d) => {
+      const m = {};
+      for (const e of engine.lookup(addr, d)) if (!e.event_only) m[e.team_rule_id] = e.result;
+      return m;
+    });
+    const ids = [...new Set(snaps.flatMap((m) => Object.keys(m)))];
+    const rows = ids.map((id) => {
+      const r = D.byId[id];
+      const series = snaps.map((m) => m[id] || "none");
+      const segs = [];
+      for (let i = 0; i < ds.length; i++) {
+        const v = series[i], from = ds[i], to = i + 1 < ds.length ? ds[i + 1] : TL_END;
+        if (segs.length && segs[segs.length - 1].v === v) segs[segs.length - 1].to = to; else segs.push({ v, from, to });
+      }
+      const changes = [];
+      for (let i = 1; i < segs.length; i++) changes.push({ date: segs[i].from, from: segs[i - 1].v, to: segs[i].v, r });
+      return { id, r, segs, changes };
+    }).filter((x) => x.segs.some((s) => s.v !== "none"));
+    rows.sort((a, b) => (TAKE_ORDER.indexOf(a.r.category) - TAKE_ORDER.indexOf(b.r.category)) || a.id.localeCompare(b.id));
+    return { ds, rows };
+  }
+  const RES_WORD = { applies: ["applies", "aplica"], unknown: ["unknown", "desconocido"], superseded: ["superseded", "desplazada"],
+    not_yet_effective: ["not yet effective", "aún no vigente"], pending: ["pending", "pendiente"], none: ["not reported", "no se informa"] };
+  const resWord = (v) => (RES_WORD[v] || [v, v])[lang === "es" ? 1 : 0];
+  function timelinePanel(addr, asOf) {
+    let data;
+    try { data = timelineData(addr); } catch (e) { return ""; }
+    if (!data.rows.length) return "";
+    const t0 = dayNum(TL_START), t1 = dayNum(TL_END);
+    const pct = (d) => Math.max(0, Math.min(100, ((dayNum(d) - t0) / (t1 - t0)) * 100));
+    const changing = data.rows.filter((r) => r.changes.length);
+    const steady = data.rows.filter((r) => !r.changes.length);
+    const shown = changing.concat(steady).slice(0, 14);
+    const years = [2024, 2025, 2026, 2027, 2028].map((y) => `<span class="tl-year" style="left:${pct(`${y}-01-01`)}%">${y}</span>`).join("");
+    const marker = asOf >= TL_START && asOf <= TL_END ? `<span class="tl-now" style="left:${pct(asOf)}%" title="${esc(asOf)}"></span>` : "";
+    const rowsHtml = shown.map((row) => {
+      const bars = row.segs.filter((s) => s.v !== "none").map((s) => `<span class="tl-seg seg-${s.v === "not_yet_effective" ? "nye" : s.v}" style="left:${pct(s.from)}%;width:${Math.max(0.6, pct(s.to) - pct(s.from))}%" title="${esc(row.id)}: ${esc(resWord(s.v))} ${esc(s.from)} → ${esc(s.to)}"></span>`).join("");
+      return `<div class="tl-row"><div class="tl-label" title="${esc(row.r.title)}"><b>${esc(catName(row.r.category))}</b><span>${esc(row.r.title)}</span></div>
+        <div class="tl-track" data-tl="1">${bars}${marker}</div></div>`;
+    }).join("");
+    const events = data.rows.flatMap((r) => r.changes).sort((a, b) => a.date.localeCompare(b.date))
+      .map((c) => `<li><button class="linkish" data-setdate="${esc(c.date)}">${esc(c.date)}</button> · ${esc(c.r.title)}: <b>${esc(resWord(c.from))} → ${esc(resWord(c.to))}</b></li>`).join("");
+    const head = lang === "es" ? "Cómo cambia esta dirección, 2024–2028" : "How this address changes, 2024–2028";
+    const sub = lang === "es" ? "Cada barra es la respuesta del motor para esa fecha. Haga clic en la línea de tiempo para ver la dirección en esa fecha."
+      : "Each bar is the engine's answer for that date. Click anywhere on the timeline to see the address on that date.";
+    const legend = ["applies", "unknown", "superseded", "not_yet_effective", "pending"].map((v) => `<span class="lg"><i class="seg-${v === "not_yet_effective" ? "nye" : v}"></i>${esc(resWord(v))}</span>`).join("");
+    return `<details class="card timeline" open><summary><h3>${esc(head)}</h3><span class="muted">${changing.length} ${lang === "es" ? "normas cambian" : "rules change"} · ${data.rows.length} ${lang === "es" ? "en total" : "in total"}</span></summary>
+      <p class="muted">${esc(sub)}</p>
+      <div class="tl"><div class="tl-axis"><div class="tl-label"></div><div class="tl-years">${years}</div></div>${rowsHtml}</div>
+      <div class="legend">${legend}</div>
+      ${events ? `<div class="tl-events"><b>${lang === "es" ? "Cambios" : "Changes"}</b><ul>${events}</ul></div>` : `<p class="muted">${lang === "es" ? "Ninguna norma cambia en este periodo." : "No rule changes for this address in this period."}</p>`}
+      ${data.rows.length > shown.length ? `<p class="muted">${data.rows.length - shown.length} ${lang === "es" ? "normas estables más no se muestran." : "more steady rules not shown."}</p>` : ""}
+    </details>`;
+  }
+
+  // ------------------------------------------------------------------ compare with another building
+  function governing(entries, c) {
+    const es = entries.filter((e) => e.category === c && !e.event_only);
+    const a = es.filter((e) => e.result === "applies").sort((x, y) => (x.rule.level === "city" ? 0 : 1) - (y.rule.level === "city" ? 0 : 1))[0];
+    if (a) return { key: a.team_rule_id, html: `${pill("applies")} <b>${esc(a.rule.title)}</b>${a.rule.key_value ? `<div class="muted">${esc(a.rule.key_value)}</div>` : ""}` };
+    const u = es.find((e) => e.result === "unknown");
+    if (u) return { key: "u:" + u.team_rule_id, html: `${pill("unknown")} <b>${esc(u.rule.title)}</b><div class="muted">${esc((u.missing_facts || []).map((m) => Lexmap.FIELD_LABEL[m] || m).join(", "))}</div>` };
+    const n = es.find((e) => e.result === "not_yet_effective" || e.result === "pending");
+    if (n) return { key: "n:" + n.team_rule_id, html: `${pill(n.result)} <b>${esc(n.rule.title)}</b>` };
+    return { key: "none", html: `<span class="muted">${lang === "es" ? "Ninguna norma la cubre" : "No rule covers it"}</span>` };
+  }
+  function comparePanel(addr, asOf) {
+    const opts = D.addresses.map((a) => `<option value="${a.id} · ${esc(a.street)}, ${esc(a.postal_city)}">`).join("");
+    const picks = [["A0016", "SF 1926"], ["A0105", "SF 2019"], ["A0437", "LA 2004"], ["A0002", "Hoboken"], ["A0003", "Newark"], ["A0065", "Boston"]]
+      .filter(([id]) => D.addrById[id] && !(current.kind === "sample" && current.id === id))
+      .map(([id, l]) => `<button class="chip" data-cmp="${id}">${esc(l)}</button>`).join("");
+    const title = lang === "es" ? "Comparar con otro edificio" : "Compare with another building";
+    const form = `<div class="cmp-form"><input id="cmp-input" list="cmp-list" placeholder="${lang === "es" ? "Elija una dirección de muestra (p. ej. A0105 o Fillmore)" : "Pick a sample address (e.g. A0105 or Fillmore)"}" aria-label="Address to compare">
+      <datalist id="cmp-list">${opts}</datalist><button class="btn" data-cmp-go="1">${lang === "es" ? "Comparar" : "Compare"}</button></div>
+      <div class="chips">${picks}</div>`;
+    const id = current.compareId;
+    const b = id && D.addrById[id];
+    if (!b) return `<details class="card compare"><summary><h3>${esc(title)}</h3><span class="muted">${lang === "es" ? "mismas fechas, mismas normas" : "same date, same rules, side by side"}</span></summary>${form}</details>`;
+    const ea = engine.lookup(addr, asOf), eb = engine.lookup({ stack: b.stack, facts: b.facts }, asOf);
+    let diffs = 0;
+    const rows = TAKE_ORDER.map((c) => {
+      const ga = governing(ea, c), gb = governing(eb, c);
+      const diff = ga.key !== gb.key;
+      if (diff) diffs++;
+      return `<tr class="${diff ? "diff" : ""}"><td><b>${esc(catName(c))}</b></td><td>${ga.html}</td><td>${gb.html}</td></tr>`;
+    }).join("");
+    const yb = b.facts.year_built ? `built ${b.facts.year_built}` : "year unknown";
+    const ya = addr.facts.year_built ? `built ${addr.facts.year_built}` : "year unknown";
+    return `<details class="card compare" open><summary><h3>${esc(title)}</h3><span class="muted">${diffs} ${lang === "es" ? "temas difieren" : diffs === 1 ? "topic differs" : "topics differ"} · ${esc(asOf)}</span></summary>
+      ${form}
+      <div class="tbl-wrap"><table class="cmp"><thead><tr><th></th><th>${esc(current.meta.title)}<div class="muted">${esc(addr.stack.slice(-1)[0])} · ${esc(ya)}</div></th>
+        <th>${esc(b.street)}, ${esc(b.postal_city)}<div class="muted">${esc(b.city || b.state)} · ${esc(yb)} · <button class="linkish" data-open="${b.id}">${lang === "es" ? "abrir" : "open"}</button> · <button class="linkish" data-cmp-clear="1">${lang === "es" ? "quitar" : "clear"}</button></div></th></tr></thead>
+        <tbody>${rows}</tbody></table></div>
+      <p class="muted">${lang === "es" ? "Las filas resaltadas difieren entre los dos edificios." : "Highlighted rows differ between the two buildings."}</p>
+    </details>`;
   }
 
   function addressCard(addr, all, asOf) {
@@ -421,7 +602,7 @@
     return `<article class="card rule ${e.result}" id="rule-${esc(r.team_rule_id)}">
       <div class="rule-top">
         <div><div class="rule-title">${esc(r.title)}</div><div class="rid">${esc(r.team_rule_id)} · ${esc(r.jurisdiction)}${r.effective_date ? " · effective " + esc(r.effective_date) : ""}</div></div>
-        <div>${pill(e.result)} ${e.conflict_flag ? `<span class="pill conflict">⚑ ${t("conflict")}</span>` : ""}</div>
+        <div>${pill(e.result)}${reviewPill(r)} ${e.conflict_flag ? `<span class="pill conflict">⚑ ${t("conflict")}</span>` : ""}</div>
       </div>
       <p class="plain">${esc(plain(r))}</p>
       ${r.key_value ? `<div class="kv"><b>${t("key")}:</b> ${esc(r.key_value)}</div>` : ""}
@@ -453,7 +634,8 @@
       ["Geocoding", `${a.geo_method.replace(/_/g, " ")} (${a.geo_confidence} confidence)`],
     ];
     if (a.lat != null) details.push(["Coordinates", `${Number(a.lat).toFixed(5)}, ${Number(a.lon).toFixed(5)}`]);
-    current = { kind: "sample", id: a.id, base: { stack: a.stack, facts: a.facts }, answers: (current && current.id === a.id) ? current.answers : {},
+    const keep = current && current.id === a.id;
+    current = { kind: "sample", id: a.id, base: { stack: a.stack, facts: a.facts }, answers: keep ? current.answers : {}, compareId: keep ? current.compareId : null,
       meta: { title: `${a.street}, ${a.postal_city}, ${a.state}`, matched: a.matched, flags: a.flags, idLabel: `${a.id} · sample address`,
         lat: a.lat, lon: a.lon, details, residential: "yes" } };
     $("#q").value = `${a.street}, ${a.postal_city}, ${a.state}`;
@@ -673,6 +855,29 @@
         return;
       }
       if (ev.target.closest("[data-print]")) { window.print(); return; }
+      const sd = ev.target.closest("[data-setdate]");
+      if (sd) { $("#asof").value = sd.dataset.setdate; syncChips(); const y = window.scrollY; render(); setHash(); window.scrollTo(0, y); return; }
+      const tr = ev.target.closest("[data-tl]");
+      if (tr && tr.getBoundingClientRect) {
+        const rect = tr.getBoundingClientRect();
+        const frac = Math.max(0, Math.min(1, (ev.clientX - rect.left) / rect.width));
+        const day = new Date((dayNum(TL_START) + frac * (dayNum(TL_END) - dayNum(TL_START))) * 864e5).toISOString().slice(0, 10);
+        $("#asof").value = day; syncChips(); const y = window.scrollY; render(); setHash(); window.scrollTo(0, y); return;
+      }
+      const cg = ev.target.closest("[data-cmp-go]");
+      if (cg) {
+        const v = (document.getElementById("cmp-input") || {}).value || "";
+        const m = v.toUpperCase().match(/A\d{4}/);
+        let id = m && D.addrById[m[0]] ? m[0] : null;
+        if (!id && v.trim()) { const low = v.trim().toLowerCase(); const hit = D.addresses.find((a) => `${a.street} ${a.postal_city}`.toLowerCase().includes(low)); id = hit && hit.id; }
+        if (id) { current.compareId = id; const y = window.scrollY; render(); window.scrollTo(0, y); }
+        return;
+      }
+      const cp = ev.target.closest("[data-cmp]");
+      if (cp) { current.compareId = cp.dataset.cmp; const y = window.scrollY; render(); window.scrollTo(0, y); return; }
+      if (ev.target.closest("[data-cmp-clear]")) { current.compareId = null; const y = window.scrollY; render(); window.scrollTo(0, y); return; }
+      const op = ev.target.closest("[data-open]");
+      if (op) { showSample(op.dataset.open); $("#result").scrollIntoView && $("#result").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
       const g = ev.target.closest("[data-goto]");
       if (g) {
         const det = document.querySelector("details.allrules");
@@ -716,6 +921,24 @@
       ["100%", "of quotes found word for word in their source"],
       [`${sc.passed}/${sc.total}`, "self-checks passing, incl. all change tests"],
     ].map(([n, l]) => `<div class="card stat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join("");
+  }
+
+  function setupTheme() {
+    const order = ["auto", "light", "dark"], label = { auto: "◐ Auto", light: "☀ Light", dark: "☾ Dark" };
+    let th = "auto";
+    try { th = localStorage.getItem("lexmap.theme") || "auto"; } catch (e) { /* storage blocked */ }
+    const apply = () => {
+      try {
+        if (th === "auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", th);
+      } catch (e) { /* never let theming break the page */ }
+      $("#theme").textContent = label[th];
+    };
+    apply();
+    $("#theme").addEventListener("click", () => {
+      th = order[(order.indexOf(th) + 1) % order.length];
+      try { localStorage.setItem("lexmap.theme", th); } catch (e) { /* ignore */ }
+      apply();
+    });
   }
 
   function goHome() {
@@ -946,10 +1169,11 @@ exempt: ${esc((r.coverage_logic || {}).exempt ? describePred(r.coverage_logic.ex
     });
     $$(".lang button").forEach((b) => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
     $("#home").addEventListener("click", (ev) => { ev.preventDefault(); goHome(); });
+    setupTheme();
     setupSearch(); setupDates(); setupQuestions(); setupTakeaways(); setupCoverage(); renderStats(); renderChanges(); renderRules(); renderMethod();
     const m = location.hash.match(/^#(A\d{4})(?:@(\d{4}-\d{2}-\d{2}))?/);
     if (m) { if (m[2] && m[2] >= "2024-01-01") $("#asof").value = m[2]; syncChips(); showSample(m[1], false); }
-    window.__lexmap = { liveLookup, showSample, render, answer: (k, v) => { if (current) { if (v) current.answers[k] = v; else delete current.answers[k]; render(); } }, state: () => current };
+    window.__lexmap = { liveLookup, showSample, render, setLang: (l) => { lang = l; applyLang(); }, setPersona: (p) => { persona = p; render(); }, answer: (k, v) => { if (current) { if (v) current.answers[k] = v; else delete current.answers[k]; render(); } }, state: () => current };
   }
   boot();
 })();

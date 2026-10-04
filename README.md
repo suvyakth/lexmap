@@ -2,6 +2,8 @@
 
 [![reproduce](https://github.com/suvyakth/lexmap/actions/workflows/reproduce.yml/badge.svg)](https://github.com/suvyakth/lexmap/actions/workflows/reproduce.yml)
 
+> *“The model reads the law. It never decides what applies.”*
+
 **Which housing rules apply at this address today, and what is about to change?**
 Lexmap reads a corpus of real state and city housing law and turns it into executable rules. It answers any of the 500 sample addresses (or any address you type) in California, New Jersey and Massachusetts, for any date. Every answer quotes the law it comes from.
 
@@ -52,6 +54,8 @@ Most systems ask a model "which rules apply here?" Lexmap uses the model only to
 ### Built for each user named in the brief
 - **Renters:** "What matters most at this address" gives up to six building-specific answers ("How much can my rent go up?") in plain English or Spanish. Each says why it applies to this building and cites the law.
 - **Small landlords:** the same view, worded as obligations ("How much can I raise rent?").
+- **Anyone curious about the future:** a per-address timeline (2024–2028) shows when each rule starts, ends or changes. Click any point to see the address on that date.
+- **Comparisons:** put two buildings side by side (for example a 1926 and a 2019 San Francisco building) and see exactly which protections differ.
 - **Advocates and agencies:** a city-by-city coverage dashboard shows how many of the 500 buildings have local rent control, state law only, no cap, or an unknown status, on any date. The change tests list every affected building.
 - **Anyone with a real address:** live Census geocoding finds the legal city. In New Jersey, public parcel records add building facts, so a shop is recognised as not a rental. Anything still missing becomes one short question, answered instantly.
 
